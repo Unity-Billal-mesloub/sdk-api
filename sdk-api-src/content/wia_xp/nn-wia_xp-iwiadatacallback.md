@@ -44,6 +44,7 @@ api_location:
  - Wiaguid.dll
 api_name:
  - IWiaDataCallback
+archived: true
 ---
 
 # IWiaDataCallback interface

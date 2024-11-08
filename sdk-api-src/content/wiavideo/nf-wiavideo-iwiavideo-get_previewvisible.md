@@ -45,6 +45,7 @@ api_name:
  - IWiaVideo.PreviewVisible
  - IWiaVideo.get_PreviewVisible
  - IWiaVideo.put_PreviewVisible
+archived: true
 ---
 
 # IWiaVideo::get_PreviewVisible

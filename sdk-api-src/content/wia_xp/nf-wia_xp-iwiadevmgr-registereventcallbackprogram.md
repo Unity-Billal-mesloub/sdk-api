@@ -43,6 +43,7 @@ api_location:
  - Wiaservc.dll
 api_name:
  - IWiaDevMgr.RegisterEventCallbackProgram
+archived: true
 ---
 
 # IWiaDevMgr::RegisterEventCallbackProgram

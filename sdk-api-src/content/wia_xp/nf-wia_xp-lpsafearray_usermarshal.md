@@ -43,6 +43,7 @@ api_location:
  - OleAut32.dll
 api_name:
  - LPSAFEARRAY_UserMarshal
+archived: true
 ---
 
 # LPSAFEARRAY_UserMarshal function

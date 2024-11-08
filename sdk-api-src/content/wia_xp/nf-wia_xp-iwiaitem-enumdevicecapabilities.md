@@ -43,6 +43,7 @@ api_location:
  - Wiaservc.dll
 api_name:
  - IWiaItem.EnumDeviceCapabilities
+archived: true
 ---
 
 # IWiaItem::EnumDeviceCapabilities

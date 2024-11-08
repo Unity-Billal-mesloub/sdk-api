@@ -43,6 +43,7 @@ api_location:
  - Wiaservc.dll
 api_name:
  - IWiaItem.GetItemType
+archived: true
 ---
 
 # IWiaItem::GetItemType

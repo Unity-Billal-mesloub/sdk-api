@@ -45,6 +45,7 @@ api_name:
  - IWiaVideo.ImagesDirectory
  - IWiaVideo.get_ImagesDirectory
  - IWiaVideo.put_ImagesDirectory
+archived: true
 ---
 
 # IWiaVideo::get_ImagesDirectory

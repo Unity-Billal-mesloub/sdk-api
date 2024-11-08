@@ -44,6 +44,7 @@ api_location:
  - Wiaguid.dll
 api_name:
  - IEnumWiaItem.Clone
+archived: true
 ---
 
 # IEnumWiaItem::Clone

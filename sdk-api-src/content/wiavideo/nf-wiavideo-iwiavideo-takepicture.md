@@ -43,6 +43,7 @@ api_location:
  - Wiavideo.dll
 api_name:
  - IWiaVideo.TakePicture
+archived: true
 ---
 
 # IWiaVideo::TakePicture

@@ -9,6 +9,7 @@ tech.root: automat
 f1_keywords:
  - wia_xp
  - wia_xp/wia_xp
+archived: true
 ---
 
 # Wia_Xp.h header
@@ -18,6 +19,5 @@ f1_keywords:
 
 This header is used by multiple technologies. For more information, see:
 
-- [Automation](../_automat/index.md)
 - [WIA](../_wia/index.md)
 
