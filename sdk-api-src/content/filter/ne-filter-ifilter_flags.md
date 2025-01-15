@@ -4,7 +4,7 @@ title: IFILTER_FLAGS (filter.h)
 description: Indicates whether the caller should use the IPropertySetStorage and IPropertyStorage interfaces to locate additional properties.
 helpviewer_keywords: ["IFILTER_FLAGS","IFILTER_FLAGS enumeration [Indexing Service]","IFILTER_FLAGS_OLE_PROPERTIES","_idxs_IFILTER_FLAGS","filter/IFILTER_FLAGS","filter/IFILTER_FLAGS_OLE_PROPERTIES","indexsrv.ifilter_flags","tagIFILTER_FLAGS"]
 old-location: indexsrv\ifilter_flags.htm
-tech.root: IndexSrv
+tech.root: search
 ms.assetid: VS|indexsrv|~\html\ixrefint_0j03.htm
 ms.date: 12/05/2018
 ms.keywords: IFILTER_FLAGS, IFILTER_FLAGS enumeration [Indexing Service], IFILTER_FLAGS_OLE_PROPERTIES, _idxs_IFILTER_FLAGS, filter/IFILTER_FLAGS, filter/IFILTER_FLAGS_OLE_PROPERTIES, indexsrv.ifilter_flags, tagIFILTER_FLAGS

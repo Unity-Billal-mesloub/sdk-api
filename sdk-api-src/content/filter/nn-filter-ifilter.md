@@ -4,7 +4,7 @@ title: IFilter (filter.h)
 description: Scans documents for text and properties (also called attributes).
 helpviewer_keywords: ["IFilter","IFilter interface [Indexing Service]","IFilter interface [Indexing Service]","described","_idxs_IFilter","filter/IFilter","indexsrv.ifilter"]
 old-location: indexsrv\ifilter.htm
-tech.root: IndexSrv
+tech.root: search
 ms.assetid: VS|indexsrv|~\html\ixrefint_9sfm.htm
 ms.date: 12/05/2018
 ms.keywords: IFilter, IFilter interface [Indexing Service], IFilter interface [Indexing Service],described, _idxs_IFilter, filter/IFilter, indexsrv.ifilter
@@ -49,9 +49,6 @@ api_name:
 
 
 ## -description
-
-> [!Note]  
-> Indexing Service is no longer supported as of Windows XP and is unavailable for use as of Windows 8. Instead, use [Windows Search](/windows/desktop/search/-search-3x-wds-overview) for client side search and [Microsoft Search Server Express](https://www.microsoft.com/download/details.aspx?id=18914) for server side search.
 
 Scans documents for text and properties (also called attributes). It extracts chunks of text from these documents, filtering out embedded formatting and retaining information about the position of the text. It also extracts chunks of values, which are properties of an entire document or of well-defined parts of a document. <b>IFilter</b> provides the foundation for building higher-level applications such as document indexers and application-independent viewers.
 
