@@ -64,12 +64,9 @@ The <b>IFilter</b> interface inherits from the <a href="/windows/desktop/api/unk
 
 ## -see-also
 
-<a href="/windows/desktop/api/ntquery/nf-ntquery-bindifilterfromstorage">BindIFilterFromStorage</a>
+[BindIFilterFromStorage](/windows/desktop/api/ntquery/nf-ntquery-bindifilterfromstorage)
 
+[BindIFilterFromStream](/windows/desktop/api/ntquery/nf-ntquery-bindifilterfromstream)
 
+[LoadIFilter](/windows/desktop/api/ntquery/nf-ntquery-loadifilter)
 
-<a href="/windows/desktop/api/ntquery/nf-ntquery-bindifilterfromstream">BindIFilterFromStream</a>
-
-
-
-<a href="/windows/desktop/api/ntquery/nf-ntquery-loadifilter">LoadIFilter</a>
