@@ -55,7 +55,7 @@ The image format is 24 bits per pixel. This value corresponds to the WIC friendl
 
 ## -remarks
 
-Specifying the bits per pixel of an image allows a search indexer to allocate to allocate a buffer of the correct size to process the image. For more information on WIC pixel formats, see [Native pixel formats overview](/windows/win32/wic/-wic-codec-native-pixel-formats).
+Specifying the bits per pixel of an image allows a search indexer to allocate a buffer of the correct size to process the image. For more information on WIC pixel formats, see [Native pixel formats overview](/windows/win32/wic/-wic-codec-native-pixel-formats).
 
 ## -see-also
 
