@@ -17,7 +17,7 @@ archived: true
 
 ## -description
 
-This header is used by multiple technologies. For more information, see:
+This header is used by rhe following technologies:
 
 - [WIA](../_wia/index.md)
 
