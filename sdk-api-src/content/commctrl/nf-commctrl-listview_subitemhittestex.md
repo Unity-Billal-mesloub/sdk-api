@@ -6,7 +6,7 @@ helpviewer_keywords: ["ListView_SubItemHitTestEx","ListView_SubItemHitTestEx mac
 old-location: controls\ListView_SubItemHitTestEx.htm
 tech.root: Controls
 ms.assetid: VS|Controls|~\controls\listview\macros\listview_subitemhittestex.htm
-ms.date: 12/05/2018
+ms.date: 10/21/2024
 ms.keywords: ListView_SubItemHitTestEx, ListView_SubItemHitTestEx macro [Windows Controls], _shell_ListView_SubItemHitTestEx, _shell_ListView_SubItemHitTestEx_cpp, commctrl/ListView_SubItemHitTestEx, controls.ListView_SubItemHitTestEx, controls._shell_ListView_SubItemHitTestEx
 req.header: commctrl.h
 req.include-header: 
@@ -46,6 +46,21 @@ api_name:
 ---
 
 # ListView_SubItemHitTestEx macro
+
+## -syntax
+
+```cpp
+INT ListView_SubItemHitTestEx(
+   HWND            hwnd,
+   LPLVHITTESTINFO plvhti
+);
+```
+
+## -returns
+
+Type: **[INT](/windows/desktop/winprog/windows-data-types)**
+
+Returns the index of the item or subitem tested, if any, or -1 otherwise. If an item or subitem is at the given coordinates, the fields of the <b>LVHITTESTINFO</b> structure will be filled with the applicable hit information.
 
 
 ## -description

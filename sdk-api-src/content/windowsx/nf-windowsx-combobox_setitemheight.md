@@ -6,7 +6,7 @@ helpviewer_keywords: ["ComboBox_SetItemHeight","ComboBox_SetItemHeight macro [Wi
 old-location: controls\ComboBox_SetItemHeight.htm
 tech.root: Controls
 ms.assetid: VS|Controls|~\controls\comboboxes\comboboxreference\comboboxmacros\combobox_setitemheight.htm
-ms.date: 12/05/2018
+ms.date: 10/21/2024
 ms.keywords: ComboBox_SetItemHeight, ComboBox_SetItemHeight macro [Windows Controls], _win32_ComboBox_SetItemHeight, _win32_ComboBox_SetItemHeight_cpp, controls.ComboBox_SetItemHeight, controls._win32_ComboBox_SetItemHeight, windowsx/ComboBox_SetItemHeight
 req.header: windowsx.h
 req.include-header: 
@@ -46,6 +46,22 @@ api_name:
 ---
 
 # ComboBox_SetItemHeight macro
+
+## -syntax
+
+```cpp
+int ComboBox_SetItemHeight(
+   HWND hwndCtl,
+   int  index,
+   int  cyItem
+);
+```
+
+## -returns
+
+Type: **int**
+
+If the index or height is invalid, the return value is CB_ERR.
 
 
 ## -description

@@ -189,6 +189,17 @@ A raw hexadecimal string.
 </td>
 </tr>
 <tr>
+<td width="40%"><a id="CRYPT_STRING_BASE64URI"></a><a id="crypt_string_base64uri"></a><dl>
+<dt><b>CRYPT_STRING_BASE64URI</b></dt>
+<dt>0x0000000d</dt>
+</dl>
+</td>
+<td width="60%">
+Base64, without headers, with "+" replaced by "-" and "/" replaced by "_" as defined in RFC 4648 Section 5.
+
+</td>
+</tr>
+<tr>
 <td width="40%"><a id="CRYPT_STRING_STRICT"></a><a id="crypt_string_strict"></a><dl>
 <dt><b>CRYPT_STRING_STRICT</b></dt>
 <dt>0x20000000</dt>
@@ -269,7 +280,7 @@ With the exception of when <b>CRYPT_STRING_BINARY</b> encoding is used, all stri
 
 
 > [!NOTE]
-> The wincrypt.h header defines CryptBinaryToString as an alias which automatically selects the ANSI or Unicode version of this function based on the definition of the UNICODE preprocessor constant. Mixing usage of the encoding-neutral alias with code that not encoding-neutral can lead to mismatches that result in compilation or runtime errors. For more information, see [Conventions for Function Prototypes](/windows/win32/intl/conventions-for-function-prototypes).
+> The wincrypt.h header defines CryptBinaryToString as an alias that automatically selects the ANSI or Unicode version of this function based on the definition of the UNICODE preprocessor constant. Mixing usage of the encoding-neutral alias with code that is not encoding-neutral can lead to mismatches that result in compilation or runtime errors. For more information, see [Conventions for Function Prototypes](/windows/win32/intl/conventions-for-function-prototypes).
 
 ## -see-also
 

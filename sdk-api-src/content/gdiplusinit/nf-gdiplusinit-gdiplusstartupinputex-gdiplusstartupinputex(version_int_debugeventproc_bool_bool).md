@@ -3,7 +3,7 @@ UID: NF:gdiplusinit.GdiplusStartupInputEx.GdiplusStartupInputEx(Version,INT,Debu
 title: GdiplusStartupInputEx::GdiplusStartupInputEx(Version,INT,DebugEventProc,BOOL,BOOL)
 description: Constructor for the GdiplusStartupInputEx structure.
 tech.root: gdiplus
-ms.date: 02/26/2024
+ms.date: 01/15/2025
 targetos: Windows
 req.assembly: 
 req.construct-type: function
@@ -55,6 +55,9 @@ All of the constructor parameters are optional, so you can declare a variable of
 Type: **Version**
 
 The version of GDI+ to initialize. See the definition of the **Version** enum below.
+
+> ![IMPORTANT]
+> For info about operating system (OS) support for the codecs mentioned below, see [Media Feature Pack for Windows 10/11 N (September 2022)](https://support.microsoft.com/windows/media-feature-pack-for-windows-10-11-n-september-2022-78cfeea5-c7d9-4aa8-b38f-ee4df1392009).
 
 ```cpp
 enum class Version : UINT32

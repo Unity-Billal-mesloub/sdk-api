@@ -43,7 +43,7 @@ helpviewer_keywords:
 
 An interface for managing arguments passed to DXC.
 
-To create an instance of this interface, call [IDxcUtils::BuildArguments](./nf-dxcapi-idxcutils-buildarguments).
+To create an instance of this interface, call [IDxcUtils::BuildArguments](./nf-dxcapi-idxcutils-buildarguments.md).
 
 ## -remarks
 

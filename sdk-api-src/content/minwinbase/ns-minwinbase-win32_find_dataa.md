@@ -230,7 +230,7 @@ If a file has a long file name, the complete name appears in the <b>cFileName</b
     value. This remains true for all subsequent calls to the 
     <a href="/windows/desktop/api/fileapi/nf-fileapi-findnextfilea">FindNextFile</a> function. As an alternative method of 
     retrieving the 8.3 format version of a file name, you can use the 
-    <a href="/windows/desktop/api/fileapi/nf-fileapi-getshortpathnamea">GetShortPathName</a> function. For more information about
+    <a href="/windows/win32/api/fileapi/nf-fileapi-getshortpathnamew">GetShortPathName</a> function. For more information about
     file names, see <a href="/windows/desktop/FileIO/naming-a-file">File Names, Paths, and Namespaces</a>.
 
 Not all file systems can record creation and last access times, and not all file systems record them in the 
@@ -244,7 +244,7 @@ Not all file systems can record creation and last access times, and not all file
 
 
 > [!NOTE]
-> The minwinbase.h header defines WIN32_FIND_DATA as an alias which automatically selects the ANSI or Unicode version of this function based on the definition of the UNICODE preprocessor constant. Mixing usage of the encoding-neutral alias with code that not encoding-neutral can lead to mismatches that result in compilation or runtime errors. For more information, see [Conventions for Function Prototypes](/windows/win32/intl/conventions-for-function-prototypes).
+> The minwinbase.h header defines WIN32_FIND_DATA as an alias that automatically selects the ANSI or Unicode version of this function based on the definition of the UNICODE preprocessor constant. Mixing usage of the encoding-neutral alias with code that is not encoding-neutral can lead to mismatches that result in compilation or runtime errors. For more information, see [Conventions for Function Prototypes](/windows/win32/intl/conventions-for-function-prototypes).
 
 ## -see-also
 
@@ -284,4 +284,4 @@ Not all file systems can record creation and last access times, and not all file
 
 
 
-<a href="/windows/desktop/api/fileapi/nf-fileapi-getshortpathnamea">GetShortPathName</a>
+<a href="/windows/win32/api/fileapi/nf-fileapi-getshortpathnamew">GetShortPathName</a>

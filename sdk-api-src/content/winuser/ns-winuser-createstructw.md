@@ -56,7 +56,7 @@ api_name:
 
 ## -description
 
-Defines the initialization parameters passed to the window procedure of an application. These members are identical to the parameters of the <a href="/windows/desktop/api/winuser/nf-winuser-createwindowexa">CreateWindowEx</a> function.
+Defines the initialization parameters passed to the window procedure of an application. These members are identical to the parameters of the <a href="/windows/desktop/api/winuser/nf-winuser-createwindowexw">CreateWindowEx</a> function.
 
 ## -struct-fields
 
@@ -64,9 +64,9 @@ Defines the initialization parameters passed to the window procedure of an appli
 
 Type: <b>LPVOID</b>
 
-Contains additional data which may be used to create the window. If the window is being created as a result of a call to the <a href="/windows/desktop/api/winuser/nf-winuser-createwindowa">CreateWindow</a> or <a href="/windows/desktop/api/winuser/nf-winuser-createwindowexa">CreateWindowEx</a> function, this member contains the value of the <i>lpParam</i> parameter specified in the function call.
+Contains additional data which may be used to create the window. If the window is being created as a result of a call to the <a href="/windows/desktop/api/winuser/nf-winuser-createwindoww">CreateWindow</a> or <a href="/windows/desktop/api/winuser/nf-winuser-createwindowexw">CreateWindowEx</a> function, this member contains the value of the <i>lpParam</i> parameter specified in the function call.
 
-If the window being created is a MDI client window, this member contains a pointer to a <a href="/windows/desktop/api/winuser/ns-winuser-clientcreatestruct">CLIENTCREATESTRUCT</a> structure. If the window being created is a MDI child window, this member contains a pointer to an <a href="/windows/desktop/api/winuser/ns-winuser-mdicreatestructa">MDICREATESTRUCT</a> structure.
+If the window being created is a MDI client window, this member contains a pointer to a <a href="/windows/desktop/api/winuser/ns-winuser-clientcreatestruct">CLIENTCREATESTRUCT</a> structure. If the window being created is a MDI child window, this member contains a pointer to an <a href="/windows/desktop/api/winuser/ns-winuser-mdicreatestructw">MDICREATESTRUCT</a> structure.
 
  If the window is being created from a dialog template, this member is the address of a <b>SHORT</b> value that specifies the size, in bytes, of the window creation data. The value is immediately followed by the creation data. For more information, see the following Remarks section.
 
@@ -166,7 +166,7 @@ PMYDLGDATA pMyDlgdata = (PMYDLGDATA) (((LPCREATESTRUCT) lParam)->lpCreateParams)
 
 
 > [!NOTE]
-> The winuser.h header defines CREATESTRUCT as an alias which automatically selects the ANSI or Unicode version of this function based on the definition of the UNICODE preprocessor constant. Mixing usage of the encoding-neutral alias with code that not encoding-neutral can lead to mismatches that result in compilation or runtime errors. For more information, see [Conventions for Function Prototypes](/windows/win32/intl/conventions-for-function-prototypes).
+> The winuser.h header defines CREATESTRUCT as an alias that automatically selects the ANSI or Unicode version of this function based on the definition of the UNICODE preprocessor constant. Mixing usage of the encoding-neutral alias with code that is not encoding-neutral can lead to mismatches that result in compilation or runtime errors. For more information, see [Conventions for Function Prototypes](/windows/win32/intl/conventions-for-function-prototypes).
 
 ## -see-also
 
@@ -178,15 +178,15 @@ PMYDLGDATA pMyDlgdata = (PMYDLGDATA) (((LPCREATESTRUCT) lParam)->lpCreateParams)
 
 
 
-<a href="/windows/desktop/api/winuser/nf-winuser-createwindowa">CreateWindow</a>
+<a href="/windows/desktop/api/winuser/nf-winuser-createwindoww">CreateWindow</a>
 
 
 
-<a href="/windows/desktop/api/winuser/nf-winuser-createwindowexa">CreateWindowEx</a>
+<a href="/windows/desktop/api/winuser/nf-winuser-createwindowexw">CreateWindowEx</a>
 
 
 
-<a href="/windows/desktop/api/winuser/ns-winuser-mdicreatestructa">MDICREATESTRUCT</a>
+<a href="/windows/desktop/api/winuser/ns-winuser-mdicreatestructw">MDICREATESTRUCT</a>
 
 
 

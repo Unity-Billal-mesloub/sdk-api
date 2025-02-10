@@ -70,7 +70,7 @@ If the operation succeeds, the function returns CR_SUCCESS. Otherwise, it return
 
 ## -see-also
 
-<a href="/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_open_class_keyw">CM_Disable_DevNode</a>
+<a href="/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_disable_devnode">CM_Disable_DevNode</a>
 
 
 

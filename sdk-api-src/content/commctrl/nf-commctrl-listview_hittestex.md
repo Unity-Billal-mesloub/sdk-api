@@ -6,7 +6,7 @@ helpviewer_keywords: ["ListView_HitTestEx","ListView_HitTestEx macro [Windows Co
 old-location: controls\ListView_HitTestEx.htm
 tech.root: Controls
 ms.assetid: VS|Controls|~\controls\listview\macros\listview_hittestex.htm
-ms.date: 12/05/2018
+ms.date: 10/21/2024
 ms.keywords: ListView_HitTestEx, ListView_HitTestEx macro [Windows Controls], _shell_ListView_HitTestEx, _shell_ListView_HitTestEx_cpp, commctrl/ListView_HitTestEx, controls.ListView_HitTestEx, controls._shell_ListView_HitTestEx
 req.header: commctrl.h
 req.include-header: 
@@ -46,6 +46,21 @@ api_name:
 ---
 
 # ListView_HitTestEx macro
+
+## -syntax
+
+```cpp
+int ListView_HitTestEx(
+   HWND            hwndLV,
+   LPLVHITTESTINFO pinfo
+);
+```
+
+## -returns
+
+Type: **int**
+
+Returns the index of the item at the specified position, if any, or -1 otherwise.
 
 
 ## -description

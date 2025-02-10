@@ -47,11 +47,10 @@ api_name:
 
 # IADsOpenDSObject::OpenDSObject
 
-
 ## -description
 
 The <b>IADsOpenDSObject::OpenDSObject</b> method binds to an ADSI object, using the given credentials, and retrieves an  <a href="/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch">IDispatch</a> pointer to the specified object.
-<div class="alert"><b>Important</b>  It is not recommended that you use this method with the WinNT Provider. For more information, please see KB article 218497, <a href="https://support.microsoft.com/kb/218497">User Authentication Issues with the Active Directory Service Interfaces WinNT Provider</a>.</div><div> </div>
+<div class="alert"><b>Important</b>  It is not recommended that you use this method with the WinNT Provider. For more information, please see KB article 218497, <a href="/troubleshoot/windows-client/admin-development/adsi-winnt-provider-user-authentication-issues">User authentication issues with the Active Directory Service Interfaces WinNT provider</a>.</div><div> </div>
 
 ## -parameters
 

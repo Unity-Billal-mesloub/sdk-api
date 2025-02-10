@@ -54,7 +54,7 @@ api_name:
 
 ## -description
 
-A range of text from a rich edit control. This structure is filled in by the <a href="https://msdn.microsoft.com/18398963-eb2c-4f64-99f5-9614a5d34b52">EM_GETTEXTRANGE</a> message. The buffer pointed to by the <b>lpstrText</b> member must be large enough to receive all characters and the terminating null character.
+A range of text from a rich edit control. This structure is filled in by the <a href="/windows/win32/controls/em-gettextrange">EM_GETTEXTRANGE</a> message. The buffer pointed to by the <b>lpstrText</b> member must be large enough to receive all characters and the terminating null character.
 
 ## -struct-fields
 
@@ -76,7 +76,7 @@ The text.
 
 
 
-<a href="https://msdn.microsoft.com/18398963-eb2c-4f64-99f5-9614a5d34b52">EM_GETTEXTRANGE</a>
+<a href="/windows/win32/controls/em-gettextrange">EM_GETTEXTRANGE</a>
 
 
 
@@ -85,4 +85,4 @@ The text.
 ## -remarks
 
 > [!NOTE]
-> The richedit.h header defines TEXTRANGE as an alias which automatically selects the ANSI or Unicode version of this function based on the definition of the UNICODE preprocessor constant. Mixing usage of the encoding-neutral alias with code that not encoding-neutral can lead to mismatches that result in compilation or runtime errors. For more information, see [Conventions for Function Prototypes](/windows/win32/intl/conventions-for-function-prototypes).
+> The richedit.h header defines TEXTRANGE as an alias that automatically selects the ANSI or Unicode version of this function based on the definition of the UNICODE preprocessor constant. Mixing usage of the encoding-neutral alias with code that is not encoding-neutral can lead to mismatches that result in compilation or runtime errors. For more information, see [Conventions for Function Prototypes](/windows/win32/intl/conventions-for-function-prototypes).

@@ -66,7 +66,7 @@ A pointer to a <a href="/windows/win32/api/windns/ns-windns-dns_query_result">DN
 
 <div class="alert"><b>Note</b>  For asynchronous queries, an application should not free
                             this structure until the <a href="/windows/win32/api/windns/nc-windns-dns_query_completion_routine">DNS_QUERY_COMPLETION_ROUTINE</a> callback is invoked. When the query completes, the <a href="/windows/win32/api/windns/ns-windns-dns_query_result">DNS_QUERY_RESULT</a> structure contains a pointer to a list of
-                            <a href="/windows/win32/api/windns/ns-windns-dns_recorda">DNS_RECORDS</a> that should be freed using <a href="/windows/win32/api/windns/nf-windns-dnsrecordlistfree">DnsRecordListFree</a>.</div>
+                            <a href="/windows/win32/api/windnsdef/ns-windnsdef-dns_recorda">DNS_RECORDS</a> that should be freed using <a href="/windows/win32/api/windns/nf-windns-dnsrecordlistfree">DnsRecordListFree</a>.</div>
 <div> </div>
 
 ### -param pCancelHandle [in, out, optional]
@@ -106,7 +106,7 @@ The call was successful.
 </dl>
 </td>
 <td width="60%">
-Either the <i>pQueryRequest</i> or <i>pQueryRequest</i> parameters are uninitialized or contain the wrong version. 
+Either the <i>pQueryRequest</i> or <i>pQueryResults</i> parameters are uninitialized or contain the wrong version. 
 
 </td>
 </tr>
@@ -147,13 +147,13 @@ The query will be completed asynchronously.
 
 ## -remarks
 
-If a call to <b>DnsQueryEx</b> completes synchronously (i.e., the function return value is not <b>DNS_REQUEST_PENDING</b>), the <b>pQueryRecords</b> member of <i>pQueryResults</i> contains a pointer to a list of <a href="/windows/win32/api/windns/ns-windns-dns_recorda">DNS_RECORDS</a> and <b>DnsQueryEx</b> will return either error or success.
+If a call to <b>DnsQueryEx</b> completes synchronously (i.e., the function return value is not <b>DNS_REQUEST_PENDING</b>), the <b>pQueryRecords</b> member of <i>pQueryResults</i> contains a pointer to a list of <a href="/windows/win32/api/windnsdef/ns-windnsdef-dns_recorda">DNS_RECORDS</a> and <b>DnsQueryEx</b> will return either error or success.
 
 The following conditions invoke a synchronous call to <b>DnsQueryEx</b> and do not utilize the DNS callback:
 
 <ul>
 <li>The <a href="/windows/win32/api/windns/nc-windns-dns_query_completion_routine">DNS_QUERY_COMPLETION_ROUTINE</a> callback is omitted from the <b>pQueryCompleteCallback</b> member of <i>pQueryRequest</i>.</li>
-<li>A query is for the local machine name and <a href="/windows/win32/api/windns/ns-windns-dns_a_data">A</a> or <a href="/windows/win32/api/windns/ns-windns-dns_aaaa_data">AAAA</a> type Resource Records (RR).</li>
+<li>A query is for the local machine name and <a href="/windows/win32/api/windns/nf-windns-dnsquery_a">A</a> or <a href="/windows/win32/api/windnsdef/ns-windnsdef-dns_aaaa_data">AAAA</a> type Resource Records (RR).</li>
 <li>A call to <b>DnsQueryEx</b> queries an IPv4 or IPv6 address.</li>
 <li>A call to <b>DnsQueryEx</b> returns in error.</li>
 </ul>

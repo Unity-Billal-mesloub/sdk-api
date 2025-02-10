@@ -9,7 +9,7 @@ ms.keywords: GetCurrentPackageInfo2
 req.assembly: 
 req.construct-type: function
 req.ddi-compliance: 
-req.dll: Kernel32.dll
+req.dll: kernelbase.dll
 req.header: appmodel.h
 req.idl: 
 req.include-header: 
@@ -39,7 +39,7 @@ topic_type:
 api_type:
  - DllExport
 api_location:
- - Kernel32.dll
+ - kernelbase.dll
 api_name:
  - GetCurrentPackageInfo2
 ---

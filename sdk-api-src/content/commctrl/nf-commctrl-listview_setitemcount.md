@@ -6,7 +6,7 @@ helpviewer_keywords: ["ListView_SetItemCount","ListView_SetItemCount macro [Wind
 old-location: controls\ListView_SetItemCount.htm
 tech.root: Controls
 ms.assetid: VS|Controls|~\controls\listview\macros\listview_setitemcount.htm
-ms.date: 12/05/2018
+ms.date: 10/21/2024
 ms.keywords: ListView_SetItemCount, ListView_SetItemCount macro [Windows Controls], _win32_ListView_SetItemCount, _win32_ListView_SetItemCount_cpp, commctrl/ListView_SetItemCount, controls.ListView_SetItemCount, controls._win32_ListView_SetItemCount
 req.header: commctrl.h
 req.include-header: 
@@ -46,6 +46,15 @@ api_name:
 ---
 
 # ListView_SetItemCount macro
+
+## -syntax
+
+```cpp
+void ListView_SetItemCount(
+   HWND hwndLV,
+   int  cItems
+);
+```
 
 
 ## -description

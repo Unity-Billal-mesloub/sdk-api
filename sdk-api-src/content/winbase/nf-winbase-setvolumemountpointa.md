@@ -66,13 +66,13 @@ Associates a volume with a drive letter or a directory on another volume.
 ### -param lpszVolumeMountPoint [in]
 
 The user-mode path to be associated with the volume. This may be a drive letter (for example, "X:\\") or a directory 
-      on another volume (for example, "Y:\MountX\"). The string must end with a trailing backslash ('\').
+      on another volume (for example, "Y:\\MountX\\"). The string must end with a trailing backslash ('\\').
 
 ### -param lpszVolumeName [in]
 
 A volume <b>GUID</b> path for the volume. This string must be of the form 
-      "\\\\?\Volume{<i>GUID</i>}\" where <i>GUID</i> is a <b>GUID</b> that identifies 
-      the volume. The "\\\\?\" turns off path parsing and is ignored as part of the path, as discussed in 
+      "\\\\?\\Volume{<i>GUID</i>}\\" where <i>GUID</i> is a <b>GUID</b> that identifies 
+      the volume. The "\\\\?\\" turns off path parsing and is ignored as part of the path, as discussed in 
       <a href="/windows/desktop/FileIO/naming-a-volume">Naming a Volume</a>.
 
 ## -returns
@@ -170,7 +170,7 @@ For an example, see
 
 
 > [!NOTE]
-> The winbase.h header defines SetVolumeMountPoint as an alias which automatically selects the ANSI or Unicode version of this function based on the definition of the UNICODE preprocessor constant. Mixing usage of the encoding-neutral alias with code that not encoding-neutral can lead to mismatches that result in compilation or runtime errors. For more information, see [Conventions for Function Prototypes](/windows/win32/intl/conventions-for-function-prototypes).
+> The winbase.h header defines SetVolumeMountPoint as an alias that automatically selects the ANSI or Unicode version of this function based on the definition of the UNICODE preprocessor constant. Mixing usage of the encoding-neutral alias with code that is not encoding-neutral can lead to mismatches that result in compilation or runtime errors. For more information, see [Conventions for Function Prototypes](/windows/win32/intl/conventions-for-function-prototypes).
 
 ## -see-also
 

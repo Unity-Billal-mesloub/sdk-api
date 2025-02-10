@@ -6,7 +6,7 @@ helpviewer_keywords: ["FILE_MAP_ALL_ACCESS","FILE_MAP_COPY","FILE_MAP_LARGE_PAGE
 old-location: base\mapviewoffilefromapp.htm
 tech.root: base
 ms.assetid: 59369959-3347-44d0-8b08-5c38ac58fdb0
-ms.date: 12/05/2018
+ms.date: 10/30/2024
 ms.keywords: FILE_MAP_ALL_ACCESS, FILE_MAP_COPY, FILE_MAP_LARGE_PAGES, FILE_MAP_READ, FILE_MAP_TARGETS_INVALID, FILE_MAP_WRITE, MapViewOfFileFromApp, MapViewOfFileFromApp function, base.mapviewoffilefromapp, memoryapi/MapViewOfFileFromApp
 req.header: memoryapi.h
 req.include-header: Windows.h
@@ -137,7 +137,7 @@ Using bitwise OR, you can combine the values above with these values.
 </td>
 <td width="60%">
 A copy-on-write view of the file is mapped. The file mapping object must have been created with 
-         <b>PAGE_READONLY</b>, <b>PAGE_READ_EXECUTE</b>, 
+         <b>PAGE_READONLY</b>, <b>PAGE_EXECUTE_READ</b>, 
          <b>PAGE_WRITECOPY</b>, or 
          <b>PAGE_READWRITE</b> protection.
 

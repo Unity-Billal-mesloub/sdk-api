@@ -6,7 +6,7 @@ helpviewer_keywords: ["1db3dbef-41bf-4b00-8e6c-07c7c414e595","AddStroke","AddStr
 old-location: tablet\addstroke.htm
 tech.root: tablet
 ms.assetid: 1db3dbef-41bf-4b00-8e6c-07c7c414e595
-ms.date: 12/05/2018
+ms.date: 11/06/2024
 ms.keywords: 1db3dbef-41bf-4b00-8e6c-07c7c414e595, AddStroke, AddStroke function [Tablet PC], recapis/AddStroke, tablet.addstroke
 req.header: recapis.h
 req.include-header: 
@@ -38,9 +38,11 @@ topic_type:
  - APIRef
  - kbSyntax
 api_type:
- - HeaderDef
+ - DllExport 
 api_location:
  - recapis.h
+ - inkobjcore.dll
+ - mshwgst.dll
 api_name:
  - AddStroke
 ---

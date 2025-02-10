@@ -46,7 +46,7 @@ helpviewer_keywords:
 
 Create a blob containing a copy of the existing data. The new blob and its contents are allocated with the current allocator.
 
-Use this method in preference to [IDxcLibrary::CreateBlobWithEncodingOnHeapCopy](./nf-dxcapi-idxclibrary-createblobwithencodingonheapcopy).
+Use this method in preference to [IDxcLibrary::CreateBlobWithEncodingOnHeapCopy](./nf-dxcapi-idxclibrary-createblobwithencodingonheapcopy.md).
 
 ## -parameters
 

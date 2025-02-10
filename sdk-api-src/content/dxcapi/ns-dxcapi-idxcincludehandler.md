@@ -43,7 +43,7 @@ helpviewer_keywords:
 
 Interface for handling include directives. To customize the handling of include directives, you can provide an implementation of this interface.
 
-To create a default implementation that reads include files from the filesystem, call [IDxcUtils::CreateDefaultIncludeHandler](./nf-dxcapi-idxcutils-createdefaultincludehandler).
+To create a default implementation that reads include files from the filesystem, call [IDxcUtils::CreateDefaultIncludeHandler](./nf-dxcapi-idxcutils-createdefaultincludehandler.md).
 
 ## -remarks
 

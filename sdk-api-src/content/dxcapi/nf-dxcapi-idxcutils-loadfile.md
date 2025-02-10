@@ -46,7 +46,7 @@ helpviewer_keywords:
 
 Create a blob with data loaded from a file. The new blob and its contents are allocated with the current allocator.
 
-Use this method in preference to [IDxcLibrary::CreateBlobFromFile](./nf-dxcapi-idxclibrary-createblobfromfile).
+Use this method in preference to [IDxcLibrary::CreateBlobFromFile](./nf-dxcapi-idxclibrary-createblobfromfile.md).
 
 ## -parameters
 

@@ -125,7 +125,7 @@ The number of custom servers pointed to by *customServers*.
 
 ### -field customServers
 
-Type: **[DNS_CUSTOM_SERVER](./ns-windns-dns_custom_server.md)\***
+Type: **[DNS_CUSTOM_SERVER](./ns-windnsdef-dns_custom_server.md)\***
 
 Pointer to an array of custom servers of size *customServersSize*. This pointer can be `NULL`, in which case *customServersSize* must be 0. If not `NULL`, then this pointer must persist until the [DnsQueryRaw](./nf-windns-dnsqueryraw.md) call returns.
 

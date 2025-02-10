@@ -6,7 +6,7 @@ helpviewer_keywords: ["INDEXTOSTATEIMAGEMASK","INDEXTOSTATEIMAGEMASK macro [Wind
 old-location: controls\INDEXTOSTATEIMAGEMASK.htm
 tech.root: Controls
 ms.assetid: VS|Controls|~\controls\common\macros\indextostateimagemask.htm
-ms.date: 12/05/2018
+ms.date: 10/21/2024
 ms.keywords: INDEXTOSTATEIMAGEMASK, INDEXTOSTATEIMAGEMASK macro [Windows Controls], _win32_INDEXTOSTATEIMAGEMASK, _win32_INDEXTOSTATEIMAGEMASK_cpp, commctrl/INDEXTOSTATEIMAGEMASK, controls.INDEXTOSTATEIMAGEMASK, controls._win32_INDEXTOSTATEIMAGEMASK
 req.header: commctrl.h
 req.include-header: 
@@ -47,6 +47,20 @@ api_name:
 
 # INDEXTOSTATEIMAGEMASK macro
 
+## -syntax
+
+```cpp
+UINT INDEXTOSTATEIMAGEMASK(
+   UINT i
+);
+```
+
+## -returns
+
+Type: **[UINT](/windows/desktop/winprog/windows-data-types)**
+
+Returns the index of a state image.
+
 
 ## -description
 
@@ -66,6 +80,6 @@ The <b>INDEXTOSTATEIMAGEMASK</b> macro is defined as follows:
 
 
 ``` syntax
-#define INDEXTOSTATEIMAGEMASK(i) ((i) &lt;&lt; 12)
+#define INDEXTOSTATEIMAGEMASK(i) ((i) << 12)
 ```
 

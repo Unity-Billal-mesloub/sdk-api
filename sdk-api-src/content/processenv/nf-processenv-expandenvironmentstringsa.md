@@ -91,7 +91,7 @@ If the function fails, the return value is zero. To get extended error informati
 
 ## -remarks
 
-The size of the <i>lpSrc</i> and <i>lpDst</i> buffers is limited to 32K.
+**Windows Server 2003 and Windows XP:** The size of the <i>lpSrc</i> and <i>lpDst</i> buffers is limited to 32K.
 
 To replace folder names in a fully qualified path with their associated environment-variable strings, use the <a href="/windows/desktop/api/shlwapi/nf-shlwapi-pathunexpandenvstringsa">PathUnExpandEnvStrings</a> function.
 
@@ -109,7 +109,7 @@ For an example, see
 
 
 > [!NOTE]
-> The processenv.h header defines ExpandEnvironmentStrings as an alias which automatically selects the ANSI or Unicode version of this function based on the definition of the UNICODE preprocessor constant. Mixing usage of the encoding-neutral alias with code that not encoding-neutral can lead to mismatches that result in compilation or runtime errors. For more information, see [Conventions for Function Prototypes](/windows/win32/intl/conventions-for-function-prototypes).
+> The processenv.h header defines ExpandEnvironmentStrings as an alias that automatically selects the ANSI or Unicode version of this function based on the definition of the UNICODE preprocessor constant. Mixing usage of the encoding-neutral alias with code that is not encoding-neutral can lead to mismatches that result in compilation or runtime errors. For more information, see [Conventions for Function Prototypes](/windows/win32/intl/conventions-for-function-prototypes).
 
 ## -see-also
 

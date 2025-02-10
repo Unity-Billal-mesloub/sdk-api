@@ -67,22 +67,22 @@ api_name:
 ## -description
 
 Retrieves the contents of the 
-<a href="/windows/desktop/api/processthreadsapi/ns-processthreadsapi-startupinfoa">STARTUPINFO</a> structure that was specified when the calling process was created.
+<a href="/windows/desktop/api/processthreadsapi/ns-processthreadsapi-startupinfow">STARTUPINFO</a> structure that was specified when the calling process was created.
 
 ## -parameters
 
 ### -param lpStartupInfo [out]
 
 A pointer to a 
-<a href="/windows/desktop/api/processthreadsapi/ns-processthreadsapi-startupinfoa">STARTUPINFO</a> structure that receives the startup information.
+<a href="/windows/desktop/api/processthreadsapi/ns-processthreadsapi-startupinfow">STARTUPINFO</a> structure that receives the startup information.
 
 ## -remarks
 
-The <a href="/windows/desktop/api/processthreadsapi/ns-processthreadsapi-startupinfoa">STARTUPINFO</a> structure was specified by the process that created the calling process. It can be used to specify properties associated with the main window of the calling process.
+The <a href="/windows/desktop/api/processthreadsapi/ns-processthreadsapi-startupinfow">STARTUPINFO</a> structure was specified by the process that created the calling process. It can be used to specify properties associated with the main window of the calling process.
 
 ## -see-also
 
-<a href="/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa">CreateProcess</a>
+<a href="/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessw">CreateProcess</a>
 
 
 
@@ -94,4 +94,4 @@ The <a href="/windows/desktop/api/processthreadsapi/ns-processthreadsapi-startup
 
 
 
-<a href="/windows/desktop/api/processthreadsapi/ns-processthreadsapi-startupinfoa">STARTUPINFO</a>
+<a href="/windows/desktop/api/processthreadsapi/ns-processthreadsapi-startupinfow">STARTUPINFO</a>

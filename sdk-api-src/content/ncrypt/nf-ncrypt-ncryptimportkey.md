@@ -6,7 +6,7 @@ helpviewer_keywords: ["NCRYPT_SILENT_FLAG","NCryptImportKey","NCryptImportKey fu
 old-location: security\ncryptimportkey_func.htm
 tech.root: security
 ms.assetid: ede0e7e0-cb2c-44c0-b724-58db3480b781
-ms.date: 12/18/2023
+ms.date: 05/29/2024
 ms.keywords: NCRYPT_SILENT_FLAG, NCryptImportKey, NCryptImportKey function [Security], ncrypt/NCryptImportKey, security.ncryptimportkey_func
 req.header: ncrypt.h
 req.include-header: 
@@ -88,8 +88,9 @@ Flags that modify function behavior. This can be zero or a combination of one or
 | Value | Meaning |
 |--------|--------|
 | **NCRYPT_SILENT_FLAG** | Requests that the key service provider (KSP) not display any user interface. If the provider must display the UI to operate, the call fails and the KSP should set the **NTE_SILENT_CONTEXT** error code as the last error. |
-| **NCRYPT_REQUIRE_VBS_FLAG** | Indicates a key must be protected with Virtualization-based security (VBS).<br/><br/>Operation will fail if VBS is not available. (**\*See Remarks**) |
-| **NCRYPT_PREFER_VBS_FLAG** | Indicates a key should be protected with Virtualization-based security (VBS).<br/><br/>Operation will generate a software-isolated key if VBS is not available. (**\*See Remarks**) |
+| **NCRYPT_REQUIRE_VBS_FLAG** | Indicates a key must be protected with Virtualization-based security (VBS). By default, this creates a cross-boot persisted key stored on disk that persists across reboot cycles.<br/><br/>Operation will fail if VBS is not available. (**\*See Remarks**) |
+| **NCRYPT_PREFER_VBS_FLAG** | Indicates a key should be protected with Virtualization-based security (VBS). By default, this creates a cross-boot persisted key stored on disk that persists across reboot cycles.<br/><br/>Operation will generate a software-isolated key if VBS is not available. (**\*See Remarks**) |
+| **NCRYPT_USE_PER_BOOT_KEY_FLAG** | An additional flag that can be used along with **NCRYPT_REQUIRE_VBS_FLAG** or **NCRYPT_PREFER_VBS_FLAG**. Instructs Virtualization-based security (VBS) to protect the client key with a per-boot key that is stored in disk but can't be reused across boot cycles. (**\*See Remarks**) |
 
 ## -returns
 
@@ -172,3 +173,5 @@ For more information about hardware requirements:
 ## -see-also
 
 [NCryptBuffer](/windows/desktop/api/bcrypt/ns-bcrypt-bcryptbuffer)
+
+[NCryptCreatePersistedKey](nf-ncrypt-ncryptcreatepersistedkey.md)

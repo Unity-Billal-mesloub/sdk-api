@@ -86,4 +86,4 @@ You can use the LPDDENUMCALLBACKEX data type to declare a variable that can cont
 If UNICODE is defined, the string values are returned as type LPWSTR, rather than LPSTR.
 
 > [!NOTE]
-> The ddraw.h header defines LPDDENUMCALLBACKEX as an alias which automatically selects the ANSI or Unicode version of this function based on the definition of the UNICODE preprocessor constant. Mixing usage of the encoding-neutral alias with code that not encoding-neutral can lead to mismatches that result in compilation or runtime errors. For more information, see [Conventions for Function Prototypes](/windows/win32/intl/conventions-for-function-prototypes).
+> The ddraw.h header defines LPDDENUMCALLBACKEX as an alias that automatically selects the ANSI or Unicode version of this function based on the definition of the UNICODE preprocessor constant. Mixing usage of the encoding-neutral alias with code that is not encoding-neutral can lead to mismatches that result in compilation or runtime errors. For more information, see [Conventions for Function Prototypes](/windows/win32/intl/conventions-for-function-prototypes).

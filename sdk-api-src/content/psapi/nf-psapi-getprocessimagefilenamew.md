@@ -92,9 +92,9 @@ The <b>GetProcessImageFileName</b> function returns the path in device form, rat
 
 \Device\Harddisk0\Partition1\Windows\System32\Ctype.nls
 
-To retrieve the module name of the current process, use the <a href="/windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulefilenamea">GetModuleFileName</a> function with a NULL module handle. This is more efficient than calling the <b>GetProcessImageFileName</b> function with a handle to the current process.
+To retrieve the module name of the current process, use the <a href="/windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulefilenamew">GetModuleFileName</a> function with a NULL module handle. This is more efficient than calling the <b>GetProcessImageFileName</b> function with a handle to the current process.
 
-To retrieve the name of the main executable module for a remote process in win32 path format, use the <a href="/windows/desktop/api/winbase/nf-winbase-queryfullprocessimagenamea">QueryFullProcessImageName</a> function.
+To retrieve the name of the main executable module for a remote process in win32 path format, use the <a href="/windows/desktop/api/winbase/nf-winbase-queryfullprocessimagenamew">QueryFullProcessImageName</a> function.
 
 Starting with Windows 7 and Windows Server 2008 R2, Psapi.h establishes 
     version numbers for the PSAPI functions. The PSAPI version number affects the name used to call the function and 
@@ -118,7 +118,7 @@ Programs that must run on earlier versions of Windows as
 
 
 > [!NOTE]
-> The psapi.h header defines GetProcessImageFileName as an alias which automatically selects the ANSI or Unicode version of this function based on the definition of the UNICODE preprocessor constant. Mixing usage of the encoding-neutral alias with code that not encoding-neutral can lead to mismatches that result in compilation or runtime errors. For more information, see [Conventions for Function Prototypes](/windows/win32/intl/conventions-for-function-prototypes).
+> The psapi.h header defines GetProcessImageFileName as an alias that automatically selects the ANSI or Unicode version of this function based on the definition of the UNICODE preprocessor constant. Mixing usage of the encoding-neutral alias with code that is not encoding-neutral can lead to mismatches that result in compilation or runtime errors. For more information, see [Conventions for Function Prototypes](/windows/win32/intl/conventions-for-function-prototypes).
 
 ## -see-also
 
@@ -130,4 +130,4 @@ Programs that must run on earlier versions of Windows as
 
 
 
-<a href="/windows/desktop/api/winbase/nf-winbase-queryfullprocessimagenamea">QueryFullProcessImageName</a>
+<a href="/windows/desktop/api/winbase/nf-winbase-queryfullprocessimagenamew">QueryFullProcessImageName</a>

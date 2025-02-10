@@ -46,7 +46,7 @@ helpviewer_keywords:
 
 Creates a blob referencing existing memory, with no copy. You must manage the memory lifetime separately.
 
-Use this method in preference to [IDxcLibrary::CreateBlobWithEncodingFromPinned](./nf-dxcapi-idxclibrary-createblobwithencodingfrompinned).
+Use this method in preference to [IDxcLibrary::CreateBlobWithEncodingFromPinned](./nf-dxcapi-idxclibrary-createblobwithencodingfrompinned.md).
 
 ## -parameters
 

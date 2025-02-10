@@ -6,7 +6,7 @@ helpviewer_keywords: ["EndInkInput","EndInkInput function [Tablet PC]","e8aa252d
 old-location: tablet\endinkinput.htm
 tech.root: tablet
 ms.assetid: e8aa252d-6b24-4864-9b3e-8edd30895303
-ms.date: 12/05/2018
+ms.date: 11/06/2024
 ms.keywords: EndInkInput, EndInkInput function [Tablet PC], e8aa252d-6b24-4864-9b3e-8edd30895303, recapis/EndInkInput, tablet.endinkinput
 req.header: recapis.h
 req.include-header: 
@@ -38,9 +38,11 @@ topic_type:
  - APIRef
  - kbSyntax
 api_type:
- - HeaderDef
+ - DllExport 
 api_location:
  - recapis.h
+ - inkobjcore.dll
+ - mshwgst.dll
 api_name:
  - EndInkInput
 ---

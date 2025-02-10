@@ -6,7 +6,7 @@ helpviewer_keywords: ["TabCtrl_SetUnicodeFormat","TabCtrl_SetUnicodeFormat macro
 old-location: controls\TabCtrl_SetUnicodeFormat.htm
 tech.root: Controls
 ms.assetid: VS|Controls|~\controls\tab\macros\tabctrl_setunicodeformat.htm
-ms.date: 12/05/2018
+ms.date: 10/21/2024
 ms.keywords: TabCtrl_SetUnicodeFormat, TabCtrl_SetUnicodeFormat macro [Windows Controls], _win32_TabCtrl_SetUnicodeFormat, _win32_TabCtrl_SetUnicodeFormat_cpp, commctrl/TabCtrl_SetUnicodeFormat, controls.TabCtrl_SetUnicodeFormat, controls._win32_TabCtrl_SetUnicodeFormat
 req.header: commctrl.h
 req.include-header: 
@@ -46,6 +46,21 @@ api_name:
 ---
 
 # TabCtrl_SetUnicodeFormat macro
+
+## -syntax
+
+```cpp
+BOOL TabCtrl_SetUnicodeFormat(
+   HWND hwnd,
+   BOOL fUnicode
+);
+```
+
+## -returns
+
+Type: **[BOOL](/windows/desktop/winprog/windows-data-types)**
+
+Returns the previous Unicode format flag for the control.
 
 
 ## -description

@@ -6,7 +6,7 @@ helpviewer_keywords: ["ListView_MoveGroup","ListView_MoveGroup macro [Windows Co
 old-location: controls\ListView_MoveGroup.htm
 tech.root: Controls
 ms.assetid: VS|Controls|~\controls\listview\macros\listview_movegroup.htm
-ms.date: 12/05/2018
+ms.date: 10/21/2024
 ms.keywords: ListView_MoveGroup, ListView_MoveGroup macro [Windows Controls], _win32_ListView_MoveGroup, _win32_ListView_MoveGroup_cpp, commctrl/ListView_MoveGroup, controls.ListView_MoveGroup, controls._win32_ListView_MoveGroup
 req.header: commctrl.h
 req.include-header: 
@@ -46,6 +46,16 @@ api_name:
 ---
 
 # ListView_MoveGroup macro
+
+## -syntax
+
+```cpp
+void ListView_MoveGroup(
+   HWND hwnd,
+   int  iGroupId,
+   int  toIndex
+);
+```
 
 
 ## -description

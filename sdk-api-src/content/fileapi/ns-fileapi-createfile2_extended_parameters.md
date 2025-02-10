@@ -6,7 +6,7 @@ helpviewer_keywords: ["*LPCREATEFILE2_EXTENDED_PARAMETERS","*PCREATEFILE2_EXTEND
 old-location: fs\createfile2_extended_parameters.htm
 tech.root: fs
 ms.assetid: efe68dfc-f13d-47de-9443-30404977e26f
-ms.date: 12/05/2018
+ms.date: 01/23/2025
 ms.keywords: '*LPCREATEFILE2_EXTENDED_PARAMETERS, *PCREATEFILE2_EXTENDED_PARAMETERS, CREATEFILE2_EXTENDED_PARAMETERS, CREATEFILE2_EXTENDED_PARAMETERS structure [Files], FILE_ATTRIBUTE_ARCHIVE, FILE_ATTRIBUTE_ENCRYPTED, FILE_ATTRIBUTE_HIDDEN, FILE_ATTRIBUTE_INTEGRITY_STREAM, FILE_ATTRIBUTE_NORMAL, FILE_ATTRIBUTE_OFFLINE, FILE_ATTRIBUTE_READONLY, FILE_ATTRIBUTE_SYSTEM, FILE_ATTRIBUTE_TEMPORARY, FILE_FLAG_BACKUP_SEMANTICS, FILE_FLAG_DELETE_ON_CLOSE, FILE_FLAG_NO_BUFFERING, FILE_FLAG_OPEN_NO_RECALL, FILE_FLAG_OPEN_REPARSE_POINT, FILE_FLAG_OPEN_REQUIRING_OPLOCK, FILE_FLAG_OVERLAPPED, FILE_FLAG_POSIX_SEMANTICS, FILE_FLAG_RANDOM_ACCESS, FILE_FLAG_SEQUENTIAL_SCAN, FILE_FLAG_SESSION_AWARE, FILE_FLAG_WRITE_THROUGH, LPCREATEFILE2_EXTENDED_PARAMETERS, LPCREATEFILE2_EXTENDED_PARAMETERS structure pointer [Files], PCREATEFILE2_EXTENDED_PARAMETERS, PCREATEFILE2_EXTENDED_PARAMETERS structure pointer [Files], SECURITY_ANONYMOUS, SECURITY_CONTEXT_TRACKING, SECURITY_DELEGATION, SECURITY_EFFECTIVE_ONLY, SECURITY_IDENTIFICATION, SECURITY_IMPERSONATION, fileapi/CREATEFILE2_EXTENDED_PARAMETERS, fileapi/LPCREATEFILE2_EXTENDED_PARAMETERS, fileapi/PCREATEFILE2_EXTENDED_PARAMETERS, fs.createfile2_extended_parameters'
 req.header: fileapi.h
 req.include-header: Windows.h
@@ -272,10 +272,9 @@ For more information, see the Remarks section.
 <td width="60%">
 The file is being opened and an opportunistic lock (oplock) on the file is being requested as a single atomic operation. The file system checks for oplocks before it performs the create operation, and will fail the create with a last error code of <b>ERROR_CANNOT_BREAK_OPLOCK</b> if the result would be to break an existing oplock.
 
-If you use this flag  and your call to the <a href="/windows/desktop/api/fileapi/nf-fileapi-createfile2">CreateFile2</a> function successfully returns, the first operation you should perform on the file handle is to request an oplock by calling the <a href="/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol">DeviceIOControl</a> function and then pass in <a href="/windows/desktop/api/winioctl/ni-winioctl-fsctl_request_oplock">FSCTL_REQUEST_OPLOCK</a> or one of the other <a href="/windows/desktop/FileIO/opportunistic-lock-operations">Opportunistic Lock Operations</a>.  If you perform other file system operations with the file handle before requesting an oplock, a deadlock might occur.<div class="alert"><b>Note</b>  You can safely call the <a href="/windows/desktop/api/handleapi/nf-handleapi-closehandle">CloseHandle</a> function on the file handle without first requesting an oplock.</div>
-<div> </div>
+If you use this flag and your call to the [CreateFile2](/windows/win32/api/fileapi/nf-fileapi-createfile2) function returns successfully, you should request an oplock on the file by calling [DeviceIoControl](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) on the new file handle with [FSCTL_REQUEST_OPLOCK](/windows/win32/api/winioctl/ni-winioctl-fsctl_request_oplock) or one of the other [Opportunistic Lock Operations](/windows/win32/FileIO/opportunistic-lock-operations). If you perform other file system operations on the file before requesting an oplock, a deadlock may occur. A deadlock is especially likely if you call a file system API that takes the name of the file rather than a handle, such as [GetFileAttributes](/windows/win32/api/fileapi/nf-fileapi-getfileattributesa).
 
-
+<b>Note:</b> You can safely call the <a href="/windows/desktop/api/handleapi/nf-handleapi-closehandle">CloseHandle</a> function on the file handle without first requesting an oplock.
 </td>
 </tr>
 <tr>
@@ -431,7 +430,7 @@ Impersonate a client at the impersonation level. This is the default behavior if
 
 ### -field lpSecurityAttributes
 
-A pointer to a [SECURITY_ATTRIBUTES](/previous-versions/windows/desktop/legacy/aa379560(v=vs.85)) structure that contains two separate but related data members: an optional security descriptor, and a Boolean value that determines whether the returned handle can be inherited by child processes.
+A pointer to a [SECURITY_ATTRIBUTES](/windows/win32/api/wtypesbase/ns-wtypesbase-security_attributes) structure that contains two separate but related data members: an optional security descriptor, and a Boolean value that determines whether the returned handle can be inherited by child processes.
 
 This parameter can be **NULL**.
 

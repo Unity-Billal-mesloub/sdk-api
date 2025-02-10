@@ -135,10 +135,10 @@ If the module is already loaded, the return value is zero and <a href="/windows/
 
 ## -remarks
 
-The symbol handler creates an entry for the module and if the deferred symbol loading option is turned off, an attempt is made to load the symbols. If deferred symbol loading is enabled, the module is marked as deferred and the symbols are not loaded until a reference is made to a symbol in the module. Therefore, you should always call the <a href="/windows/desktop/api/dbghelp/nf-dbghelp-symgetmoduleinfo">SymGetModuleInfo64</a> function after calling <b>SymLoadModuleEx</b>.
+The symbol handler creates an entry for the module and if the deferred symbol loading option is turned off, an attempt is made to load the symbols. If deferred symbol loading is enabled, the module is marked as deferred and the symbols are not loaded until a reference is made to a symbol in the module. Therefore, you should always call the <a href="/windows/desktop/api/dbghelp/nf-dbghelp-symgetmoduleinfo64">SymGetModuleInfo64</a> function after calling <b>SymLoadModuleEx</b>.
 
 To unload the symbol table, use the 
-<a href="/windows/desktop/api/dbghelp/nf-dbghelp-symunloadmodule">SymUnloadModule64</a> function.
+<a href="/windows/desktop/api/dbghelp/nf-dbghelp-symunloadmodule64">SymUnloadModule64</a> function.
 
 All DbgHelp functions, such as this one, are single threaded. Therefore, calls from more than one thread to this function will likely result in unexpected behavior or memory corruption. To avoid this, you must synchronize all concurrent calls from more than one thread to this function.
 

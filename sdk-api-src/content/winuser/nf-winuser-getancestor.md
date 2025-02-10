@@ -6,7 +6,7 @@ helpviewer_keywords: ["GA_PARENT","GA_ROOT","GA_ROOTOWNER","GetAncestor","GetAnc
 old-location: winmsg\getancestor.htm
 tech.root: winmsg
 ms.assetid: VS|winui|~\winui\windowsuserinterface\windowing\windows\windowreference\windowfunctions\getancestor.htm
-ms.date: 12/05/2018
+ms.date: 11/26/2024
 ms.keywords: GA_PARENT, GA_ROOT, GA_ROOTOWNER, GetAncestor, GetAncestor function [Windows and Messages], _win32_GetAncestor, _win32_getancestor_cpp, winmsg.getancestor, winui._win32_getancestor, winuser/GetAncestor
 req.header: winuser.h
 req.include-header: Windows.h
@@ -121,6 +121,8 @@ Retrieves the owned root window by walking the chain of parent and owner windows
 Type: <b>HWND</b>
 
 The return value is the handle to the ancestor window.
+
+If the function fails, the return value is <b>NULL</b>. To get extended error information, call <a href="/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror">GetLastError</a>.
 
 ## -see-also
 

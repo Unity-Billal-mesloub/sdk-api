@@ -47,12 +47,9 @@ api_name:
  - IAlertDataCollector.put_AlertThresholds
 ---
 
-# IAlertDataCollector::get_AlertThresholds
-
-
 ## -description
 
-Retrieves or sets a list of performance counters and thresholds to monitor. 
+Retrieves or sets a list of performance counters and thresholds to monitor as a SAFEARRAY of BSTR. For example, `L"\Memory\Committed Bytes>549755813888"`.
 
 This property is read/write.
 

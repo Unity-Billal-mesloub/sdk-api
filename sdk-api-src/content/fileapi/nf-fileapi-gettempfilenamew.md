@@ -67,7 +67,7 @@ Creates a name for a temporary file. If a unique file name is generated, an empt
 ### -param lpPathName [in]
 
 The directory path for the file name. Applications typically specify a period (.) for the current directory 
-       or the result of the <a href="/windows/desktop/api/fileapi/nf-fileapi-gettemppatha">GetTempPath</a> function. The string 
+       or the result of the <a href="/windows/desktop/api/fileapi/nf-fileapi-gettemppath2a">GetTempPath2</a> function. The string 
        cannot be longer than <b>MAX_PATH</b>–14 characters or
        <b>GetTempFileName</b> will fail. If this parameter is 
        <b>NULL</b>, the function fails.
@@ -248,7 +248,7 @@ For an example, see
 
 
 > [!NOTE]
-> The fileapi.h header defines GetTempFileName as an alias which automatically selects the ANSI or Unicode version of this function based on the definition of the UNICODE preprocessor constant. Mixing usage of the encoding-neutral alias with code that not encoding-neutral can lead to mismatches that result in compilation or runtime errors. For more information, see [Conventions for Function Prototypes](/windows/win32/intl/conventions-for-function-prototypes).
+> The fileapi.h header defines GetTempFileName as an alias that automatically selects the ANSI or Unicode version of this function based on the definition of the UNICODE preprocessor constant. Mixing usage of the encoding-neutral alias with code that is not encoding-neutral can lead to mismatches that result in compilation or runtime errors. For more information, see [Conventions for Function Prototypes](/windows/win32/intl/conventions-for-function-prototypes).
 
 ## -see-also
 
@@ -264,7 +264,7 @@ For an example, see
 
 
 
-<a href="/windows/desktop/api/fileapi/nf-fileapi-gettemppatha">GetTempPath</a>
+<a href="/windows/desktop/api/fileapi/nf-fileapi-gettemppath2a">GetTempPath2</a>
 
 
 

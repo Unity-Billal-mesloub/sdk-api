@@ -6,7 +6,7 @@ helpviewer_keywords: ["ImageList_AddIcon","ImageList_AddIcon macro [Windows Cont
 old-location: controls\ImageList_AddIcon.htm
 tech.root: Controls
 ms.assetid: VS|Controls|~\controls\imagelist\macros\imagelist_addicon.htm
-ms.date: 12/05/2018
+ms.date: 10/21/2024
 ms.keywords: ImageList_AddIcon, ImageList_AddIcon macro [Windows Controls], _win32_ImageList_AddIcon, _win32_ImageList_AddIcon_cpp, commctrl/ImageList_AddIcon, controls.ImageList_AddIcon, controls._win32_ImageList_AddIcon
 req.header: commctrl.h
 req.include-header: 
@@ -46,6 +46,15 @@ api_name:
 ---
 
 # ImageList_AddIcon macro
+
+## -syntax
+
+```cpp
+int ImageList_AddIcon(
+   HIMAGELIST himl,
+   HICON      hicon
+);
+```
 
 
 ## -description

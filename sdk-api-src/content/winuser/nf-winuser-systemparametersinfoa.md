@@ -1263,8 +1263,13 @@ Determines whether the snap-to-default-button feature is enabled. If enabled, th
 </dl>
 </td>
 <td width="60%">
-<b>Starting with Windows 11, version 24H2:</b> Retrieves information about the Precision Touchpad. This includes both user settings and system information related to the touchpad.
+<b>Starting with Windows 11, version 24H2:</b> Retrieves details about the Precision Touchpad, including user settings and system information related to the touchpad.
 
+The *pvParam* parameter must point to a **[TOUCHPAD_PARAMETERS](/windows/win32/api/winuser/ns-winuser-touchpad_parameters)** structure.
+
+The *uiParam* parameter must specify the size of the structure.
+
+The value of the *versionNumber* field in the TOUCHPAD_PARAMETERS structure must be set to the appropriate value for the version of the structure being used.
 </td>
 </tr>
 <tr>
@@ -1603,8 +1608,13 @@ Enables or disables the snap-to-default-button feature. If enabled, the mouse cu
 </dl>
 </td>
 <td width="60%">
-<b>Starting with Windows 11, version 24H2:</b> Sets information about the Precision Touchpad. This includes both user settings and system information related to the touchpad.
+<b>Starting with Windows 11, version 24H2:</b> Sets details about the Precision Touchpad, including user settings and system information related to the touchpad.
 
+The *pvParam* parameter must point to a **[TOUCHPAD_PARAMETERS](/windows/win32/api/winuser/ns-winuser-touchpad_parameters)** structure.
+
+The *uiParam* parameter must specify the size of the structure.
+
+The value of the *versionNumber* field in the TOUCHPAD_PARAMETERS structure must be set to the appropriate value for the version of the structure being used.
 </td>
 </tr>
 <tr>
@@ -3034,7 +3044,7 @@ void main()
 
 
 > [!NOTE]
-> The winuser.h header defines SystemParametersInfo as an alias which automatically selects the ANSI or Unicode version of this function based on the definition of the UNICODE preprocessor constant. Mixing usage of the encoding-neutral alias with code that not encoding-neutral can lead to mismatches that result in compilation or runtime errors. For more information, see [Conventions for Function Prototypes](/windows/win32/intl/conventions-for-function-prototypes).
+> The winuser.h header defines SystemParametersInfo as an alias that automatically selects the ANSI or Unicode version of this function based on the definition of the UNICODE preprocessor constant. Mixing usage of the encoding-neutral alias with code that is not encoding-neutral can lead to mismatches that result in compilation or runtime errors. For more information, see [Conventions for Function Prototypes](/windows/win32/intl/conventions-for-function-prototypes).
 
 ## -see-also
 

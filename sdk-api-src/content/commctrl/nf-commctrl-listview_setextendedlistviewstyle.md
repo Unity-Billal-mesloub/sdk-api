@@ -6,7 +6,7 @@ helpviewer_keywords: ["ListView_SetExtendedListViewStyle","ListView_SetExtendedL
 old-location: controls\ListView_SetExtendedListViewStyle.htm
 tech.root: Controls
 ms.assetid: VS|Controls|~\controls\listview\macros\listview_setextendedlistviewstyle.htm
-ms.date: 12/05/2018
+ms.date: 10/21/2024
 ms.keywords: ListView_SetExtendedListViewStyle, ListView_SetExtendedListViewStyle macro [Windows Controls], _win32_ListView_SetExtendedListViewStyle, _win32_ListView_SetExtendedListViewStyle_cpp, commctrl/ListView_SetExtendedListViewStyle, controls.ListView_SetExtendedListViewStyle, controls._win32_ListView_SetExtendedListViewStyle
 req.header: commctrl.h
 req.include-header: 
@@ -46,6 +46,15 @@ api_name:
 ---
 
 # ListView_SetExtendedListViewStyle macro
+
+## -syntax
+
+```cpp
+void ListView_SetExtendedListViewStyle(
+   HWND  hwndLV,
+   DWORD dw
+);
+```
 
 
 ## -description

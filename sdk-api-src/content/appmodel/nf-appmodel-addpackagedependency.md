@@ -1,11 +1,10 @@
 ---
 UID: NF:appmodel.AddPackageDependency
-tech.root: appxpkg
 title: AddPackageDependency
-ms.date: 7/12/2021
-targetos: Windows
 description: Resolves a previously defined PackageDependency to a specific package and adds it to the invoking process' package graph. After the dependency has been added, other code-loading methods (such as LoadLibrary and CoCreateInstance) can find the binaries in the resolved package.
-prerelease: false
+ms.date: 7/12/2021
+tech.root: appxpkg
+targetos: Windows
 req.assembly: 
 req.construct-type: function
 req.ddi-compliance: 
@@ -43,6 +42,8 @@ dev_langs:
 ## -description
 
 Adds a run-time reference for the framework package dependency you created earlier by using the [TryCreatePackageDependency](nf-appmodel-trycreatepackagedependency.md) method, with the specified options. After this method successfully returns, your app can activate types and use content from the framework package.
+
+Also see [AddPackageDependency2](nf-appmodel-addpackagedependency2.md).
 
 ## -parameters
 
@@ -100,10 +101,6 @@ For more information, see [Use the dynamic dependency API to reference MSIX pack
 
 ## -see-also
 
-[RemovePackageDependency](nf-appmodel-removepackagedependency.md)
-
-
-[TryCreatePackageDependency](nf-appmodel-trycreatepackagedependency.md)
-
-
-[Use the dynamic dependency API to reference MSIX packages at run time](/windows/apps/desktop/modernize/framework-packages/use-the-dynamic-dependency-api)
+* [RemovePackageDependency](./nf-appmodel-removepackagedependency.md)
+* [TryCreatePackageDependency](./nf-appmodel-trycreatepackagedependency.md)
+* [Use the dynamic dependency API to reference MSIX packages at run time](/windows/apps/desktop/modernize/framework-packages/use-the-dynamic-dependency-api)

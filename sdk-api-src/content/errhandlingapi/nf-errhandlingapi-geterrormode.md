@@ -73,6 +73,16 @@ The process error mode. This function returns one of the following values.
 <tr>
 <td width="40%">
 <dl>
+<dt>0</dt>
+</dl>
+</td>
+<td width="60%">
+Uses the system default, which displays all error dialog boxes.
+</td>
+</tr>
+<tr>
+<td width="40%">
+<dl>
 <dt><b>SEM_FAILCRITICALERRORS</b></dt>
 <dt>0x0001</dt>
 </dl>

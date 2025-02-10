@@ -6,7 +6,7 @@ helpviewer_keywords: ["ListView_CreateDragImage","ListView_CreateDragImage macro
 old-location: controls\ListView_CreateDragImage.htm
 tech.root: Controls
 ms.assetid: VS|Controls|~\controls\listview\macros\listview_createdragimage.htm
-ms.date: 12/05/2018
+ms.date: 10/21/2024
 ms.keywords: ListView_CreateDragImage, ListView_CreateDragImage macro [Windows Controls], _win32_ListView_CreateDragImage, _win32_ListView_CreateDragImage_cpp, commctrl/ListView_CreateDragImage, controls.ListView_CreateDragImage, controls._win32_ListView_CreateDragImage
 req.header: commctrl.h
 req.include-header: 
@@ -46,6 +46,22 @@ api_name:
 ---
 
 # ListView_CreateDragImage macro
+
+## -syntax
+
+```cpp
+HIMAGELIST ListView_CreateDragImage(
+   HWND    hwnd,
+   int     i,
+   LPPOINT lpptUpLeft
+);
+```
+
+## -returns
+
+Type: **HIMAGELIST**
+
+Returns the handle to the drag image list if successful, or <b>NULL</b> otherwise.
 
 
 ## -description

@@ -97,7 +97,7 @@ If the function fails, the return value is <b>NULL</b>. To get extended error in
 <b>LoadIcon</b> can only load an icon whose size conforms to the <b>SM_CXICON</b> and <b>SM_CYICON</b> system metric values. Use the <a href="/windows/desktop/api/winuser/nf-winuser-loadimagew">LoadImage</a> function to load icons of other sizes.
 
 > [!NOTE]
-> The winuser.h header defines LoadIcon as an alias which automatically selects the ANSI or Unicode version of this function based on the definition of the UNICODE preprocessor constant. Mixing usage of the encoding-neutral alias with code that not encoding-neutral can lead to mismatches that result in compilation or runtime errors. For more information, see [Conventions for Function Prototypes](/windows/win32/intl/conventions-for-function-prototypes).
+> The winuser.h header defines LoadIcon as an alias that automatically selects the ANSI or Unicode version of this function based on the definition of the UNICODE preprocessor constant. Mixing usage of the encoding-neutral alias with code that is not encoding-neutral can lead to mismatches that result in compilation or runtime errors. For more information, see [Conventions for Function Prototypes](/windows/win32/intl/conventions-for-function-prototypes).
 
 ## -see-also
 

@@ -134,7 +134,7 @@ For further discussion on when this flag is necessary, see the Remarks section.<
 </tr>
 <tr valign="top">
 <td>SEE_MASK_FLAG_NO_UI (0x00000400)</td>
-<td>Do not display any user interface (UI) including error dialogs, security warnings or other user interface that would normally be presented without this option.</td>
+<td>Do not display user interface (UI) error dialogs that would normally be presented without this option. Security prompts are exempted and will still be shown.</td>
 </tr>
 <tr valign="top">
 <td>SEE_MASK_UNICODE (0x00004000)
@@ -199,6 +199,7 @@ A string, referred to as a <i>verb</i>, that specifies the action to be performe
 - **explore**: Explores the folder specified by <b>lpFile</b>.
 - **find**: Initiates a search starting from the specified directory.
 - **open**: Opens the file specified by the <b>lpFile</b> parameter. The file can be an executable file, a document file, or a folder.
+- **openas**: Launches a picker UI allowing the user to select an app with which to open the file specified by the <b>lpFile</b> parameter. 
 - **print**: Prints the document file specified by <b>lpFile</b>. If <b>lpFile</b> is not a document file, the function will fail.
 - **properties**: Displays the file or folder's properties.
 - **runas**: Launches an application as Administrator. User Account Control (UAC) will prompt the user for consent to run the application elevated or enter the credentials of an administrator account used to run the application.
@@ -323,4 +324,4 @@ sei.lpParameters = "An example: \"\"\"quoted text\"\"\"";
 In this case, the application receives three parameters: <i>An</i>, <i>example:</i>, and <i>"quoted text"</i>.
 
 > [!NOTE]
-> The shellapi.h header defines SHELLEXECUTEINFO as an alias which automatically selects the ANSI or Unicode version of this function based on the definition of the UNICODE preprocessor constant. Mixing usage of the encoding-neutral alias with code that not encoding-neutral can lead to mismatches that result in compilation or runtime errors. For more information, see [Conventions for Function Prototypes](/windows/win32/intl/conventions-for-function-prototypes).
+> The shellapi.h header defines SHELLEXECUTEINFO as an alias that automatically selects the ANSI or Unicode version of this function based on the definition of the UNICODE preprocessor constant. Mixing usage of the encoding-neutral alias with code that is not encoding-neutral can lead to mismatches that result in compilation or runtime errors. For more information, see [Conventions for Function Prototypes](/windows/win32/intl/conventions-for-function-prototypes).

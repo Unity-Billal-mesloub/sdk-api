@@ -58,7 +58,7 @@ A pointer to the variable in which to receive the result.
 
 ## -returns
 
-**S_OK** on success, or **E_NOT_VALID_STATE** if a container has not been loaded by using [Load](./nf-dxcapi-idxccontainerreflection-load), or **E_BOUND** if *idx* is out of bounds, or another standard **HRESULT** error code.
+**S_OK** on success, or **E_NOT_VALID_STATE** if a container has not been loaded by using [Load](./nf-dxcapi-idxccontainerreflection-load.md), or **E_BOUND** if *idx* is out of bounds, or another standard **HRESULT** error code.
 
 ## -remarks
 

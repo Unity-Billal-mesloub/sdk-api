@@ -174,12 +174,13 @@ Regardless of the operating system version, you can select which way the Shell s
 <div> </div>
 As of Windows XP Service Pack 2 (SP2), a custom icon can be displayed in the notification balloon. This allows the calling process to customize the notification beyond the previously available options of info, warning, and error, and distinguish it from other types of notification for the user.
 
-
-
+<div> </div>
+On Windows 10, the balloon messages are shown as banner notifications, which then stay in the Notification Center until dismissed. On Windows 11, the behavior of banner notifications more closely follows the legacy behavior in making them transient. When a bannner notification times out or is otherwise dismissed, it will not be displayed in the Notification Center.
+<div> </div>
 
 
 > [!NOTE]
-> The shellapi.h header defines Shell_NotifyIcon as an alias which automatically selects the ANSI or Unicode version of this function based on the definition of the UNICODE preprocessor constant. Mixing usage of the encoding-neutral alias with code that not encoding-neutral can lead to mismatches that result in compilation or runtime errors. For more information, see [Conventions for Function Prototypes](/windows/win32/intl/conventions-for-function-prototypes).
+> The shellapi.h header defines Shell_NotifyIcon as an alias that automatically selects the ANSI or Unicode version of this function based on the definition of the UNICODE preprocessor constant. Mixing usage of the encoding-neutral alias with code that is not encoding-neutral can lead to mismatches that result in compilation or runtime errors. For more information, see [Conventions for Function Prototypes](/windows/win32/intl/conventions-for-function-prototypes).
 
 ## -see-also
 

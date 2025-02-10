@@ -6,7 +6,7 @@ helpviewer_keywords: ["ListView_GetOrigin","ListView_GetOrigin macro [Windows Co
 old-location: controls\ListView_GetOrigin.htm
 tech.root: Controls
 ms.assetid: VS|Controls|~\controls\listview\macros\listview_getorigin.htm
-ms.date: 12/05/2018
+ms.date: 10/21/2024
 ms.keywords: ListView_GetOrigin, ListView_GetOrigin macro [Windows Controls], _win32_ListView_GetOrigin, _win32_ListView_GetOrigin_cpp, commctrl/ListView_GetOrigin, controls.ListView_GetOrigin, controls._win32_ListView_GetOrigin
 req.header: commctrl.h
 req.include-header: 
@@ -46,6 +46,21 @@ api_name:
 ---
 
 # ListView_GetOrigin macro
+
+## -syntax
+
+```cpp
+BOOL ListView_GetOrigin(
+   HWND    hwndLV,
+   LPPOINT ppt
+);
+```
+
+## -returns
+
+Type: **[BOOL](/windows/desktop/winprog/windows-data-types)**
+
+Returns <b>TRUE</b> if successful, or <b>FALSE</b> if the current view is list or report view.
 
 
 ## -description

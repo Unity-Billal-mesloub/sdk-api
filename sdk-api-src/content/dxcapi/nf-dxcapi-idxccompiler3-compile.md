@@ -51,7 +51,7 @@ Compile a shader. Depending on the arguments, you can use this method to:
 * Compile a root signature (`-T rootsig_*`),
 * Preprocess HLSL source (`-P`)
 
-You can use [IDxcUtils::BuildArguments](,.nf-dxcapi-idxcutils-buildarguments) to assist in building the *pArguments* and *argCount* arguments.
+You can use [IDxcUtils::BuildArguments](./nf-dxcapi-idxcutils-buildarguments) to assist in building the *pArguments* and *argCount* arguments.
 
 ## -parameters
 

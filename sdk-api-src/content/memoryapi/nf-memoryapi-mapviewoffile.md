@@ -6,7 +6,7 @@ helpviewer_keywords: ["FILE_MAP_ALL_ACCESS","FILE_MAP_COPY","FILE_MAP_EXECUTE","
 old-location: base\mapviewoffile.htm
 tech.root: base
 ms.assetid: df9f54cd-b2de-4107-a1c5-d5a07045851e
-ms.date: 12/05/2018
+ms.date: 10/30/2024
 ms.keywords: FILE_MAP_ALL_ACCESS, FILE_MAP_COPY, FILE_MAP_EXECUTE, FILE_MAP_LARGE_PAGES, FILE_MAP_READ, FILE_MAP_TARGETS_INVALID, FILE_MAP_WRITE, MapViewOfFile, MapViewOfFile function, _win32_mapviewoffile, base.mapviewoffile, fs.mapviewoffile, winbase/MapViewOfFile
 req.header: memoryapi.h
 req.include-header: Windows.h, Memoryapi.h
@@ -143,7 +143,7 @@ Using bitwise OR, you can combine the values above with these values.
 </td>
 <td width="60%">
 A copy-on-write view of the file is mapped. The file mapping object must have been created with 
-         <b>PAGE_READONLY</b>, <b>PAGE_READ_EXECUTE</b>, 
+         <b>PAGE_READONLY</b>, <b>PAGE_EXECUTE_READ</b>, 
          <b>PAGE_WRITECOPY</b>, <b>PAGE_EXECUTE_WRITECOPY</b>, 
          <b>PAGE_READWRITE</b>, or <b>PAGE_EXECUTE_READWRITE</b> protection.
 
@@ -211,9 +211,9 @@ A high-order <b>DWORD</b> of the file offset where the view begins.
 ### -param dwFileOffsetLow [in]
 
 A low-order <b>DWORD</b> of the file offset where the view is to begin. The combination 
-       of the high and low offsets must specify an offset within the file mapping. They must also match the  memory 
-       allocation granularity of the system. That is, the offset must be a multiple of the allocation granularity. To 
-       obtain the memory allocation granularity of the system, use the 
+       of the high and low offsets must specify an offset within the file mapping. They must also match the virtual memory 
+       allocation granularity of the system. That is, the offset must be a multiple of the VirtualAlloc allocation granularity. To 
+       obtain the VirtualAlloc memory allocation granularity of the system, use the 
        <a href="/windows/desktop/api/sysinfoapi/nf-sysinfoapi-getsysteminfo">GetSystemInfo</a> function, which fills in the members of 
        a <a href="/windows/desktop/api/sysinfoapi/ns-sysinfoapi-system_info">SYSTEM_INFO</a> structure.
 

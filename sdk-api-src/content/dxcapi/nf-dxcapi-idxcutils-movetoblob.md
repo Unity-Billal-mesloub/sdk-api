@@ -46,7 +46,7 @@ helpviewer_keywords:
 
 Create a blob, taking ownership of the memory that's allocated by the supplied allocator.
 
-Use this method in preference to [IDxcLibrary::CreateBlobWithEncodingOnMalloc](./nf-dxcapi-idxclibrary-createblobwithencodingonmalloc).
+Use this method in preference to [IDxcLibrary::CreateBlobWithEncodingOnMalloc](./nf-dxcapi-idxclibrary-createblobwithencodingonmalloc.md).
 
 ## -parameters
 

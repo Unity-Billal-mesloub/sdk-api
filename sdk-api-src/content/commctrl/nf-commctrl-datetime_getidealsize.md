@@ -6,7 +6,7 @@ helpviewer_keywords: ["DateTime_GetIdealSize","DateTime_GetIdealSize macro [Wind
 old-location: controls\DateTime_GetIdealSize.htm
 tech.root: Controls
 ms.assetid: VS|Controls|~\controls\datetime\macros\datetime_getidealsize.htm
-ms.date: 12/05/2018
+ms.date: 10/21/2024
 ms.keywords: DateTime_GetIdealSize, DateTime_GetIdealSize macro [Windows Controls], _shell_DateTime_GetIdealSize, _shell_DateTime_GetIdealSize_cpp, commctrl/DateTime_GetIdealSize, controls.DateTime_GetIdealSize, controls._shell_DateTime_GetIdealSize
 req.header: commctrl.h
 req.include-header: 
@@ -46,6 +46,21 @@ api_name:
 ---
 
 # DateTime_GetIdealSize macro
+
+## -syntax
+
+```cpp
+BOOL DateTime_GetIdealSize(
+  [in]  HWND hdp,
+  [out] SIZE psize
+);
+```
+
+## -returns
+
+Type: **[BOOL](/windows/desktop/winprog/windows-data-types)**
+
+Returns <b>TRUE</b>.
 
 
 ## -description

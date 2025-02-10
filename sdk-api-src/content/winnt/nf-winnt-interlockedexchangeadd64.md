@@ -52,7 +52,7 @@ api_name:
 
 Performs an atomic addition of two 64-bit values.
 
-To operate on 32-bit values, use the <a href="/windows/win32/api/winbase/nf-winbase-interlockedexchangeadd">InterlockedExchangeAdd</a> function.
+To operate on 32-bit values, use the <a href="/windows/win32/api/winnt/nf-winnt-interlockedexchangeadd">InterlockedExchangeAdd</a> function.
 
 ## -parameters
 
@@ -81,7 +81,7 @@ This function is implemented using a compiler intrinsic where possible. For more
 
 This function  generates a full memory barrier (or fence) to ensure that memory operations are completed in order.
 
-<b>Itanium-based systems:  </b>For performance-critical applications, use <a href="/windows/win32/api/winbase/nf-winbase-interlockedexchangeaddacquire64">InterlockedExchangeAddAcquire64</a> instead.
+<b>Itanium-based systems:  </b>For performance-critical applications, use <a href="/previous-versions/windows/desktop/legacy/ms683604(v=vs.85)">">InterlockedExchangeAddAcquire64</a> instead.
 
 <div class="alert"><b>Note</b>  This function is supported on Windows RT-based systems.</div>
 <div> </div>
@@ -96,35 +96,35 @@ This function  generates a full memory barrier (or fence) to ensure that memory 
 
 
 
-<a href="/windows/win32/api/winbase/nf-winbase-interlockedexchange">InterlockedExchange</a>
+<a href="/windows/win32/api/winnt/nf-winnt-interlockedexchange">InterlockedExchange</a>
 
 
 
-<a href="/windows/win32/api/winbase/nf-winbase-interlockedexchangeadd">InterlockedExchangeAdd</a>
+<a href="/windows/win32/api/winnt/nf-winnt-interlockedexchangeadd">InterlockedExchangeAdd</a>
 
 
 
-<a href="/windows/win32/api/winbase/nf-winbase-interlockedexchangeaddacquire">InterlockedExchangeAddAcquire</a>
+<a href="/previous-versions/windows/desktop/legacy/ms683594(v=vs.85)">InterlockedExchangeAddAcquire</a>
 
 
 
-<a href="/windows/win32/api/winbase/nf-winbase-interlockedexchangeaddacquire64">InterlockedExchangeAddAcquire64</a>
+<a href="/previous-versions/windows/desktop/legacy/ms683604(v=vs.85)">">InterlockedExchangeAddAcquire64</a>
 
 
 
-<a href="/windows/win32/api/winbase/nf-winbase-interlockedexchangeaddnofence">InterlockedExchangeAddNoFence</a>
+<a href="/windows/win32/api/winnt/nf-winnt-interlockedexchangeadd">InterlockedExchangeAddNoFence</a>
 
 
 
-<a href="/windows/win32/api/winbase/nf-winbase-interlockedexchangeaddnofence64">InterlockedExchangeAddNoFence64</a>
+<a href="/windows/win32/api/winnt/nf-winnt-interlockedexchangeadd64">InterlockedExchangeAddNoFence64</a>
 
 
 
-<a href="/windows/win32/api/winbase/nf-winbase-interlockedexchangeaddrelease">InterlockedExchangeAddRelease</a>
+<a href="/previous-versions/windows/desktop/legacy/ms683605(v=vs.85)".InterlockedExchangeAddRelease</a>
 
 
 
-<a href="/windows/win32/api/winbase/nf-winbase-interlockedexchangeaddrelease64">InterlockedExchangeAddRelease64</a>
+<a href="/windows/win32/api/winnt/nf-winnt-interlockedexchangeadd64">InterlockedExchangeAddRelease64</a>
 
 
 

@@ -6,7 +6,7 @@ helpviewer_keywords: ["SetProcessInformation","SetProcessInformation function","
 old-location: base\setprocessinformation.htm
 tech.root: processthreadsapi
 ms.assetid: 1739fadf-6b43-4b89-8a17-87d9867d5197
-ms.date: 01/29/2024
+ms.date: 10/31/2024
 ms.keywords: SetProcessInformation, SetProcessInformation function, base.setprocessinformation, processthreadsapi/SetProcessInformation
 req.header: processthreadsapi.h
 req.include-header: Windows.h
@@ -67,7 +67,7 @@ A member of the [PROCESS_INFORMATION_CLASS](./ne-processthreadsapi-process_infor
 
 Pointer to an object that contains the type of information specified by the *ProcessInformationClass* parameter.
 
-If the *ProcessInformationClass* parameter is **ProcessMemoryPriority**, this parameter must point to a [MEMORY_PRIORITY_INFORMATION structure](ns-processthreadsapi-memory_priority_information.md) <a href="/windows/win32/api/processthreadsapi/ns-processthreadsapi-memory_priority_information">MEMORY_PRIORITY_INFORMATION</a> structure.
+If the *ProcessInformationClass* parameter is **ProcessMemoryPriority**, this parameter must point to a [MEMORY_PRIORITY_INFORMATION structure](ns-processthreadsapi-memory_priority_information.md).
 
 If the *ProcessInformationClass* parameter is **ProcessPowerThrottling**, this parameter must point to a [PROCESS_POWER_THROTTLING_STATE structure](ns-processthreadsapi-process_power_throttling_state.md).
 

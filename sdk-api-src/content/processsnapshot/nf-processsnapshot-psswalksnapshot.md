@@ -52,7 +52,7 @@ api_name:
 
 ## -description
 
-Returns information from the current walk position and advanced the walk marker to the next position.
+Returns information from the current walk position and advances the walk marker to the next position.
 
 ## -parameters
 

@@ -53,7 +53,7 @@ api_name:
 ## -description
 
 An application-defined callback function used with the 
-<a href="/windows/desktop/api/psapi/nf-psapi-enumpagefilesa">EnumPageFiles</a> function.
+<a href="/windows/desktop/api/psapi/nf-psapi-enumpagefilesw">EnumPageFiles</a> function.
 
 The <b>PENUM_PAGE_FILE_CALLBACK</b> type defines a pointer to this callback function. 
 <b>EnumPageFilesProc</b> is a placeholder for the application-defined function name.
@@ -63,7 +63,7 @@ The <b>PENUM_PAGE_FILE_CALLBACK</b> type defines a pointer to this callback func
 ### -param pContext [in]
 
 The user-defined data passed from 
-<a href="/windows/desktop/api/psapi/nf-psapi-enumpagefilesa">EnumPageFiles</a>.
+<a href="/windows/desktop/api/psapi/nf-psapi-enumpagefilesw">EnumPageFiles</a>.
 
 ### -param pPageFileInfo [in]
 
@@ -86,7 +86,7 @@ To stop enumeration, the callback function must return FALSE.
 
 
 
-<a href="/windows/desktop/api/psapi/nf-psapi-enumpagefilesa">EnumPageFiles</a>
+<a href="/windows/desktop/api/psapi/nf-psapi-enumpagefilesw">EnumPageFiles</a>
 
 
 
@@ -95,4 +95,4 @@ To stop enumeration, the callback function must return FALSE.
 ## -remarks
 
 > [!NOTE]
-> The psapi.h header defines PENUM_PAGE_FILE_CALLBACK as an alias which automatically selects the ANSI or Unicode version of this function based on the definition of the UNICODE preprocessor constant. Mixing usage of the encoding-neutral alias with code that not encoding-neutral can lead to mismatches that result in compilation or runtime errors. For more information, see [Conventions for Function Prototypes](/windows/win32/intl/conventions-for-function-prototypes).
+> The psapi.h header defines PENUM_PAGE_FILE_CALLBACK as an alias that automatically selects the ANSI or Unicode version of this function based on the definition of the UNICODE preprocessor constant. Mixing usage of the encoding-neutral alias with code that is not encoding-neutral can lead to mismatches that result in compilation or runtime errors. For more information, see [Conventions for Function Prototypes](/windows/win32/intl/conventions-for-function-prototypes).

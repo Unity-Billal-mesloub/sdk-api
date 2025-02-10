@@ -58,7 +58,7 @@ A pointer to the variable in which to receive the index of the matching part.
 
 ## -returns
 
-**S_OK** on success, or **E_NOT_VALID_STATE** if a container has not been loaded by using [Load](./nf-dxcapi-idxccontainerreflection-load), or **HRESULT_FROM_WIN32(ERROR_NOT_FOUND)** if there's no part with the specified kind, or another standard **HRESULT** error code.
+**S_OK** on success, or **E_NOT_VALID_STATE** if a container has not been loaded by using [Load](./nf-dxcapi-idxccontainerreflection-load.md), or **HRESULT_FROM_WIN32(ERROR_NOT_FOUND)** if there's no part with the specified kind, or another standard **HRESULT** error code.
 
 ## -remarks
 

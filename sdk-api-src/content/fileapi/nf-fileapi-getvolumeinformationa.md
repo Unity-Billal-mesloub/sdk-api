@@ -6,7 +6,7 @@ helpviewer_keywords: ["FILE_CASE_PRESERVED_NAMES", "FILE_CASE_SENSITIVE_SEARCH",
 old-location: fs\getvolumeinformation.htm
 tech.root: fs
 ms.assetid: c80a38e1-319e-4f15-8c8a-9d29075e1709
-ms.date: 04/21/2023
+ms.date: 01/08/2025
 ms.keywords: FILE_CASE_PRESERVED_NAMES, FILE_CASE_SENSITIVE_SEARCH, FILE_DAX_VOLUME, FILE_FILE_COMPRESSION, FILE_NAMED_STREAMS, FILE_PERSISTENT_ACLS, FILE_READ_ONLY_VOLUME, FILE_SEQUENTIAL_WRITE_ONCE, FILE_SUPPORTS_ENCRYPTION, FILE_SUPPORTS_EXTENDED_ATTRIBUTES, FILE_SUPPORTS_HARD_LINKS, FILE_SUPPORTS_OBJECT_IDS, FILE_SUPPORTS_OPEN_BY_FILE_ID, FILE_SUPPORTS_REPARSE_POINTS, FILE_SUPPORTS_SPARSE_FILES, FILE_SUPPORTS_TRANSACTIONS, FILE_SUPPORTS_USN_JOURNAL, FILE_UNICODE_ON_DISK, FILE_VOLUME_IS_COMPRESSED, FILE_VOLUME_QUOTAS, GetVolumeInformation, GetVolumeInformation function [Files], GetVolumeInformationA, GetVolumeInformationW, _win32_getvolumeinformation, base.getvolumeinformation, fileapi/GetVolumeInformation, fileapi/GetVolumeInformationA, fileapi/GetVolumeInformationW, fs.getvolumeinformation, winbase/GetVolumeInformation, winbase/GetVolumeInformationA, winbase/GetVolumeInformationW
 req.header: fileapi.h
 req.include-header: Windows.h
@@ -79,7 +79,7 @@ A pointer to a buffer that receives the name of a specified volume. The buffer s
 
 ### -param nVolumeNameSize [in]
 
-The length of a volume name buffer, in **TCHARs**. The maximum buffer size is **MAX_PATH**s+1.
+The length of a volume name buffer, in **TCHARs**. The maximum buffer size is **MAX_PATH**+1.
 
 This parameter is ignored if the volume name buffer is not supplied.
 
@@ -186,7 +186,7 @@ SMB does not support volume management functions.
 If the volume supports file system transactions, the function returns **FILE_SUPPORTS_TRANSACTIONS** in _lpFileSystemFlags_.
 
 > [!NOTE]
-> The fileapi.h header defines GetVolumeInformation as an alias which automatically selects the ANSI or Unicode version of this function based on the definition of the UNICODE preprocessor constant. Mixing usage of the encoding-neutral alias with code that not encoding-neutral can lead to mismatches that result in compilation or runtime errors. For more information, see [Conventions for Function Prototypes](/windows/win32/intl/conventions-for-function-prototypes).
+> The fileapi.h header defines GetVolumeInformation as an alias that automatically selects the ANSI or Unicode version of this function based on the definition of the UNICODE preprocessor constant. Mixing usage of the encoding-neutral alias with code that is not encoding-neutral can lead to mismatches that result in compilation or runtime errors. For more information, see [Conventions for Function Prototypes](/windows/win32/intl/conventions-for-function-prototypes).
 
 ## -see-also
 

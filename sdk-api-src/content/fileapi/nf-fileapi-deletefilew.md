@@ -120,7 +120,7 @@ In Windows 8 and Windows Server 2012, this function is supported by the follow
 For an example, see [Locking and Unlocking Byte Ranges in Files](/windows/win32/FileIO/locking-and-unlocking-byte-ranges-in-files).
 
 > [!NOTE]
-> The `fileapi.h` header defines DeleteFile as an alias which automatically selects the ANSI or Unicode version of this function based on the definition of the UNICODE preprocessor constant. Mixing usage of the encoding-neutral alias with code that not encoding-neutral can lead to mismatches that result in compilation or runtime errors. For more information, see [Conventions for Function Prototypes](/windows/win32/intl/conventions-for-function-prototypes).
+> The `fileapi.h` header defines DeleteFile as an alias that automatically selects the ANSI or Unicode version of this function based on the definition of the UNICODE preprocessor constant. Mixing usage of the encoding-neutral alias with code that is not encoding-neutral can lead to mismatches that result in compilation or runtime errors. For more information, see [Conventions for Function Prototypes](/windows/win32/intl/conventions-for-function-prototypes).
 
 ## -see-also
 

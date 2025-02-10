@@ -2,7 +2,7 @@
 UID: NF:processenv.SetEnvironmentStringsW
 title: SetEnvironmentStringsW
 description: The SetEnvironmentStringsW (Unicode) function (processenv.h) sets the environment strings of the calling process for the current process.
-ms.date: 08/05/2022
+ms.date: 10/31/2024
 ms.keywords: SetEnvironmentStringsW
 targetos: Windows
 req.assembly: 
@@ -18,8 +18,8 @@ req.lib: kernel32.lib
 req.max-support: 
 req.namespace: 
 req.redist: 
-req.target-min-winverclnt: Windows 10 Build 20348
-req.target-min-winversvr: Windows 10 Build 20348
+req.target-min-winverclnt: Windows XP [desktop apps \| UWP apps]
+req.target-min-winversvr: Windows Server 2003 [desktop apps \| UWP apps]
 req.target-type: 
 req.type-library: 
 req.umdf-ver: 

@@ -180,9 +180,13 @@ Type: <b>LRESULT</b>
 
 If the function succeeds, the return value is nonzero. <b>SendMessageTimeout</b> does not provide information about individual windows timing out if <b>HWND_BROADCAST</b> is used.
 
-If the function fails or times out, the return value is 0. To get extended error information, call <a href="/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror">GetLastError</a>. If <b>GetLastError</b> returns <b>ERROR_TIMEOUT</b>, then the function timed out.
-
-<b>Windows 2000:  </b>If <a href="/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror">GetLastError</a> returns 0, then the function timed out.
+If the function fails or times out, the return value is 0.
+Note that the function does not always call <a href="/windows/desktop/api/errhandlingapi/nf-errhandlingapi-setlasterror">SetLastError</a>
+on failure.
+If the reason for failure is important to you, call SetLastError(ERROR_SUCCESS)
+before calling SendMessageTimeout. If the function returns 0, and
+<a href="/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror">GetLastError</a>
+returns ERROR_SUCCESS, then treat it as a generic failure.
 
 ## -remarks
 
@@ -197,7 +201,7 @@ The system only does marshalling for system messages (those in the range 0 to (<
 
 
 > [!NOTE]
-> The winuser.h header defines SendMessageTimeout as an alias which automatically selects the ANSI or Unicode version of this function based on the definition of the UNICODE preprocessor constant. Mixing usage of the encoding-neutral alias with code that not encoding-neutral can lead to mismatches that result in compilation or runtime errors. For more information, see [Conventions for Function Prototypes](/windows/win32/intl/conventions-for-function-prototypes).
+> The winuser.h header defines SendMessageTimeout as an alias that automatically selects the ANSI or Unicode version of this function based on the definition of the UNICODE preprocessor constant. Mixing usage of the encoding-neutral alias with code that is not encoding-neutral can lead to mismatches that result in compilation or runtime errors. For more information, see [Conventions for Function Prototypes](/windows/win32/intl/conventions-for-function-prototypes).
 
 ## -see-also
 

@@ -43,7 +43,7 @@ helpviewer_keywords:
 
 Represents PDB version information.
 
-To obtain an instance of this interface, call [IDxcPdbUtils::GetVersionInfo](./nf-dxcapi-idxcpdbutils-getversioninfo) to obtain a **IDxcVersionInfo** interface, and then use **QueryInterface** to obtain an instance of this interface from it.
+To obtain an instance of this interface, call [IDxcPdbUtils::GetVersionInfo](./nf-dxcapi-idxcpdbutils-getversioninfo.md) to obtain a **IDxcVersionInfo** interface, and then use **QueryInterface** to obtain an instance of this interface from it.
 
 ## -remarks
 

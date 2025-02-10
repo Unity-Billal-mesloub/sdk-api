@@ -69,4 +69,4 @@ The adapter's PCI or ACPI revision number. If <b>vendorID</b> is a PCI ID, it is
 
 ## -see-also
 
-[DXCore Reference](/windows/win32/dxcore/dxcore-reference), [Using DXCore to enumerate adapters](/windows/win32/dxcore/dxcore-enum-adapters)
+[DXCore reference](/windows/win32/dxcore/dxcore-reference), [Using DXCore to enumerate adapters](/windows/win32/dxcore/dxcore-enum-adapters)

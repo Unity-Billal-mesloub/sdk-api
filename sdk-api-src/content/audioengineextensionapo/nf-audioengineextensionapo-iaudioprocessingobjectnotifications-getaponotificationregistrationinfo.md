@@ -48,7 +48,7 @@ Called by the system to allow clients to register to receive notification callba
 
 ### -param apoNotifications [out]
 
-Output parameter that returns a pointer to an array of [APO_NOTIFICATION_DESCRIPTOR](ns-audioengineextensionapo-apo_notification_descriptor.md) specifying the set of APO changes for which notifications are requested.
+Output parameter that returns a pointer to an array of [APO_NOTIFICATION_DESCRIPTOR](ns-audioengineextensionapo-apo_notification_descriptor.md) specifying the set of APO changes for which notifications are requested. The callee allocates the APO_NOTIFICATION_DESCRIPTOR structures using [CoTaskMemAlloc](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemalloc); the caller must release the structures by using [CoTaskMemFree](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree) when finished.
 
 ### -param count [out]
 

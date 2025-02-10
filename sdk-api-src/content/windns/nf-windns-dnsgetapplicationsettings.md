@@ -56,7 +56,7 @@ After the function call, this will point to the number of custom DNS servers tha
 
 ### -param ppDefaultServers
 
-Type: \_Outptr\_result\_buffer\_(*pcServers) **[DNS_CUSTOM_SERVER](ns-windns-dns_custom_server)\*\***
+Type: \_Outptr\_result\_buffer\_(*pcServers) **[DNS_CUSTOM_SERVER](ns-windnsdef-dns_custom_server)\*\***
 
 After the function call, this will point to the array of DNS custom servers that are configured for the application. If the application has no servers configured, or if the function fails, then this will be set to **NULL**.
 

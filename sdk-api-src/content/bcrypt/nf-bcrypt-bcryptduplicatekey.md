@@ -65,13 +65,17 @@ A pointer to a <b>BCRYPT_KEY_HANDLE</b> variable that receives the handle of the
 
 ### -param pbKeyObject [out]
 
-A pointer to a buffer that receives the duplicate key object. The <i>cbKeyObject</i> parameter contains the size of this buffer. The required size of this buffer can be obtained by calling the <a href="/windows/desktop/api/bcrypt/nf-bcrypt-bcryptgetproperty">BCryptGetProperty</a> function to get the <b>BCRYPT_OBJECT_LENGTH</b> property. This will provide the size of the key object for the specified algorithm.
+An ***optional*** pointer to a buffer that receives the duplicate key object. The <i>cbKeyObject</i> parameter contains the size of this buffer. The required size of this buffer can be obtained by calling the <a href="/windows/desktop/api/bcrypt/nf-bcrypt-bcryptgetproperty">BCryptGetProperty</a> function to get the <b>BCRYPT_OBJECT_LENGTH</b> property. This will provide the size of the key object for the specified algorithm.
 
 This memory can only be freed after the <i>phNewKey</i> key handle is destroyed.
+
+If the value of this parameter is <b>NULL</b> and the value of the <i>cbKeyObject</i> parameter is zero, the memory for the duplicate key object is allocated by this function and freed by <a href="/windows/desktop/api/bcrypt/nf-bcrypt-bcryptdestroykey">BCryptDestroyKey</a>. <b>Windows 7:  </b>This memory management functionality is available beginning with Windows 7.
 
 ### -param cbKeyObject [in]
 
 The size, in bytes, of the <i>pbKeyObject</i> buffer.
+
+If the value of this parameter is zero and the value of the <i>pbKeyObject</i> parameter is <b>NULL</b>, the memory for the duplicate key object is allocated by this function and freed by <a href="/windows/desktop/api/bcrypt/nf-bcrypt-bcryptdestroykey">BCryptDestroyKey</a>. <b>Windows 7:  </b>This memory management functionality is available beginning with Windows 7.
 
 ### -param dwFlags [in]
 

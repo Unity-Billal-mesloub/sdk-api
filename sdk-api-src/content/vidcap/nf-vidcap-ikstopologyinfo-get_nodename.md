@@ -145,4 +145,4 @@ if (hr == HRESULT_FROM_WIN32(ERROR_MORE_DATA))
 
 
 
-<a href="/windows/win32/api/vidcap/nn-vidcap-ikstopologyinfo">IKsTopologyInfo Interface</a>
+<a href="/previous-versions/ms785846(v=vs.85)">IKsTopologyInfo Interface</a>

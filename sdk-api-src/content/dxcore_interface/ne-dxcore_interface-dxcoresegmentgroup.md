@@ -45,7 +45,7 @@ Defines constants that specify an adapter's memory segment grouping.
 
 ## -enum-fields
 
-### -field Local:1
+### -field Local:0
 
 Specifies a grouping of segments that is considered local to the adapter, and represents the fastest memory available to the GPU. Your application should target the local segment group as the target size for its working set.
 
@@ -55,4 +55,4 @@ Specifies a grouping of segments that is considered non-local to the adapter, an
 
 ## -see-also
 
-[DXCore Reference](/windows/win32/dxcore/dxcore-reference), [Using DXCore to enumerate adapters](/windows/win32/dxcore/dxcore-enum-adapters)
+[DXCore reference](/windows/win32/dxcore/dxcore-reference), [Using DXCore to enumerate adapters](/windows/win32/dxcore/dxcore-enum-adapters)

@@ -43,7 +43,7 @@ helpviewer_keywords:
 
 Interface representing an optimizer pass.
 
-To obtain an instance of this interface, call [IDxcOptimizer::GetAvailablePass](./nf-dxcapi-idxcoptimizer-getavailablepass).
+To obtain an instance of this interface, call [IDxcOptimizer::GetAvailablePass](./nf-dxcapi-idxcoptimizer-getavailablepass.md).
 
 ## -remarks
 

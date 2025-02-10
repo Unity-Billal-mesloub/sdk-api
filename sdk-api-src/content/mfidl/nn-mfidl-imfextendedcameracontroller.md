@@ -43,16 +43,15 @@ The IMFExtendedCameraController interface can be obtained through the [IMFMediaS
 In this case, guidService parameter of the IMFGetService::GetService function must be `GUID_NULL`, please see following code snippet.
 
 ```
-HRESULT GetExtendedCameraController(_In_ IMFMediaSource cameraSource)
+HRESULT GetExtendedCameraController(_In_ IMFMediaSource* pCameraSource)
 {
-    wil::com_ptr_nothrow<IMFExtendedCameraController> extCameraController;
-    wil::com_ptr_nothrow<IMFGetService> getService;
+    wil::com_ptr_nothrow<IMFExtendedCameraController> spExtCameraController;
+    wil::com_ptr_nothrow<IMFGetService> spGetService;
 
-    RETURN_IF_FAILED(extCameraController.query_to(&getService));
+    RETURN_IF_FAILED(pCameraSource->QueryInterface(IID_PPV_ARGS(&spGetService)));
+    RETURN_IF_FAILED(spGetService->GetService(GUID_NULL, IID_PPV_ARGS(&spExtCameraController)));
 
-    RETURN_IF_FAILED(getService->GetService(GUID_NULL, IID_PPV_ARGS(&extCameraController)));
-
-    // Use the IMFExtendedCameraController
+    // Use the IMFExtendedCameraController to check for support of a specific IMFExtendedCameraControl using GetExtendedCameraControl()
 
     return S_OK;
 }

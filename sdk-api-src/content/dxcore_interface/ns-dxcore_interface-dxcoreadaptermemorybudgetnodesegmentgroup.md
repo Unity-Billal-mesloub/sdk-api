@@ -58,4 +58,4 @@ Specifies the adapter memory segment grouping that you want to query about.
 
 ## -see-also
 
-[DXCore Reference](/windows/win32/dxcore/dxcore-reference), [Using DXCore to enumerate adapters](/windows/win32/dxcore/dxcore-enum-adapters), [Multi-adapter](/windows/win32/direct3d12/multi-engine)
+[DXCore reference](/windows/win32/dxcore/dxcore-reference), [Using DXCore to enumerate adapters](/windows/win32/dxcore/dxcore-enum-adapters), [Multi-adapter](/windows/win32/direct3d12/multi-engine)

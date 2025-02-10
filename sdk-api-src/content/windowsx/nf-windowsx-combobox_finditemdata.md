@@ -6,7 +6,7 @@ helpviewer_keywords: ["ComboBox_FindItemData","ComboBox_FindItemData macro [Wind
 old-location: controls\ComboBox_FindItemData.htm
 tech.root: Controls
 ms.assetid: VS|Controls|~\controls\comboboxes\comboboxreference\comboboxmacros\combobox_finditemdata.htm
-ms.date: 12/05/2018
+ms.date: 10/21/2024
 ms.keywords: ComboBox_FindItemData, ComboBox_FindItemData macro [Windows Controls], _win32_ComboBox_FindItemData, _win32_ComboBox_FindItemData_cpp, controls.ComboBox_FindItemData, controls._win32_ComboBox_FindItemData, windowsx/ComboBox_FindItemData
 req.header: windowsx.h
 req.include-header: 
@@ -46,6 +46,22 @@ api_name:
 ---
 
 # ComboBox_FindItemData macro
+
+## -syntax
+
+```cpp
+int ComboBox_FindItemData(
+   HWND   hwndCtl,
+   int    indexStart,
+   LPARAM data
+);
+```
+
+## -returns
+
+Type: **int**
+
+The index of the matching item, or CB_ERR if the search was unsuccessful.
 
 
 ## -description

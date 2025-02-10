@@ -63,7 +63,7 @@ req.apiset: ext-ms-win-ntuser-window-l1-1-0 (introduced in Windows 8)
 
 ## -description
 
-Creates an overlapped, pop-up, or child window with an extended window style; otherwise, this function is identical to the <a href="/windows/desktop/api/winuser/nf-winuser-createwindowa">CreateWindow</a> function. For more information about creating a window and for full descriptions of the other parameters of <b>CreateWindowEx</b>, see <b>CreateWindow</b>.
+Creates an overlapped, pop-up, or child window with an extended window style; otherwise, this function is identical to the <a href="/windows/desktop/api/winuser/nf-winuser-createwindoww">CreateWindow</a> function. For more information about creating a window and for full descriptions of the other parameters of <b>CreateWindowEx</b>, see <b>CreateWindow</b>.
 
 ## -parameters
 
@@ -77,13 +77,17 @@ The extended window style of the window being created. For a list of possible va
 
 Type: <b>LPCTSTR</b>
 
-A <b>null</b>-terminated string or a class atom created by a previous call to the <a href="/windows/desktop/api/winuser/nf-winuser-registerclassa">RegisterClass</a> or <a href="/windows/desktop/api/winuser/nf-winuser-registerclassexa">RegisterClassEx</a> function. The atom must be in the low-order word of <i>lpClassName</i>; the high-order word must be zero. If <i>lpClassName</i> is a string, it specifies the window class name. The class name can be any name registered with <b>RegisterClass</b> or <b>RegisterClassEx</b>, provided that the module that registers the class is also the module that creates the window. The class name can also be any of the predefined <a href="/windows/desktop/winmsg/about-window-classes">system class</a> names.
+A <b>null</b>-terminated string or a class atom.
+
+If a <b>null</b>-terminated string, it specifies the window class name. The class name can be any name registered with the <a href="/windows/desktop/api/winuser/nf-winuser-registerclassw">RegisterClass</a> or <a href="/windows/desktop/api/winuser/nf-winuser-registerclassexw">RegisterClassEx</a> function, provided that the module that registers the class is also the module that creates the window. The class name can also be any of the predefined <a href="/windows/desktop/winmsg/about-window-classes">system class</a> names.
+
+If a class atom created by a previous call to <b>RegisterClass</b> or <b>RegisterClassEx</b>, it must be converted using the macro <a href="/windows/desktop/api/winbase/nf-winbase-makeintatom">MAKEINTATOM</a>. (The atom must be in the low-order word of <i>lpClassName</i>; the high-order word must be zero.)
 
 ### -param lpWindowName [in, optional]
 
 Type: <b>LPCTSTR</b>
 
-The window name. If the window style specifies a title bar, the window title pointed to by <i>lpWindowName</i> is displayed in the title bar. When using <a href="/windows/desktop/api/winuser/nf-winuser-createwindowa">CreateWindow</a> to create controls, such as buttons, check boxes, and static controls, use <i>lpWindowName</i> to specify the text of the control. When creating a static control with the <b>SS_ICON</b> style, use <i>lpWindowName</i> to specify the icon name or identifier. To specify an identifier, use the syntax "#<i>num</i>".
+The window name. If the window style specifies a title bar, the window title pointed to by <i>lpWindowName</i> is displayed in the title bar. When using <a href="/windows/desktop/api/winuser/nf-winuser-createwindoww">CreateWindow</a> to create controls, such as buttons, check boxes, and static controls, use <i>lpWindowName</i> to specify the text of the control. When creating a static control with the <b>SS_ICON</b> style, use <i>lpWindowName</i> to specify the icon name or identifier. To specify an identifier, use the syntax "#<i>num</i>".
 
 ### -param dwStyle [in]
 
@@ -142,9 +146,9 @@ A handle to the instance of the module to be associated with the window.
 
 Type: <b>LPVOID</b>
 
-Pointer to a value to be passed to the window through the <a href="/windows/desktop/api/winuser/ns-winuser-createstructa">CREATESTRUCT</a> structure (<b>lpCreateParams</b> member) pointed to by the <i>lParam</i> param of the <b>WM_CREATE</b> message.  This message is sent to the created window by this function before it returns.
+Pointer to a value to be passed to the window through the <a href="/windows/desktop/api/winuser/ns-winuser-createstructw">CREATESTRUCT</a> structure (<b>lpCreateParams</b> member) pointed to by the <i>lParam</i> param of the <b>WM_CREATE</b> message.  This message is sent to the created window by this function before it returns.
 
-If an application calls <a href="/windows/desktop/api/winuser/nf-winuser-createwindowa">CreateWindow</a> to create a MDI client window, <i>lpParam</i> should point to a <a href="/windows/desktop/api/winuser/ns-winuser-clientcreatestruct">CLIENTCREATESTRUCT</a> structure. If an MDI client window calls <b>CreateWindow</b> to create an MDI child window, <i>lpParam</i> should point to a <a href="/windows/desktop/api/winuser/ns-winuser-mdicreatestructa">MDICREATESTRUCT</a> structure. <i>lpParam</i> may be <b>NULL</b> if no additional data is needed.
+If an application calls <a href="/windows/desktop/api/winuser/nf-winuser-createwindoww">CreateWindow</a> to create a MDI client window, <i>lpParam</i> should point to a <a href="/windows/desktop/api/winuser/ns-winuser-clientcreatestruct">CLIENTCREATESTRUCT</a> structure. If an MDI client window calls <b>CreateWindow</b> to create an MDI child window, <i>lpParam</i> should point to a <a href="/windows/desktop/api/winuser/ns-winuser-mdicreatestructw">MDICREATESTRUCT</a> structure. <i>lpParam</i> may be <b>NULL</b> if no additional data is needed.
 
 ## -returns
 
@@ -302,7 +306,7 @@ BOOL Create(
 
 
 > [!NOTE]
-> The winuser.h header defines CreateWindowEx as an alias which automatically selects the ANSI or Unicode version of this function based on the definition of the UNICODE preprocessor constant. Mixing usage of the encoding-neutral alias with code that not encoding-neutral can lead to mismatches that result in compilation or runtime errors. For more information, see [Conventions for Function Prototypes](/windows/win32/intl/conventions-for-function-prototypes).
+> The winuser.h header defines CreateWindowEx as an alias that automatically selects the ANSI or Unicode version of this function based on the definition of the UNICODE preprocessor constant. Mixing usage of the encoding-neutral alias with code that is not encoding-neutral can lead to mismatches that result in compilation or runtime errors. For more information, see [Conventions for Function Prototypes](/windows/win32/intl/conventions-for-function-prototypes).
 
 ## -see-also
 
@@ -314,7 +318,7 @@ BOOL Create(
 
 
 
-<a href="/windows/desktop/api/winuser/ns-winuser-createstructa">CREATESTRUCT</a>
+<a href="/windows/desktop/api/winuser/ns-winuser-createstructw">CREATESTRUCT</a>
 
 
 
@@ -322,7 +326,7 @@ BOOL Create(
 
 
 
-<a href="/windows/desktop/api/winuser/nf-winuser-createwindowa">CreateWindow</a>
+<a href="/windows/desktop/api/winuser/nf-winuser-createwindoww">CreateWindow</a>
 
 
 
@@ -342,11 +346,11 @@ BOOL Create(
 
 
 
-<a href="/windows/desktop/api/winuser/nf-winuser-registerclassa">RegisterClass</a>
+<a href="/windows/desktop/api/winuser/nf-winuser-registerclassw">RegisterClass</a>
 
 
 
-<a href="/windows/desktop/api/winuser/nf-winuser-registerclassexa">RegisterClassEx</a>
+<a href="/windows/desktop/api/winuser/nf-winuser-registerclassexw">RegisterClassEx</a>
 
 
 
@@ -358,7 +362,7 @@ BOOL Create(
 
 
 
-<a href="/windows/desktop/api/winuser/nf-winuser-setwindowlonga">SetWindowLong</a>
+<a href="/windows/desktop/api/winuser/nf-winuser-setwindowlongw">SetWindowLong</a>
 
 
 

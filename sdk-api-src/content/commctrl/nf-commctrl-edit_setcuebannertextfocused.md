@@ -6,7 +6,7 @@ helpviewer_keywords: ["Edit_SetCueBannerTextFocused","Edit_SetCueBannerTextFocus
 old-location: controls\Edit_SetCueBannerTextFocused.htm
 tech.root: Controls
 ms.assetid: VS|Controls|~\controls\editcontrols\editcontrolreference\editcontrolmacros\edit_setcuebannertextfocused.htm
-ms.date: 12/05/2018
+ms.date: 10/21/2024
 ms.keywords: Edit_SetCueBannerTextFocused, Edit_SetCueBannerTextFocused macro [Windows Controls], _shell_Edit_SetCueBannerTextFocused, _shell_Edit_SetCueBannerTextFocused_cpp, commctrl/Edit_SetCueBannerTextFocused, controls.Edit_SetCueBannerTextFocused, controls._shell_Edit_SetCueBannerTextFocused
 req.header: commctrl.h
 req.include-header: 
@@ -46,6 +46,22 @@ api_name:
 ---
 
 # Edit_SetCueBannerTextFocused macro
+
+## -syntax
+
+```cpp
+BOOL Edit_SetCueBannerTextFocused(
+   HWND    hwnd,
+   LPCWSTR lpcwText,
+   BOOL    fDrawFocused
+);
+```
+
+## -returns
+
+Type: **[BOOL](/windows/desktop/winprog/windows-data-types)**
+
+If the macro succeeds, it returns <b>TRUE</b>. Otherwise it returns <b>FALSE</b>.
 
 
 ## -description

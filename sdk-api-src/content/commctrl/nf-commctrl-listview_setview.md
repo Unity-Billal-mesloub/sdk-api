@@ -6,7 +6,7 @@ helpviewer_keywords: ["ListView_SetView","ListView_SetView macro [Windows Contro
 old-location: controls\ListView_SetView.htm
 tech.root: Controls
 ms.assetid: VS|Controls|~\controls\listview\macros\listview_setview.htm
-ms.date: 12/05/2018
+ms.date: 10/21/2024
 ms.keywords: ListView_SetView, ListView_SetView macro [Windows Controls], _win32_ListView_SetView, _win32_ListView_SetView_cpp, commctrl/ListView_SetView, controls.ListView_SetView, controls._win32_ListView_SetView
 req.header: commctrl.h
 req.include-header: 
@@ -46,6 +46,21 @@ api_name:
 ---
 
 # ListView_SetView macro
+
+## -syntax
+
+```cpp
+int ListView_SetView(
+   HWND  hwnd,
+   DWORD iView
+);
+```
+
+## -returns
+
+Type: **int**
+
+Returns 1 if successful, or -1 otherwise. For example, returns -1 if the view is invalid. 
 
 
 ## -description

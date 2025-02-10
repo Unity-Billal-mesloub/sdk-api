@@ -56,9 +56,9 @@ The number of custom DNS servers present in the *pServers* parameter.
 
 ### -param pServers
 
-Type: \_In\_reads\_(cServers) **[DNS_CUSTOM_SERVER](ns-windns-dns_custom_server)\***
+Type: \_In\_reads\_(cServers) **[DNS_CUSTOM_SERVER](ns-windnsdef-dns_custom_server)\***
 
-An array of [DNS_CUSTOM_SERVER](ns-windns-dns_custom_server) that contains *cServers* elements. If *cServers* is 0, then this must be **NULL**.
+An array of [DNS_CUSTOM_SERVER](ns-windnsdef-dns_custom_server) that contains *cServers* elements. If *cServers* is 0, then this must be **NULL**.
 
 ### -param pSettings
 

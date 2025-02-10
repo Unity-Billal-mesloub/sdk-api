@@ -6,7 +6,7 @@ helpviewer_keywords: ["IIsoImageManager interface [IMAPI]","Validate method","II
 old-location: imapi\iisoimagemanager_validate.htm
 tech.root: imapi
 ms.assetid: 0fd9f0fc-8a77-4b94-9111-c8ce223329b6
-ms.date: 10/19/2023
+ms.date: 10/03/2024
 ms.keywords: IIsoImageManager interface [IMAPI],Validate method, IIsoImageManager.Validate, IIsoImageManager::Validate, Validate, Validate method [IMAPI], Validate method [IMAPI],IIsoImageManager interface, imapi.iisoimagemanager_validate, imapi2fs/IIsoImageManager::Validate
 req.header: imapi2fs.h
 req.include-header: 
@@ -68,12 +68,12 @@ For this method to succeed, the disc image, which may be a file or a stream, mus
 
 - The disc image size must be a multiple of the sector user data size, 2048 bytes.
 - The disc image must contain user data only and no sector header or file header.
-- The disc image must contain a valid Volume Recognition Sequence with at least one Volume Descriptor such as described in ECMA [119](https://www.ecma-international.org/publications-and-standards/standards/ecma-119/), [167](https://www.ecma-international.org/publications-and-standards/standards/ecma-167/), [168](https://www.ecma-international.org/publications-and-standards/standards/ecma-168/) standards.
+- The disc image must contain a valid Volume Recognition Sequence with at least one Volume Descriptor such as described in ECMA [119](https://www.ecma-international.org/wp-content/uploads/ECMA-119_2nd_edition_december_1987.pdf), [167](https://www.ecma-international.org/publications-and-standards/standards/ecma-167/), [168](https://www.ecma-international.org/publications-and-standards/standards/ecma-168/) standards.
 
 If the disc image does not fit these criteria, this method will return the relevant failure code. More importantly, a failure to validate will affect the probability of operation success when the image is mounted by Windows after recording.
-
-This method is supported in Windows Server 2003 with Service Pack 1 (SP1), Windows XP with Service Pack 2 (SP2),  and Windows Vista  via the Windows Feature Pack for Storage. All  features provided by this  update package are supported natively in Windows 7 and Windows Server 2008 R2.
 
 ## -see-also
 
 - [IIsoImageManager](/windows/win32/api/imapi2fs/nn-imapi2fs-iisoimagemanager)
+- [SetPath](/windows/win32/api/imapi2fs/nf-imapi2fs-iisoimagemanager-setpath)
+- [SetStream](/windows/win32/api/imapi2fs/nf-imapi2fs-iisoimagemanager-setstream)

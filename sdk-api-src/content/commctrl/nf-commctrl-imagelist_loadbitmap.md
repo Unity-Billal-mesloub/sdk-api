@@ -6,7 +6,7 @@ helpviewer_keywords: ["ImageList_LoadBitmap","ImageList_LoadBitmap macro [Window
 old-location: controls\ImageList_LoadBitmap.htm
 tech.root: Controls
 ms.assetid: VS|Controls|~\controls\imagelist\macros\imagelist_loadbitmap.htm
-ms.date: 12/05/2018
+ms.date: 10/21/2024
 ms.keywords: ImageList_LoadBitmap, ImageList_LoadBitmap macro [Windows Controls], _win32_ImageList_LoadBitmap, _win32_ImageList_LoadBitmap_cpp, commctrl/ImageList_LoadBitmap, controls.ImageList_LoadBitmap, controls._win32_ImageList_LoadBitmap
 req.header: commctrl.h
 req.include-header: 
@@ -46,6 +46,24 @@ api_name:
 ---
 
 # ImageList_LoadBitmap macro
+
+## -syntax
+
+```cpp
+HIMAGELIST ImageList_LoadBitmap(
+   HINSTANCE hi,
+   LPCTSTR   lpbmp,
+   int       cx,
+   int       cGrow,
+   COLORREF  crMask
+);
+```
+
+## -returns
+
+Type: **HIMAGELIST**
+
+Returns the handle to the image list if successful, or <b>NULL</b> otherwise.
 
 
 ## -description

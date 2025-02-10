@@ -77,7 +77,7 @@ A <b>null</b>-terminated string to be written to the file. If this parameter is 
 
 The name of the initialization file.
 
-If the file was created using Unicode characters, the function writes Unicode characters to the file. Otherwise, the function writes ANSI characters.
+If the file already exists and consists of Unicode characters, the function writes Unicode characters to the file. Otherwise, the function writes ANSI characters.
 
 ## -returns
 
@@ -307,7 +307,7 @@ int main()
 
 
 > [!NOTE]
-> The winbase.h header defines WritePrivateProfileString as an alias which automatically selects the ANSI or Unicode version of this function based on the definition of the UNICODE preprocessor constant. Mixing usage of the encoding-neutral alias with code that not encoding-neutral can lead to mismatches that result in compilation or runtime errors. For more information, see [Conventions for Function Prototypes](/windows/win32/intl/conventions-for-function-prototypes).
+> The winbase.h header defines WritePrivateProfileString as an alias that automatically selects the ANSI or Unicode version of this function based on the definition of the UNICODE preprocessor constant. Mixing usage of the encoding-neutral alias with code that is not encoding-neutral can lead to mismatches that result in compilation or runtime errors. For more information, see [Conventions for Function Prototypes](/windows/win32/intl/conventions-for-function-prototypes).
 
 ## -see-also
 

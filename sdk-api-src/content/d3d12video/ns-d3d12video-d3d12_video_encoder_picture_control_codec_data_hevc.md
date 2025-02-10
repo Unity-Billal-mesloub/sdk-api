@@ -2,7 +2,7 @@
 UID: NS:d3d12video.D3D12_VIDEO_ENCODER_PICTURE_CONTROL_CODEC_DATA_HEVC
 tech.root: mf
 title: D3D12_VIDEO_ENCODER_PICTURE_CONTROL_CODEC_DATA_HEVC
-ms.date: 06/29/2021
+ms.date: 01/23/2025
 targetos: Windows
 description: Represents the picture level control elements for the associated EncodeFrame command for HEVC encoding.
 prerelease: false
@@ -122,21 +122,22 @@ The following tables list the expected VPS, SPS and PPS Values for HEVC encoding
 
 ### Level_idc mappings for HEVC
 
+
 | D3D12 Level | Expected general_level_idc | Notes |
 |--------|------------|------------|
-D3D12_VIDEO_ENCODER_LEVELS_HEVC_1 | 30 | Corresponds to 3 * enum level 2 digit suffix (10) |
-D3D12_VIDEO_ENCODER_LEVELS_HEVC_2 | 60 | Corresponds to 3 * enum level 2 digit suffix (20) |
-D3D12_VIDEO_ENCODER_LEVELS_HEVC_21 | 63 | Corresponds to 3 * enum level 2 digit suffix (21) |
-D3D12_VIDEO_ENCODER_LEVELS_HEVC_3 | 90 | Corresponds to 3 * enum level 2 digit suffix (30) |
-D3D12_VIDEO_ENCODER_LEVELS_HEVC_31 | 93 | Corresponds to 3 * enum level 2 digit suffix (31) |
-D3D12_VIDEO_ENCODER_LEVELS_HEVC_4 1| 20 | Corresponds to 3 * enum level 2 digit suffix (40) |
-D3D12_VIDEO_ENCODER_LEVELS_HEVC_41 1| 23 | Corresponds to 3 * enum level 2 digit suffix (41) |
-D3D12_VIDEO_ENCODER_LEVELS_HEVC_5 1| 50 | Corresponds to 3 * enum level 2 digit suffix (50) |
-D3D12_VIDEO_ENCODER_LEVELS_HEVC_51 1| 53 | Corresponds to 3 * enum level 2 digit suffix (51) |
-D3D12_VIDEO_ENCODER_LEVELS_HEVC_52 1| 56 | Corresponds to 3 * enum level 2 digit suffix (52) |
-D3D12_VIDEO_ENCODER_LEVELS_HEVC_6 1| 80 | Corresponds to 3 * enum level 2 digit suffix (60) |
-D3D12_VIDEO_ENCODER_LEVELS_HEVC_61 1| 83 | Corresponds to 3 * enum level 2 digit suffix (61) |
-D3D12_VIDEO_ENCODER_LEVELS_HEVC_62 1| 86 | Corresponds to 3 * enum level 2 digit suffix (62) |
+D3D12_VIDEO_ENCODER_LEVELS_HEVC_1 | 30 | None |
+D3D12_VIDEO_ENCODER_LEVELS_HEVC_2 | 60 | None |
+D3D12_VIDEO_ENCODER_LEVELS_HEVC_21 | 63 | None |
+D3D12_VIDEO_ENCODER_LEVELS_HEVC_3 | 90 | None |
+D3D12_VIDEO_ENCODER_LEVELS_HEVC_31 | 93 | None |
+D3D12_VIDEO_ENCODER_LEVELS_HEVC_4 | 120 | None |
+D3D12_VIDEO_ENCODER_LEVELS_HEVC_41 | 123 | None |
+D3D12_VIDEO_ENCODER_LEVELS_HEVC_5 | 150 | None |
+D3D12_VIDEO_ENCODER_LEVELS_HEVC_51 | 153 | None |
+D3D12_VIDEO_ENCODER_LEVELS_HEVC_52 | 156 | None |
+D3D12_VIDEO_ENCODER_LEVELS_HEVC_6 | 180 | None |
+D3D12_VIDEO_ENCODER_LEVELS_HEVC_61 | 183 | None |
+D3D12_VIDEO_ENCODER_LEVELS_HEVC_62 | 186 | None |
 
 ### HEVC Video Parameter Set expected values
 

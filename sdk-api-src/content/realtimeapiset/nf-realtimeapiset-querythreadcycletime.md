@@ -6,7 +6,7 @@ helpviewer_keywords: ["QueryThreadCycleTime","QueryThreadCycleTime function","ba
 old-location: base\querythreadcycletime.htm
 tech.root: backup
 ms.assetid: 5828b073-48af-4118-9206-096b87c978e7
-ms.date: 12/05/2018
+ms.date: 09/26/2024
 ms.keywords: QueryThreadCycleTime, QueryThreadCycleTime function, base.querythreadcycletime, realtimeapiset/QueryThreadCycleTime, winbase/QueryThreadCycleTime
 req.header: realtimeapiset.h
 req.include-header: Windows.h on Windows 7, Windows Server 2008  Windows Server 2008 R2
@@ -22,7 +22,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: Kernel32.lib
+req.lib: Mincore.lib
 req.dll: Kernel32.dll
 req.irql: 
 targetos: Windows

@@ -54,7 +54,6 @@ api_name:
 
 # WriteFile function
 
-
 ## -description
 
 Writes data to the specified file or input/output (I/O) device.
@@ -346,7 +345,7 @@ If <i>hFile</i> is opened with <b>FILE_FLAG_OVERLAPPED</b>, it is an
 <div class="alert"><b>Note</b>  If a  file or device is opened for asynchronous I/O, subsequent calls to functions such as 
       <b>WriteFile</b> using that handle generally return immediately, 
       but can also behave synchronously with respect to blocked execution. For more information, see 
-      <a href="https://support.microsoft.com/kb/156932">http://support.microsoft.com/kb/156932</a>.</div>
+      <a href="/previous-versions/troubleshoot/windows/win32/asynchronous-disk-io-synchronous">Asynchronous disk I/O appears as synchronous on Windows</a>.</div>
 <div> </div>
 Considerations for working with asynchronous file handles:
 

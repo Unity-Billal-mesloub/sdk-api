@@ -568,7 +568,7 @@ For an example of opening a physical drive, see
 
 When opening a volume or removable media drive (for example, a floppy disk drive or flash memory thumb drive), 
       the <i>lpFileName</i> string should be the following form: 
-      "\\.&#92;<i>X</i>:". Do not use a trailing backslash 
+      "&#92;&#92;.&#92;<i>X</i>:". Do not use a trailing backslash 
       (\\), which indicates the root directory of a drive. The following table shows some examples of drive strings.
 
 <table>
@@ -734,7 +734,7 @@ Set the members of the
 </td>
 <td>
 If you want the console to be inherited, the <b>bInheritHandle</b> member of the 
-         <a href="/previous-versions/windows/desktop/legacy/aa379560(v=vs.85)">SECURITY_ATTRIBUTES</a> structure 
+         <a href="/windows/win32/api/wtypesbase/ns-wtypesbase-security_attributes">SECURITY_ATTRIBUTES</a> structure 
          must be <b>TRUE</b>.
 
 </td>

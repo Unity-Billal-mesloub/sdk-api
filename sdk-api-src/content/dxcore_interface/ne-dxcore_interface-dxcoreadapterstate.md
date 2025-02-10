@@ -4,7 +4,7 @@ title: DXCoreAdapterState
 description: Defines constants that specify kinds of DXCore adapter states.
 tech.root: dxcore
 ms.author: windowssdkdev
-ms.date: 02/09/2024
+ms.date: 09/16/2024
 ms.keywords: DXCoreAdapterState enumeration, dxcore_interface.dxcoreadapterstate
 ms.localizationpriority: low
 ms.topic: reference
@@ -93,12 +93,40 @@ This returns the number of processes using this adapter, and the PIDs in it, res
 
 ### -field AdapterEngineFrequencyHertz:9
 
-TBD
+This query takes in the physical adapter and engine indices, and outputs the clock frequency of the respective engine in hertz. The output structure also includes the maximum frequency for the engine, with and without overclocking.
+
+<pre><code class="lang-cppwinrt">
+uint64_t GetEngineFrequency(com_ptr<IDXCoreAdapter1> adapter, uint32_t physicalIndex, uint32_t engineIndex)
+{
+    DXCoreAdapterEngineIndex index;
+    index.PhysicalAdapterIndex = physicalIndex;
+    index.EngineIndex = engineIndex;
+
+    DXCoreFrequencyQueryOutput frequencyData = {};
+
+    winrt::check_hresult(adapter->QueryState(DXCoreAdapterState::AdapterEngineFrequencyHertz, &index, &frequencyData));
+
+    return frequencyData.Frequency;
+}
+</code></pre>
 
 ### -field AdapterMemoryFrequencyHertz:10
 
-TBD
- 
+This query takes in the physical adapter index, and outputs the clock frequency of its memory in hertz. The output structure also includes the maximum frequency for the memory, with and without overclocking.
+
+<pre><code class="lang-cppwinrt">
+uint64_t GetEngineFrequency(com_ptr<IDXCoreAdapter1> adapter, uint32_t physicalIndex, uint32_t engineIndex)
+{
+uint64_t GetMemoryFrequency(com_ptr<IDXCoreAdapter1> adapter, uint32_t physicalIndex)
+{
+    DXCoreFrequencyQueryOutput frequencyData = {};
+
+    winrt::check_hresult(adapter->QueryState(DXCoreAdapterState::AdapterMemoryFrequencyHertz, &physicalIndex, &frequencyData));
+
+    return frequencyData.frequency;
+}
+</code></pre>
+
 ## -see-also
 
-[IDXCoreAdapter::QueryState](/windows/win32/dxcore/dxcore_interface/nf-dxcore_interface-idxcoreadapter-querystate), [IDXCoreAdapter::SetState](/windows/win32/dxcore/dxcore_interface/nf-dxcore_interface-idxcoreadapter-setstate), [DXCore Reference](/windows/win32/dxcore/dxcore-reference), [Using DXCore to enumerate adapters](/windows/win32/dxcore/dxcore-enum-adapters)
+[IDXCoreAdapter::QueryState](/windows/win32/dxcore/dxcore_interface/nf-dxcore_interface-idxcoreadapter-querystate), [IDXCoreAdapter::SetState](/windows/win32/dxcore/dxcore_interface/nf-dxcore_interface-idxcoreadapter-setstate), [DXCore reference](/windows/win32/dxcore/dxcore-reference), [Using DXCore to enumerate adapters](/windows/win32/dxcore/dxcore-enum-adapters)

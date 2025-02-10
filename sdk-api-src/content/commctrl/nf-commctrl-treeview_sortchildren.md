@@ -6,7 +6,7 @@ helpviewer_keywords: ["TreeView_SortChildren","TreeView_SortChildren macro [Wind
 old-location: controls\TreeView_SortChildren.htm
 tech.root: Controls
 ms.assetid: VS|Controls|~\controls\treeview\macros\treeview_sortchildren.htm
-ms.date: 12/05/2018
+ms.date: 10/21/2024
 ms.keywords: TreeView_SortChildren, TreeView_SortChildren macro [Windows Controls], _win32_TreeView_SortChildren, _win32_TreeView_SortChildren_cpp, commctrl/TreeView_SortChildren, controls.TreeView_SortChildren, controls._win32_TreeView_SortChildren
 req.header: commctrl.h
 req.include-header: 
@@ -46,6 +46,22 @@ api_name:
 ---
 
 # TreeView_SortChildren macro
+
+## -syntax
+
+```cpp
+BOOL TreeView_SortChildren(
+   HWND      hwnd,
+   HTREEITEM hitem,
+   BOOL      recurse
+);
+```
+
+## -returns
+
+Type: **[BOOL](/windows/desktop/winprog/windows-data-types)**
+
+Returns <b>TRUE</b> if successful, or <b>FALSE</b> otherwise.
 
 
 ## -description
