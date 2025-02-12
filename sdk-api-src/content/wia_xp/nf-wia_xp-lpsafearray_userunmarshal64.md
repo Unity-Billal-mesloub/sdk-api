@@ -4,7 +4,7 @@ title: LPSAFEARRAY_UserUnmarshal64 function (wia_xp.h)
 description: Unmarshals a SAFEARRAY object from the RPC buffer. (LPSAFEARRAY_UserUnmarshal64)
 helpviewer_keywords: ["LPSAFEARRAY_UserUnmarshal64","LPSAFEARRAY_UserUnmarshal64 function [Automation]","automat.lpsafearray_userunmarshal64","wia_xp/LPSAFEARRAY_UserUnmarshal64"]
 old-location: automat\lpsafearray_userunmarshal64.htm
-tech.root: automat
+tech.root: wia
 ms.assetid: 19B52C54-0905-446C-A8D9-C98153931708
 ms.date: 12/05/2018
 ms.keywords: LPSAFEARRAY_UserUnmarshal64, LPSAFEARRAY_UserUnmarshal64 function [Automation], automat.lpsafearray_userunmarshal64, wia_xp/LPSAFEARRAY_UserUnmarshal64
