@@ -41,7 +41,7 @@ dev_langs:
 
 ## -description
 
-Queries whether the specified Key System and, optionally, content type are supported.
+Queries whether the specified Key System supported.
 
 ## -parameters
 
@@ -51,11 +51,11 @@ An **LPCWSTR** specifying the Key System for which support is being queried.
 
 ### -param contentType
 
-Optional. An **LPCWSTR** specifying the content type for which support is being queried.
+This parameter is ignored.
 
 ## -returns
 
-True if the specified Key System and content type are supported; otherwise, false.
+True if the specified Key System is supported; otherwise, false.
 
 ## -remarks
 
