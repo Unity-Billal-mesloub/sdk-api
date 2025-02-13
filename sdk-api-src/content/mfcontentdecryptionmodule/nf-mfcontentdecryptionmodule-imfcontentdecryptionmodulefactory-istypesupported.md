@@ -41,7 +41,7 @@ dev_langs:
 
 ## -description
 
-Queries whether the specified Key System supported.
+Queries whether the specified Key System is supported.
 
 ## -parameters
 
