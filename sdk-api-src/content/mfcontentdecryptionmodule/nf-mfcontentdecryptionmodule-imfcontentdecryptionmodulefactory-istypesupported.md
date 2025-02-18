@@ -51,7 +51,7 @@ An **LPCWSTR** specifying the Key System for which support is being queried.
 
 ### -param contentType
 
-Optional. An **LPCWSTR** specifying the content type for which support is being queried. 
+Optional. An **LPCWSTR** specifying the content type for which support is being queried. See the **Remarks** section for more information about this parameter.
 
 ## -returns
 
