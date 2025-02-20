@@ -97,6 +97,8 @@ This method is inherited by the following interfaces:
     
 <a href="/windows/desktop/api/d3d9helper/nn-d3d9helper-idirect3dvertexbuffer9">IDirect3DVertexBuffer9</a>.
 
+If the data returned is a pointer to an <a href="/windows/desktop/api/unknwn/nn-unknwn-iunknown">IUnknown</a>, or one of its derivative classes, which was previously set by **SetPrivateData** with a `D3DSPD_IUNKNOWN` flag, that interface will have its reference count incremented before the private data is returned.
+
 ## -see-also
 
 <a href="/windows/desktop/api/d3d9helper/nn-d3d9helper-idirect3dresource9">IDirect3DResource9</a>

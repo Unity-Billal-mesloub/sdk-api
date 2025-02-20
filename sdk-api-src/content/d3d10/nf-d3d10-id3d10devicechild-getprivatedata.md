@@ -81,7 +81,7 @@ This method returns one of the following <a href="/windows/desktop/direct3d10/d3
 
 ## -remarks
 
-The data stored in the device child is set with <a href="/windows/desktop/api/d3d10/nf-d3d10-id3d10devicechild-setprivatedata">ID3D10DeviceChild::SetPrivateData</a>.
+If the data returned is a pointer to an <a href="/windows/desktop/api/unknwn/nn-unknwn-iunknown">IUnknown</a>, or one of its derivative classes, which was previously set by **SetPrivateDataInterface**, that interface will have its reference count incremented before the private data is returned.
 
 ## -see-also
 
