@@ -74,8 +74,7 @@ This method can return one of these values.
 
 ## -remarks
 
-The image data returned in *pixelBuffer* must be in the [IMAGE_PIXELFORMAT](ne-filter-image_pixelformat.md) format specified in the **Format** field of the [IMAGE_INFO](ns-filter-image_info.md) structure returned from the filter's implementation of [IPixelFilter::GetImageInfo](nf-filter-ipixelfilter-getimageinfo.md). If the pixel data
-is in an unsupported format, this method will fail with **FILTER_E_NO_FRAMES**.
+The image data returned in *pixelBuffer* must be in the [IMAGE_PIXELFORMAT](ne-filter-image_pixelformat.md) format specified in the **Format** field of the [IMAGE_INFO](ns-filter-image_info.md) structure returned from the filter's implementation of [IPixelFilter::GetImageInfo](nf-filter-ipixelfilter-getimageinfo.md).
 
 ## -see-also
 
