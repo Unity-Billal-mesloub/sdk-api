@@ -2,7 +2,7 @@
 UID: NN:filter.IPixelFilter
 tech.root: search
 title: IPixelFilter
-ms.date: 01/15/2023
+ms.date: 02/24/2025
 targetos: Windows
 description: Implemented by search filters to return chunks containing the raw pixels and properties for images to enable semantic indexing of images.
 prerelease: false

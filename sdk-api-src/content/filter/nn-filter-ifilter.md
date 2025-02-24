@@ -62,6 +62,8 @@ The <b>IFilter</b> interface inherits from the <a href="/windows/desktop/api/unk
 
 <b>IFilter</b> components for Indexing Service run in the Local Security context and should be written to manage buffers and to stack correctly. All string copies must have explicit checks to guard against buffer overruns. You should always verify the allocated size of the buffer and test the size of the data against the size of the buffer.
 
+Previously, data returned by **IFilter** was only indexed lexically. Starting with Windows 11, version 26100, data returned **IFilter** is also semantically indexed. For example, users searching for "pasta" might also get results for "lasagna". Also starting with Windows 11, version 26100, the [IPixelFilter](nn-filter-ipixelfilter.md) enables semantic indexing of images. 
+
 ## -see-also
 
 [BindIFilterFromStorage](/windows/desktop/api/ntquery/nf-ntquery-bindifilterfromstorage)
