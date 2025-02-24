@@ -71,7 +71,6 @@ This method can return one of these values.
 | Return code | Description |
 |-------------|-------------|
 | S_OK     | Success |
-| FILTER_E_NO_FRAMES | Image not found or is in an unsupported format. |
 
 ## -remarks
 

@@ -42,7 +42,7 @@ Implemented by a search filter to return chunks containing the raw pixels and pr
 
 ## -remarks
 
-This interface inherits from [IFilter](nn-filter-ifilter.md), which allowed for semantic indexing of text and property values.
+This interface inherits from [IFilter](nn-filter-ifilter.md), which allows for lexical and semantic indexing of text and property values.
 
 ## -see-also
 
