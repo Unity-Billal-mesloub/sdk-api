@@ -1,6 +1,6 @@
 ---
 UID: NF:powrprof.PowerGetUserConfiguredDCPowerMode
-tech.root: power
+tech.root: base
 title: PowerGetUserConfiguredDCPowerMode function (powrprof.h)
 ms.date: 02/24/2025
 targetos: Windows
@@ -27,7 +27,8 @@ req.type-library:
 req.umdf-ver: 
 req.unicode-ansi: 
 topic_type:
- - apiref
+ - APIRef
+ - kbSyntax
 api_type:
  - HeaderDef
 api_location:

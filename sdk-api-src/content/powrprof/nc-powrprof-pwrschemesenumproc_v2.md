@@ -1,6 +1,6 @@
 ---
 UID: NC:powrprof.PWRSCHEMESENUMPROC_V2
-tech.root: power
+tech.root: base
 title: PWRSCHEMESENUMPROC_V2 function (powrprof.h)
 ms.date: 02/24/2025
 targetos: Windows
@@ -26,7 +26,8 @@ req.type-library:
 req.umdf-ver: 
 req.unicode-ansi: 
 topic_type:
- - apiref
+ - APIRef
+ - kbSyntax
 api_type:
  - LibDef
 api_location:

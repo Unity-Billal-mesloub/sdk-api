@@ -1,10 +1,10 @@
 ---
 UID: NC:powrprof.PWRSCHEMESENUMPROC_V1
-tech.root: power
 title: PWRSCHEMESENUMPROC_V1 function (powrprof.h)
+description: Not implemented.
+tech.root: base
 ms.date: 02/24/2025
 targetos: Windows
-description: Not implemented.
 prerelease: false
 req.assembly: 
 req.construct-type: function
@@ -26,7 +26,8 @@ req.type-library:
 req.umdf-ver: 
 req.unicode-ansi: 
 topic_type:
- - apiref
+ - APIRef
+ - kbSyntax
 api_type:
  - LibDef
 api_location:
