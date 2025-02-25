@@ -45,6 +45,7 @@ api_location:
  - Wiavideo.h
 api_name:
  - WIAVIDEO_STATE
+archived: true
 ---
 
 # WIAVIDEO_STATE enumeration

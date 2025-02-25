@@ -43,6 +43,7 @@ api_location:
  - Wiavideo.dll
 api_name:
  - IWiaVideo.CreateVideoByWiaDevID
+archived: true
 ---
 
 # IWiaVideo::CreateVideoByWiaDevID

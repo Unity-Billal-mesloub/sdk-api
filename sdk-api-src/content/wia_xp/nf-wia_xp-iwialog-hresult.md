@@ -43,6 +43,7 @@ api_location:
  - Wiaservc.dll
 api_name:
  - IWiaLog.hResult
+archived: true
 ---
 
 # IWiaLog::hResult

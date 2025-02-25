@@ -43,6 +43,7 @@ api_location:
  - Wiaservc.dll
 api_name:
  - IWiaItemExtras.Escape
+archived: true
 ---
 
 # IWiaItemExtras::Escape

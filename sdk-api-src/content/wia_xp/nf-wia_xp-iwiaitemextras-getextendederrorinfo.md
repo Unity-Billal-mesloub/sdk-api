@@ -43,6 +43,7 @@ api_location:
  - Wiaservc.dll
 api_name:
  - IWiaItemExtras.GetExtendedErrorInfo
+archived: true
 ---
 
 # IWiaItemExtras::GetExtendedErrorInfo

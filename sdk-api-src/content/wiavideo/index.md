@@ -9,6 +9,7 @@ tech.root: wia
 f1_keywords:
  - wiavideo
  - wiavideo/wiavideo
+archived: true
 ---
 
 # Wiavideo.h header

@@ -43,6 +43,7 @@ api_location:
  - Wiavideo.dll
 api_name:
  - IWiaVideo.Pause
+archived: true
 ---
 
 # IWiaVideo::Pause

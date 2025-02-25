@@ -43,6 +43,7 @@ api_location:
  - Wiaservc.dll
 api_name:
  - IWiaLogEx.Log
+archived: true
 ---
 
 # IWiaLogEx::Log

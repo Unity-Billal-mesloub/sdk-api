@@ -44,6 +44,7 @@ api_location:
  - Wiaguid.dll
 api_name:
  - IEnumWIA_DEV_INFO
+archived: true
 ---
 
 # IEnumWIA_DEV_INFO interface

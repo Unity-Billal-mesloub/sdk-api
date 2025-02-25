@@ -18,7 +18,6 @@ To develop Automation, you need these headers:
  * [oaidl.h](../oaidl/index.md)
  * [oleauto.h](../oleauto/index.md)
  * [olectl.h](../olectl/index.md)
- * [wia_xp.h](../wia_xp/index.md)
  * [wtypes.h](../wtypes/index.md)
 
 

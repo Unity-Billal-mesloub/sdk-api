@@ -44,6 +44,7 @@ api_location:
  - Wiaguid.dll
 api_name:
  - IEnumWiaItem
+archived: true
 ---
 
 # IEnumWiaItem interface
