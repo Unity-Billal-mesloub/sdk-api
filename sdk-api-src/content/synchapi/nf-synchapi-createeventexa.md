@@ -93,7 +93,7 @@ The object can be created in a private namespace. For more information, see <a h
 
 ### -param dwFlags [in]
 
-This parameter can be one or more of the following values.
+This parameter can be 0 or one of the following values.
 
 <table>
 <tr>
