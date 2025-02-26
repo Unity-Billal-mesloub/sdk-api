@@ -63,7 +63,7 @@ The system is in battery saver mode.
 The system is in energy saver high savings mode. Save energy where possible.
 
 <div class="alert"><b>Note</b>  This is an alias of the <b>EffectivePowerModeBatterySaver</b> mode.</div>
-<div> </div>
+<div> </div>
 
 > [!IMPORTANT]
 > This information relates to a prerelease product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
