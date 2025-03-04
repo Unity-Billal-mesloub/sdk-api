@@ -96,7 +96,7 @@ Specifies how to set the state of virtual mode support. If the <a href="/windows
 
 Specifies the current SDR white level for an HDR monitor. If the <a href="/windows/desktop/api/winuser/nf-winuser-displayconfigsetdeviceinfo">DisplayConfigGetDeviceInfo</a> function is successful, <b>DisplayConfigGetDeviceInfo</b> return SDR white level info in the <a href="/windows/desktop/api/wingdi/ns-wingdi-displayconfig_sdr_white_level">DISPLAYCONFIG_SDR_WHITE_LEVEL</a> structure.
 
-Supported starting in Windows�10 Fall Creators Update (Version 1709).
+Supported starting in Windows 10 Fall Creators Update (Version 1709).
 
 ### -field DISPLAYCONFIG_DEVICE_INFO_FORCE_UINT32:0xFFFFFFFF
 
