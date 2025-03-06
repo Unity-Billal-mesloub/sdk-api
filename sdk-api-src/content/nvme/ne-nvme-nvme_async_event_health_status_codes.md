@@ -2,7 +2,7 @@
 UID: NE:nvme.NVME_ASYNC_EVENT_HEALTH_STATUS_CODES
 tech.root: fs
 title: NVME_ASYNC_EVENT_HEALTH_STATUS_CODES
-ms.date: 02/19/2021
+ms.date: 03/06/2025
 ms.topic: language-reference
 targetos: Windows
 description: Contains values that indicate a SMART/Health Status event type.
@@ -34,7 +34,6 @@ dev_langs:
 
 # NVME_ASYNC_EVENT_HEALTH_STATUS_CODES enumeration
 
-
 ## -description
 
 Contains values that indicate a SMART/Health Status event type.
@@ -60,6 +59,5 @@ Use this enumeration to specify values in the **NVME_ASYNC_EVENT_TYPE_HEALTH_STA
 ## -see-also
 
 [NVME_ASYNC_EVENT_TYPES](ne-nvme-nvme_async_event_types.md)
-[NVME_FEATURES](ne-nvme_features)
+[NVME_FEATURES](ne-nvme-nvme_features.md)
 [NVME_ADMIN_COMMANDS](ne-nvme-nvme_admin_commands.md)
-

@@ -2,7 +2,7 @@
 UID: NS:nvme.NVME_CONTROLLER_REGISTERS
 tech.root: fs
 title: NVME_CONTROLLER_REGISTERS
-ms.date: 02/19/2021
+ms.date: 03/06/2025
 ms.topic: language-reference
 targetos: Windows
 description: Specifies the register map for the controller.
@@ -41,7 +41,6 @@ dev_langs:
 
 # NVME_CONTROLLER_REGISTERS structure
 
-
 ## -description
 
 Specifies the register map for the controller.
@@ -56,7 +55,7 @@ The Controller Capabilities **CAP** register starts at Offset 00h.
 
 ### -field VS
 
-a [NVME_VERSION](nvme\ns-nvme-nvme_version.md) structure that indicates the major and minor version of the NVM Express specification that the controller implementation supports. Valid versions of the specification are: 1.0, 1.1, and 1.2.
+a [NVME_VERSION](ns-nvme-nvme_version.md) structure that indicates the major and minor version of the NVM Express specification that the controller implementation supports. Valid versions of the specification are: 1.0, 1.1, and 1.2.
 
 The Version **VS** register starts at Offset 08h.
 
@@ -76,7 +75,7 @@ The Interrupt Mask Set **INTMS** register starts at Offset 0Ch.
 
 Indicates whether an interrupt vector is masked.
 
-When a value of `1` is written to a bit in the field, the corresponding interrupt vector is unmasked. Writing a `0` to a bit has no effect. 
+When a value of `1` is written to a bit in the field, the corresponding interrupt vector is unmasked. Writing a `0` to a bit has no effect.
 
 When read, this field returns the current interrupt mask value within the controller (not the value of this register). If a bit has a value of a `1`, then the corresponding interrupt vector is masked, If a bit has a value of `0`, then the corresponding interrupt vector is not masked.
 
@@ -174,3 +173,5 @@ Accesses that target any portion of two or more registers are not supported.
 
 ## -see-also
 
+- [NVME_ADMIN_QUEUE_ATTRIBUTES](ns-nvme-nvme_admin_queue_attributes.md)
+- [NVME_ADMIN_COMPLETION_QUEUE_BASE_ADDRESS](ns-nvme-nvme_admin_completion_queue_base_address.md)

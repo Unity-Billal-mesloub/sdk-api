@@ -2,7 +2,7 @@
 UID: NS:nvme.NVME_RESERVATION_NOTIFICATION_LOG
 tech.root: fs
 title: NVME_RESERVATION_NOTIFICATION_LOG
-ms.date: 02/19/2021
+ms.date: 03/06/2025
 ms.topic: language-reference
 targetos: Windows
 description: Contains fields that specify the information in a Reservation Notification Log page.
@@ -41,12 +41,11 @@ dev_langs:
 
 # NVME_RESERVATION_NOTIFICATION_LOG structure
 
-
 ## -description
 
 Contains fields that specify the information in a Reservation Notification Log page.
 
-A Reservation Notification log page is created whenever an unmasked reservation notification occurs on any namespace that may be accessed by the controller. The [Get Log Page]((ns-nvme-nvme_cdw10_get_log_page.md)) command returns a data buffer containing a log page corresponding to a single reservation notification. This log page is global to the controller.
+A Reservation Notification log page is created whenever an unmasked reservation notification occurs on any namespace that may be accessed by the controller. The [Get Log Page](ns-nvme-nvme_cdw10_get_log_page.md) command returns a data buffer containing a log page corresponding to a single reservation notification. This log page is global to the controller.
 
 ## -struct-fields
 
@@ -82,3 +81,5 @@ A reserved field.
 
 ## -see-also
 
+- [NVME_RESERVATION_NOTIFICATION_TYPES enumeration](ne-nvme-nvme_reservation_notification_types.md)
+- [Get Log Page](ns-nvme-nvme_cdw10_get_log_page.md)

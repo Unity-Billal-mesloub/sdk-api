@@ -2,7 +2,7 @@
 UID: NS:nvme.NVME_HOST_MEMORY_BUFFER_DESCRIPTOR_ENTRY
 tech.root: fs
 title: NVME_HOST_MEMORY_BUFFER_DESCRIPTOR_ENTRY
-ms.date: 02/19/2021
+ms.date: 03/06/2025
 ms.topic: language-reference
 targetos: Windows
 description: Defines the parameters of a single entry in the Host Memory Descriptor List.
@@ -41,7 +41,6 @@ dev_langs:
 
 # NVME_HOST_MEMORY_BUFFER_DESCRIPTOR_ENTRY structure
 
-
 ## -description
 
 Defines the parameters of a single entry in the Host Memory Descriptor List.
@@ -50,7 +49,7 @@ Defines the parameters of a single entry in the Host Memory Descriptor List.
 
 ### -field BADD
 
-Indicates the host memory address for this entry aligned to the memory page size. the memory page size is defined in the **MPS** field of the [NVME_CONTROLLER_CONFIGURATION](s-nvme-nvme_controller_configuration.md)].
+Indicates the host memory address for this entry aligned to the memory page size. the memory page size is defined in the **MPS** field of the [NVME_CONTROLLER_CONFIGURATION](ns-nvme-nvme_controller_configuration.md).
 
 The lower bits (n:0) of this field indicate that the offset within the memory page is `0h`. For example, if the memory page size is 4KB, then bits 11:00 will be zero; if the memory page size is 8KB, then bits 12:00 will be zero.
 
@@ -72,4 +71,3 @@ For a description of the fields and structures that define the Host Memory Descr
 - [NVME_CDW13_FEATURE_HOST_MEMORY_BUFFER](ns-nvme-nvme_cdw13_feature_host_memory_buffer.md)
 - [NVME_CDW14_FEATURE_HOST_MEMORY_BUFFER](ns-nvme-nvme_cdw14_feature_host_memory_buffer.md)
 - [NVME_CDW15_FEATURE_HOST_MEMORY_BUFFER](ns-nvme-nvme_cdw15_feature_host_memory_buffer.md)
-

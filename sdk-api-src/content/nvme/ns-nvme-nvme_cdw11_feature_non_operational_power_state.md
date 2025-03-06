@@ -2,7 +2,7 @@
 UID: NS:nvme.NVME_CDW11_FEATURE_NON_OPERATIONAL_POWER_STATE
 tech.root: fs
 title: NVME_CDW11_FEATURE_NON_OPERATIONAL_POWER_STATE
-ms.date: 02/19/2021
+ms.date: 03/06/2025
 ms.topic: language-reference
 targetos: Windows
 description: Contains parameters for the Non-Operational Power State Feature that indicates whether permissive mode is enabled for a non-operational power state.
@@ -41,12 +41,11 @@ dev_langs:
 
 # NVME_CDW11_FEATURE_NON_OPERATIONAL_POWER_STATE structure
 
-
 ## -description
 
 Contains parameters for the Non-Operational Power State Feature that indicates whether permissive mode is enabled for a non-operational power state.
 
-A power state may be a non-operational power state, as indicated by the **NOPS** field of the [NVME_POWER_STATE_DESC](ns-nvme-nvme_power_state_desc.md) structure that defines the Power State Descriptors in the **PDS** field of the [NVME_IDENTIFY_CONTROLLER_DATA](nvme\ns-nvme-nvme_identify_controller_data.md). In a non-operational power state, memory-mapped I/O (MMIO) accesses, configuration register accesses and Admin Queue commands are serviced. No I/O commands are processed by the controller while in a non-operational power state.
+A power state may be a non-operational power state, as indicated by the **NOPS** field of the [NVME_POWER_STATE_DESC](ns-nvme-nvme_power_state_desc.md) structure that defines the Power State Descriptors in the **PDS** field of the [NVME_IDENTIFY_CONTROLLER_DATA](ns-nvme-nvme_identify_controller_data.md). In a non-operational power state, memory-mapped I/O (MMIO) accesses, configuration register accesses and Admin Queue commands are serviced. No I/O commands are processed by the controller while in a non-operational power state.
 
 When in a non-operational power state, regardless of whether [autonomous power state transitions](ns-nvme-nvme_cdw11_feature_auto_power_state_transition.md) are enabled, the controller will autonomously transition back to the last operational power state when an [I/O Submission Queue Tail Doorbell](ns-nvme-nvme_submission_queue_tail_doorbell.md) is written.
 
@@ -72,5 +71,4 @@ Specifies whether permissive mode is enabled for a non-operational power state.
 
 - [Power Management](ns-nvme-nvme_cdw11_feature_power_management.md)
 - [NVME_POWER_STATE_DESC](ns-nvme-nvme_power_state_desc.md)
-- [NVME_IDENTIFY_CONTROLLER_DATA](nvme\ns-nvme-nvme_identify_controller_data.md)
-
+- [NVME_IDENTIFY_CONTROLLER_DATA](ns-nvme-nvme_identify_controller_data.md)
