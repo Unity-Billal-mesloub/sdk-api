@@ -181,7 +181,7 @@ DMDO_90
 
 </td>
 <td>
-The display device orientation is 90 degrees (measured clockwise) from that of DMDO_DEFAULT.
+The display device orientation is 90 degrees (measured counter-clockwise) from that of DMDO_DEFAULT.
 
 </td>
 </tr>
@@ -191,7 +191,7 @@ DMDO_180
 
 </td>
 <td>
-The display device orientation is 180 degrees (measured clockwise) from that of DMDO_DEFAULT.
+The display device orientation is 180 degrees (measured counter-clockwise) from that of DMDO_DEFAULT.
 
 </td>
 </tr>
@@ -201,7 +201,7 @@ DMDO_270
 
 </td>
 <td>
-The display device orientation is 270 degrees (measured clockwise) from that of DMDO_DEFAULT.
+The display device orientation is 270 degrees (measured counter-clockwise) from that of DMDO_DEFAULT.
 
 </td>
 </tr>
