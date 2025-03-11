@@ -796,15 +796,15 @@ For display devices only, the orientation at which images should be presented. I
 </tr>
 <tr>
 <td>DMDO_90</td>
-<td>The display orientation is rotated 90 degrees (measured clockwise) from DMDO_DEFAULT.</td>
+<td>The display orientation is rotated 90 degrees (measured counter-clockwise) from DMDO_DEFAULT.</td>
 </tr>
 <tr>
 <td>DMDO_180</td>
-<td>The display orientation is rotated 180 degrees (measured clockwise) from DMDO_DEFAULT.</td>
+<td>The display orientation is rotated 180 degrees (measured counter-clockwise) from DMDO_DEFAULT.</td>
 </tr>
 <tr>
 <td>DMDO_270</td>
-<td>The display orientation is rotated 270 degrees (measured clockwise) from DMDO_DEFAULT.</td>
+<td>The display orientation is rotated 270 degrees (measured counter-clockwise) from DMDO_DEFAULT.</td>
 </tr>
 </table>
  
