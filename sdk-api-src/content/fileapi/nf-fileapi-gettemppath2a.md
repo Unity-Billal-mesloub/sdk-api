@@ -1,7 +1,7 @@
 ---
 UID: NF:fileapi.GetTempPath2A
 title: GetTempPath2A
-ms.date: 10/03/2024
+ms.date: 03/05/2025
 ms.topic: language-reference
 targetos: Windows
 description: Retrieves the path of the directory designated for temporary files, based on the privileges of the calling process. (ANSI)
@@ -21,7 +21,7 @@ req.max-support:
 req.namespace: 
 req.redist: 
 req.target-min-winverclnt: Windows 11 Build 22000
-req.target-min-winversvr: Windows Server Build 20348
+req.target-min-winversvr: Windows Server 2016 Build 14393
 req.target-type: 
 req.type-library: 
 req.umdf-ver: 
@@ -68,6 +68,11 @@ The maximum possible return value is **MAX_PATH**+1 (261).
 ## -remarks
 
 When calling this function from a process running as SYSTEM it will return the path C:\Windows\SystemTemp, which is inaccessible to non-SYSTEM processes. For non-SYSTEM processes, **GetTempPath2** will behave the same as [GetTempPath](/windows/win32/api/fileapi/nf-fileapi-gettemppatha).
+
+For system processes, the **GetTempPath2** function checks for the existence of the environment variable `SystemTemp`. If this environment variable is set, it will use the value of the environment variable as the path instead of the default system provided path on the `C:` drive.
+
+> [!NOTE]
+> The reason **GetTempPath2** exists and defaults to returning C:\Windows\SystemTemp is because that directory is ACL'd with the correct permissions to prevent common path redirection issues. For security reasons, only set the SystemTemp environment variable to a directory with permissions that only allow for a SYSTEM process/administrator to access it.
 
 For non-system processes, the **GetTempPath2** function checks for the existence of environment variables in the following order and uses the first path found:
 
