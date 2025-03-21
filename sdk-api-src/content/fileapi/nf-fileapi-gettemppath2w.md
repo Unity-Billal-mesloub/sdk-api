@@ -21,7 +21,7 @@ req.max-support:
 req.namespace: 
 req.redist: 
 req.target-min-winverclnt: Windows 11 Build 22000
-req.target-min-winversvr: Windows Server 2016 Build 14393
+req.target-min-winversvr: Windows Server 2022 Build 20348
 req.target-type: 
 req.type-library: 
 req.umdf-ver: 
@@ -94,6 +94,9 @@ In Windows 8 and Windows Server 2012, this function is supported by the follow
 | SMB 3.0 with Scale-out File Shares (SO) | Yes |
 | Cluster Shared Volume File System (CsvFS) | Yes |
 | Resilient File System (ReFS) | Yes |
+
+> [!NOTE]
+> When Windows updates released in March 2025 and later are installed, this API will be supported on Windows 10, version 1607 (Build 14393.7876) and later and Windows Server 2016 Build 14393.7876 and later versions. See [KB5053594](https://support.microsoft.com/topic/march-11-2025-kb5053594-os-build-14393-7876-831b6318-8f05-4c41-b413-509fb89baa34) for more information.
 
 #### Examples
 
