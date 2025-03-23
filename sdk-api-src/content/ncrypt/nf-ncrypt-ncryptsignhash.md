@@ -188,7 +188,7 @@ The <i>dwFlags</i> parameter contains a value that is not valid.
 </dl>
 </td>
 <td width="60%">
-The <i>pbHashValue</i> parameter contains a value that is not valid.
+The hash object specified by the <i>pbHashValue</i> parameter is not valid.
 
 </td>
 </tr>
