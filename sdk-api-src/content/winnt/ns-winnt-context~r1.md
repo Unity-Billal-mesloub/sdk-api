@@ -1,10 +1,10 @@
 ---
 UID: NS:winnt._CONTEXT~r1
-tech.root: 
-title: CONTEXT
-ms.date: 
+tech.root: Debug
+title: CONTEXT (Arm32)
+ms.date: 03/24/2025
 targetos: Windows
-description: 
+description: Contains processor-specific register data for Arm32 architecture. The system uses CONTEXT structures to perform various internal operations.
 prerelease: false
 req.construct-type: structure
 req.ddi-compliance: 
@@ -45,7 +45,18 @@ helpviewer_keywords:
  - _CONTEXT
 ---
 
+# CONTEXT structure (Arm32)
+
 ## -description
+
+Contains processor-specific register data. The system uses <b>CONTEXT</b> structures to perform various internal operations. The structure definition varies for different processor architectures. This page applies to the Arm32 architecture. The following table links to the structures for other architectures.
+
+| Architecture | API reference page |
+|--------------|--------------------|
+| x86 64-bit | [CONTEXT structure (x86 64-bit)](sdk-api-src\content\winnt\ns-winnt-context.md) |
+| x86 32-bit | [CONTEXT structure (x86 32-bit)](sdk-api-src\content\winnt\ns-winnt-context~r2.md) |
+| Arm64 | [ARM64_NT_CONTEXT structure](sdk-api-src\content\winnt\ns-winnt-arm64_nt_context.md) |
+
 
 ## -struct-fields
 
