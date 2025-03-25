@@ -60,7 +60,7 @@ Contains processor-specific register data. The system uses <b>CONTEXT</b> struct
 |--------------|--------------------|
 | x86 64-bit | [CONTEXT structure (x86 64-bit)](sdk-api-src\content\winnt\ns-winnt-context.md) |
 | x86 32-bit | [CONTEXT structure (x86 32-bit)](sdk-api-src\content\winnt\ns-winnt-context~r2.md) |
-| Arm32 | [CONTEXT structure (Arm32)](sdk-api-src\content\winnt\ns-winnt-context~r1.md) |
+| Arm32 | [CONTEXT structure (Arm32)](ns-winnt-context~r1.md) |
 
 
 ## -struct-fields
