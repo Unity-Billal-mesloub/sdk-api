@@ -244,15 +244,16 @@ Handle = SetupDiGetClassDevs(&GUID_DEVINTERFACE_VOLUME, NULL, NULL, DIGCF_PRESEN
 <div> </div>
 
 ```
-DeviceInfoSet = SetupDiGetClassDevs(
+HDEVINFO DeviceInfoSet = SetupDiGetClassDevs(
                                     NULL,
                                     NULL,
                                     NULL,
                                     DIGCF_ALLCLASSES | DIGCF_PRESENT);
 
+SP_DEVINFO_DATA DeviceInfoData;
 ZeroMemory(&DeviceInfoData, sizeof(SP_DEVINFO_DATA));
 DeviceInfoData.cbSize = sizeof(SP_DEVINFO_DATA);
-DeviceIndex = 0;
+DWORD DeviceIndex = 0;
     
 while (SetupDiEnumDeviceInfo(
                              DeviceInfoSet,
@@ -273,16 +274,16 @@ while (SetupDiEnumDeviceInfo(
         Error = GetLastError();
 
         if (Error == ERROR_NOT_FOUND) {
-            \\
-            \\ This device has an unknown device setup class.
-            \\
-            }
-        }                 
-    }
+            //
+            // This device has an unknown device setup class.
+            //
+        }
+    }                 
+}
 
 if (DeviceInfoSet) {
     SetupDiDestroyDeviceInfoList(DeviceInfoSet);
-    }
+}
 ```
 
 
