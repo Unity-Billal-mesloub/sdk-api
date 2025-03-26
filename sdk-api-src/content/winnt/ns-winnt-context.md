@@ -47,6 +47,7 @@ api_location:
  - WinNT.h
 api_name:
  - CONTEXT
+h1-override: CONTEXT structure (x86 64-bit)
 ---
 
 # CONTEXT structure (x86 64-bit)

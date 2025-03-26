@@ -40,6 +40,7 @@ dev_langs:
  - c++
 helpviewer_keywords:
  - _CONTEXT
+h1-override: CONTEXT (x86 32-bit)
 ---
 
 # CONTEXT (x86 32-bit)

@@ -43,6 +43,7 @@ dev_langs:
  - c++
 helpviewer_keywords:
  - _CONTEXT
+h1-override: CONTEXT structure (Arm32)
 ---
 
 # CONTEXT structure (Arm32)
