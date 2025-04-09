@@ -197,6 +197,34 @@ Use with [DwmGetWindowAttribute](/windows/win32/api/dwmapi/nf-dwmapi-dwmgetwindo
 
 This value is supported starting with Windows 11 Build 22621.
 
+
+### -field DWMWA_REDIRECTIONBITMAP_ALPHA
+
+Use with
+[DwmSetWindowAttribute](/windows/win32/api/dwmapi/nf-dwmapi-dwmsetwindowattribute)
+. Enables or disables the use of the alpha channel in the window's redirection
+bitmap. If this attribute is set to true, the window must contain premultiplied
+alpha values in each pixel. If it is false, the alpha is ignored and the
+redirection bitmap is treated as fully opaque. This attribute defaults to false.
+
+This value is supported starting with Windows 11 Build 26100.
+
+### -field DWMWA_BORDER_MARGINS
+
+Use with [DwmSetWindowAttribute](/windows/win32/api/dwmapi/nf-dwmapi-dwmsetwindowattribute)
+. Specifies the override location of the window border, as a distance from each
+edge. The *pvAttribute* parameter points to a value of type FRAME_MARGIN.
+
+A value of all zeros disables the override set by this attribute, resulting in
+default window borders. Otherwise, all values must be greater than or equal to 1.
+
+Each value in the FRAME_MARGIN (left, right, top, bottom) indicates a distance
+inwards from each edge of the window. Non-zero border margins forces the window
+to have a border and sets the location of the border. Window contents covered
+by or outside the border are clipped.
+
+This value will be supported in an upcoming update to Windows 11 build 26100.
+
 ### -field DWMWA_LAST
 
 The maximum recognized <b>DWMWINDOWATTRIBUTE</b> value, used for validation purposes.
