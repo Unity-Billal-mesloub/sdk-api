@@ -64,7 +64,7 @@ The bit position to be tested. The offset is from the least-significant bit posi
 
 ## -returns
 
-The value of the specified bit.
+The original value of the specified bit.
 
 ## -remarks
 
