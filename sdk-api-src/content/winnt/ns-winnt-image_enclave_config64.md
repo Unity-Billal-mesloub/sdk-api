@@ -6,7 +6,7 @@ helpviewer_keywords: ["*PIMAGE_ENCLAVE_CONFIG64","IMAGE_ENCLAVE_CONFIG","IMAGE_E
 old-location: base\image_enclave_config32.htm
 tech.root: base
 ms.assetid: 6006F018-4F3F-4595-8ED2-89D2CC7F782D
-ms.date: 02/02/2024
+ms.date: 04/14/2025
 ms.keywords: '*PIMAGE_ENCLAVE_CONFIG64, IMAGE_ENCLAVE_CONFIG, IMAGE_ENCLAVE_CONFIG32, IMAGE_ENCLAVE_CONFIG32 structure, IMAGE_ENCLAVE_CONFIG64, IMAGE_ENCLAVE_FLAG_PRIMARY_IMAGE, IMAGE_ENCLAVE_POLICY_DEBUGGABLE, PIMAGE_ENCLAVE_CONFIG32, PIMAGE_ENCLAVE_CONFIG32 structure pointer, _IMAGE_ENCLAVE_CONFIG32, base.image_enclave_config, base.image_enclave_config32, winnt/IMAGE_ENCLAVE_CONFIG32, winnt/PIMAGE_ENCLAVE_CONFIG32'
 req.header: winnt.h
 req.include-header: 
@@ -115,12 +115,13 @@ The maximum number of threads that can be created within the enclave.
 
 ### -field EnclaveFlags
 
-A flag that indicates whether the image is suitable for use as the primary image in the enclave.
+Flags that indicate whether the image is suitable for use as the primary image in the enclave and whether access is restricted to the containing process's address space.
 
 | Value | Meaning |
 |-------|---------|
-| **IMAGE_ENCLAVE_FLAG_PRIMARY_IMAGE**<br/>`0x00000001` | The image is suitable for use as the primary image in the enclave. |
 | `0x00000000` | The image is not suitable for use as the primary image in the enclave. |
+| **IMAGE_ENCLAVE_FLAG_PRIMARY_IMAGE**<br/>`0x00000001` | The image is suitable for use as the primary image in the enclave. |
+| **IMAGE_ENCLAVE_POLICY_STRICT_MEMORY**<br/>`0x00000002` | This flag restricts access by an enclave to the address space of its containing process. This policy applies to all threads in the enclave. The enclave must use the [EnclaveCopyIntoEnclave](../winenclaveapi/nf-winenclaveapi-enclavecopyintoenclave.md) and [EnclaveCopyOutOfEnclave](../winenclaveapi/nf-winenclaveapi-enclavecopyoutofenclave.md) APIs to access containing process memory.<br/><br/>**Note:** Access to the containing process's address space can also be restricted by calling the [EnclaveRestrictContainingProcessAccess](../winenclaveapi/nf-winenclaveapi-enclaverestrictcontainingprocessaccess.md) API. This API can also be used to relax this policy at runtime and restore access to the containing process memory. |
 
 ## -remarks
 
