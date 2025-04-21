@@ -4,7 +4,7 @@ tech.root: search
 title: ISearchCatalogManager3::IsContainsSemanticSupported
 ms.date: 04/17/2025
 targetos: Windows
-description: Returns a boolean value that indicates whether semantic search SQL predicates are supported on the current device.
+description: Returns a Boolean value that indicates whether the CONTAINSSEMANTIC SQL predicate is supported on the current device.
 prerelease: false
 req.assembly: 
 req.construct-type: function
@@ -44,7 +44,7 @@ helpviewer_keywords:
 
 ## -description
 
-Returns a boolean value that indicates whether semantic search SQL predicates are supported on the current device.
+Returns a Boolean value that indicates whether the [CONTAINSSEMANTIC](/windows/win32/search/-search-sql-containssemantic) SQL predicate is supported on the current device.
 
 ## -parameters
 
@@ -58,7 +58,7 @@ Returns S_OK on success.
 
 ## -remarks
 
-Starting with Windows 11, build 26100, search Windows Search queries can include new SQL syntax that enables searching for semantically-related items. The semantic search syntax includes the [CONTAINSSEMANTIC Predicate](/windows/win32/search/-search-sql-containssemantic) and [MERGE](/windows/win32/search/-search-sql-rankby#mergemerge_operation) operations. Older versions of Windows do not support this syntax. **IsContainsSemanticSupported** allows apps to confirm that **CONTAINSSEMANTIC** is supported on the current device before executing queries that use this predicate.
+Starting with Windows 11, build 26100, Windows Search queries can include new SQL syntax that enables searching for semantically-related items. The semantic search syntax includes the **CONTAINSSEMANTIC** predicate and [MERGE](/windows/win32/search/-search-sql-rankby#mergemerge_operation) operations. Older versions of Windows do not support this syntax. **IsContainsSemanticSupported** allows apps to confirm that **CONTAINSSEMANTIC** is supported on the current device before executing queries that use this predicate.
 
 ## -see-also
 
