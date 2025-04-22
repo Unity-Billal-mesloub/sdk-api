@@ -50,11 +50,11 @@ Returns a Boolean value that indicates whether the [CONTAINSSEMANTIC](/windows/w
 
 ### -param isContainsSemanticSupported [out]
 
-True if semantic SQL predicates are supported on the current device.
+TRUE if semantic SQL predicates are supported on the current device; otherwise, FALSE.
 
 ## -returns
 
-Returns S_OK on success.
+Returns S_OK on success. Otherwise it returns an error code.
 
 ## -remarks
 
