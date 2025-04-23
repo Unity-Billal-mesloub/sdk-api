@@ -45,9 +45,6 @@ api_name:
  - ID3D12Device.GetResourceTiling
 ---
 
-# ID3D12Device::GetResourceTiling
-
-
 ## -description
 
 Gets info about how a tiled resource is broken into tiles.
@@ -88,7 +85,7 @@ A pointer to a variable that contains the number of tiles in the subresource. On
 
 Type: <b>UINT</b>
 
-The number of the first subresource tile to get. <b>GetResourceTiling</b> ignores this parameter if the number that <i>pNumSubresourceTilings</i> points to is 0.
+The index of the first subresource tile to get. <b>GetResourceTiling</b> ignores this parameter if the number that <i>pNumSubresourceTilings</i> points to is 0.
 
 ### -param pSubresourceTilingsForNonPackedMips [out]
 
