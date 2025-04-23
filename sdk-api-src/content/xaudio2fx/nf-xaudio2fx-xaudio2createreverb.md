@@ -149,18 +149,17 @@ class __declspec(uuid("C2633B16-471B-4498-B8C5-4F0959E2EC09")) AudioReverb;
 
 The reverb uses the <a href="/windows/desktop/api/xaudio2fx/ns-xaudio2fx-xaudio2fx_reverb_parameters">XAUDIO2FX_REVERB_PARAMETERS</a> parameter structure that you access via the <a href="/windows/desktop/api/xaudio2/nf-xaudio2-ixaudio2voice-seteffectparameters">IXAudio2Voice::SetEffectParameters</a>. 
 
-<div class="alert"><b>Note</b>  <b>XAudio2CreateReverb</b> is an inline function in xaudio2fx.h that calls <b>CreateAudioReverb</b>: 
-``` syntax
+> [!NOTE]
+> **XAudio2CreateReverb** is an inline function in xaudio2fx.h that calls **CreateAudioReverb** as illustrated in the following code example.
 
+``` syntax
 XAUDIO2FX_STDAPI CreateAudioReverb(_Outptr_ IUnknown** ppApo);
 __inline HRESULT XAudio2CreateReverb(_Outptr_ IUnknown** ppApo, UINT32 /*Flags*/ DEFAULT(0))
 {
     return CreateAudioReverb(ppApo);
 }
-
 ```
 
-</div>
 <div> </div>
 <h3><a id="Platform_Requirements"></a><a id="platform_requirements"></a><a id="PLATFORM_REQUIREMENTS"></a>Platform Requirements</h3>
 Windows 10 (XAudio2.9); Windows 8, Windows Phone 8 (XAudio 2.8); DirectX SDK (XAudio 2.7)
