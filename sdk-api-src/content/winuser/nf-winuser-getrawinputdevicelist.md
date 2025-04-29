@@ -65,7 +65,9 @@ Enumerates the raw input devices attached to the system.
 
 Type: <b>PRAWINPUTDEVICELIST</b>
 
-An array of <a href="/windows/desktop/api/winuser/ns-winuser-rawinputdevicelist">RAWINPUTDEVICELIST</a> structures for the devices attached to the system. If <b>NULL</b>, the number of devices are returned in *<i>puiNumDevices</i>.
+An array of <a href="/windows/desktop/api/winuser/ns-winuser-rawinputdevicelist">RAWINPUTDEVICELIST</a> structures for the devices attached to the system. Pointer should be aligned on a **DWORD** (32-bit) boundary.
+
+If <b>NULL</b>, the number of devices are returned in *<i>puiNumDevices</i>.
 
 ### -param puiNumDevices [in, out]
 
@@ -84,11 +86,9 @@ The size of a <a href="/windows/desktop/api/winuser/ns-winuser-rawinputdevicelis
 
 Type: <b>UINT</b>
 
-If the function is successful, the return value is the number of devices stored in the buffer pointed to by 
-						<i>pRawInputDeviceList</i>.
+If the function is successful, the return value is the number of devices stored in the buffer pointed to by <i>pRawInputDeviceList</i>.
 
-On any other error, the function returns (<b>UINT</b>) -1 and 
-						<a href="/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror">GetLastError</a> returns the error indication.
+On any other error, the function returns (<b>UINT</b>) -1 and <a href="/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror">GetLastError</a> returns the error indication.
 
 ## -remarks
 
@@ -127,18 +127,8 @@ free(pRawInputDeviceList);
 
 <b>Conceptual</b>
 
-
-
 <a href="/windows/desktop/api/winuser/nf-winuser-getrawinputdeviceinfoa">GetRawInputDeviceInfo</a>
-
-
 
 <a href="/windows/desktop/api/winuser/ns-winuser-rawinputdevicelist">RAWINPUTDEVICELIST</a>
 
-
-
 <a href="/windows/desktop/inputdev/raw-input">Raw Input</a>
-
-
-
-<b>Reference</b>

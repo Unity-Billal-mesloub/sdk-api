@@ -121,7 +121,7 @@ For this <i>uiCommand</i> only, the value in <i>pcbSize</i> is the character cou
 
 Type: <b>LPVOID</b>
 
-A pointer to a buffer that contains the information specified by <i>uiCommand</i>.
+A pointer to a buffer that contains the information specified by <i>uiCommand</i>. Pointer should be aligned on a **DWORD** (32-bit) boundary.
 
 If <i>uiCommand</i> is <b>RIDI_DEVICEINFO</b>, set the <b>cbSize</b> member of <a href="/windows/desktop/api/winuser/ns-winuser-rid_device_info">RID_DEVICE_INFO</a> to <code>sizeof(RID_DEVICE_INFO)</code> before calling <b>GetRawInputDeviceInfo</b>.
 
