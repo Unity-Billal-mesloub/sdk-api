@@ -643,7 +643,7 @@ The file is being opened for backup intent. Therefore, the system should check f
 </dl>
 </td>
 <td width="60%">
-This flag allows an application to request a filter opportunistic lock ([Opportunistic Locks](/windows/win32/fileio/opportunistic-locks)) to prevent other applications from getting share violations. If there are already open handles, the create request will fail with <b>STATUS_OPLOCK_NOT_GRANTED</b>. For more information, see the Remarks section.
+This flag allows an application to request a filter <a href="/windows/win32/fileio/opportunistic-locks">opportunistic lock</a> to prevent other applications from getting share violations. If there are already open handles, the create request will fail with <b>STATUS_OPLOCK_NOT_GRANTED</b>. For more information, see the Remarks section.
 
 </td>
 </tr>
@@ -653,9 +653,9 @@ This flag allows an application to request a filter opportunistic lock ([Opportu
 </dl>
 </td>
 <td width="60%">
-The file is being opened and an opportunistic lock ([Opportunistic Locks](/windows/win32/fileio/opportunistic-locks)) on the file is being requested as a single atomic operation. The file system checks for oplocks before it performs the create operation and will fail the create with a return code of <b>STATUS_CANNOT_BREAK_OPLOCK</b> if the result would be to break an existing oplock.  For more information, see the Remarks section.<b>Windows Server 2008, Windows Vista, Windows Server 2003 and Windows XP:  </b>This flag is not supported.
+The file is being opened and an <a href="/windows/win32/fileio/opportunistic-locks">opportunistic lock</a> on the file is being requested as a single atomic operation. The file system checks for oplocks before it performs the create operation and will fail the create with a return code of <b>STATUS_CANNOT_BREAK_OPLOCK</b> if the result would be to break an existing oplock.  For more information, see the Remarks section.
 
-
+<b>Windows Server 2008, Windows Vista, Windows Server 2003 and Windows XP:  </b>This flag is not supported.
 
 This flag is supported on the following file systems: NTFS, FAT, and exFAT.
 
@@ -667,7 +667,7 @@ This flag is supported on the following file systems: NTFS, FAT, and exFAT.
 </dl>
 </td>
 <td width="60%">
-Complete this operation immediately with an alternate success code of <b>STATUS_OPLOCK_BREAK_IN_PROGRESS</b> if the target file is oplocked, rather than blocking the caller's thread. If the file is oplocked ([Opportunistic Locks](/windows/win32/fileio/opportunistic-locks)), another caller already has access to the file. This flag is not used by device and intermediate drivers.
+Complete this operation immediately with an alternate success code of <b>STATUS_OPLOCK_BREAK_IN_PROGRESS</b> if the target file is oplocked, rather than blocking the caller's thread. If the file is <a href="/windows/win32/fileio/opportunistic-locks">oplocked</a>, another caller already has access to the file. This flag is not used by device and intermediate drivers.
 
 </td>
 </tr>
@@ -776,7 +776,7 @@ In Windows 7, if other handles exist on the file when an application uses this 
 
 If this create operation would break an oplock that already exists on the file, then setting the <b>FILE_OPEN_REQUIRING_OPLOCK</b> flag will cause the create operation to fail with <b>STATUS_CANNOT_BREAK_OPLOCK</b>. The existing oplock will not be broken by this create operation.
 
-An application that uses this flag must request an oplock after this call succeeds, or all subsequent attempts to open the file will be blocked without the benefit of normal oplock processing. Similarly, if this call succeeds but the subsequent oplock request fails, an application that uses this flag must close its handle after it detects that the oplock request has failed.
+An application that uses the FILE_OPEN_REQUIRING_OPLOCK flag must request an oplock on the file after this call succeeds, or all subsequent attempts to open the file will be blocked without the benefit of normal oplock processing. Similarly, if this call succeeds but the subsequent oplock request fails, an application that uses this flag must close its handle after it detects that the oplock request has failed. The application must not perform any other file system operation on the file before requsting the oplock (besides closing the file handle), otherwise a deadlock may occur.
 
 <div class="alert"><b>Note</b>  The <b>FILE_OPEN_REQUIRING_OPLOCK</b> flag is available in Windows 7, Windows Server 2008 R2 and later operating systems for the following file systems: NTFS, FAT, and exFAT.
 </div>

@@ -153,7 +153,7 @@ integer identifier of the resource type. For example, the string "#258" represen
 
 The enumeration search can include both an LN file and its associated .mui files. It can be limited to a single binary module of any type. It can also be limited to the .mui files associated with a single LN file. By specifying an LN file for the <i>hModule</i> parameter and a nonzero <i>LangId</i> parameter, the search can be limited to the unique .mui file associated with that LN file and language.
 
-For each resource found, <b>EnumResourceNamesEx</b> calls an application-defined callback function <i>lpEnumFunc</i>, passing the name or the ID of each resource it finds, as well as the various other parameters that were passed to <b>EnumResourceNamesEx</b>.
+For each resource found, <b>EnumResourceNamesEx</b> calls an application-defined callback function <i>lpEnumFunc</i>, passing the name or the ID of each resource it finds, as well as the various other parameters that were passed to <b>EnumResourceNamesEx</b>. The passed name is only valid inside the callback - if the passed name is a string pointer, it points to an internal buffer that is reused for all callback invocations.
 
 If a resource has an ID, the ID is returned to the callback function; otherwise the resource name is returned to the callback function. For more information, see <a href="/windows/win32/api/libloaderapi/nc-libloaderapi-enumresnameproca">EnumResNameProc</a>.
 

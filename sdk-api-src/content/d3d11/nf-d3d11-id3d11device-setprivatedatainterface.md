@@ -65,7 +65,7 @@ Guid associated with the interface.
 
 Type: <b>const IUnknown*</b>
 
-Pointer to an IUnknown-derived interface to be associated with the device child.
+A pointer to the [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown)-derived interface to be associated with the device object. Its reference count is incremented when set, and decremented when either the [ID3D11Device](/windows/win32/api/d3d11/nn-d3d11-id3d11device) is destroyed, or when the data is overwritten by calling [SetPrivateData](/windows/win32/api/d3d11/nf-d3d11-id3d11device-setprivatedata) or **SetPrivateDataInterface** with the same **GUID**.
 
 ## -returns
 

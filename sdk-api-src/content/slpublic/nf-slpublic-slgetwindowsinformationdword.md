@@ -99,4 +99,16 @@ The value portion of the name-value pair is not a <b>DWORD</b>.
 
 </td>
 </tr>
+<tr>
+<td width="40%">
+<dl>
+<dt><b>SL_E_VALUE_NOT_FOUND</b></dt>
+<dt>0xC004F012</dt>
+</dl>
+</td>
+<td width="60%">
+The requested policy is not defined for the current device.
+
+</td>
+</tr>
 </table>

@@ -65,7 +65,7 @@ A window handle to a parent window. This parameter can be <b>NULL</b>.
 
 ### -param szApp [in]
 
-Type: <b>LPCTSTR</b>
+Type: <b>LPCWSTR</b>
 
 A pointer to a null-terminated string that contains text to be displayed in the title bar of the <b>ShellAbout</b> dialog box and on the first line of the dialog box after the text "Microsoft". If the text contains a separator (#) that divides it into two parts, the function displays the first part in the title bar and the second part on the first line after the text "Microsoft".
 
@@ -77,7 +77,7 @@ A pointer to a null-terminated string that contains text to be displayed in the 
 
 ### -param szOtherStuff [in, optional]
 
-Type: <b>LPCTSTR</b>
+Type: <b>LPCWSTR</b>
 
 A pointer to a null-terminated string that contains text to be displayed in the dialog box after the version and copyright information. This parameter can be <b>NULL</b>.
 
@@ -97,7 +97,7 @@ Type: <b>int</b>
 
 Note that the <b>ShellAbout</b> function dialog box uses text and a default icon that are specific to Windows.
 
-To see an example of a <b>ShellAbout</b> dialog box, choose <b>About Windows</b> from the <b>Help</b> menu drop-down list in Windows Explorer.
+To see an example of a <b>ShellAbout</b> dialog box, run the `winver.exe` command.
 
 
 

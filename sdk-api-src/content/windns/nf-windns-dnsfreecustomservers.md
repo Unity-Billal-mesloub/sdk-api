@@ -56,9 +56,9 @@ A pointer to a **DWORD** that contains the number of servers present in the arra
 
 ### -param ppServers
 
-Type: \_Inout\_ **[DNS_CUSTOM_SERVER](ns-windns-dns_custom_server)\*\***
+Type: \_Inout\_ **[DNS_CUSTOM_SERVER](ns-windnsdef-dns_custom_server)\*\***
 
-A pointer to an array of [DNS_CUSTOM_SERVER](ns-windns-dns_custom_server) that contains *pcServers* elements. This will be set to **NULL** after the function call.
+A pointer to an array of [DNS_CUSTOM_SERVER](ns-windnsdef-dns_custom_server) that contains *pcServers* elements. This will be set to **NULL** after the function call.
 
 ## -remarks
 

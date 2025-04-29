@@ -54,7 +54,7 @@ api_name:
 
 Creates an overlapped, pop-up, or child window. It specifies the window class, window title, window style, and (optionally) the initial position and size of the window. The function also specifies the window's parent or owner, if any, and the window's menu.
 
-To use extended window styles in addition to the styles supported by <b>CreateWindow</b>, use the <a href="/windows/desktop/api/winuser/nf-winuser-createwindowexa">CreateWindowEx</a> function.
+To use extended window styles in addition to the styles supported by <b>CreateWindow</b>, use the <a href="/windows/desktop/api/winuser/nf-winuser-createwindowexw">CreateWindowEx</a> function.
 
 ## -syntax
 
@@ -80,7 +80,7 @@ HWND CreateWindowW(
 
 Type: <b>LPCWSTR</b>
 
-A <b>null</b>-terminated string or a class atom created by a previous call to the <a href="/windows/desktop/api/winuser/nf-winuser-registerclassa">RegisterClass</a> or <a href="/windows/desktop/api/winuser/nf-winuser-registerclassexa">RegisterClassEx</a> function. The atom must be in the low-order word of <i>lpClassName</i>; the high-order word must be zero. If <i>lpClassName</i> is a string, it specifies the window class name. The class name can be any name registered with <b>RegisterClass</b> or <b>RegisterClassEx</b>, provided that the module that registers the class is also the module that creates the window. The class name can also be any of the predefined system class names. For a list of system class names, see the Remarks section.
+A <b>null</b>-terminated string or a class atom created by a previous call to the <a href="/windows/desktop/api/winuser/nf-winuser-registerclassw">RegisterClass</a> or <a href="/windows/desktop/api/winuser/nf-winuser-registerclassexw">RegisterClassEx</a> function. The atom must be in the low-order word of <i>lpClassName</i>; the high-order word must be zero. If <i>lpClassName</i> is a string, it specifies the window class name. The class name can be any name registered with <b>RegisterClass</b> or <b>RegisterClassEx</b>, provided that the module that registers the class is also the module that creates the window. The class name can also be any of the predefined system class names. For a list of system class names, see the Remarks section.
 
 ### -param lpWindowName [in, optional]
 
@@ -145,9 +145,9 @@ A handle to the instance of the module to be associated with the window.
 
 Type: <b>LPVOID</b>
 
-A pointer to a value to be passed to the window through the <a href="/windows/desktop/api/winuser/ns-winuser-createstructa">CREATESTRUCT</a> structure (<b>lpCreateParams</b> member) pointed to by the <i>lParam</i> param of the <a href="/windows/desktop/winmsg/wm-create">WM_CREATE</a> message.  This message is sent to the created window by this function before it returns.
+A pointer to a value to be passed to the window through the <a href="/windows/desktop/api/winuser/ns-winuser-createstructw">CREATESTRUCT</a> structure (<b>lpCreateParams</b> member) pointed to by the <i>lParam</i> param of the <a href="/windows/desktop/winmsg/wm-create">WM_CREATE</a> message.  This message is sent to the created window by this function before it returns.
 
-If an application calls <b>CreateWindow</b> to create a MDI client window, <i>lpParam</i> should point to a <a href="/windows/desktop/api/winuser/ns-winuser-clientcreatestruct">CLIENTCREATESTRUCT</a> structure. If an MDI client window calls <b>CreateWindow</b> to create an MDI child window, <i>lpParam</i> should point to a <a href="/windows/desktop/api/winuser/ns-winuser-mdicreatestructa">MDICREATESTRUCT</a> structure. <i>lpParam</i> may be <b>NULL</b> if no additional data is needed.
+If an application calls <b>CreateWindow</b> to create a MDI client window, <i>lpParam</i> should point to a <a href="/windows/desktop/api/winuser/ns-winuser-clientcreatestruct">CLIENTCREATESTRUCT</a> structure. If an MDI client window calls <b>CreateWindow</b> to create an MDI child window, <i>lpParam</i> should point to a <a href="/windows/desktop/api/winuser/ns-winuser-mdicreatestructw">MDICREATESTRUCT</a> structure. <i>lpParam</i> may be <b>NULL</b> if no additional data is needed.
 
 ## -returns
 
@@ -160,7 +160,7 @@ If the function fails, the return value is <b>NULL</b>. To get extended error in
 ## -remarks
 
 Before returning, <b>CreateWindow</b> sends a <a href="/windows/desktop/winmsg/wm-create">WM_CREATE</a> message to the window procedure. For overlapped, pop-up, and child windows, <b>CreateWindow</b> sends <b>WM_CREATE</b>, <a href="/windows/desktop/winmsg/wm-getminmaxinfo">WM_GETMINMAXINFO</a>, and <a href="/windows/desktop/winmsg/wm-nccreate">WM_NCCREATE</a> messages to the window. The
- <i>lParam</i> parameter of the <b>WM_CREATE</b> message contains a pointer to a <a href="/windows/desktop/api/winuser/ns-winuser-createstructa">CREATESTRUCT</a> structure. If the <b>WS_VISIBLE</b> style is specified, <b>CreateWindow</b> sends the window all the messages required to activate and show the window. 
+ <i>lParam</i> parameter of the <b>WM_CREATE</b> message contains a pointer to a <a href="/windows/desktop/api/winuser/ns-winuser-createstructw">CREATESTRUCT</a> structure. If the <b>WS_VISIBLE</b> style is specified, <b>CreateWindow</b> sends the window all the messages required to activate and show the window. 
 
 If the created window is a child window, its default position is at the bottom of the Z-order. If the created window is a top-level window, its default position is at the top of the Z-order (but beneath all topmost windows unless the created window is itself topmost).
 
@@ -262,7 +262,7 @@ For a table of the static control styles you can specify in the <i>dwStyle</i> p
 </table>
  
 
-<b>CreateWindow</b> is implemented as a call to the <a href="/windows/desktop/api/winuser/nf-winuser-createwindowexa">CreateWindowEx</a> function, as shown below.
+<b>CreateWindow</b> is implemented as a call to the <a href="/windows/desktop/api/winuser/nf-winuser-createwindowexw">CreateWindowEx</a> function, as shown below.
 
 
 ``` syntax
@@ -306,7 +306,7 @@ For an example, see <a href="/windows/desktop/winmsg/using-window-classes">Using
 
 
 
-<a href="/windows/desktop/api/winuser/nf-winuser-createwindowexa">CreateWindowEx</a>
+<a href="/windows/desktop/api/winuser/nf-winuser-createwindowexw">CreateWindowEx</a>
 
 
 
@@ -326,11 +326,11 @@ For an example, see <a href="/windows/desktop/winmsg/using-window-classes">Using
 
 
 
-<a href="/windows/desktop/api/winuser/nf-winuser-registerclassa">RegisterClass</a>
+<a href="/windows/desktop/api/winuser/nf-winuser-registerclassw">RegisterClass</a>
 
 
 
-<a href="/windows/desktop/api/winuser/nf-winuser-registerclassexa">RegisterClassEx</a>
+<a href="/windows/desktop/api/winuser/nf-winuser-registerclassexw">RegisterClassEx</a>
 
 
 

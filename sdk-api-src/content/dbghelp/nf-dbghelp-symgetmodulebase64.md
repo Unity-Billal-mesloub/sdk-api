@@ -47,6 +47,8 @@ api_name:
  - SymGetModuleBase
 ---
 
+# SymGetModuleBase64 function
+
 ## -description
 
 Retrieves the base address of the module that contains the specified address.

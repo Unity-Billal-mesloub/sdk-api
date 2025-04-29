@@ -6,7 +6,7 @@ helpviewer_keywords: ["ENCLAVE_FLAG_DYNAMIC_DEBUG_ACTIVE","ENCLAVE_FLAG_DYNAMIC_
 old-location: base\enclave_identity.htm
 tech.root: base
 ms.assetid: D584D824-3C86-4BBB-9086-6DBE0290E0A4
-ms.date: 02/02/2024
+ms.date: 02/06/2025
 ms.keywords: ENCLAVE_FLAG_DYNAMIC_DEBUG_ACTIVE, ENCLAVE_FLAG_DYNAMIC_DEBUG_ENABLED, ENCLAVE_FLAG_FULL_DEBUG_ENABLED, ENCLAVE_IDENTITY, ENCLAVE_IDENTITY structure, base.enclave_identity, ntenclv/ENCLAVE_IDENTITY
 req.header: ntenclv.h
 req.include-header: 
@@ -97,11 +97,11 @@ Flags that describe the runtime policy for the enclave.
 
 ### -field SigningLevel
 
-The signing level of the primary module for the enclave.
+This is a reserved field and must be set to zero.
 
-### -field Reserved
+### -field EnclaveType
 
-Reserved.
+This is a reserved field and must be set to zero.
 
 ## -remarks
 

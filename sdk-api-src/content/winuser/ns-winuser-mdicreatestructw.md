@@ -64,7 +64,7 @@ Contains information about the class, title, owner, location, and size of a mult
 
 Type: <b>LPCTSTR</b>
 
-The name of the window class of the MDI child window. The class name must have been registered by a previous call to the <a href="/windows/desktop/api/winuser/nf-winuser-registerclassa">RegisterClass</a> function.
+The name of the window class of the MDI child window. The class name must have been registered by a previous call to the <a href="/windows/desktop/api/winuser/nf-winuser-registerclassw">RegisterClass</a> function.
 
 ### -field szTitle
 
@@ -171,7 +171,7 @@ An application-defined value.
 ## -remarks
 
 When the MDI client window creates an MDI child window
-            by calling <a href="/windows/desktop/api/winuser/nf-winuser-createwindowa">CreateWindow</a>, the system sends a <a href="/windows/desktop/winmsg/wm-create">WM_CREATE</a> message to the created window. The <i>lParam</i> member of the <b>WM_CREATE</b> message contains a pointer to a <a href="/windows/desktop/api/winuser/ns-winuser-createstructa">CREATESTRUCT</a> structure. The 
+            by calling <a href="/windows/desktop/api/winuser/nf-winuser-createwindowa">CreateWindow</a>, the system sends a <a href="/windows/desktop/winmsg/wm-create">WM_CREATE</a> message to the created window. The <i>lParam</i> member of the <b>WM_CREATE</b> message contains a pointer to a <a href="/windows/desktop/api/winuser/ns-winuser-createstructw">CREATESTRUCT</a> structure. The 
 				<b>lpCreateParams</b> member of this structure contains a pointer to the <b>MDICREATESTRUCT</b> structure passed with the <a href="/windows/desktop/winmsg/wm-mdicreate">WM_MDICREATE</a> message that created the MDI child window.
 
 
@@ -187,7 +187,7 @@ When the MDI client window creates an MDI child window
 
 
 
-<a href="/windows/desktop/api/winuser/ns-winuser-createstructa">CREATESTRUCT</a>
+<a href="/windows/desktop/api/winuser/ns-winuser-createstructw">CREATESTRUCT</a>
 
 
 

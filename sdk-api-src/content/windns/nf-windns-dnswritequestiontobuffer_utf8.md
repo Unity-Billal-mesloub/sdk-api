@@ -53,7 +53,7 @@ api_name:
 
 The 
 <b>DnsWriteQuestionToBuffer</b> function type creates a DNS query message and stores it in a 
-<a href="/windows/desktop/api/windns/ns-windns-dns_message_buffer">DNS_MESSAGE_BUFFER</a> structure. Like many DNS functions, the 
+<a href="/windows/desktop/api/windnsdef/ns-windnsdef-dns_message_buffer">DNS_MESSAGE_BUFFER</a> structure. Like many DNS functions, the 
 <b>DnsWriteQuestionToBuffer</b> function type is implemented in multiple forms to facilitate different character encoding. Based on the character encoding involved, use one of the following functions:
 <ul>
 <li>
@@ -71,7 +71,7 @@ The
 
 ### -param pDnsBuffer [in, out]
 
-A pointer to a <a href="/windows/desktop/api/windns/ns-windns-dns_message_buffer">DNS_MESSAGE_BUFFER</a> structure that contains a DNS query message stored in a buffer.
+A pointer to a <a href="/windows/desktop/api/windnsdef/ns-windnsdef-dns_message_buffer">DNS_MESSAGE_BUFFER</a> structure that contains a DNS query message stored in a buffer.
 
 ### -param pdwBufferSize [in, out]
 
@@ -118,11 +118,11 @@ DnsWriteQuestionToBuffer_UTF8(
 
 ## -see-also
 
-<a href="/windows/desktop/api/windns/ns-windns-dns_message_buffer">DNS_MESSAGE_BUFFER</a>
+<a href="/windows/desktop/api/windnsdef/ns-windnsdef-dns_message_buffer">DNS_MESSAGE_BUFFER</a>
 
 
 
-<a href="/windows/win32/api/windns/ns-windns-dns_recorda">DNS_RECORD</a>
+<a href="/windows/win32/api/windnsdef/ns-windnsdef-dns_recorda">DNS_RECORD</a>
 
 
 

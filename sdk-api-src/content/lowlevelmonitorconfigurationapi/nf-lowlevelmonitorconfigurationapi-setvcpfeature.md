@@ -70,12 +70,11 @@ Value of the VCP code.
 
 ## -returns
 
-If the function succeeds, the return value is <b>TRUE</b>. If the function fails, the return value is <b>FALSE</b>. To get extended error information, call GetLastError.
+If the function succeeds, the return value is <b>TRUE</b>. If the function fails, the return value is <b>FALSE</b>. To get extended error information, call <a href="/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror">GetLastError</a>.
 
 ## -remarks
 
 This function corresponds to the "Set VCP Feature" command from the Display Data Channel Command Interface (DDC/CI) standard.
-      
 
 This function takes about 50 milliseconds to return.
 

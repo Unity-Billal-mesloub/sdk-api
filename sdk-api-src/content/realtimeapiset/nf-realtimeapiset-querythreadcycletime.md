@@ -61,8 +61,8 @@ Retrieves the cycle time for the specified thread.
 
 ### -param ThreadHandle [in]
 
-A handle to the thread. The handle must have the PROCESS_QUERY_INFORMATION or PROCESS_QUERY_LIMITED_INFORMATION access right. For more information, see 
-<a href="/windows/desktop/ProcThread/process-security-and-access-rights">Process Security and Access Rights</a>.
+A handle to the thread. The handle must have the THREAD_QUERY_INFORMATION or THREAD_QUERY_LIMITED_INFORMATION access right. For more information, see 
+<a href="/windows/win32/procthread/thread-security-and-access-rights">Thread Security and Access Rights</a>.
 
 ### -param CycleTime [out]
 

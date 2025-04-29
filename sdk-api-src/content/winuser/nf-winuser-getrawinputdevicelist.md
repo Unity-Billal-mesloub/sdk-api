@@ -6,7 +6,7 @@ helpviewer_keywords: ["GetRawInputDeviceList","GetRawInputDeviceList function [K
 old-location: inputdev\getrawinputdevicelist.htm
 tech.root: inputdev
 ms.assetid: VS|winui|~\winui\windowsuserinterface\userinput\rawinput\rawinputreference\rawinputfunctions\getrawinputdevicelist.htm
-ms.date: 12/05/2018
+ms.date: 02/25/2025
 ms.keywords: GetRawInputDeviceList, GetRawInputDeviceList function [Keyboard and Mouse Input], _win32_GetRawInputDeviceList, _win32_getrawinputdevicelist_cpp, inputdev.getrawinputdevicelist, winui._win32_getrawinputdevicelist, winuser/GetRawInputDeviceList
 req.header: winuser.h
 req.include-header: Windows.h
@@ -95,6 +95,8 @@ On any other error, the function returns (<b>UINT</b>) -1 and <a href="/windows/
 The devices returned from this function are the mouse, the keyboard, and other Human Interface Device (HID) devices.
 
 To get more detailed information about the attached devices, call <a href="/windows/desktop/api/winuser/nf-winuser-getrawinputdeviceinfoa">GetRawInputDeviceInfo</a> using the hDevice from <a href="/windows/desktop/api/winuser/ns-winuser-rawinputdevicelist">RAWINPUTDEVICELIST</a>. 
+
+Input devices accessed through Remote Desktop Protocal (RDP) do not appear in the raw input device list.
 
 #### Examples
 

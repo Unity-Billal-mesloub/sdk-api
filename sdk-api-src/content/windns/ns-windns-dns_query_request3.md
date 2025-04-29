@@ -73,7 +73,7 @@ A pointer to a string that represents the DNS name to query.
 
 Type: **[WORD](/windows/win32/winprog/windows-data-types)**
 
-A value that represents the Resource Record (RR) [DNS Record Type](/windows/win32/dns/dns-constants#dns-record-types) that is queried. *QueryType* determines the format of data pointed to by *pQueryRecords* returned in the [DNS_QUERY_RESULT](/windows/win32/api/windns/ns-windns-dns_query_result) structure. For example, if the value of *wType* is [DNS_TYPE_A](/windows/win32/dns/dns-constants), then the format of data pointed to by *pQueryRecords* is [DNS_A_DATA](/windows/win32/api/windns/ns-windns-dns_a_data).
+A value that represents the Resource Record (RR) [DNS Record Type](/windows/win32/dns/dns-constants#dns-record-types) that is queried. *QueryType* determines the format of data pointed to by *pQueryRecords* returned in the [DNS_QUERY_RESULT](/windows/win32/api/windns/ns-windns-dns_query_result) structure. For example, if the value of *wType* is [DNS_TYPE_A](/windows/win32/dns/dns-constants), then the format of data pointed to by *pQueryRecords* is [DNS_A_DATA](/windows/win32/api/windnsdef/ns-windnsdef-dns_a_data).
 
 ### -field QueryOptions
 
@@ -83,9 +83,9 @@ A value that contains a bitmap of [DNS Query Options](/windows/win32/dns/dns-con
 
 ### -field pDnsServerList
 
-Type: **[PDNS_ADDR_ARRAY](/windows/win32/api/windns/ns-windns-dns_addr_array)**
+Type: **[PDNS_ADDR_ARRAY](/windows/win32/api/windnsdef/ns-windnsdef-dns_addr_array)**
 
-A pointer to a [DNS_ADDR_ARRAY](/windows/win32/api/windns/ns-windns-dns_addr_array) structure that contains a list of DNS servers to use in the query.
+A pointer to a [DNS_ADDR_ARRAY](/windows/win32/api/windnsdef/ns-windnsdef-dns_addr_array) structure that contains a list of DNS servers to use in the query.
 
 ### -field InterfaceIndex
 
@@ -128,9 +128,9 @@ The number of custom servers pointed to by the *pCustomServers* member.
 
 ### -field pCustomServers
 
-Type: \_Field\_size\_(cCustomServers) **[DNS_CUSTOM_SERVER](/windows/win32/api/windns/ns-windns-dns_custom_server)\***
+Type: \_Field\_size\_(cCustomServers) **[DNS_CUSTOM_SERVER](/windows/win32/api/windnsdef/ns-windnsdef-dns_custom_server)\***
 
-A pointer to an array of N (where N is given in the *cCustomServers* field) [DNS_CUSTOM_SERVER](/windows/win32/api/windns/ns-windns-dns_custom_server) objects.
+A pointer to an array of N (where N is given in the *cCustomServers* field) [DNS_CUSTOM_SERVER](/windows/win32/api/windnsdef/ns-windnsdef-dns_custom_server) objects.
 
 If *cCustomServers* is 0, then *pCustomServers* must be **NULL**.
 
@@ -145,8 +145,8 @@ If the query name matches a rule in the **Name Resolution Policy Table (NRPT)**,
 
 ## -see-also
 
-* [DNS_ADDR_ARRAY](/windows/win32/api/windns/ns-windns-dns_addr_array)
+* [DNS_ADDR_ARRAY](/windows/win32/api/windnsdef/ns-windnsdef-dns_addr_array)
 * [DNS constants](/windows/win32/dns/dns-constants)
-* [DNS_CUSTOM_SERVER](/windows/win32/api/windns/ns-windns-dns_custom_server)
+* [DNS_CUSTOM_SERVER](/windows/win32/api/windnsdef/ns-windnsdef-dns_custom_server)
 * [DnsQueryEx function](/windows/win32/api/windns/nf-windns-dnsqueryex)
 * [DNS_QUERY_RESULT](/windows/win32/api/windns/ns-windns-dns_query_result)

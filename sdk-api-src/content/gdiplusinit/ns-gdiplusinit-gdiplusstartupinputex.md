@@ -1,7 +1,7 @@
 ---
 UID: NS:gdiplusinit.GdiplusStartupInputEx
 title: GdiplusStartupInputEx
-ms.date: 05/07/2020
+ms.date: 01/15/2025
 targetos: Windows
 description: The **GdiplusStartupInputEx** structure holds a block of arguments that are required by the [GdiplusStartup](../gdiplusinit/nf-gdiplusinit-gdiplusstartup.md) function.
 tech.root: gdiplus
@@ -49,6 +49,9 @@ Type: **INT**
 See [**GdiplusStartupParams**](./ne-gdiplusinit-gdiplusstartupparams.md). The default value is **GdiplusStartupDefault** (0).
 
 ## -remarks
+
+> ![IMPORTANT]
+> For info about operating system (OS) support for the codecs mentioned below, see [Media Feature Pack for Windows 10/11 N (September 2022)](https://support.microsoft.com/windows/media-feature-pack-for-windows-10-11-n-september-2022-78cfeea5-c7d9-4aa8-b38f-ee4df1392009).
 
 The **GdiplusStartupInputEx** structure also defines the following enumeration, which is the type of one of the parameters of the [GdiplusStartupInputEx.GdiplusStartupInputEx(Version,INT,DebugEventProc,BOOL,BOOL)](./nf-gdiplusinit-gdiplusstartupinputex-gdiplusstartupinputex(version_int_debugeventproc_bool_bool).md) constructor.
 

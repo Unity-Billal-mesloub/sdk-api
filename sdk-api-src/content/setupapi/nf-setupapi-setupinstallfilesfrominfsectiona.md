@@ -6,7 +6,7 @@ helpviewer_keywords: ["SetupInstallFilesFromInfSectionA", "setupapi/SetupInstall
 old-location: setup\setupinstallfilesfrominfsection.htm
 tech.root: setup
 ms.assetid: 9834a3b0-f8f5-4e4d-92b2-d3c5a4939a41
-ms.date: 12/05/2018
+ms.date: 12/20/2024
 ms.keywords: SetupInstallFilesFromInfSection, SetupInstallFilesFromInfSection function [Setup API], SetupInstallFilesFromInfSectionA, SetupInstallFilesFromInfSectionW, _setupapi_setupinstallfilesfrominfsection, setup.setupinstallfilesfrominfsection, setupapi/SetupInstallFilesFromInfSection, setupapi/SetupInstallFilesFromInfSectionA, setupapi/SetupInstallFilesFromInfSectionW
 req.header: setupapi.h
 req.include-header: 
@@ -234,12 +234,10 @@ If the function fails, the return value is 0 (zero). To get extended error infor
 If a UNC directory is specified as the target directory of a file installation, you must ensure that the UNC directory exists before you call 
 <b>SetupInstallFilesFromInfSection</b>. The setup functions do not check for the existence of directories and do not create UNC directories. If the target UNC directory does not exist, the file installation fails.
 
-
-
-
-
 > [!NOTE]
 > The setupapi.h header defines SetupInstallFilesFromInfSection as an alias that automatically selects the ANSI or Unicode version of this function based on the definition of the UNICODE preprocessor constant. Mixing usage of the encoding-neutral alias with code that is not encoding-neutral can lead to mismatches that result in compilation or runtime errors. For more information, see [Conventions for Function Prototypes](/windows/win32/intl/conventions-for-function-prototypes).
+
+<b>SetupInstallFilesFromInfSection</b> will log diagnostic information to the [SetupAPI application installation text log](/windows-hardware/drivers/install/setupapi-text-logs). This log file is generally off by default. It can be enabled by modifying the *General logging levels* part of the SetupAPI `LogLevel` value as described at [Setting SetupAPI Logging Levels](/windows-hardware/drivers/install/setting-setupapi-logging-levels). For performance reasons, you should only enable this log file when troubleshooting an issue. When the log file is enabled, you can find it at `%windir%\inf\setupapi.app.log`.
 
 ## -see-also
 

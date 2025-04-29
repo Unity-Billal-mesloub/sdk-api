@@ -123,6 +123,9 @@ When you call <a href="/windows/win32/api/dxgi1_2/nf-dxgi1_2-idxgiswapchain1-pre
 Regardless of whether the flip model is more efficient, an application still might choose the bitblt model because the bitblt model is the only way to mix GDI and DirectX presentation. In the flip model, the application must create the swap chain with <a href="/windows/win32/api/dxgi/ne-dxgi-dxgi_swap_chain_flag">DXGI_SWAP_CHAIN_FLAG_GDI_COMPATIBLE</a>, and then must use <a href="/windows/win32/api/dxgi/nf-dxgi-idxgisurface1-getdc">GetDC</a> on the back buffer explicitly. After the first successful call to <a href="/windows/win32/api/dxgi1_2/nf-dxgi1_2-idxgiswapchain1-present1">IDXGISwapChain1::Present1</a> on a flip-model swap chain, GDI no longer works with the <a href="/windows/win32/WinProg/windows-data-types">HWND</a> that is associated with that swap chain, even after the destruction of the swap chain. This restriction even extends to methods like <a href="/windows/win32/api/winuser/nf-winuser-scrollwindowex">ScrollWindowEx</a>.
         
 
+To display HDR swapchain buffer formats and color spaces, a flip model is required. Otherwise they get composed (and clipped) in SDR (sRGB with a 0-1 range).
+        
+
 For more info about the flip-model swap chain and optimizing presentation, see <a href="/windows/win32/direct3ddxgi/dxgi-1-2-presentation-improvements">Enhancing presentation with the flip model, dirty rectangles, and scrolled areas</a>.
         
 

@@ -6,7 +6,7 @@ helpviewer_keywords: ["GetModuleHandle", "GetModuleHandle function", "GetModuleH
 old-location: base\getmodulehandle.htm
 tech.root: base
 ms.assetid: 29514410-89fe-4888-8b34-0c30d5af237f
-ms.date: 12/05/2018
+ms.date: 12/09/2024
 ms.keywords: GetModuleHandle, GetModuleHandle function, GetModuleHandleA, GetModuleHandleW, _win32_getmodulehandle, base.getmodulehandle, libloaderapi/GetModuleHandle, libloaderapi/GetModuleHandleA, libloaderapi/GetModuleHandleW, winbase/GetModuleHandle, winbase/GetModuleHandleA, winbase/GetModuleHandleW
 req.header: libloaderapi.h
 req.include-header: Windows.h
@@ -29,11 +29,6 @@ targetos: Windows
 req.typenames: 
 req.redist: 
 ms.custom: 19H1
-f1_keywords:
- - GetModuleHandleW
- - libloaderapi/GetModuleHandleW
-dev_langs:
- - c++
 topic_type:
  - APIRef
  - kbSyntax
@@ -53,6 +48,13 @@ api_name:
  - GetModuleHandle
  - GetModuleHandleA
  - GetModuleHandleW
+f1_keywords:
+ - GetModuleHandleW
+ - libloaderapi/GetModuleHandleW
+ - GetModuleHandle
+ - libloaderapi/GetModuleHandle
+dev_langs:
+ - c++
 ---
 
 # GetModuleHandleW function

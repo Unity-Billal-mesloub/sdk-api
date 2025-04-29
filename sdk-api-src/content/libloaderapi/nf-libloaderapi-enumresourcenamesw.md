@@ -88,7 +88,7 @@ The return value is **TRUE** if the function succeeds or **FALSE** if the functi
 
 If [IS_INTRESOURCE](/windows/desktop/api/winuser/nf-winuser-is_intresource)(*lpszType*) is **TRUE**, then *lpszType* specifies the integer identifier of the given resource type. Otherwise, it is a pointer to a null-terminated string. If the first character of the string is a pound sign (#), then the remaining characters represent a decimal number that specifies the integer identifier of the resource type. For example, the string "#258" represents the identifier 258.
 
-For each resource found, **EnumResourceNames** calls an application-defined callback function *lpEnumFunc*, passing the name or the ID of each resource it finds, as well as the various other parameters that were passed to **EnumResourceNames**.
+For each resource found, **EnumResourceNames** calls an application-defined callback function *lpEnumFunc*, passing the name or the ID of each resource it finds, as well as the various other parameters that were passed to **EnumResourceNames**. The passed name is only valid inside the callback - if the passed name is a string pointer, it points to an internal buffer that is reused for all callback invocations.
 
 Alternately, applications can call [EnumResourceNamesEx](/windows/desktop/api/libloaderapi/nf-libloaderapi-enumresourcenamesexw), which provides more precise control of what resources are enumerated.
 

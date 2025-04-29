@@ -15,8 +15,8 @@ req.include-header:
 req.max-support: 
 req.namespace: 
 req.redist: 
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
+req.target-min-winverclnt: Windows Build 22621
+req.target-min-winversvr: Windows Server, version 23H2
 req.target-type: 
 req.unicode-ansi: 
 topic_type:

@@ -6,7 +6,7 @@ helpviewer_keywords: ["CreateAppContainerProfile","CreateAppContainerProfile fun
 old-location: shell\createappcontainerprofile.htm
 tech.root: shell
 ms.assetid: 73F5F30F-4083-4D33-B181-31B782AD40D6
-ms.date: 07/24/2023
+ms.date: 11/26/2024
 ms.keywords: CreateAppContainerProfile, CreateAppContainerProfile function [Windows Shell], shell.createappcontainerprofile, userenv/CreateAppContainerProfile
 req.header: userenv.h
 req.include-header: 
@@ -73,7 +73,7 @@ The number of SIDs in *pCapabilities*.
 
 ### -param ppSidAppContainerSid [out]
 
-The SID for the profile. This buffer must be freed using the [FreeSid](/windows/win32/api/securitybaseapi/nf-securitybaseapi-freesid)function.
+The SID for the profile. This buffer must be freed using the [FreeSid](/windows/win32/api/securitybaseapi/nf-securitybaseapi-freesid) function.
 
 ## -returns
 

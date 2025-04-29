@@ -45,6 +45,8 @@ api_name:
  - FunctionTableAccessProc64
 ---
 
+# PFUNCTION_TABLE_ACCESS_ROUTINE64 callback function
+
 ## -description
 
 An application-defined callback function used with the 

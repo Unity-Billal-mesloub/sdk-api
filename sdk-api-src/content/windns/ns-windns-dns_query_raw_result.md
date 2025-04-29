@@ -96,7 +96,7 @@ The pointer might or might not be valid depending on *queryStatus*. Internal DNS
 
 Type: **PDNS_RECORD**
 
-Pointer to a [DNS_RECORD](/windows/win32/api/windns/ns-windns-dns_recordw) structure. This contains the same records as in *queryRawResponse*, but parsed out into a structure format.
+Pointer to a [DNS_RECORD](/windows/win32/api/windnsdef/ns-windnsdef-dns_recordw) structure. This contains the same records as in *queryRawResponse*, but parsed out into a structure format.
 
 This pointer is valid in the same ways as *queryRawResponse*, where it's dependent on the *queryStatus* value.
 

@@ -262,7 +262,7 @@ In Windows Sockets 1.1, the only possible socket types are <b>SOCK_DGRAM</b> and
 
 The protocol to be used. The possible options for the <i>protocol</i> parameter are specific to the address family and socket type specified. Possible values for the <i>protocol</i> are defined are defined in the  <i>Winsock2.h</i> and <i>Wsrm.h</i> header files. 
 
-On the Windows SDK released for Windows Vista and later,, the organization of header files has changed and this parameter can be one of the values from the <b>IPPROTO</b> enumeration type defined in the <i>Ws2def.h</i> header file. Note that the <i>Ws2def.h</i> header file is automatically included in <i>Winsock2.h</i>, and should never be used directly.
+On the Windows SDK released for Windows Vista and later, the organization of header files has changed and this parameter can be one of the values from the <b>IPPROTO</b> enumeration type defined in the <i>Ws2def.h</i> header file. Note that the <i>Ws2def.h</i> header file is automatically included in <i>Winsock2.h</i>, and should never be used directly.
 
 If a value of  0 is specified, the caller does not
               wish to specify a protocol and the service provider will choose the <i>protocol</i> to use.

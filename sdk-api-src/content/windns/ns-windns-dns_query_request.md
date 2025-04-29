@@ -83,7 +83,7 @@ A value that contains a bitmap of <a href="/windows/desktop/DNS/dns-constants">D
 
 ### -field pDnsServerList
 
-A pointer to a <a href="/windows/win32/api/windns/ns-windns-dns_addr_array">DNS_ADDR_ARRAY</a> structure that contains a list of DNS servers to use in the query.
+A pointer to a <a href="/windows/win32/api/windnsdef/ns-windnsdef-dns_addr_array">DNS_ADDR_ARRAY</a> structure that contains a list of DNS servers to use in the query.
 
 ### -field InterfaceIndex
 

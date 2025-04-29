@@ -97,7 +97,7 @@ Type: <b>int</b>
 
 Note that the <b>ShellAbout</b> function dialog box uses text and a default icon that are specific to Windows.
 
-To see an example of a <b>ShellAbout</b> dialog box, choose <b>About Windows</b> from the <b>Help</b> menu drop-down list in Windows Explorer.
+To see an example of a <b>ShellAbout</b> dialog box, run the `winver.exe` command.
 
 
 

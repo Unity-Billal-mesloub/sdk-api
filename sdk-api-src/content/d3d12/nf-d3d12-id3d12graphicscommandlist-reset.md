@@ -87,7 +87,7 @@ See <a href="/windows/desktop/direct3d12/d3d12-graphics-reference-returnvalues">
 
 ## -remarks
 
-By using <b>Reset</b>, you can re-use command list tracking structures without any allocations. Unlike <a href="/windows/desktop/api/d3d12/nf-d3d12-id3d12commandallocator-reset">ID3D12CommandAllocator::Reset</a>, you can call <b>Reset</b> while the command list is still being executed.
+By using <b>Reset</b>, you can re-use command list tracking structures without any allocations. Unlike <a href="/windows/desktop/api/d3d12/nf-d3d12-id3d12commandallocator-reset">ID3D12CommandAllocator::Reset</a>, you can call ID3D12GraphicsCommandList::<b>Reset</b> while the command list is still being executed.
 
 You can use <b>Reset</b> for both direct command lists and bundles.
       
@@ -112,11 +112,6 @@ Apps must specify a command list allocator.  The runtime will ensure that an all
           
 
 <b>Reset</b> fails for bundles that are referenced by a not yet submitted command list.
-          
-
-<h3><a id="Debug_layer"></a><a id="debug_layer"></a><a id="DEBUG_LAYER"></a>Debug layer</h3>
-The debug layer will also track graphics processing unit (GPU) progress and issue an error if it can't prove that there are no outstanding executions of the command list.
-          
 
 
 #### Examples

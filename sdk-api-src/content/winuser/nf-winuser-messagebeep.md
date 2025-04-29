@@ -209,8 +209,10 @@ After queuing the sound, the <b>MessageBeep</b> function
 
 If it cannot play the specified alert sound, 
     <b>MessageBeep</b> attempts to play the system default sound. If 
-    it cannot play the system default sound, the function produces a standard beep sound through the computer 
-    speaker.
+    it cannot play the system default sound, the function produces a standard beep sound using the
+    <a href="/windows/desktop/api/utilapiset/nf-utilapiset-beep">Beep</a>
+    function. Starting in Windows 7, this plays a simple tone on the default sound device.
+    See the documentation for the <b>Beep</b> function for further details.
 
 The user can disable the warning beep by using the Sound control panel application.
 

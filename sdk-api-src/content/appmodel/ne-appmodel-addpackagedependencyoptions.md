@@ -1,10 +1,10 @@
 ---
 UID: NE:appmodel.AddPackageDependencyOptions
-tech.root: appxpkg
 title: AddPackageDependencyOptions
-ms.date: 7/12/2021
-targetos: Windows
 description: Defines options that can be applied when adding a package dependency.
+ms.date: 7/12/2021
+tech.root: appxpkg
+targetos: Windows
 prerelease: false
 req.construct-type: enumeration
 req.ddi-compliance: 
@@ -44,10 +44,10 @@ No options are applied.
 
 ### -field AddPackageDependencyOptions_PrependIfRankCollision
 
-If multiple packages are present in the package graph with the same rank as the call to **AddPackageDependency**, the resolved package is added before others of the same rank. For more information, see [AddPackageDependency](nf-appmodel-addpackagedependency.md).
+If multiple packages are present in the package graph with the same rank as the call to [AddPackageDependency](./nf-appmodel-addpackagedependency.md), then the resolved package is added before others of the same rank. For more info, see **AddPackageDependency**.
 
 ## -remarks
 
 ## -see-also
 
-[AddPackageDependency](nf-appmodel-addpackagedependency.md)
+[AddPackageDependency](./nf-appmodel-addpackagedependency.md)

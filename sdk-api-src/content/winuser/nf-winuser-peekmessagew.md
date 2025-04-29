@@ -106,104 +106,22 @@ Type: <b>UINT</b>
 
 Specifies how messages are to be handled. This parameter can be one or more of the following values.
 
-<table>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-<tr>
-<td width="40%"><a id="PM_NOREMOVE"></a><a id="pm_noremove"></a><dl>
-<dt><b>PM_NOREMOVE</b></dt>
-<dt>0x0000</dt>
-</dl>
-</td>
-<td width="60%">
-Messages are not removed from the queue after processing by <b>PeekMessage</b>.
-
-</td>
-</tr>
-<tr>
-<td width="40%"><a id="PM_REMOVE"></a><a id="pm_remove"></a><dl>
-<dt><b>PM_REMOVE</b></dt>
-<dt>0x0001</dt>
-</dl>
-</td>
-<td width="60%">
-Messages are removed from the queue after processing by <b>PeekMessage</b>.
-
-</td>
-</tr>
-<tr>
-<td width="40%"><a id="PM_NOYIELD"></a><a id="pm_noyield"></a><dl>
-<dt><b>PM_NOYIELD</b></dt>
-<dt>0x0002</dt>
-</dl>
-</td>
-<td width="60%">
-Prevents the system from releasing any thread that is waiting for the caller to go idle (see <a href="/windows/desktop/api/winuser/nf-winuser-waitforinputidle">WaitForInputIdle</a>).
-
-Combine this value with either <b>PM_NOREMOVE</b> or <b>PM_REMOVE</b>.
-
-</td>
-</tr>
-</table>
- 
-
+| Value | Meaning |
+|-------|---------|
+| **PM\_NOREMOVE**<br>`0x0000`  | Messages are not removed from the queue after processing by **PeekMessage**. |
+| **PM\_REMOVE**<br>`0x0001` | Messages are removed from the queue after processing by **PeekMessage**. |
+| **PM\_NOYIELD**<br>`0x0002` | Prevents the system from releasing any thread that is waiting for the caller to go idle (see [WaitForInputIdle](/windows/desktop/api/winuser/nf-winuser-waitforinputidle)). Combine this value with either **PM\_NOREMOVE** or **PM\_REMOVE**. |
 
 By default, all message types are processed. To specify that only certain message should be processed, specify one or more of the following values.
 
+| Value | Meaning |
+|-------|---------|
+| **PM\_QS\_INPUT**<br>`(QS_INPUT << 16)` | Process mouse and keyboard messages. |
+| **PM\_QS\_POSTMESSAGE**<br>`((QS_POSTMESSAGE \| QS_HOTKEY \| QS_TIMER) << 16)` | Process all posted messages, including timers and hotkeys. |
+| **PM\_QS\_PAINT**<br>`(QS_PAINT << 16)` | Process paint messages. |
+| **PM\_QS\_SENDMESSAGE**<br>`(QS_SENDMESSAGE << 16)` | Process all sent messages. |
 
-
-<table>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-<tr>
-<td width="40%"><a id="PM_QS_INPUT"></a><a id="pm_qs_input"></a><dl>
-<dt><b>PM_QS_INPUT</b></dt>
-<dt>(QS_INPUT &lt;&lt; 16)</dt>
-</dl>
-</td>
-<td width="60%">
- Process mouse and keyboard messages.
-
-</td>
-</tr>
-<tr>
-<td width="40%"><a id="PM_QS_PAINT"></a><a id="pm_qs_paint"></a><dl>
-<dt><b>PM_QS_PAINT</b></dt>
-<dt>(QS_PAINT &lt;&lt; 16)</dt>
-</dl>
-</td>
-<td width="60%">
- Process paint messages.
-
-</td>
-</tr>
-<tr>
-<td width="40%"><a id="PM_QS_POSTMESSAGE"></a><a id="pm_qs_postmessage"></a><dl>
-<dt><b>PM_QS_POSTMESSAGE</b></dt>
-<dt>((QS_POSTMESSAGE | QS_HOTKEY | QS_TIMER) &lt;&lt; 16)</dt>
-</dl>
-</td>
-<td width="60%">
- Process all posted messages, including timers and hotkeys.  
-
-</td>
-</tr>
-<tr>
-<td width="40%"><a id="PM_QS_SENDMESSAGE"></a><a id="pm_qs_sendmessage"></a><dl>
-<dt><b>PM_QS_SENDMESSAGE</b></dt>
-<dt>(QS_SENDMESSAGE &lt;&lt; 16)</dt>
-</dl>
-</td>
-<td width="60%">
- Process all sent messages.
-
-</td>
-</tr>
-</table>
+For more info on listed `QS_` flags and types of messages see [GetQueueStatus](nf-winuser-getqueuestatus.md) documentation.
 
 ## -returns
 

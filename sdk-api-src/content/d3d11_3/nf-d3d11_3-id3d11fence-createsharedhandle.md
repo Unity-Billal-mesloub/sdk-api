@@ -53,7 +53,7 @@ api_name:
 Creates a shared handle to a fence object.
         
 
-This method is equivalent to the Direct3D 12 <a href="/windows/desktop/api/d3d12/nf-d3d12-id3d12device-createsharedhandle">ID3D12Device::CreateSharedHandle</a> method, and it applies in scenarios involving interoperation between Direct3D 11 and Direct3D 12. In DirecX 11, you can open the shared fence handle with the <a href="/windows/win32/api/d3d11_4/nf-d3d11_4-id3d11device5-opensharedfence">ID3D11Device5::OpenSharedFence</a> method. In DirecX 12, you can open the shared fence handle with the <a href="/windows/win32/api/d3d12/nf-d3d12-id3d12device-opensharedhandle">ID3D12Device::OpenSharedHandle</a> method.
+This method is equivalent to the Direct3D 12 <a href="/windows/desktop/api/d3d12/nf-d3d12-id3d12device-createsharedhandle">ID3D12Device::CreateSharedHandle</a> method, and it applies in scenarios involving interoperation between Direct3D 11 and Direct3D 12. In DirecX 11, you can open the shared fence handle with the <a href="/windows/win32/api/d3d11_4/nf-d3d11_4-id3d11device5-opensharedfence">ID3D11Device5::OpenSharedFence</a> method. In DirectX 12, you can open the shared fence handle with the <a href="/windows/win32/api/d3d12/nf-d3d12-id3d12device-opensharedhandle">ID3D12Device::OpenSharedHandle</a> method.
 
 ## -parameters
 
