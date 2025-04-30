@@ -70,12 +70,13 @@ If **MinimumRequiredConfigSize** is zero, the minimum size of the **IMAGE_ENCLAV
 
 ### -field PolicyFlags
 
-A flag that indicates whether the enclave permits debugging.
+Flags that indicate the policies that have been set for the enclave. These flags can be set to indicate whether the enclave permits debugging and whether the enclave is restricted to using its own memory space.
 
 | Value | Meaning |
 |-------|---------|
-| **IMAGE_ENCLAVE_POLICY_DEBUGGABLE**<br/>`0x00000001` | The enclave permits debugging. |
 | `0x00000000` | The enclave does not permit debugging. |
+| **IMAGE_ENCLAVE_POLICY_DEBUGGABLE**<br/>`0x00000001` | The enclave permits debugging. |
+| **IMAGE_ENCLAVE_POLICY_STRICT_MEMORY**<br/>`0x00000002` | This flag restricts access by an enclave to the address space of its containing process. This policy applies to all threads in the enclave. The enclave must use the [EnclaveCopyIntoEnclave](../winenclaveapi/nf-winenclaveapi-enclavecopyintoenclave.md) and [EnclaveCopyOutOfEnclave](../winenclaveapi/nf-winenclaveapi-enclavecopyoutofenclave.md) APIs to access containing process memory.<br/><br/>**Note:** Access to the containing process's address space can also be restricted by calling the [EnclaveRestrictContainingProcessAccess](../winenclaveapi/nf-winenclaveapi-enclaverestrictcontainingprocessaccess.md) API. This API can also be used to relax this policy at runtime and restore access to the containing process memory. |
 
 ### -field NumberOfImports
 
@@ -119,8 +120,8 @@ A flag that indicates whether the image is suitable for use as the primary image
 
 | Value | Meaning |
 |-------|---------|
-| **IMAGE_ENCLAVE_FLAG_PRIMARY_IMAGE**<br/>`0x00000001` | The image is suitable for use as the primary image in the enclave. |
 | `0x00000000` | The image is not suitable for use as the primary image in the enclave. |
+| **IMAGE_ENCLAVE_FLAG_PRIMARY_IMAGE**<br/>`0x00000001` | The image is suitable for use as the primary image in the enclave. |
 
 ## -remarks
 
@@ -130,4 +131,10 @@ The **IMAGE_ENCLAVE_CONFIG** structure is defined as another name for the **IMAG
 
 [Enclave Structures](/windows/win32/trusted-execution/enclaves-structures)
 
-[IMAGE_ENCLAVE_CONFIG64](/previous-versions/windows/desktop/legacy/mt844244(v=vs.85))
+[IMAGE_ENCLAVE_CONFIG64](ns-winnt-image_enclave_config64.md)
+
+[EnclaveCopyIntoEnclave](../winenclaveapi/nf-winenclaveapi-enclavecopyintoenclave.md)
+
+[EnclaveCopyOutOfEnclave](../winenclaveapi/nf-winenclaveapi-enclavecopyoutofenclave.md)
+
+[EnclaveRestrictContainingProcessAccess](../winenclaveapi/nf-winenclaveapi-enclaverestrictcontainingprocessaccess.md)
