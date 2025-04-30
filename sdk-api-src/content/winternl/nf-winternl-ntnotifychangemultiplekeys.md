@@ -62,11 +62,11 @@ A handle to an open key. The handle must be opened with the <b>KEY_NOTIFY</b> ac
 
 ### -param Count [in, optional]
 
-The number of subkeys under the key specified by the <i>MasterKeyHandle</i> parameter. This parameter must be 1.
+The number of keys objects provided in the <i>SubordinateObjects</i> parameter. This parameter must be 1.
 
 ### -param SubordinateObjects [in, optional]
 
-Pointer to an array of <a href="/windows-hardware/drivers/ddi/content/wudfwdm/ns-wudfwdm-_object_attributes">OBJECT_ATTRIBUTES</a> structures, one for each subkey.   This array can contain one <b>OBJECT_ATTRIBUTES</b> structure.
+Pointer to an array of <a href="/windows-hardware/drivers/ddi/content/wudfwdm/ns-wudfwdm-_object_attributes">OBJECT_ATTRIBUTES</a> structures, one for each key.   This array can contain one <b>OBJECT_ATTRIBUTES</b> structure and you can't provide a key in the same hive as the <i>MasterKeyHandle</i> key.
 
 ### -param Event [in, optional]
 
@@ -74,11 +74,11 @@ A handle to an event created by the caller. If <i>Event</i> is not <b>NULL</b>, 
 
 ### -param ApcRoutine [in, optional]
 
-A pointer to an asynchronous procedure call (APC) function supplied by the caller. If <i>ApcRoutine</i> is not <b>NULL</b>, the specified APC function executes after the operation completes.
+A pointer to an asynchronous procedure call (APC) function supplied by the caller. If <i>ApcRoutine</i> is not <b>NULL</b>, the specified APC function executes after the operation completes. A <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_work_queue_item">WORK_QUEUE_ITEM</a> must be provided instead of ApcRoutine in the <i>ZwNotifyChangeMultipleKeys</i> variant.
 
 ### -param ApcContext [in, optional]
 
-A pointer to a context supplied by the caller for its APC function. This value is passed to the APC function when it is executed. The <i>Asynchronous</i> parameter must be <b>TRUE</b>. If <i>ApcContext</i> is specified, the <i>Event</i> parameter must be <b>NULL</b>.
+A pointer to a context supplied by the caller for its APC function. This value is passed to the APC function when it is executed. The <i>Asynchronous</i> parameter must be <b>TRUE</b>. If <i>ApcContext</i> is specified, the <i>Event</i> parameter must be <b>NULL</b>. A <a href="/windows-hardware/drivers/ddi/wdm/ne-wdm-_work_queue_type">WORK_QUEUE_TYPE</a> must be provided instead of ApcContext in the <i>ZwNotifyChangeMultipleKeys</i> variant.
 
 ### -param IoStatusBlock [out]
 
