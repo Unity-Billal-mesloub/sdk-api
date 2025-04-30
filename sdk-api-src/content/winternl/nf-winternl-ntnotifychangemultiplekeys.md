@@ -6,7 +6,7 @@ helpviewer_keywords: ["NtNotifyChangeMultipleKeys","NtNotifyChangeMultipleKeys f
 old-location: winprog\ntnotifychangemultiplekeys.htm
 tech.root: winprog
 ms.assetid: c1ee9793-490c-45de-a2a5-deab630917f6
-ms.date: 12/05/2018
+ms.date: 04/30/2025
 ms.keywords: NtNotifyChangeMultipleKeys, NtNotifyChangeMultipleKeys function [Windows API], REG_NOTIFY_CHANGE_ATTRIBUTES, REG_NOTIFY_CHANGE_LAST_SET, REG_NOTIFY_CHANGE_NAME, REG_NOTIFY_CHANGE_SECURITY, base.ntnotifychangemultiplekeys, winprog.ntnotifychangemultiplekeys, winternl/NtNotifyChangeMultipleKeys
 req.header: winternl.h
 req.include-header: 
@@ -66,7 +66,7 @@ The number of keys objects provided in the <i>SubordinateObjects</i> parameter. 
 
 ### -param SubordinateObjects [in, optional]
 
-Pointer to an array of <a href="/windows-hardware/drivers/ddi/content/wudfwdm/ns-wudfwdm-_object_attributes">OBJECT_ATTRIBUTES</a> structures, one for each key.   This array can contain one <b>OBJECT_ATTRIBUTES</b> structure and you can't provide a key in the same hive as the <i>MasterKeyHandle</i> key.
+Pointer to an array of <a href="/windows-hardware/drivers/ddi/content/wudfwdm/ns-wudfwdm-_object_attributes">OBJECT_ATTRIBUTES</a> structures, one for each key.   This array can contain one <b>OBJECT_ATTRIBUTES</b> structure and must not be a key in the same hive as the <i>MasterKeyHandle</i> key.
 
 ### -param Event [in, optional]
 
