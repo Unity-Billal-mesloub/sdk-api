@@ -84,7 +84,7 @@ The following values are allowed for this field:
 
 ### -field DUMMYSTRUCTNAME.THSEL
 
-Specifies an [NVME_TEMPERATURE_THRESHOLD_TYPES](ns-nvme-nvme_cdw11_feature_temperature_threshold.md) value that indicates the threshold type that is modified by a Set Features command and whose threshold value is returned by a Get Features command.
+Specifies an [NVME_TEMPERATURE_THRESHOLD_TYPES](ne-nvme-nvme_temperature_threshold_types.md) value that indicates the threshold type that is modified by a Set Features command and whose threshold value is returned by a Get Features command.
 
 ### -field DUMMYSTRUCTNAME.Reserved0
 

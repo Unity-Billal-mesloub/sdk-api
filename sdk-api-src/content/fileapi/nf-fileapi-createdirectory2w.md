@@ -95,7 +95,7 @@ This parameter can contain combinations of [DIRECTORY_FLAGS](ne-fileapi-director
 
 ### -param lpSecurityAttributes
 
-A pointer to a [SECURITY_ATTRIBUTES](/windows/win32/wtypesbase/ns-wtypesbase-security_attributes) structure. The **lpSecurityDescriptor** member of the structure specifies a security descriptor for the new directory. If *lpSecurityAttributes* is `NULL`, the directory gets a default security descriptor. The ACLs in the default security descriptor for a directory are inherited from its parent directory.
+A pointer to a [SECURITY_ATTRIBUTES](/windows/win32/api/wtypesbase/ns-wtypesbase-security_attributes) structure. The **lpSecurityDescriptor** member of the structure specifies a security descriptor for the new directory. If *lpSecurityAttributes* is `NULL`, the directory gets a default security descriptor. The ACLs in the default security descriptor for a directory are inherited from its parent directory.
 
 The target file system must support security on files and directories for this parameter to have an effect. (This is indicated when [GetVolumeInformation](nf-fileapi-getvolumeinformationw.md) returns **FS_PERSISTENT_ACLS**.)
 
