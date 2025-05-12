@@ -78,6 +78,26 @@ The values for the <i>Priority</i> parameter function as follows:
 </ul>
 To use the <b>SetGPUThreadPriority</b> method, you should have a comprehensive understanding of GPU scheduling. You should profile your application to ensure that it behaves as intended. If used inappropriately, the <b>SetGPUThreadPriority</b> method can impede rendering speed and result in a poor user experience.
 
+<b>Priority Values Bit Definition:</b>
+<ul>
+Bit 0-4  : Priority Value <br>
+Bit 5-29 : Reserved <br>
+Bit 30   : Absolute Priority Flag ( D3DKMT_SETCONTEXTSCHEDULINGPRIORITY_ABSOLUTE ), can be ORed with Priority Value Bits [4:0] <br>
+Bit 31   : Signed bit <br>
+</ul>
+
+Use D3DKMT_SETCONTEXTSCHEDULINGPRIORITY_ABSOLUTE only if you have thorough understanding of dxgkrnl/graphics priorities and understand repercussions of changing them.
+
+<b>Priority Values Bits[4:0]</b> tranlsates to following priority values:
+<ul>
+0     : Idle Priority   - Forward progress is not guaranteed if higher priorties use most of the accelerator time.<br>
+1     : Normal Priority - Most of the processes use this priority with forward progress guarantee.<br>
+2 -15 : Reserved        - <br>
+16-29 : Soft Realtime   - Preempts lower priorities<br>
+30    : Hard Realtime   - VR compositor<br>
+31    : Internal Use <br>
+</ul>
+
 ## -see-also
 
 <a href="/windows/desktop/direct3ddxgi/d3d10-graphics-reference-dxgi-interfaces">DXGI Interfaces</a>
