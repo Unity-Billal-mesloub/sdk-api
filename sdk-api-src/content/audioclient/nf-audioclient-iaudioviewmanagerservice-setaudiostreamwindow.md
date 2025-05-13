@@ -58,7 +58,7 @@ The [HWND](https://docs.microsoft.com/en-us/windows/win32/winprog/windows-data-t
 
 An app can choose to associate audio streams with a particular window of their app for proper audio location representation in a Mixed Reality scenario
 
-Get an instance of the [IAudioViewManagerService](nn-audioclient-iaudioviewmanagerservice.md) by calling [GetService](nf-audioclient-iaudioclient-getservice) on the [IAudioClient](nn-audioclient-iaudioclient.md) instance representing the stream you want to associate a window with. The following code example illustrates creating an audio stream on the default audio render endpoint and associating it with an **HWND**.
+Get an instance of the [IAudioViewManagerService](nn-audioclient-iaudioviewmanagerservice.md) by calling [GetService](nf-audioclient-iaudioclient-getservice.md) on the [IAudioClient](nn-audioclient-iaudioclient.md) instance representing the stream you want to associate a window with. The following code example illustrates creating an audio stream on the default audio render endpoint and associating it with an **HWND**.
 
 ```cpp
 #include <audioclient.h>

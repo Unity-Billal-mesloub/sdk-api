@@ -74,7 +74,7 @@ Register an **IAudioEffectsChangedNotificationClient** to receive notifications 
 
 ## Examples
 
-The following example demonstrates the [IAudioEffectsManager.GetAudioEffects](nf-audioclient-iaudioeffectsmanager-getaudioeffects.md) to detect whether the [AUDIO_EFFECT_TYPE_DEEP_NOISE_SUPPRESSION](/windows-hardware/drivers/audio/audio-signal-processing-modes#clsids-for-system-effects) effect is present on the specified audio stream.
+The following example demonstrates using **IAudioEffectsManager.GetAudioEffects** to detect whether the [AUDIO_EFFECT_TYPE_DEEP_NOISE_SUPPRESSION](/windows-hardware/drivers/audio/audio-signal-processing-modes#clsids-for-system-effects) effect is present on the specified audio stream.
 
 ```cpp
 HRESULT IsPlatformDeepNoiseSuppressionPresent(_In_ IAudioClient *client, _Out_ bool *isPresent)

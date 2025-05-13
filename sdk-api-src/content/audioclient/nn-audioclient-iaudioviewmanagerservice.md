@@ -42,7 +42,7 @@ Provides APIs for associating an [HWND](https://docs.microsoft.com/en-us/windows
 
 ## -remarks
 
-Get an instance of the [IAudioViewManagerService](nn-audioclient-iaudioviewmanagerservice.md) by calling [GetService](nf-audioclient-iaudioclient-getservice) on an instance of [IAudioClient](nn-audioclient-iaudioclient.md).
+Get an instance of the **IAudioViewManagerService** by calling [GetService](nf-audioclient-iaudioclient-getservice.md) on an instance of [IAudioClient](nn-audioclient-iaudioclient.md).
 
 ## -see-also
 
