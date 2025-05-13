@@ -44,7 +44,7 @@ helpviewer_keywords:
 
 ## -description
 
-Creates an instance of [IAppInstallerReader](nf-appxpackaging-iappxfactory3-createappinstallerreader.md), with an optional parameter for specifying the expected digest for the App Installer file.
+Creates an instance of [IAppxInstallerReader](nn-appxpackaging-iappxappinstallerreader.md), with an optional parameter for specifying the expected digest for the App Installer file.
 
 ## -parameters
 

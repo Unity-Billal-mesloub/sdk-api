@@ -44,6 +44,7 @@ api_location:
 api_name:
  - MFCreateVideoSampleFromSurface
 archived: true
+ROBOTS: "NOINDEX,NOFOLLOW"
 ---
 
 # MFCreateVideoSampleFromSurface callback function

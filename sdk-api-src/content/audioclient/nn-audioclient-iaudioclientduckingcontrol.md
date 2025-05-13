@@ -44,7 +44,7 @@ Provides a method, [SetDuckingOptionsForCurrentStream](nf-audioclient-iaudioclie
 
 ## -remarks
 
-Get an instance of the [IAudioClientDuckingControl](nn-audioclient-iaudioclientduckingcontrol.md) interface by calling [IAudioClient::GetService](nf-audioclient-iaudioclient-getservice.md), passing in the interface ID constant **IID_IAudioClientDuckingControl**.
+Get an instance of the **IAudioClientDuckingControl** interface by calling [IAudioClient::GetService](nf-audioclient-iaudioclient-getservice.md), passing in the interface ID constant **IID_IAudioClientDuckingControl**.
 
 **IAudioClientDuckingControl** only controls the ducking caused by the audio stream (**IAudioClient**) that the interface is obtained from. 
 
