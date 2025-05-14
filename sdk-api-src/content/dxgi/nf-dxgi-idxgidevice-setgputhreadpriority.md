@@ -59,7 +59,7 @@ Sets the GPU thread priority.
 
 Type: <b><a href="/windows/desktop/WinProg/windows-data-types">INT</a></b>
 
-A value that specifies the required GPU thread priority. (See Remarks)
+A value that specifies the required GPU thread priority. See the [Remarks](#remarks) section in this topic.
 
 ## -returns
 
