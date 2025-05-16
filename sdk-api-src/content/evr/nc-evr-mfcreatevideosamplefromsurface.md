@@ -38,9 +38,9 @@ topic_type:
  - APIRef
  - kbSyntax
 api_type:
- - UserDefined
+ - DllExport
 api_location:
- - evr.h
+ - evr.dll
 api_name:
  - MFCreateVideoSampleFromSurface
 archived: true
