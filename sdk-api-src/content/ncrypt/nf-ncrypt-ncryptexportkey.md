@@ -6,7 +6,7 @@ helpviewer_keywords: ["BCRYPT_DH_PRIVATE_BLOB","BCRYPT_DH_PUBLIC_BLOB","BCRYPT_D
 old-location: security\ncryptexportkey_func.htm
 tech.root: security
 ms.assetid: 1588eb29-4026-4d1c-8bee-a035df38444a
-ms.date: 02/13/2023
+ms.date: 05/15/2025
 ms.keywords: BCRYPT_DH_PRIVATE_BLOB, BCRYPT_DH_PUBLIC_BLOB, BCRYPT_DSA_PRIVATE_BLOB, BCRYPT_DSA_PUBLIC_BLOB, BCRYPT_ECCPRIVATE_BLOB, BCRYPT_ECCPUBLIC_BLOB, BCRYPT_PRIVATE_KEY_BLOB, BCRYPT_PUBLIC_KEY_BLOB, BCRYPT_RSAFULLPRIVATE_BLOB, BCRYPT_RSAPRIVATE_BLOB, BCRYPT_RSAPUBLIC_BLOB, LEGACY_DH_PRIVATE_BLOB, LEGACY_DH_PUBLIC_BLOB, LEGACY_DSA_PRIVATE_BLOB, LEGACY_DSA_PUBLIC_BLOB, LEGACY_RSAPRIVATE_BLOB, LEGACY_RSAPUBLIC_BLOB, NCRYPT_CIPHER_KEY_BLOB, NCRYPT_OPAQUETRANSPORT_BLOB, NCRYPT_PKCS7_ENVELOPE_BLOB, NCRYPT_PKCS8_PRIVATE_KEY_BLOB, NCRYPT_PROTECTED_KEY_BLOB, NCRYPT_SILENT_FLAG, NCryptExportKey, NCryptExportKey function [Security], ncrypt/NCryptExportKey, security.ncryptexportkey_func
 req.header: ncrypt.h
 req.include-header: 
@@ -67,27 +67,51 @@ A null-terminated Unicode string that contains an identifier that specifies the 
 
 #### BCRYPT_DH_PRIVATE_BLOB
 
-Export a Diffie-Hellman [public/private key pair](/windows/win32/SecGloss/p-gly). The _pbOutput_ buffer receives a [BCRYPT_DH_KEY_BLOB](/windows/win32/api/bcrypt/ns-bcrypt-bcrypt_dh_key_blob) structure immediately followed by the key data.
+Export a Diffie-Hellman [public/private key pair](/windows/win32/SecGloss/p-gly). The *pbOutput* buffer receives a [BCRYPT_DH_KEY_BLOB](/windows/win32/api/bcrypt/ns-bcrypt-bcrypt_dh_key_blob) structure immediately followed by the key data.
 
 #### BCRYPT_DH_PUBLIC_BLOB
 
-Export a Diffie-Hellman [public key](/windows/win32/SecGloss/p-gly). The _pbOutput_ buffer receives a [BCRYPT_DH_KEY_BLOB](/windows/win32/api/bcrypt/ns-bcrypt-bcrypt_dh_key_blob) structure immediately followed by the key data.
+Export a Diffie-Hellman [public key](/windows/win32/SecGloss/p-gly). The *pbOutput* buffer receives a [BCRYPT_DH_KEY_BLOB](/windows/win32/api/bcrypt/ns-bcrypt-bcrypt_dh_key_blob) structure immediately followed by the key data.
 
 #### BCRYPT_DSA_PRIVATE_BLOB
 
-Export a DSA public/private key pair. The _pbOutput_ buffer receives a [BCRYPT_DSA_KEY_BLOB](/windows/win32/api/bcrypt/ns-bcrypt-bcrypt_dsa_key_blob) structure immediately followed by the key data.
+Export a DSA public/private key pair. The *pbOutput* buffer receives a [BCRYPT_DSA_KEY_BLOB](/windows/win32/api/bcrypt/ns-bcrypt-bcrypt_dsa_key_blob) structure immediately followed by the key data.
 
 #### BCRYPT_DSA_PUBLIC_BLOB
 
-Export a DSA public key. The _pbOutput_ buffer receives a [BCRYPT_DSA_KEY_BLOB](/windows/win32/api/bcrypt/ns-bcrypt-bcrypt_dsa_key_blob) structure immediately followed by the key data.
+Export a DSA public key. The *pbOutput* buffer receives a [BCRYPT_DSA_KEY_BLOB](/windows/win32/api/bcrypt/ns-bcrypt-bcrypt_dsa_key_blob) structure immediately followed by the key data.
 
 #### BCRYPT_ECCPRIVATE_BLOB
 
-Export an [elliptic curve cryptography](/windows/win32/SecGloss/e-gly) (ECC) [private key](/windows/win32/SecGloss/p-gly). The _pbOutput_ buffer receives a [BCRYPT_ECCKEY_BLOB](/windows/win32/api/bcrypt/ns-bcrypt-bcrypt_ecckey_blob) structure immediately followed by the key data.
+Export an [elliptic curve cryptography](/windows/win32/SecGloss/e-gly) (ECC) [private key](/windows/win32/SecGloss/p-gly). The *pbOutput* buffer receives a [BCRYPT_ECCKEY_BLOB](/windows/win32/api/bcrypt/ns-bcrypt-bcrypt_ecckey_blob) structure immediately followed by the key data.
 
 #### BCRYPT_ECCPUBLIC_BLOB
 
-Export an ECC public key. The _pbOutput_ buffer receives a [BCRYPT_ECCKEY_BLOB](/windows/win32/api/bcrypt/ns-bcrypt-bcrypt_ecckey_blob) structure immediately followed by the key data.
+Export an ECC public key. The *pbOutput* buffer receives a [BCRYPT_ECCKEY_BLOB](/windows/win32/api/bcrypt/ns-bcrypt-bcrypt_ecckey_blob) structure immediately followed by the key data.
+
+#### BCRYPT_MLKEM_PUBLIC_BLOB
+
+The BLOB is a ML-KEM BLOB that provides import and export of standard byte-encoded ML-KEM encapsulation keys per FIPS 203. The *pbOutput* buffer must contain a [BCRYPT_MLKEM_KEY_BLOB](/windows/win32/seccng/bcrypt/ns-bcrypt-bcrypt_mlkem_key_blob) structure containing the byte-encoded KEM encapsulation key, **BCRYPT_MLKEM_PUBLIC_MAGIC**, and ML-KEM parameter set.
+
+#### BCRYPT_MLKEM_PRIVATE_BLOB
+
+The BLOB is a ML-KEM BLOB that provides import and export of standard byte-encoded ML-KEM decapsulation keys per FIPS 203. The *pbOutput* buffer must contain a [BCRYPT_MLKEM_KEY_BLOB](/windows/win32/seccng/bcrypt/ns-bcrypt-bcrypt_mlkem_key_blob) structure containing the byte-encoded KEM decapsulation key, **BCRYPT_MLKEM_PRIVATE_MAGIC**, and ML-KEM parameter set.
+
+#### BCRYPT_MLKEM_PRIVATE_SEED_BLOB
+
+The BLOB is a ML-KEM BLOB that provides import and export of ML-KEM seeds per FIPS 203. The *pbOutput* buffer must contain a [BCRYPT_MLKEM_KEY_BLOB](/windows/win32/seccng/bcrypt/ns-bcrypt-bcrypt_mlkem_key_blob) structure containing the KEM seed, **BCRYPT_MLKEM_SEED_MAGIC**, and ML-KEM parameter set.
+
+#### BCRYPT_PQDSA_PUBLIC_BLOB
+
+The BLOB is a ML-DSA, SLH-DSA, LMS, or XMSS BLOB that provides import and export of PQ digital signature public keys per FIPS 204 and 205. The *pbOutput* buffer must contain a [BCRYPT_PQDSA_KEY_BLOB](/windows/win32/seccng/bcrypt/ns-bcrypt-bcrypt_pqdsa_key_blob) structure containing the key material, public magic, and PQ parameter set.
+
+#### BCRYPT_PQDSA_PRIVATE_BLOB
+
+The BLOB is a ML-DSA, SLH-DSA, LMS, or XMSS BLOB that provides import and export of PQ digital signature private keys per FIPS 204 and 205. The *pbOutput* buffer must contain a [BCRYPT_PQDSA_KEY_BLOB](/windows/win32/seccng/bcrypt/ns-bcrypt-bcrypt_pqdsa_key_blob) structure containing the key material, private magic, and PQ parameter set.
+
+#### BCRYPT_PQDSA_PRIVATE_SEED_BLOB
+
+The BLOB is a ML-DSA, SLH-DSA, LMS, or XMSS BLOB that provides import and export of PQ digital signature private seeds per FIPS 204 and 205. The *pbOutput* buffer must contain a [BCRYPT_PQDSA_KEY_BLOB](/windows/win32/seccng/bcrypt/ns-bcrypt-bcrypt_pqdsa_key_blob) structure containing the seed value, private seed magic, and PQ parameter set.
 
 #### BCRYPT_PUBLIC_KEY_BLOB
 
@@ -99,15 +123,15 @@ Export a generic private key of any type.  The private key does not necessarily 
 
 #### BCRYPT_RSAFULLPRIVATE_BLOB
 
-Export a full RSA public/private key pair. The _pbOutput_ buffer receives a [BCRYPT_RSAKEY_BLOB](/windows/win32/api/bcrypt/ns-bcrypt-bcrypt_rsakey_blob) structure immediately followed by the key data. This BLOB will include additional key material compared to the **BCRYPT_RSAPRIVATE_BLOB** type.
+Export a full RSA public/private key pair. The *pbOutput* buffer receives a [BCRYPT_RSAKEY_BLOB](/windows/win32/api/bcrypt/ns-bcrypt-bcrypt_rsakey_blob) structure immediately followed by the key data. This BLOB will include additional key material compared to the **BCRYPT_RSAPRIVATE_BLOB** type.
 
 #### BCRYPT_RSAPRIVATE_BLOB
 
-Export an RSA public/private key pair. The _pbOutput_ buffer receives a [BCRYPT_RSAKEY_BLOB](/windows/win32/api/bcrypt/ns-bcrypt-bcrypt_rsakey_blob) structure immediately followed by the key data.
+Export an RSA public/private key pair. The *pbOutput* buffer receives a [BCRYPT_RSAKEY_BLOB](/windows/win32/api/bcrypt/ns-bcrypt-bcrypt_rsakey_blob) structure immediately followed by the key data.
 
 #### BCRYPT_RSAPUBLIC_BLOB
 
-Export an RSA public key. The _pbOutput_ buffer receives a [BCRYPT_RSAKEY_BLOB](/windows/win32/api/bcrypt/ns-bcrypt-bcrypt_rsakey_blob) structure immediately followed by the key data.
+Export an RSA public key. The *pbOutput* buffer receives a [BCRYPT_RSAKEY_BLOB](/windows/win32/api/bcrypt/ns-bcrypt-bcrypt_rsakey_blob) structure immediately followed by the key data.
 
 #### LEGACY_DH_PRIVATE_BLOB
 
@@ -179,11 +203,11 @@ The address of a buffer that receives the key BLOB. The _cbOutput_ parameter con
 
 ### -param cbOutput [in]
 
-The size, in bytes, of the _pbOutput_ buffer.
+The size, in bytes, of the *pbOutput* buffer.
 
 ### -param pcbResult [out]
 
-The address of a **DWORD** variable that receives the number of bytes copied to the _pbOutput_ buffer. If the _pbOutput_ parameter is **NULL**, this function will place the required size, in bytes, in the **DWORD** pointed to by this parameter.
+The address of a **DWORD** variable that receives the number of bytes copied to the *pbOutput* buffer. If the *pbOutput* parameter is **NULL**, this function will place the required size, in bytes, in the **DWORD** pointed to by this parameter.
 
 ### -param dwFlags [in]
 
