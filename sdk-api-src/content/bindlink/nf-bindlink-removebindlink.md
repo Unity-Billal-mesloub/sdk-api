@@ -78,7 +78,7 @@ int wmain(int argc, wchar_t* argv[])
 
     if(FAILED(hr))
     {
-        std::cerr << "CreateBindLink Failed with Err: " << hr;
+        std::cerr << "RemoveBindLink Failed with Err: " << hr;
         return hr;
     }
 

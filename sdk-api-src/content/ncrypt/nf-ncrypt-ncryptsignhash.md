@@ -64,7 +64,7 @@ A pointer to a structure that contains padding information. The actual type of s
 
 ### -param pbHashValue [in]
 
-A pointer to a buffer that contains the hash value to sign. The <i>cbInput</i> parameter contains the size of this buffer.
+A pointer to a buffer that contains the hash value to sign. The <i>cbHashValue</i> parameter contains the size of this buffer.
 
 ### -param cbHashValue [in]
 
@@ -178,6 +178,17 @@ The key represented by the <i>hKey</i> parameter does not support signing.
 </td>
 <td width="60%">
 The <i>dwFlags</i> parameter contains a value that is not valid.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
+<dl>
+<dt><b>NTE_BAD_HASH</b></dt>
+</dl>
+</td>
+<td width="60%">
+The hash object specified by the <i>pbHashValue</i> parameter is not valid.
 
 </td>
 </tr>

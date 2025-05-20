@@ -61,7 +61,7 @@ The **GUID** to associate with the interface.
 
 Type: **const [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown)\***
 
-A pointer to the [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown)-derived interface to be associated with the device object. Its reference count is incremented when set, and its reference count is decremented when either the [ID3D12Object](/windows/win32/api/d3d12/nn-d3d12-id3d12object) is destroyed, or when the data is overwritten by calling [SetPrivateData](/windows/win32/api/d3d12/nf-d3d12-id3d12object-setprivatedata) or **SetPrivateDataInterface** with the same **GUID**.
+A pointer to the [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown)-derived interface to be associated with the device object. Its reference count is incremented when set, and decremented when either the [ID3D12Object](/windows/win32/api/d3d12/nn-d3d12-id3d12object) is destroyed, or when the data is overwritten by calling [SetPrivateData](/windows/win32/api/d3d12/nf-d3d12-id3d12object-setprivatedata) or **SetPrivateDataInterface** with the same **GUID**.
 
 ## -returns
 

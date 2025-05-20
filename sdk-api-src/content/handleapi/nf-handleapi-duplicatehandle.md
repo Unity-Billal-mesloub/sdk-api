@@ -72,6 +72,8 @@ The handle must have the PROCESS_DUP_HANDLE access right. For more information, 
 
 The handle to be duplicated. This is an open object handle that is valid in the context of the source process. For a list of objects whose handles can be duplicated, see the following Remarks section.
 
+If <i>hSourceHandle</i> is a pseudo handle returned by <a href="/windows/desktop/api/processthreadsapi/nf-processthreadsapi-getcurrentprocess">GetCurrentProcess</a> or <a href="/windows/desktop/api/processthreadsapi/nf-processthreadsapi-getcurrentthread">GetCurrentThread</a>, <i>hSourceProcessHandle</i> should be a handle to the process calling <b>DuplicateHandle</b>.
+
 ### -param hTargetProcessHandle [in]
 
 A handle to the process that is to receive the duplicated handle. The handle must have the PROCESS_DUP_HANDLE access right.

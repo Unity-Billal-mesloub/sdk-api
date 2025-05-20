@@ -6,7 +6,7 @@ helpviewer_keywords: ["GetRawInputDeviceList","GetRawInputDeviceList function [K
 old-location: inputdev\getrawinputdevicelist.htm
 tech.root: inputdev
 ms.assetid: VS|winui|~\winui\windowsuserinterface\userinput\rawinput\rawinputreference\rawinputfunctions\getrawinputdevicelist.htm
-ms.date: 12/05/2018
+ms.date: 02/25/2025
 ms.keywords: GetRawInputDeviceList, GetRawInputDeviceList function [Keyboard and Mouse Input], _win32_GetRawInputDeviceList, _win32_getrawinputdevicelist_cpp, inputdev.getrawinputdevicelist, winui._win32_getrawinputdevicelist, winuser/GetRawInputDeviceList
 req.header: winuser.h
 req.include-header: Windows.h
@@ -65,7 +65,9 @@ Enumerates the raw input devices attached to the system.
 
 Type: <b>PRAWINPUTDEVICELIST</b>
 
-An array of <a href="/windows/desktop/api/winuser/ns-winuser-rawinputdevicelist">RAWINPUTDEVICELIST</a> structures for the devices attached to the system. If <b>NULL</b>, the number of devices are returned in *<i>puiNumDevices</i>.
+An array of <a href="/windows/desktop/api/winuser/ns-winuser-rawinputdevicelist">RAWINPUTDEVICELIST</a> structures for the devices attached to the system. Pointer should be aligned on a **DWORD** (32-bit) boundary.
+
+If <b>NULL</b>, the number of devices are returned in *<i>puiNumDevices</i>.
 
 ### -param puiNumDevices [in, out]
 
@@ -84,11 +86,9 @@ The size of a <a href="/windows/desktop/api/winuser/ns-winuser-rawinputdevicelis
 
 Type: <b>UINT</b>
 
-If the function is successful, the return value is the number of devices stored in the buffer pointed to by 
-						<i>pRawInputDeviceList</i>.
+If the function is successful, the return value is the number of devices stored in the buffer pointed to by <i>pRawInputDeviceList</i>.
 
-On any other error, the function returns (<b>UINT</b>) -1 and 
-						<a href="/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror">GetLastError</a> returns the error indication.
+On any other error, the function returns (<b>UINT</b>) -1 and <a href="/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror">GetLastError</a> returns the error indication.
 
 ## -remarks
 
@@ -96,6 +96,7 @@ The devices returned from this function are the mouse, the keyboard, and other H
 
 To get more detailed information about the attached devices, call <a href="/windows/desktop/api/winuser/nf-winuser-getrawinputdeviceinfoa">GetRawInputDeviceInfo</a> using the hDevice from <a href="/windows/desktop/api/winuser/ns-winuser-rawinputdevicelist">RAWINPUTDEVICELIST</a>. 
 
+Input devices accessed through Remote Desktop Protocal (RDP) do not appear in the raw input device list.
 
 #### Examples
 
@@ -126,18 +127,8 @@ free(pRawInputDeviceList);
 
 <b>Conceptual</b>
 
-
-
 <a href="/windows/desktop/api/winuser/nf-winuser-getrawinputdeviceinfoa">GetRawInputDeviceInfo</a>
-
-
 
 <a href="/windows/desktop/api/winuser/ns-winuser-rawinputdevicelist">RAWINPUTDEVICELIST</a>
 
-
-
 <a href="/windows/desktop/inputdev/raw-input">Raw Input</a>
-
-
-
-<b>Reference</b>

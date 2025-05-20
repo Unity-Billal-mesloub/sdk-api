@@ -52,16 +52,22 @@ Defines constants that specify a rounding mode.
 
 ### -field DML_ROUNDING_MODE_HALVES_TO_NEAREST_EVEN
 
-Specifies rounding halves to the nearest even integer.
+Specifies rounding to the nearest integer, with tied halves to the nearest even integer.
 
 ### -field DML_ROUNDING_MODE_TOWARD_ZERO
 
-Specifies always rounding downward.
+Specifies rounding toward zero to the nearest integer.
 
 ### -field DML_ROUNDING_MODE_TOWARD_INFINITY
 
-Specifies always rounding upward.
+Specifies rounding to the nearest integer, with tied halves toward the nearest infinity / away from zero.
 
 ## -remarks
+
+| Original value                           | -2.5 | -1.75 | -1.5 | -1.25 | 0 | 1.25 | 1.5 | 1.75 | 2.5 |
+|------------------------------------------|------|-------|------|-------|---|------|-----|------|-----|
+| DML_ROUNDING_MODE_HALVES_TO_NEAREST_EVEN | -2   | -2    | -2   | -1    | 0 | 1    | 2   | 2    | 2   |
+| DML_ROUNDING_MODE_TOWARD_ZERO            | -2   | -1    | -1   | -1    | 0 | 1    | 1   | 1    | 2   |
+| DML_ROUNDING_MODE_TOWARD_INFINITY        | -3   | -2    | -2   | -1    | 0 | 1    | 2   | 2    | 3   |
 
 ## -see-also

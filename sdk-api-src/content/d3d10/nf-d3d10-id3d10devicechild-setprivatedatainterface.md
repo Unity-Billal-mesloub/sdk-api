@@ -65,17 +65,13 @@ Guid associated with the interface.
 
 Type: <b>const IUnknown*</b>
 
-Pointer to an <a href="/windows/desktop/api/unknwn/nn-unknwn-iunknown">IUnknown</a>-derived interface to be associated with the device child.
+A pointer to the [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown)-derived interface to be associated with the device child. Its reference count is incremented when set, and decremented when either the [ID3D10DeviceChild](/windows/win32/api/d3d10/nn-d3d10-id3d10devicechild) is destroyed, or when the data is overwritten by calling [SetPrivateData](/windows/win32/api/d3d10/nf-d3d10-id3d10devicechild-setprivatedata) or **SetPrivateDataInterface** with the same **GUID**.
 
 ## -returns
 
 Type: <b><a href="/windows/win32/com/structure-of-com-error-codes">HRESULT</a></b>
 
 This method returns one of the following <a href="/windows/desktop/direct3d10/d3d10-graphics-reference-returnvalues">Direct3D 10 Return Codes</a>.
-
-## -remarks
-
-When this method is called ::addref() will be called on the <a href="/windows/desktop/api/unknwn/nn-unknwn-iunknown">IUnknown</a>-derived interface, and when the device child is destroyed ::release() will be called on the IUnknown-derived interface.
 
 ## -see-also
 

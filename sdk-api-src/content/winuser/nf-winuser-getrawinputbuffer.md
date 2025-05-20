@@ -57,7 +57,7 @@ Performs a buffered read of the raw input messages data found in the calling thr
 
 Type: **PRAWINPUT**
 
-A pointer to a buffer of [RAWINPUT](ns-winuser-rawinput.md) structures that contain the raw input data. Buffer should be aligned on a pointer boundary, which is a **DWORD** on 32-bit architectures and a **QWORD** on 64-bit architectures.
+A pointer to a buffer of [RAWINPUT](ns-winuser-rawinput.md) structures that contain the raw input data. Pointer should be aligned on a **DWORD** (32-bit) boundary.
 
 If **NULL**, size of the first raw input message data (minimum required buffer), in bytes, is returned in \**pcbSize*.
 
