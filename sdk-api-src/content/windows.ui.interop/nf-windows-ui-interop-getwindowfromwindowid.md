@@ -44,7 +44,7 @@ helpviewer_keywords:
 
 ## -description
 
-Gets the window handle ([HWND](/windows/win32/winprog/windows-data-types)) that corresponds to the specified [WindowId](/windows/windows-app-sdk/api/winrt/microsoft.ui.windowid), if the *windowId* argument is valid and the system has an **HWND** that represents the window.
+Gets the window handle ([HWND](/windows/win32/winprog/windows-data-types)) that corresponds to the specified [WindowId](/uwp/api/windows.ui.windowid), if the *windowId* argument is valid and the system has an **HWND** that represents the window.
 
 ## -parameters
 
