@@ -54,6 +54,7 @@ To develop C++ apps that interoperate with the associated Windows Runtime APIs, 
  * [windows.graphics.effects.interop.h](../windows.graphics.effects.interop/index.md)
  * [windows.graphics.imaging.interop.h](../windows.graphics.imaging.interop/index.md)
  * [windows.media.core.interop.h](../windows.media.core.interop/index.md)
+ * [windows.ui.interop.h](../windows.ui.interop/index.md)
  * [windows.ui.composition.interop.h](../windows.ui.composition.interop/index.md)
  * [windows.ui.viewmanagement.core.coreframeworkinputviewinterop.h](/windows/win32/api/windows.ui.viewmanagement.core.coreframeworkinputviewinterop)
  * [windows.ui.xaml.hosting.desktopwindowxamlsource.h](../windows.ui.xaml.hosting.desktopwindowxamlsource/index.md)

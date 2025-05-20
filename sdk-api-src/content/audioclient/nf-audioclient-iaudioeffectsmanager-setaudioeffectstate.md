@@ -67,11 +67,11 @@ Returns an HRESULT including but not limited to the following.
 
 ## -remarks
 
-Get the current list of audio effects for the associated audio stream by calling [GetAudioEffects](nf-audioclient-iaudioeffectsmanager-setaudioeffectstate.md).
+Get the current list of audio effects for the associated audio stream by calling [GetAudioEffects](nf-audioclient-iaudioeffectsmanager-getaudioeffects.md).
 
 ## Examples
 
-The following example demonstrates using the [IAudioEffectsManager.SetAudioEffectState](nf-audioclient-iaudioeffectsmanager-setaudioeffectstate.md) to disable the **AUDIO_EFFECT_TYPE_DEEP_NOISE_SUPPRESSION** effect.
+The following example demonstrates using **IAudioEffectsManager.SetAudioEffectState** to disable the **AUDIO_EFFECT_TYPE_DEEP_NOISE_SUPPRESSION** effect.
 
 ```cpp
 HRESULT TryDisablePlatformDeepNoiseSuppression(_In_ IAudioClient *client)
@@ -107,7 +107,7 @@ HRESULT TryDisablePlatformDeepNoiseSuppression(_In_ IAudioClient *client)
 }
 ```
 
-The following example demonstrates using the [IAudioEffectsManager.SetAudioEffectState](nf-audioclient-iaudioeffectsmanager-setaudioeffectstate.md) to enable the **AUDIO_EFFECT_TYPE_DEEP_NOISE_SUPPRESSION** effect.
+The following example demonstrates using **IAudioEffectsManager.SetAudioEffectState** to enable the **AUDIO_EFFECT_TYPE_DEEP_NOISE_SUPPRESSION** effect.
 
 ```cpp
 HRESULT TryEnablePlatformDeepNoiseSuppression(_In_ IAudioClient *client)

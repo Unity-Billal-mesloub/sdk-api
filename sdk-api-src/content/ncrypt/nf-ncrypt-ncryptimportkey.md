@@ -6,7 +6,7 @@ helpviewer_keywords: ["NCRYPT_SILENT_FLAG","NCryptImportKey","NCryptImportKey fu
 old-location: security\ncryptimportkey_func.htm
 tech.root: security
 ms.assetid: ede0e7e0-cb2c-44c0-b724-58db3480b781
-ms.date: 05/29/2024
+ms.date: 05/15/2025
 ms.keywords: NCRYPT_SILENT_FLAG, NCryptImportKey, NCryptImportKey function [Security], ncrypt/NCryptImportKey, security.ncryptimportkey_func
 req.header: ncrypt.h
 req.include-header: 
@@ -63,7 +63,7 @@ The handle of the [cryptographic key](/windows/win32/SecGloss/c-gly) with which 
 
 ### -param pszBlobType [in]
 
-A null-terminated Unicode string that contains an identifier that specifies the format of the key BLOB. These formats are specific to a particular key storage provider. For the BLOB formats supported by Microsoft providers, see Remarks.
+A null-terminated Unicode string that contains an identifier that specifies the format of the key BLOB. These formats are specific to a particular key storage provider. For the BLOB formats supported by Microsoft providers, see [Remarks](#-remarks).
 
 ### -param pParameterList [in, optional]
 
@@ -121,13 +121,24 @@ The following sections describe behaviors specific to the Microsoft key storage 
 - **Microsoft Software KSP**
 - **Microsoft Smart Card KSP**
 
-### Microsoft Software KSP
+#### Microsoft Software KSP
 
 The following constants are supported by the Microsoft software KSP for the _pszBlobType_ parameter.
 
 If a key name is not supplied, the Microsoft Software KSP treats the key as ephemeral and does not store it persistently. For the **NCRYPT_OPAQUETRANSPORT_BLOB** type, the key name is stored within the BLOB when it is exported. For other BLOB formats, the name can be supplied in an **NCRYPTBUFFER_PKCS_KEY_NAME** buffer parameter within the _pParameterList_ parameter.
 
-On Windows Server 2008 and Windows Vista,  only keys imported as PKCS #7 envelope BLOBs (**NCRYPT_PKCS7_ENVELOPE_BLOB**) or PKCS #8 private key BLOBs (**NCRYPT_PKCS8_PRIVATE_KEY_BLOB**) can be persisted by using the above method. To persist keys imported through other BLOB types on these platforms, use the method documented in [Key Import and Export](/windows/win32/SecCNG/key-import-and-export).
+On Windows Server 2008 and Windows Vista, only keys imported as PKCS #7 envelope BLOBs (**NCRYPT_PKCS7_ENVELOPE_BLOB**) or PKCS #8 private key BLOBs (**NCRYPT_PKCS8_PRIVATE_KEY_BLOB**) can be persisted by using the above method. To persist keys imported through other BLOB types on these platforms, use the method documented in [Key Import and Export](/windows/win32/SecCNG/key-import-and-export).
+
+The following BLOB types are supported for ML-KEM and ML-DSA keys:
+
+| BLOB Type | Description |
+|--------|--------|
+| **BCRYPT_MLKEM_PUBLIC_BLOB** | The BLOB is a ML-KEM BLOB that provides import and export of standard byte-encoded ML-KEM encapsulation keys per FIPS 203. The *pbInput* buffer must contain a [BCRYPT_MLKEM_KEY_BLOB](/windows/win32/seccng/bcrypt/ns-bcrypt-bcrypt_mlkem_key_blob) structure containing the byte-encoded KEM encapsulation key, **BCRYPT_MLKEM_PUBLIC_MAGIC**, and ML-KEM parameter set. |
+| **BCRYPT_MLKEM_PRIVATE_BLOB** | The BLOB is a ML-KEM BLOB that provides import and export of standard byte-encoded ML-KEM decapsulation keys per FIPS 203. The *pbInput* buffer must contain a [BCRYPT_MLKEM_KEY_BLOB](/windows/win32/seccng/bcrypt/ns-bcrypt-bcrypt_mlkem_key_blob) structure containing the byte-encoded KEM decapsulation key, **BCRYPT_MLKEM_PRIVATE_MAGIC**, and ML-KEM parameter set. |
+| **BCRYPT_MLKEM_PRIVATE_SEED_BLOB** | The BLOB is a ML-KEM BLOB that provides import and export of ML-KEM seeds per FIPS 203. The *pbInput* buffer must contain a [BCRYPT_MLKEM_KEY_BLOB](/windows/win32/seccng/bcrypt/ns-bcrypt-bcrypt_mlkem_key_blob) structure containing the KEM seed, **BCRYPT_MLKEM_SEED_MAGIC**, and ML-KEM parameter set. |
+| **BCRYPT_PQDSA_PUBLIC_BLOB** | The BLOB is a ML-DSA, SLH-DSA, LMS, or XMSS BLOB that provides import and export of PQ digital signature public keys per FIPS 204 and 205. The *pbInput* buffer must contain a [BCRYPT_PQDSA_KEY_BLOB](/windows/win32/seccng/bcrypt/ns-bcrypt-bcrypt_pqdsa_key_blob) structure containing the key material, public magic, and PQ parameter set. |
+| **BCRYPT_PQDSA_PRIVATE_BLOB** | The BLOB is a ML-DSA, SLH-DSA, LMS, or XMSS BLOB that provides import and export of PQ digital signature private keys per FIPS 204 and 205. The *pbInput* buffer must contain a [BCRYPT_PQDSA_KEY_BLOB](/windows/win32/seccng/bcrypt/ns-bcrypt-bcrypt_pqdsa_key_blob) structure containing the key material, private magic, and PQ parameter set. |
+| **BCRYPT_PQDSA_PRIVATE_SEED_BLOB** | The BLOB is a ML-DSA, SLH-DSA, LMS, or XMSS BLOB that provides import and export of PQ digital signature private seeds per FIPS 204 and 205. The *pbInput* buffer must contain a [BCRYPT_PQDSA_KEY_BLOB](/windows/win32/seccng/bcrypt/ns-bcrypt-bcrypt_pqdsa_key_blob) structure containing the seed value, private seed magic, and PQ parameter set. |
 
 The following flags are supported by this KSP.
 
@@ -139,7 +150,7 @@ The following flags are supported by this KSP.
 | NCRYPT_OVERWRITE_KEY_FLAG | If a key already exists in the container with the specified name, the existing key will be overwritten. If this flag is not specified and a key with the specified name already exists, this function will return **NTE_EXISTS**. |
 | NCRYPT_WRITE_KEY_TO_LEGACY_STORE_FLAG | Also save the key in legacy storage. This allows the key to be used with the CryptoAPI. This flag only applies to RSA keys. |
 
-### Microsoft Smart Card KSP
+#### Microsoft Smart Card KSP
 
 The set of key BLOB formats and flags supported by this KSP is identical to the set supported by the Microsoft Software KSP.
 
@@ -155,7 +166,7 @@ On Windows Server 2008 R2 and Windows 7, the Microsoft Smart Card Key Storage
 
 If the key container name is **NULL**, the Microsoft Smart Card KSP treats the key as ephemeral and imports it into the Microsoft Software KSP.
 
-### Additional hardware requirements for VBS keys
+#### Additional hardware requirements for VBS keys
 
 Although you may have the appropriate OS installed on your machine, the following additional hardware requirements must be met to use VBS to generate and protect keys.
 

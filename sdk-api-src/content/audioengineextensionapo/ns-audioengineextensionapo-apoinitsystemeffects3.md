@@ -38,13 +38,13 @@ dev_langs:
 
 ## -description
 
-Provides audio processing object (APO) initialization parameters, extending [APOInitSystemEffects2](../audioenginebaseapo/ns-audioenginebaseapo-apoinitsystemeffects2) to add the ability to specify a service provider for logging.
+Provides audio processing object (APO) initialization parameters, extending [APOInitSystemEffects2](../audioenginebaseapo/ns-audioenginebaseapo-apoinitsystemeffects2.md) to add the ability to specify a service provider for logging.
 
 ## -struct-fields
 
 ### -field APOInit
 
-An [APOInitBaseStruct](../audioenginebaseapo/ns-audioenginebaseapo-apoinitbasestruct) structure.
+An [APOInitBaseStruct](../audioenginebaseapo/ns-audioenginebaseapo-apoinitbasestruct.md) structure.
 
 ### -field pAPOEndpointProperties
 
@@ -81,6 +81,6 @@ For more information on the Windows 11 APIs for the Audio Processing Objects (AP
 
 ## -see-also
 
-[APOInitSystemEffects](../audioenginebaseapo/ns-audioenginebaseapo-apoinitsystemeffects)
-[APOInitSystemEffects2](../audioenginebaseapo/ns-audioenginebaseapo-apoinitsystemeffects2)
+[APOInitSystemEffects](../audioenginebaseapo/ns-audioenginebaseapo-apoinitsystemeffects.md)
+[APOInitSystemEffects2](../audioenginebaseapo/ns-audioenginebaseapo-apoinitsystemeffects2.md)
 

@@ -63,7 +63,7 @@ Returns an HRESULT value including the following:
 
 ## -remarks
 
-The following example illustrates the usage of **IAcousticEchoCancellationControl** interface. Call [IAudioClient::GetService](./nf-audioclient-iaudioclient-getservice.md), passing in the IID for the **IAcousticEchoCancellationControl** interface. If it succeeds, the capture endpoint supports control of the loopback reference endpoint for AEC. Note that an endpoint may support AEC, but may not support control of loopback reference endpoint for AEC. Call [SetEchoCancellationRenderEndpoint](./nf-audioclient-iacousticechocancellationcontrol-setechocancellationrenderendpoint.md) to set the reference stream for AEC. If the call to **GetService** fails with **E_NOINTERFACE**, then the AEC effect on the endpoint (if supported), does not allow control over the loopback reference endpoint.
+The following example illustrates the usage of **IAcousticEchoCancellationControl** interface. Call [IAudioClient::GetService](./nf-audioclient-iaudioclient-getservice.md), passing in the IID for the **IAcousticEchoCancellationControl** interface. If it succeeds, the capture endpoint supports control of the loopback reference endpoint for AEC. Note that an endpoint may support AEC, but may not support control of loopback reference endpoint for AEC. Call **SetEchoCancellationRenderEndpoint** to set the reference stream for AEC. If the call to **GetService** fails with **E_NOINTERFACE**, then the AEC effect on the endpoint (if supported), does not allow control over the loopback reference endpoint.
 
 ```cpp
 wil::com_ptr_nothrow<IAudioClient> audioClient;
