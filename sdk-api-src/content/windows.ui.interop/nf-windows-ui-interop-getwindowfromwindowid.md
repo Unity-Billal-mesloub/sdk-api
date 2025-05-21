@@ -4,7 +4,7 @@ tech.root: winrt
 title: GetWindowFromWindowId
 ms.date: 05/16/2025
 targetos: Windows
-description: 
+description: Gets the window handle (HWND) that corresponds to the specified WindowId, if the *windowId* argument is valid and the system has an **HWND** that represents the window.
 prerelease: false
 req.assembly: 
 req.construct-type: function
