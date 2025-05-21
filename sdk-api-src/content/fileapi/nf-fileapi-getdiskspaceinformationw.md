@@ -64,7 +64,7 @@ A [**DISK_SPACE_INFORMATION**](ns-fileapi-disk_space_information.md) structure c
 
 ## -returns
 
-Returns `TRUE` if the function succeeds, or `FALSE` if it fails. To get extended error information, call the `GetLastError` function.
+Returns `S_OK` if the function succeeds, or a value from [Common HRESULT Values](/windows/win32/seccrypto/common-hresult-values) if it fails. You can call [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) for extended error information.
 
 ## -remarks
 
