@@ -45,12 +45,7 @@ api_name:
  - Edit_GetEndOfLine
 ---
 
-# Edit_GetEndOfLine macro
-
-
 ## -description
-
-
 
 Gets the end of line character used for the content of the edit control. You can use this macro or send the <a href="/windows/desktop/controls/em-getendofline">EM_GETENDOFLINE</a> message explicitly.
 
@@ -59,3 +54,13 @@ Gets the end of line character used for the content of the edit control. You can
 ### -param hwndCtl
 
 A handle to the edit control.
+
+## Return value
+
+Returns the end-of-line character used by the edit control, which can be one of the following **EC_ENDOFLINE** values.
+
+| Value | Meaning |
+|-|-|
+| **EC_ENDOFLINE_CRLF** | The end-of-line character used for new linebreaks is carriage return followed by linefeed (CRLF). |
+| **EC_ENDOFLINE_CR** | The end-of-line character used for new linebreaks is carriage return (CR). |
+| **EC_ENDOFLINE_LF** | The end-of-line character used for new linebreaks is linefeed (LF). |
