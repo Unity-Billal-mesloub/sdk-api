@@ -59,3 +59,13 @@ Gets the end of line character used for the content of the edit control. You can
 ### -param hwndCtl
 
 A handle to the edit control.
+
+## Return value
+
+Returns the end-of-line character used by the edit control, which can be one of the following **EC\_ENDOFLINE** values:
+
+| Value                                                                                                                                                   | Meaning                                                                                        |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
+| <span id="EC_ENDOFLINE_CRLF"></span><span id="ec_endofline_crlf"></span><dl> <dt>**EC\_ENDOFLINE\_CRLF**</dt> </dl> | The end-of-line character used for new linebreaks is carriage return followed by linefeed (CRLF).<br/> |
+| <span id="EC_ENDOFLINE_CR"></span><span id="ec_endofline_cr"></span><dl> <dt>**EC\_ENDOFLINE\_CR**</dt> </dl>       | The end-of-line character used for new linebreaks is carriage return (CR).<br/>                        |
+| <span id="EC_ENDOFLINE_LF"></span><span id="ec_endofline_lf"></span><dl> <dt>**EC\_ENDOFLINE\_LF**</dt> </dl>       | The end-of-line character used for new linebreaks is linefeed (LF).<br/>                               |
