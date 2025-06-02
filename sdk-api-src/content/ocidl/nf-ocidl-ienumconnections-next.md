@@ -45,12 +45,9 @@ api_name:
  - IEnumConnections.Next
 ---
 
-# IEnumConnections::Next
-
-
 ## -description
 
-Retrieves the specified number of items in the enumeration sequence. An item corresponds to a <a href="/windows/desktop/api/ocidl/ns-ocidl-connectdata">CONNECTDATA</a> structure.
+Retrieves the specified number of items in the enumeration sequence. An item corresponds to a [CONNECTDATA](/windows/win32/api/ocidl/ns-ocidl-connectdata) structure.
 
 ## -parameters
 
