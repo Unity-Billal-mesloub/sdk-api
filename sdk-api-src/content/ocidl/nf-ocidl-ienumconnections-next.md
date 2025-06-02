@@ -50,7 +50,7 @@ api_name:
 
 ## -description
 
-Retrieves the specified number of items in the enumeration sequence.
+Retrieves the specified number of items in the enumeration sequence. An item corresponds to a <a href="/windows/desktop/api/ocidl/ns-ocidl-connectdata">CONNECTDATA</a> structure.
 
 ## -parameters
 
