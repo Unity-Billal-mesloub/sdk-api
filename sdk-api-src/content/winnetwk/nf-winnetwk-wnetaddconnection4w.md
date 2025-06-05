@@ -61,9 +61,9 @@ The *hwndOwner* parameter can be **NULL**. If it is, a call to **WNetAddConnecti
 
 ### -param lpNetResource
 
-A pointer to a [NETRESOURCE](../rrascfg/nn-rrascfg-ieapproviderconfig.md) structure that specifies details of the proposed connection, such as information about the network resource, the local device, and the network resource provider. 
+A pointer to a [NETRESOURCE](ns-winnetwk-netresourcew.md) structure that specifies details of the proposed connection, such as information about the network resource, the local device, and the network resource provider. 
 
-You must specify the following members of the [NETRESOURCE](../rrascfg/nn-rrascfg-ieapproviderconfig.md) structure.
+You must specify the following members of the [NETRESOURCE](ns-winnetwk-netresourcew.md) structure.
 
 | Member | Meaning |
 |--------|---------|
@@ -72,7 +72,7 @@ You must specify the following members of the [NETRESOURCE](../rrascfg/nn-rrascf
 | **lpRemoteName** | A pointer to a **null**-terminated string that specifies the network resource to connect to. The string can be up to MAX_PATH characters in length, and must follow the network provider's naming conventions. |
 | **lpProvider** | A pointer to a **null**-terminated string that specifies the network provider to connect to.<br/><br/>If **lpProvider** is **NULL**, or if it points to an empty string, the operating system attempts to determine the correct provider by parsing the string pointed to by the **lpRemoteName** member.<br/><br/>If this member is not **NULL**, the operating system attempts to make a connection only to the named network provider.<br/><br/>You should set this member only if you know which network provider you want to use. Otherwise, let the operating system determine which network provider the network name maps to.
 
-The **WNetAddConnection4** function ignores the other members of the [NETRESOURCE](../rrascfg/nn-rrascfg-ieapproviderconfig.md) structure.
+The **WNetAddConnection4** function ignores the other members of the [NETRESOURCE](ns-winnetwk-netresourcew.md) structure.
 
 ### -param pAuthBuffer
 
@@ -90,7 +90,7 @@ A set of connection options. The following values are currently defined:
 |-------|---------|
 | **CONNECT_INTERACTIVE** | If this flag is set, the operating system may interact with the user for authentication purposes. |
 | **CONNECT_PROMPT** | This flag instructs the system not to use any default settings for user names or passwords without offering the user the opportunity to supply an alternative. This flag is ignored unless CONNECT_INTERACTIVE is also set. |
-| **CONNECT_REDIRECT** | This flag forces the redirection of a local device when making the connection.<br/><br/>If the **lpLocalName** member of [NETRESOURCE](../rrascfg/nn-rrascfg-ieapproviderconfig.md) specifies a local device to redirect, this flag has no effect, because the operating system still attempts to redirect the specified device. When the operating system automatically chooses a local device, the **dwType** member must not be equal to RESOURCETYPE_ANY.<br/><br/>If this flag is not set, a local device is automatically chosen for redirection only if the network requires a local device to be redirected.<br/><br/>**Windows Server 2003 and Windows XP:** When the system automatically assigns network drive letters, letters are assigned beginning with Z:, then Y:, and ending with C:. This reduces collision between per-logon drive letters (such as network drive letters) and global drive letters (such as disk drives). Note that earlier versions of Windows assigned drive letters beginning with C: and ending with Z:. |
+| **CONNECT_REDIRECT** | This flag forces the redirection of a local device when making the connection.<br/><br/>If the **lpLocalName** member of [NETRESOURCE](ns-winnetwk-netresourcew.md) specifies a local device to redirect, this flag has no effect, because the operating system still attempts to redirect the specified device. When the operating system automatically chooses a local device, the **dwType** member must not be equal to RESOURCETYPE_ANY.<br/><br/>If this flag is not set, a local device is automatically chosen for redirection only if the network requires a local device to be redirected.<br/><br/>**Windows Server 2003 and Windows XP:** When the system automatically assigns network drive letters, letters are assigned beginning with Z:, then Y:, and ending with C:. This reduces collision between per-logon drive letters (such as network drive letters) and global drive letters (such as disk drives). Note that earlier versions of Windows assigned drive letters beginning with C: and ending with Z:. |
 | **CONNECT_UPDATE_PROFILE** | The network resource connection should be remembered.<br/><br/>If this bit flag is set, the operating system automatically attempts to restore the connection when the user logs on.<br/><br/>The operating system remembers only successful connections that redirect local devices. It does not remember connections that are unsuccessful or deviceless connections. (A deviceless connection occurs when the **lpLocalName** member is **NULL** or when it points to an empty string.)<br/><br/>If this bit flag is clear, the operating system does not automatically restore the connection at logon. |
 | **CONNECT_COMMANDLINE** | If this flag is set, the operating system prompts the user for authentication using the command line instead of a graphical user interface (GUI). This flag is ignored unless CONNECT_INTERACTIVE is also set.<br/><br/>**Windows 2000/NT and Windows Me/98/95:** This value is not supported. |
 | **CONNECT_CMD_SAVECRED** | If this flag is set, and the operating system prompts for a credential, the credential should be saved by the credential manager. If the credential manager is disabled for the caller's logon session, or if the network provider does not support saving credentials, this flag is ignored. This flag is also ignored unless you set the CONNECT_COMMANDLINE flag.<br/><br/>**Windows 2000/NT and Windows Me/98/95:** This value is not supported. |
@@ -135,11 +135,11 @@ On Windows Server 2003 and Windows XP, the WNet functions create and delete ne
 
 On Windows Server 2003 and Windows XP, if a service that runs as LocalSystem calls the **WNetAddConnection4** function, then the mapped drive is visible to all user logon sessions.  
 
-For Microsoft network providers, the **lpRemoteName** member of the [NETRESOURCE](../rrascfg/nn-rrascfg-ieapproviderconfig.md) structure pointed to by the *lpNetResource* parameter can contain an IPv4 address in dotted-decimal notation. An example for a share might be the following:
+For Microsoft network providers, the **lpRemoteName** member of the [NETRESOURCE](ns-winnetwk-netresourcew.md) structure pointed to by the *lpNetResource* parameter can contain an IPv4 address in dotted-decimal notation. An example for a share might be the following:
 
 `\\192.168.1.1\share`
 
-For Microsoft network providers on Windows Vista and later, the **lpRemoteName** member of the [NETRESOURCE](../rrascfg/nn-rrascfg-ieapproviderconfig.md) structure pointed to by the *lpNetResource* parameter can contain an IPv6 address. However, the IPv6 literal format must be used so that the IPv6 address is parsed correctly. An IPv6 literal address is of the form:
+For Microsoft network providers on Windows Vista and later, the **lpRemoteName** member of the [NETRESOURCE](ns-winnetwk-netresourcew.md) structure pointed to by the *lpNetResource* parameter can contain an IPv6 address. However, the IPv6 literal format must be used so that the IPv6 address is parsed correctly. An IPv6 literal address is of the form:
 
 ipv6-address with the ':' characters replaced by '-' characters followed by the ".ipv6-literal.net" string.
 
@@ -151,7 +151,7 @@ an example for a share might be the following:
 
 `\\2001-4898-9-3-c069-aa97-fe76-2449.ipv6-literal.net\share`
 
-Other network providers may support the **lpRemoteName** member of the [NETRESOURCE](../rrascfg/nn-rrascfg-ieapproviderconfig.md) structure pointed to by the *lpNetResource* parameter that contains an IPv4 or IPv6 address, but this is up to specific network provider.
+Other network providers may support the **lpRemoteName** member of the [NETRESOURCE](ns-winnetwk-netresourcew.md) structure pointed to by the *lpNetResource* parameter that contains an IPv4 or IPv6 address, but this is up to specific network provider.
 
 **Windows 7 and Windows Server 2008 R2:** If the **WNetAddConnection4** function is called with explicit user credentials specified in the *pAuthBuffer* to establish a connection with a network resource on a specific server and then called again with the parameter as **NULL** (to use the default credential information) to the same server, the call with fail. The error returned will be **ERROR_BAD_USERNAME** or **ERROR_INVALID_PASSWORD**.
 
