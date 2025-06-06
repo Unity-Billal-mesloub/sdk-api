@@ -18,8 +18,8 @@ req.lib:
 req.max-support: 
 req.namespace: 
 req.redist: 
-req.target-min-winverclnt: Windows 10 Build 20348
-req.target-min-winversvr: Windows 10 Build 20348
+req.target-min-winverclnt: Windows Vista
+req.target-min-winversvr: Windows Server 2008
 req.target-type: 
 req.type-library: 
 req.umdf-ver: 
@@ -60,7 +60,9 @@ Optional. Receives the previous handle.
 
 ## -returns
 
-Returns S_OK on success.
+If the function succeeds, the return value is nonzero.
+
+If the function fails, the return value is zero. To get extended error information, call [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror).
 
 ## -remarks
 
