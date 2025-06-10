@@ -6,7 +6,7 @@ helpviewer_keywords: ["GetSystemTimes","GetSystemTimes function","base.getsystem
 old-location: base\getsystemtimes.htm
 tech.root: processthreadsapi
 ms.assetid: 84f674e7-536b-4ae0-b523-6a17cb0a1c17
-ms.date: 12/05/2018
+ms.date: 06/10/2025
 ms.keywords: GetSystemTimes, GetSystemTimes function, base.getsystemtimes, processthreadsapi/GetSystemTimes
 req.header: processthreadsapi.h
 req.include-header: Windows.h
@@ -52,11 +52,9 @@ api_name:
 
 # GetSystemTimes function
 
-
 ## -description
 
-Retrieves system timing information.  On a multiprocessor system, the values returned are the sum
-    of the designated times across all processors.
+Retrieves system timing information.
 
 ## -parameters
 
@@ -74,11 +72,16 @@ A pointer to a <a href="/windows/desktop/api/minwinbase/ns-minwinbase-filetime">
 
 ## -returns
 
-If the function succeeds, the return value is nonzero. 
+If the function succeeds, the return value is nonzero.
 
 If the function fails, the return value is zero. To get extended error  information, call <a href="/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror">GetLastError</a>.
 
 ## -remarks
+
+On a multiprocessor system (with 64 processors or fewer), the values returned are the sum of the designated times across all processors.
+
+> [!NOTE]
+> On systems with more than 64 processors, the value returned is the sum of the designated times for the primary processor group that the calling thread belongs to.
 
 To compile an application that uses this function, define _WIN32_WINNT as 0x0501 or later. For more information, see <a href="/windows/desktop/WinProg/using-the-windows-headers">Using the Windows Headers</a>.
 
