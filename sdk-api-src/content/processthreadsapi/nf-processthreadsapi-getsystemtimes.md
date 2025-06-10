@@ -78,10 +78,10 @@ If the function fails, the return value is zero. To get extended error  informat
 
 ## -remarks
 
-On a multiprocessor system (with 64 processors or fewer), the values returned are the sum of the designated times across all processors.
+On a multiprocessor system (with 64 processors or fewer), the value returned is the sum of the designated times across all processors.
 
 > [!NOTE]
-> On systems with more than 64 processors, the value returned is the sum of the designated times for the primary processor group that the calling thread belongs to.
+> On systems with more than 64 processors, the value returned is the sum of the designated times for the primary processor group that the calling thread belongs to (see [Processor Groups](/windows/win32/procthread/processor-groups)).
 
 To compile an application that uses this function, define _WIN32_WINNT as 0x0501 or later. For more information, see <a href="/windows/desktop/WinProg/using-the-windows-headers">Using the Windows Headers</a>.
 
