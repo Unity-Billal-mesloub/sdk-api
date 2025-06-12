@@ -41,6 +41,8 @@ helpviewer_keywords:
  - Wow64SetThreadContext
 ---
 
+# Wow64SetThreadContext function
+
 ## -description
 
 Sets the thread context.

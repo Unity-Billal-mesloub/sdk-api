@@ -41,6 +41,8 @@ helpviewer_keywords:
  - Wow64GetThreadContext
 ---
 
+# Wow64GetThreadContext function
+
 ## -description
 
 Retrieves the thread context.

@@ -42,6 +42,8 @@ helpviewer_keywords:
  - Wow64SetThreadDefaultGuestMachine
 ---
 
+# Wow64SetThreadDefaultGuestMachine function
+
 ## -description
 
 Sets the thread to the given machine architecture.

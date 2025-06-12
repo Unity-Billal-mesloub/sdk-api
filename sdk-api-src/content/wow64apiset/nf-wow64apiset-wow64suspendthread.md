@@ -35,9 +35,13 @@ api_name:
 f1_keywords:
  - Wow64SuspendThread
  - wow64apiset/Wow64SuspendThread
+helpviewer_keywords:
+ - Wow64SuspendThread
 dev_langs:
  - c++
 ---
+
+# Wow64SuspendThread function
 
 ## -description
 

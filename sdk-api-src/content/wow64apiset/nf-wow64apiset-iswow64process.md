@@ -52,6 +52,8 @@ api_name:
  - IsWow64Process
 ---
 
+# IsWow64Process function
+
 ## -description
 
 Determines whether the specified process is running under 
