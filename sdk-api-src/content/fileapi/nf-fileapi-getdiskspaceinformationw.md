@@ -64,7 +64,7 @@ A [**DISK_SPACE_INFORMATION**](ns-fileapi-disk_space_information.md) structure c
 
 ## -returns
 
-Returns `S_OK` if the function succeeds, or a value from [Common HRESULT Values](/windows/win32/seccrypto/common-hresult-values) if it fails. You can call [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) for extended error information.
+Returns `S_OK` if the function succeeds, or a value from [Common HRESULT Values](/windows/win32/seccrypto/common-hresult-values) if it fails. You can call [GetLastError](../errhandlingapi/nf-errhandlingapi-getlasterror.md) for extended error information.
 
 ## -remarks
 
