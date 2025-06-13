@@ -21,8 +21,8 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: Ole32.lib
-req.dll: Ole32.dll
+req.lib: onecore.lib
+req.dll: combase.dll
 req.irql: 
 targetos: Windows
 req.typenames: 
@@ -38,7 +38,6 @@ topic_type:
 api_type:
  - DllExport
 api_location:
- - Ole32.dll
  - API-MS-Win-Core-Com-l1-1-3.dll
  - ComBase.dll
 api_name:
