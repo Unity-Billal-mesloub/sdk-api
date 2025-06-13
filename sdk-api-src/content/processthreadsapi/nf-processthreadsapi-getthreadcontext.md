@@ -57,7 +57,8 @@ api_name:
 
 Retrieves the context of the specified thread.
 
-A 64-bit application can retrieve the context of a WOW64 thread using the [Wow64GetThreadContext function](../wow64apiset/nf-wow64apiset-wow64getthreadcontext.md).
+> [!NOTE]
+> A 64-bit application can retrieve the context of a WOW64 thread using the [Wow64GetThreadContext function](../wow64apiset/nf-wow64apiset-wow64getthreadcontext.md).
 
 ## -parameters
 

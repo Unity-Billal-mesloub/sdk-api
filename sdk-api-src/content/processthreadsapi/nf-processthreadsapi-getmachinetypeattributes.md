@@ -43,8 +43,7 @@ dev_langs:
 
 ## -description
 
-Queries if the specified architecture is supported on the current system, either natively or by any form of compatibility or emulation layer. 
-
+Queries if the specified architecture is supported on the current system, either natively or by any form of compatibility or emulation layer.
 
 ## -parameters
 
@@ -63,4 +62,3 @@ If the function fails, the return value is a nonzero HRESULT value. If the funct
 ## -remarks
 
 ## -see-also
-

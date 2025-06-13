@@ -54,7 +54,6 @@ api_name:
 
 # GetProcessVersion function
 
-
 ## -description
 
 Retrieves the major and minor version numbers of the system on which the specified process expects to run.
@@ -69,13 +68,11 @@ The process identifier of the process of interest. A value of zero specifies the
 
 If the function succeeds, the return value is the version of the system on which the process expects to run. The high word of the return value contains the major version number. The low word of the return value contains the minor version number.
 
-If the function fails, the return value is zero. To get extended error information, call 
-<a href="/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror">GetLastError</a>. The function fails if <i>ProcessId</i> is an invalid value.
+If the function fails, the return value is zero. To get extended error information, call <a href="/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror">GetLastError</a>. The function fails if *ProcessId* is an invalid value.
 
 ## -remarks
 
-The 
-<b>GetProcessVersion</b> function performs less quickly when <i>ProcessId</i> is nonzero, specifying a process other than the calling process.
+The **GetProcessVersion** function performs less quickly when *ProcessId* is nonzero, specifying a process other than the calling process.
 
 The version number returned by this function is the version number stamped in the image header of the .exe file the process is running. Linker programs set this value.
 
@@ -84,7 +81,5 @@ If this function is called from a 32-bit application running on WOW64, the speci
 ## -see-also
 
 <a href="/windows/desktop/ProcThread/process-and-thread-functions">Process and Thread Functions</a>
-
-
 
 <a href="/windows/desktop/ProcThread/child-processes">Processes</a>

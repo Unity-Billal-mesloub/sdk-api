@@ -54,12 +54,12 @@ api_name:
 
 # SuspendThread function
 
-
 ## -description
 
 Suspends the specified thread.
 
-A 64-bit application can suspend a WOW64 thread using the <a href="/windows/win32/api/wow64apiset/nf-wow64apiset-wow64suspendthread">Wow64SuspendThread</a> function.
+> [!NOTE]
+> A 64-bit application can suspend a WOW64 thread thread using the [Wow64SuspendThread function](../wow64apiset/nf-wow64apiset-wow64suspendthread.md).
 
 ## -parameters
 
