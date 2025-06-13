@@ -44,6 +44,8 @@ helpviewer_keywords:
  - Wow64EnableWow64FsRedirection
 ---
 
+# Wow64EnableWow64FsRedirection function
+
 ## -description
 
 Enables or disables file system redirection for the calling thread.
