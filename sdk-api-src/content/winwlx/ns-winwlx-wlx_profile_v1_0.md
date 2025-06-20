@@ -68,10 +68,7 @@ Must be set to WLX_PROFILE_TYPE_V1_0.
 
 Pointer to the profile path (for example, "%SystemRoot%\system32\config\AprilM001"). 
 
-
-
-
-The string pointed to by <b>pszProfile</b> must be separately allocated by your <a href="/windows/desktop/SecGloss/g-gly">GINA</a> DLL. It will be deallocated by <a href="/windows/desktop/SecGloss/w-gly">Winlogon</a>.
+The string pointed to by <b>pszProfile</b> must be separately allocated by your <a href="/windows/desktop/SecGloss/g-gly">GINA</a> DLL, using <a href="/windows/desktop/api/winbase/nf-winbase-localalloc">LocalAlloc</a>. It will be deallocated by <a href="/windows/desktop/SecGloss/w-gly">Winlogon</a>.
 
 ## -remarks
 
