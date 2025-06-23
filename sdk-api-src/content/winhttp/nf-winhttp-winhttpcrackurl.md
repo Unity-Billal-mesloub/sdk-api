@@ -183,6 +183,8 @@ The required components are indicated by members of the
 If the pointer contains the address of the user-supplied buffer, the length member must contain the size of the buffer. The 
 <b>WinHttpCrackUrl</b> function copies the component into the buffer, and the length member is set to the length of the copied component, minus 1 for the trailing string terminator. If a user-supplied buffer is not large enough, <b>WinHttpCrackUrl</b> returns <b>FALSE</b>, and <a href="/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror">GetLastError</a> returns <b>ERROR_INSUFFICIENT_BUFFER</b>.
 
+When _lpszExtraInfo_ is not set or _dwExtraInfoLength_ is left as 0 in _lpUrlComponents_, if _lpszUrlPath_ is set the query and/or fragment component of the URL will be included in that field.
+
 For 
 <b>WinHttpCrackUrl</b> to work properly, the size of the 
 <a href="/windows/win32/api/winhttp/ns-winhttp-url_components">URL_COMPONENTS</a> structure must be stored in the 
