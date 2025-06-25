@@ -110,184 +110,28 @@ If this font does not support more than one Windows character set, <b>dpCharSets
 
 ### -field jWinCharSet
 
-Identifies the character set best supported by this font. If the font supports only a single Windows character set, the driver should store the corresponding value in <b>jWinCharSet</b>. The driver should not store DEFAULT_CHARSET in this field. This member can be one of the following values:
+Identifies the character set best supported by this font. If the font supports only a single Windows character set, the driver should store the corresponding value in <b>jWinCharSet</b>. The driver should not store 'DEFAULT_CHARSET' in this field. This member can be one of the following values:
 
-<table>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-<tr>
-<td>
-ANSI_CHARSET
-
-</td>
-<td>
-This font supports the Windows ANSI character set.
-
-</td>
-</tr>
-<tr>
-<td>
-ARABIC_CHARSET
-
-</td>
-<td>
-This font supports the Arabic character set.
-
-</td>
-</tr>
-<tr>
-<td>
-BALTIC_CHARSET
-
-</td>
-<td>
-This font supports the Baltic character set.
-
-</td>
-</tr>
-<tr>
-<td>
-CHINESEBIG5_CHARSET
-
-</td>
-<td>
-This font supports the traditional Chinese (Big 5) character set.
-
-</td>
-</tr>
-<tr>
-<td>
-EASTEUROPE_CHARSET
-
-</td>
-<td>
-This font supports the Eastern European character set.
-
-</td>
-</tr>
-<tr>
-<td>
-GB2312_CHARSET
-
-</td>
-<td>
-This font supports the simplified (PRC) Chinese character set.
-
-</td>
-</tr>
-<tr>
-<td>
-GREEK_CHARSET
-
-</td>
-<td>
-This font supports the Greek character set.
-
-</td>
-</tr>
-<tr>
-<td>
-HANGEUL_CHARSET
-
-</td>
-<td>
-This font supports the Korean (Hangeul) character set.
-
-</td>
-</tr>
-<tr>
-<td>
-HEBREW_CHARSET
-
-</td>
-<td>
-This font supports the Hebrew character set.
-
-</td>
-</tr>
-<tr>
-<td>
-JOHAB_CHARSET
-
-</td>
-<td>
-This font supports the Korean (Johab) character set.
-
-</td>
-</tr>
-<tr>
-<td>
-OEM_CHARSET
-
-</td>
-<td>
-This font supports an OEM-specific character set. The OEM character set is system dependent.
-
-</td>
-</tr>
-<tr>
-<td>
-SHIFTJIS_CHARSET
-
-</td>
-<td>
-This font supports the Shift-JIS (Japanese Industry Standard) character set.
-
-</td>
-</tr>
-<tr>
-<td>
-SYMBOL_CHARSET
-
-</td>
-<td>
-This font supports the Windows symbol character set.
-
-</td>
-</tr>
-<tr>
-<td>
-RUSSIAN_CHARSET
-
-</td>
-<td>
-This font supports the Cyrillic character set.
-
-</td>
-</tr>
-<tr>
-<td>
-THAI_CHARSET
-
-</td>
-<td>
-This font supports the Thai character set.
-
-</td>
-</tr>
-<tr>
-<td>
-TURKISH_CHARSET
-
-</td>
-<td>
-This font supports the Turkish character set.
-
-</td>
-</tr>
-<tr>
-<td>
-VIETNAMESE_CHARSET
-
-</td>
-<td>
-This font supports the Vietnamese character set.
-
-</td>
-</tr>
-</table>
+| Value | Description |
+|--|--|
+| `ANSI_CHARSET` | This font supports the Windows ANSI character set. |
+| `ARABIC_CHARSET` | This font supports the Arabic character set. |
+| `BALTIC_CHARSET` | This font supports the Baltic character set. |
+| `CHINESEBIG5_CHARSET` | This font supports the traditional Chinese (Big 5) character set. |
+| `EASTEUROPE_CHARSET` | This font supports the Eastern European character set. |
+| `GB2312_CHARSET` | This font supports the simplified (PRC) Chinese character set. |
+| `GREEK_CHARSET` | This font supports the Greek character set. |
+| `HANGEUL_CHARSET` | This font supports the Korean (Hangul) character set. |
+| `HEBREW_CHARSET` | This font supports the Hebrew character set. |
+| `JOHAB_CHARSET` | This font supports the Korean (Johab) character set. |
+| `MAC_CHARSET` | This font supports character set value based on the current system Macintosh code page. This value is used primarily in legacy code and should not generally be needed since modern Macintosh computers use Unicode for encoding. |
+| `OEM_CHARSET` | This font supports an OEM-specific character set. The OEM character set is system dependent. |
+| `RUSSIAN_CHARSET` | This font supports the Cyrillic character set. |
+| `SHIFTJIS_CHARSET` | This font supports the Shift-JIS (Japanese Industry Standard) character set. |
+| `SYMBOL_CHARSET` | This font supports the Windows symbol character set. |
+| `THAI_CHARSET` | This font supports the Thai character set. |
+| `TURKISH_CHARSET` | This font supports the Turkish character set. |
+| `VIETNAMESE_CHARSET` | This font supports the Vietnamese character set. |
 
 ### -field jWinPitchAndFamily
 
