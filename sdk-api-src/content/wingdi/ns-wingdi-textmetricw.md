@@ -172,51 +172,26 @@ The four high-order bits of <b>tmPitchAndFamily</b> designate the font's font fa
 
 The character set of the font. The character set can be one of the following values.
 
-<ul>
-<li>ANSI_CHARSET</li>
-<li>BALTIC_CHARSET</li>
-<li>CHINESEBIG5_CHARSET</li>
-<li>DEFAULT_CHARSET</li>
-<li>EASTEUROPE_CHARSET</li>
-<li>GB2312_CHARSET</li>
-<li>GREEK_CHARSET</li>
-<li>HANGUL_CHARSET</li>
-<li>MAC_CHARSET</li>
-<li>OEM_CHARSET</li>
-<li>RUSSIAN_CHARSET</li>
-<li>SHIFTJIS_CHARSET</li>
-<li>SYMBOL_CHARSET</li>
-<li>TURKISH_CHARSET</li>
-<li>VIETNAMESE_CHARSET</li>
-</ul>
-<b>Korean language edition of Windows:</b>
-
-<ul>
-<li>
-JOHAB_CHARSET
-
-</li>
-</ul>
-<b>Middle East language edition of Windows:</b>
-
-<ul>
-<li>
-ARABIC_CHARSET
-
-</li>
-<li>
-HEBREW_CHARSET
-
-</li>
-</ul>
-<b>Thai language edition of Windows:</b>
-
-<ul>
-<li>
-THAI_CHARSET
-
-</li>
-</ul>
+| Value | Description |
+|--|--|
+| `ANSI_CHARSET` | This font supports the Windows ANSI character set. |
+| `ARABIC_CHARSET` | This font supports the Arabic character set. |
+| `BALTIC_CHARSET` | This font supports the Baltic character set. |
+| `CHINESEBIG5_CHARSET` | This font supports the traditional Chinese (Big 5) character set. |
+| `EASTEUROPE_CHARSET` | This font supports the Eastern European character set. |
+| `GB2312_CHARSET` | This font supports the simplified (PRC) Chinese character set. |
+| `GREEK_CHARSET` | This font supports the Greek character set. |
+| `HANGEUL_CHARSET` | This font supports the Korean (Hangul) character set. |
+| `HEBREW_CHARSET` | This font supports the Hebrew character set. |
+| `JOHAB_CHARSET` | This font supports the Korean (Johab) character set. |
+| `MAC_CHARSET` | This font supports character set value based on the current system Macintosh code page. This value is used primarily in legacy code and should not generally be needed since modern Macintosh computers use Unicode for encoding. |
+| `OEM_CHARSET` | This font supports an OEM-specific character set. The OEM character set is system dependent. |
+| `RUSSIAN_CHARSET` | This font supports the Cyrillic character set. |
+| `SHIFTJIS_CHARSET` | This font supports the Shift-JIS (Japanese Industry Standard) character set. |
+| `SYMBOL_CHARSET` | This font supports the Windows symbol character set. |
+| `THAI_CHARSET` | This font supports the Thai character set. |
+| `TURKISH_CHARSET` | This font supports the Turkish character set. |
+| `VIETNAMESE_CHARSET` | This font supports the Vietnamese character set. |
 
 ## -see-also
 
