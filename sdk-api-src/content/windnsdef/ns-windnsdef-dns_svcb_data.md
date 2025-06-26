@@ -1,9 +1,9 @@
 ---
 UID: NS:windnsdef._DNS_SVCB_DATA
 title: DNS_SVCB_DATA
-description: TBD
+description: The DNS_SVCB_DATA structure represents a DNS SVCB ("Service Binding") record, as specified in RFC 9460.
 tech.root: DNS
-ms.date: 06/25/2025
+ms.date: 06/26/2025
 targetos: Windows
 prerelease: false
 req.construct-type: structure
@@ -44,7 +44,7 @@ helpviewer_keywords:
 
 ## -description
 
-TBD
+The **DNS_SVCB_DATA** structure represents a DNS SVCB ("Service Binding") record, as specified in RFC 9460.
 
 ## -struct-fields
 
