@@ -54,7 +54,6 @@ api_name:
 
 # CreateThread function
 
-
 ## -description
 
 Creates a thread to execute within the virtual address space of the calling process.
@@ -66,11 +65,7 @@ To create a thread that runs in the virtual address space of another process, us
 
 ### -param lpThreadAttributes [in, optional]
 
-A pointer to a <a href="/windows/win32/api/wtypesbase/ns-wtypesbase-security_attributes">SECURITY_ATTRIBUTES</a> 
-       structure that determines whether the returned handle can be inherited by child processes. If 
-       <i>lpThreadAttributes</i> is NULL, the handle cannot be inherited.
-
-The <b>lpSecurityDescriptor</b> member of the structure specifies a security descriptor for the new thread. If <i>lpThreadAttributes</i> is NULL, the thread gets a default security descriptor. The ACLs in the default security descriptor for a thread come from the primary token of the creator.
+A pointer to a <a href="/windows/win32/api/wtypesbase/ns-wtypesbase-security_attributes">SECURITY_ATTRIBUTES</a> structure that specifies a security descriptor for the new thread and determines whether child processes can inherit the returned handle. If *lpThreadAttributes* is NULL, the thread gets a default security descriptor and the handle cannot be inherited. The access control lists (ACL) in the default security descriptor for a thread come from the primary token of the creator.
 
 ### -param dwStackSize [in]
 
