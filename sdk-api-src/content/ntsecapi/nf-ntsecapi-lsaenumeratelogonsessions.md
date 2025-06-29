@@ -61,7 +61,7 @@ Pointer to a long integer that receives the number of elements returned in the a
 ### -param LogonSessionList [out]
 
 Address of a pointer to a LUID. The pointer receives the first element of an array of logon session identifiers. The memory used by the array is allocated by the LSA. When the array is no longer needed, call the 
-<a href="/windows/desktop/api/ntsecapi/nf-ntsecapi-lsafreereturnbuffer">LSAFreeReturnBuffer</a> function to free it.
+<a href="/windows/desktop/api/ntsecapi/nf-ntsecapi-lsafreereturnbuffer">LsaFreeReturnBuffer</a> function to free it.
 
 ## -returns
 
