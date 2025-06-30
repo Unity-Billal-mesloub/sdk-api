@@ -29,6 +29,7 @@ topic_type:
 api_type:
  - DllExport
 api_location:
+ - api-ms-win-core-wow64-l1-1-3.dll
  - wow64apiset.h
 api_name:
  - Wow64SetThreadContext
