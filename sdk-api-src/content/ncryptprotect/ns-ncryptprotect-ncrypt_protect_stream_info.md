@@ -72,4 +72,4 @@ Pointer to a buffer supplied by the caller. The buffer is not modified by the da
 
 
 
-<a href="/windows/desktop/api/ncryptprotect/nc-ncryptprotect-pfncryptstreamoutputcallback">PFNCryptStreamOutputCallback</a>
+<a href="/windows/win32/api/ncryptprotect/nc-ncryptprotect-pfncryptstreamoutputcallback">PFNCryptStreamOutputCallback</a>
