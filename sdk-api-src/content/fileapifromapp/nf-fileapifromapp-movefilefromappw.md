@@ -27,7 +27,6 @@ req.unicode-ansi:
 topic_type:
  - apiref
 api_location:
- - api-ms-win-core-file-fromapp-l1-1-0.dll
  - Kernel32.dll
 api_name:
 - MoveFileFromAppW
