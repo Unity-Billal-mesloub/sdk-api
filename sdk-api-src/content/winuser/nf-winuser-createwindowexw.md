@@ -60,6 +60,7 @@ api_name:
  - CreateWindowExA
  - CreateWindowExW
 req.apiset: ext-ms-win-ntuser-window-l1-1-0 (introduced in Windows 8)
+no-loc: [BUTTON, COMBOBOX, EDIT, LISTBOX, MDICLIENT, RichEdit, RICHEDIT_CLASS, SCROLLBAR, STATIC]
 ---
 
 # CreateWindowExW function
