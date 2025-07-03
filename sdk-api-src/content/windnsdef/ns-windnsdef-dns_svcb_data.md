@@ -3,7 +3,7 @@ UID: NS:windnsdef._DNS_SVCB_DATA
 title: DNS_SVCB_DATA
 description: The DNS_SVCB_DATA structure represents a DNS SVCB ("Service Binding") record, as specified in RFC 9460.
 tech.root: DNS
-ms.date: 06/26/2025
+ms.date: 07/03/2025
 targetos: Windows
 prerelease: false
 req.construct-type: structure
@@ -52,25 +52,25 @@ The **DNS_SVCB_DATA** structure represents a DNS SVCB ("Service Binding") record
 
 Type: **[WORD](/windows/win32/winprog/windows-data-types)**
 
-TBD
+Record priority. A lower value indicates higher priority; 0 indicates Alias Mode, as described in section 2.4.2 of RFC 9460.
 
 ### -field pszTargetName
 
 Type: **[PSTR](/windows/win32/winprog/windows-data-types)**
 
-A pointer to a null-terminated string that specifies TBD.
+A pointer to a null-terminated string representing the domain name of the target or alternative endpoint.
 
 ### -field cSvcParams
 
 Type: **[WORD](/windows/win32/winprog/windows-data-types)**
 
-TBD
+Count of svcb parameters.
 
 ### -field pSvcParams
 
 Type: **DNS_SVCB_PARAM\***
 
-TBD
+List of SVCB parameters representing the services available at *pszTargetName*.
 
 ## -remarks
 
