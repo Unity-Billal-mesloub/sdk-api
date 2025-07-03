@@ -804,4 +804,4 @@ NTFS is the only Microsoft file system that implements <b>FILE_RESERVE_OPFILTER<
 
 For more information on oplocks, see [Opportunistic Locks](/windows/win32/fileio/opportunistic-locks).
 
-Note that the WDK header file NtDef.h is necessary for many constant definitions as well as the <b>InitializeObjectAttributes</b> macro. You can also use the <a href="/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya">LoadLibrary</a> and <a href="/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress">GetProcAddress</a> functions to dynamically link to NtDll.dll.
+Note that the WDK header file NtDef.h is necessary for many constant definitions. You can also use the <a href="/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya">LoadLibrary</a> and <a href="/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress">GetProcAddress</a> functions to dynamically link to NtDll.dll.
