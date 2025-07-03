@@ -113,8 +113,8 @@ Driver routines that run in a process context other than that of the system proc
 
 Callers of <b>ZwCreateFile</b> must be running at IRQL = PASSIVE_LEVEL.
 
-Note that the WDK header file Ntdef.h is necessary for many constant definitions 
-    as well as the <b>InitializeObjectAttributes</b> macro. You can also use the 
+Note that the WDK header file Ntdef.h is necessary for many constant definitions.
+You can also use the 
     <a href="/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya">LoadLibrary</a> and 
     <a href="/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress">GetProcAddress</a> functions to dynamically link to 
     Ntdll.dll.
