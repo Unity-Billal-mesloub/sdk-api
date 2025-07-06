@@ -80,7 +80,7 @@ The globally unique identifier (GUID) of the <a href="/windows/desktop/api/dxgi1
 
 Type: <b>void**</b>
 
-Address of a pointer to an <a href="/windows/desktop/api/dxgi1_2/nn-dxgi1_2-idxgifactory2">IDXGIFactory2</a> object.
+Address of a pointer to an <a href="/windows/desktop/api/dxgi1_2/nn-dxgi1_2-idxgifactory2">IDXGIFactory2</a> interface.
 
 ## -returns
 
