@@ -300,7 +300,7 @@ The following tables list some of the common options supported by the <b>setsock
 </tr>
 <tr>
 <td>SO_UPDATE_ACCEPT_CONTEXT</td>
-<td>int</td>
+<td>UINT_PTR</td>
 <td>Updates the accepting socket with the context of the listening socket.</td>
 </tr>
 <tr>
