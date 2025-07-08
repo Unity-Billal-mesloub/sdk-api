@@ -53,10 +53,10 @@ api_type:
   - DllExport
 api_location:
  - api-ms-win-eventing-controller-l1-1-1.dll
-  - Sechost.dll
-  - Advapi32.dll
-  - API-MS-Win-Eventing-Controller-l1-1-0.dll
-  - KernelBase.dll
+ - Sechost.dll
+ - Advapi32.dll
+ - API-MS-Win-Eventing-Controller-l1-1-0.dll
+ - KernelBase.dll
 api_name:
   - TraceQueryInformation
 ---
