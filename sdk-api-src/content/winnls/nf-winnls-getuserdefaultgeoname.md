@@ -77,8 +77,6 @@ Zero indicates that the function failed. To get extended error information, call
 
 ## -remarks
 
-If the ISO 3166-1 code for the user's default geographical location is 'XX' (indicating that no code has been assigned), but the location does have a UN M.49 code assigned, then the M.49 code is returned as a decimal string.
-
 If the ISO 3166-1 code for the user's default geographical location is 'XX' (which indicates that no code has been assigned), but the location does have a UN M.49 code assigned, then the M.49 code is returned as a decimal string.
 
 For information about two-letter ISO 3166-1 codes, see [ISO 3166 Country Codes](https://www.iso.org/iso-3166-country-codes.html).
