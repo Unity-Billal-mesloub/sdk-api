@@ -6,7 +6,7 @@ helpviewer_keywords: ["WICHeifOrientation","WICHeifProperties","WICHeifPropertie
 old-location: wic\wicheifproperties.htm
 tech.root: wic
 ms.assetid: 171A2EDE-7545-4AC3-B3AC-3A65A22746E5
-ms.date: 12/05/2018
+ms.date: 07/14/2025
 ms.keywords: WICHeifOrientation, WICHeifProperties, WICHeifProperties enumeration [Windows Imaging Component], wic.wicheifproperties, wincodec/WICHeifOrientation, wincodec/WICHeifProperties
 req.header: wincodec.h
 req.include-header: 
@@ -45,9 +45,6 @@ api_name:
  - WICHeifProperties
 ---
 
-# WICHeifProperties enumeration
-
-
 ## -description
 
 Specifies the properties of a High Efficiency Image Format (HEIF) image.
@@ -59,5 +56,15 @@ Specifies the properties of a High Efficiency Image Format (HEIF) image.
 [VT_UI2] Indicates the orientation of the image.
 
 The value of this property uses the same numbering scheme as the <a href="/windows/desktop/properties/props-system-photo-orientation">System.Photo.Orientation</a> property. For example, a value of 1 (PHOTO_ORIENTATION_NORMAL) indicates a 0 degree rotation.
+
+### -field WICHeifLayeredImageCanvasColor:0x2
+
+Array of POINT structures, specifying the coordinates of each layer image in the canvas (VT_VECTOR | VT_UI8).
+
+### -field WICHeifLayeredImageLayerPositions:0x3
+
+WICColor (VT_UI4).
+
+If this property is present and not VT_EMPTY, then the image is a layered image.
 
 ### -field WICHeifProperties_FORCE_DWORD:0x7fffffff

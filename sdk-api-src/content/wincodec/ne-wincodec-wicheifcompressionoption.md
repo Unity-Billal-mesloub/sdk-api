@@ -2,7 +2,7 @@
 UID: NE:wincodec.WICHeifCompressionOption
 title: WICHeifCompressionOption
 description: Defines constants that specify High Efficiency Image Format (HEIF) compression options.
-ms.date: 01/11/2024
+ms.date: 07/14/2025
 tech.root: wic
 targetos: Windows
 prerelease: true
@@ -41,21 +41,33 @@ Defines constants that specify High Efficiency Image Format (HEIF) compression o
 
 ## -enum-fields
 
-### -field WICHeifCompressionDontCare
+### -field WICHeifCompressionDontCare:0x0
 
 Specifies that any compression option may be used.
 
-### -field WICHeifCompressionNone
+### -field WICHeifCompressionNone:0x1
 
 Specifies that no compression be used.
 
-### -field WICHeifCompressionHEVC
+### -field WICHeifCompressionHEVC:0x2
 
 Specifies that High Efficiency Video Coding (HEVC) compression be used.
 
-### -field WICHeifCompressionAV1
+### -field WICHeifCompressionAV1:0x3
 
 Specifies that AOMedia Video 1 (AV1) compression be used.
+
+### -field WICHeifCompressionJpegXL:0x4
+
+TBD
+
+### -field WICHeifCompressionBrotli:0x5
+
+TBD
+
+### -field WICHeifCompressionDeflate:0x6
+
+TBD
 
 ### -field WICHEIFCOMPRESSIONOPTION_FORCE_DWORD
 
