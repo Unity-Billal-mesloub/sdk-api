@@ -1,7 +1,7 @@
 ---
 UID: NF:wincodec.IWICBitmapFrameChainWriter.AppendFrameToChain
 title: IWICBitmapFrameChainWriter::AppendFrameToChain
-description: TBD
+description: Creates a frame that's linked to a chain of a given type.
 ms.date: 07/14/2025
 tech.root: wic
 targetos: Windows
@@ -44,19 +44,21 @@ helpviewer_keywords:
 
 ## -description
 
+Creates a frame that's linked to a chain of a given type.
+
 ## -parameters
 
 ### -param chainType
 
 Type: **[WICBitmapChainType](./ne-wincodec-wicbitmapchaintype)**
 
-TBD
+The chain type to link the new frame to.
 
 ### -param ppIFrameEncode
 
 Type: **[IWICBitmapFrameEncode](./nn-wincodec-iwicbitmapframeencode.md)\*\***
 
-TBD
+Receives the new frame for a chain of type *chainType*.
 
 ### -param ppIEncoderOptions
 
@@ -65,6 +67,10 @@ Type: **IPropertyBag2\*\***
 TBD
 
 ## -returns
+
+Type: **[HRESULT](/windows/win32/com/structure-of-com-error-codes)**
+
+If the function succeeds, it returns **S_OK**. Otherwise, it returns an [HRESULT](/windows/win32/com/structure-of-com-error-codes) [error code](/windows/desktop/com/com-error-codes-10).
 
 ## -remarks
 

@@ -40,6 +40,10 @@ helpviewer_keywords:
 
 Links frames together in chains of different types.
 
+To provide access to subordinate frames, the encoderframe object (which is represented by [IWICBitmapFrameEncode](./nn-wincodec-iwicbitmapframeencode.md)), implements **IWICBitmapFrameChainWriter**.
+
 ## -remarks
+
+See **Remarks** in [IWICBitmapFrameChainReader](./nn-wincodec-iwicbitmapframechainreader.md).
 
 ## -see-also

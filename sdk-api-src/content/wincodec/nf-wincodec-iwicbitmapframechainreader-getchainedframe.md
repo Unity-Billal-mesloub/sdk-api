@@ -1,7 +1,7 @@
 ---
 UID: NF:wincodec.IWICBitmapFrameChainReader.GetChainedFrame
 title: IWICBitmapFrameChainReader::GetChainedFrame
-description: TBD
+description: Retrieves a frame for a chain of a given type.
 ms.date: 07/14/2025
 tech.root: wic
 targetos: Windows
@@ -44,27 +44,33 @@ helpviewer_keywords:
 
 ## -description
 
+Retrieves a frame for a chain of a given type.
+
 ## -parameters
 
 ### -param chainType
 
 Type: **[WICBitmapChainType](./ne-wincodec-wicbitmapchaintype)**
 
-TBD
+The chain type for which to retrieve a frame.
 
 ### -param index
 
 Type: **[UINT](/windows/win32/winprog/windows-data-types)**
 
-TBD
+The index of the frame to retrieve.
 
 ### -param ppIBitmapFrame
 
 Type: **[IWICBitmapFrameDecode](./nn-wincodec-iwicbitmapframedecode.md)\*\***
 
-TBD
+Receives the frame at *index* for chains of type *chainType*.
 
 ## -returns
+
+Type: **[HRESULT](/windows/win32/com/structure-of-com-error-codes)**
+
+If the function succeeds, it returns **S_OK**. Otherwise, it returns an [HRESULT](/windows/win32/com/structure-of-com-error-codes) [error code](/windows/desktop/com/com-error-codes-10).
 
 ## -remarks
 

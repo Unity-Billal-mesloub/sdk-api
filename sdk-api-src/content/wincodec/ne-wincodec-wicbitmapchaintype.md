@@ -37,17 +37,17 @@ helpviewer_keywords:
 
 ## -description
 
-TBD
+Defines constants that specify a type of chain. The frames that are in each chain don't need to have the same dimensions as the primary frame.
 
 ## -enum-fields
 
 ### -field WICBitmapChainType_Alternate:0x1
 
-TBD
+Specifies an ordered chain of alternate images. If the primary image can't be decoded or displayed (perhaps due to the use of an unsupported codec), then you can traverse the chain of alternate images until you find a frame that can be decoded. The alternate frames are ordered in decreasing order of preference. In other words, ordered with the most preferred (for example, highest quality) alternate frames listed first in the chain.
 
 ### -field WICBitmapChainType_Layer:0x2
 
-TBD
+Specifies an ordered chain of layer images, which are used to compose the primary image (referred to as a *layered image*). The images are stacked on top of a canvas, defined by the layered image, with the first image in the chain placed lowest in the stack. Alpha blending can be used to provide transparency between layers. The color of the canvas, and the coordinates at which each layer image should be placed, is defined as metadata accessible on the layered image. When you create a layered image, don't invoke **WritePixels** on the primary image because the primary image doesn't participate in the layering.
 
 ### -field WICBitmapChainType_Preview:0x3
 
