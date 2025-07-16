@@ -2,7 +2,7 @@
 UID: NE:wincodec.WICHeifCompressionOption
 title: WICHeifCompressionOption
 description: Defines constants that specify High Efficiency Image Format (HEIF) compression options.
-ms.date: 07/14/2025
+ms.date: 07/16/2025
 tech.root: wic
 targetos: Windows
 prerelease: true
@@ -59,15 +59,15 @@ Specifies that AOMedia Video 1 (AV1) compression be used.
 
 ### -field WICHeifCompressionJpegXL:0x4
 
-TBD
+Specifies that JPEG XL should be used as the image compression format inside the HEIF file. Since JPEG XL supports both lossy and lossless compression, the *Lossless* compression option must also be set to **VARIANT_TRUE** to enable lossless encoding using JPEG XL. The *CompressionQuality* compression option is also available when using JPEG XL. *CompressionQuality* is a floating point number between 0 and 1, and the default value is 0.45. Larger values result in a smaller image size, at the expense of longer encoding time.
 
 ### -field WICHeifCompressionBrotli:0x5
 
-TBD
+Specifies that the Brotli lossless compression algorithm will be applied to the pixels. Brotli is defined in RFC 7932. Brotli generally provides a higher compression ratio than **WICHeifCompressionDeflate**, at the expense of being slower.
 
 ### -field WICHeifCompressionDeflate:0x6
 
-TBD
+Specifies that the Deflate lossless compression algorithm will be applied to the pixels. Defalate is defined in RFC 1951. Deflate is generally *faster* than Brotli, but it doesn't compress as well.
 
 ### -field WICHEIFCOMPRESSIONOPTION_FORCE_DWORD
 
