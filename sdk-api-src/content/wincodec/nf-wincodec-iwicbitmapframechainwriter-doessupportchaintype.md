@@ -1,8 +1,8 @@
 ---
 UID: NF:wincodec.IWICBitmapFrameChainWriter.DoesSupportChainType
 title: IWICBitmapFrameChainWriter::DoesSupportChainType
-description: TBD
-ms.date: 07/14/2025
+description: Determines whether the specified chain type is supported.
+ms.date: 07/17/2025
 tech.root: wic
 targetos: Windows
 prerelease: false
@@ -44,7 +44,7 @@ helpviewer_keywords:
 
 ## -description
 
-TBD
+Determines whether the specified chain type is supported.
 
 ## -parameters
 
@@ -52,13 +52,13 @@ TBD
 
 Type: **[WICBitmapChainType](./ne-wincodec-wicbitmapchaintype)**
 
-TBD
+The specified chain type to query about.
 
 ### -param pfIsSupported
 
 Type: **[BOOL](/windows/win32/winprog/windows-data-types)\***
 
-TBD
+Used to retrieve a value indicating whether the chain type specified in *chainType* is supported. **TRUE** if it's supported; otherwise, **FALSE**.
 
 ## -returns
 

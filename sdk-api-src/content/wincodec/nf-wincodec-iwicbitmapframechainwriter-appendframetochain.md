@@ -62,9 +62,9 @@ Receives the new frame for a chain of type *chainType*.
 
 ### -param ppIEncoderOptions
 
-Type: **IPropertyBag2\*\***
+Type: **[IPropertyBag2](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768192(v=vs.85))\*\***
 
-TBD
+Optional. Receives the named properties to use for subsequent frame initialization. For more info, see the **Remarks** in the [IWICBitmapEncoder::CreateNewFrame](./nf-wincodec-iwicbitmapencoder-createnewframe.md) topic.
 
 ## -returns
 

@@ -67,7 +67,7 @@ Specifies that the Brotli lossless compression algorithm will be applied to the 
 
 ### -field WICHeifCompressionDeflate:0x6
 
-Specifies that the Deflate lossless compression algorithm will be applied to the pixels. Defalate is defined in RFC 1951. Deflate is generally *faster* than Brotli, but it doesn't compress as well.
+Specifies that the Deflate lossless compression algorithm will be applied to the pixels. Defalate is defined in RFC 1951. Deflate is generally *faster* than Brotli (so it's more efficient), but it doesn't compress as well (so it's less effective).
 
 ### -field WICHEIFCOMPRESSIONOPTION_FORCE_DWORD
 

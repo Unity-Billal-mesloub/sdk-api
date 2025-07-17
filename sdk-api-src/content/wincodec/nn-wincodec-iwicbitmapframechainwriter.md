@@ -47,3 +47,5 @@ To provide access to subordinate frames, the encoderframe object (which is repre
 See **Remarks** in [IWICBitmapFrameChainReader](./nn-wincodec-iwicbitmapframechainreader.md).
 
 ## -see-also
+
+* [IWICBitmapFrameChainReader](./nn-wincodec-iwicbitmapframechainreader.md)
