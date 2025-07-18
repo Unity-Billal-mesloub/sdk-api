@@ -53,20 +53,23 @@ Sets the environment strings of the calling process (both the system and the use
 
 The environment variable string using the following format:
 
-<i>Var1</i>
-<i>Value1</i>
-<i>Var2</i>
-<i>Value2</i>
-<i>Var3</i>
-<i>Value3</i>
-<i>VarN</i>
-<i>ValueN</i>
+*Var1*=*Value1*\0<br/>
+*Var2*=*Value2*\0<br/>
+*Var3*=*Value3*\0<br/>
+...<br/>
+*VarN*=*ValueN*\0\0
 
 ## -returns
 
-Returns S_OK on success.
+If the function succeeds, the return value is nonzero.
+
+If the function fails, the return value is zero. To get extended error information, call [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror).
 
 ## -remarks
 
 ## -see-also
 
+[Environment Variables](/windows/desktop/ProcThread/environment-variables)
+[GetEnvironmentStrings](/windows/win32/api/processenv/nf-processenv-getenvironmentstrings)
+[GetEnvironmentVariable](../winbase/nf-winbase-getenvironmentvariable.md)
+[SetEnvironmentVariable](../winbase/nf-winbase-setenvironmentvariable.md)
