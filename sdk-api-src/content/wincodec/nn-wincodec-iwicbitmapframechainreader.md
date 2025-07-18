@@ -2,7 +2,7 @@
 UID: NN:wincodec.IWICBitmapFrameChainReader
 title: IWICBitmapFrameChainReader
 description: Provides access to frames that are linked to the current frame through chains of different types.
-ms.date: 07/14/2025
+ms.date: 07/18/2025
 tech.root: wic
 targetos: Windows
 prerelease: false
@@ -46,13 +46,13 @@ To provide access to subordinate frames, the frame object (which is represented 
 
 **IWICBitmapFrameChainReader** represents one of a set of COM interfaces that allow WIC to expose chains of linked frames, of different types.
 
-The decoder for an image file can provide multiple frames. Each frame represents a separate image. Similarly, the encoder can accept multiple frames, and encode them into a single file. The typical use case for multiple frames is when scanning a multi-page document into TIFF format. In that scenario, there's no hierarchy of frames (each frame is just as important as another). The newer HEIF image format supports more advanced scenarios, involving secondary frames that are linked to a primary frame. **IWICBitmapFrameChainReader** gives you a way to specify such relationships between frames in the WIC API.
+The decoder for an image file can provide multiple frames. Each frame represents a separate image. Similarly, the encoder can accept multiple frames, and encode them into a single file. For example,  when scanning a multi-page document into TIFF format, the [IWICBitmapEncoder::CreateNewFrame](./nf-wincodec-iwicbitmapencoder-createnewframe.md) method is used to create a frame for each scanned page, and the [IWICBitmapDecoder::GetFrame](./nf-wincodec-iwicbitmapdecoder-getframe.md) method is used to retrieve each frame. In that scenario, there's no hierarchy of frames (each frame is just as important as another). Some image formats&mdash;such as HEIF and JPEG XL&mdash;support secondary frames that are linked to a primary frame. **IWICBitmapFrameChainReader** gives you a way to specify such relationships between frames in the WIC API. Examples of secondary frames include thumbnail images, preview images, and alpha plane bitmaps.
 
-The main scenario that this enables is support for HEIF *overlay images*. An overlay image is composed of multiple *layer* images that are stacked on top of each other in a specified order. The overlay image is the primary image, and the layer images are secondary (subordinate) images that are linked to the primary image. The layer images aren't displayed individually by regular photo viewing apps, but there is a use case where an image editing app needs to be able to read and write each individual layer image.
+HEIF supports layered images (also known as *overlay images*). An overlay image is composed of multiple *layer* images that are stacked on top of each other in a specified order. The overlay image is the primary image, and the layer images are secondary (subordinate) images that are linked to the primary image. The layer images aren't typically displayed, but there are cases where an image-editing app needs to be able to read and write each individual layer image.
 
-An overlay image requires metadata to describe how to compose the different layers into a single image. You can work with that metadata with WIC API extensions.
+An overlay image requires metadata to describe how to compose the different layers into a single image. You can work with that metadata with WIC metadata interfaces such as [IWICMetadataReader](/windows/win32/api/wincodecsdk/nn-wincodecsdk-iwicmetadatareader) and [IWICMetadataWriter](/windows/win32/api/wincodecsdk/nn-wincodecsdk-iwicmetadatawriter).
 
-An overlay image often require lossless compression, because that allows image editing apps to open and save a file multiple times without degrading the image quality. The HEVC and AV1 compression formats for HEIF image files are lossy. With the WIC encoding APIs, you can use HEIF with lossless compression formats such as JPEG XL, and uncompressed formats such as RGBA.
+An overlay image often require lossless compression, because that allows image editing apps to open and save a file multiple times without degrading the image quality. The HEVC and AV1 compression formats for HEIF image files are lossy. With the WIC encoding APIs, you can use HEIF with uncompressed formats such as RGBA.
 
 ### Nesting
 
@@ -336,85 +336,15 @@ HRESULT CreateLayerImage(
 }
 ```
 
-#### Example 4: Configure HEIF for lossless encoding
+#### Example 4: Encode an alternate frame
 
-This example shows how to configure the HEIF encoder for lossless encoding. The example also shows usage of [IWICBitmapFrameChainWriter](./nn-wincodec-iwicbitmapframechainwriter.md) to create a layer frame; but lossless encoding works for any type of HEIF image frame.
-
-```cpp
-#include <wil/com.h>
-#include <wincodec.h>
-
-HRESULT AddLayerUsingLosslessEncode(
-    _In_ IWICBitmapFrameChainWriter* chainWriter,
-    _In_ IWICBitmapSource* layerBitmap,
-    WICHeifCompressionOption compressionOption,
-    float compressionQuality)
-{
-    if (compressionOption != WICHeifCompressionNone &&
-        compressionOption != WICHeifCompressionJpegXL &&
-        compressionOption != WICHeifCompressionBrotli &&
-        compressionOption != WICHeifCompressionDeflate)
-    {
-        // The specified compression option is not one of the known lossless formats.
-        RETURN_HR(E_INVALIDARG);
-    }
-
-    wil::com_ptr_nothrow<IWICBitmapFrameEncode> layerFrame;
-    wil::com_ptr_nothrow<IPropertyBag2> encoderOptions;
-    RETURN_IF_FAILED(chainWriter->AppendFrameToChain(WICBitmapChainType_Layer, &layerFrame,
-        &encoderOptions));
-
-    PROPBAG2 option{};
-    option.pstrName = L"HeifCompressionMethod";
-
-    wil::unique_variant prop;
-    prop.vt = VT_UI1;
-    prop.bVal = (BYTE)compressionOption;
-
-    RETURN_IF_FAILED(encoderOptions->Write(1, &option, &prop));
-
-    if (compressionOption == WICHeifCompressionJpegXL)
-    {
-        // For JPEG XL, we must explicitly enable lossless encoding.
-        option.pstrName = L"Lossless";
-        prop.vt = VT_BOOL;
-        prop.boolVal = VARIANT_TRUE;
-        RETURN_IF_FAILED(encoderOptions->Write(1, &option, &prop));
-
-        if (compressionQuality >= 0.0f && compressionQuality <= 1.0f)
-        {
-            // For JPEG XL, we can configure the compression quality.
-            // It's a float between 0 and 1. The default value is 0.45.
-            // Larger numbers result in a smaller file, but take longer to encode. When lossless encoding
-            // is enabled, values greater than about 0.8 can cause encoding to take minutes to complete.
-            option.pstrName = L"CompressionQuality";
-
-            prop.vt = VT_R4;
-            prop.fltVal = compressionQuality;
-            RETURN_IF_FAILED(encoderOptions->Write(1, &option, &prop));
-        }
-    }
-
-    // The "Lossless" and "CompressionQuality" properties don't need to be
-    // specified for Brotli or Deflate, because they're ignored for those formats.
-
-    RETURN_IF_FAILED(layerFrame->Initialize(encoderOptions.get()));
-
-    RETURN_IF_FAILED(layerFrame->WriteSource(layerBitmap, nullptr));
-    RETURN_IF_FAILED(layerFrame->Commit());
-    return S_OK;
-}
-```
-
-#### Example 5: Encode an alternate frame
-
-This example shows how your app can encode a frame by using JPEG XL lossless encoding, while providing a lower quality alternative encoding using HEVC. Since the JPEG XL plug-in is currently downloadable only from the Microsoft Store, and available only for Windows 11 24H2, and later, there's a possibility that a photo viewing app won't be able to decode frames that are encoded using JPEG XL. By providing an alternate frame encoded in HEVC, apps that don't have JPEG XL will still be able to display the image, albeit at a lower quality.
+This example shows how your app can save an uncompressed frame by using lossless Deflate compression, while providing a lower quality alternative encoding using HEVC. Uncompressed images in HEIF is defined in a new standard that might not be supported outside Windows. This means that there's a possibility that a photo viewing app, especially one not running on Windows, won't be able to decode uncompressed frames. By providing an alternate frame encoded in HEVC, apps that don't support uncompressed frames will still be able to display the image, albeit at a lower quality.
 
 ```cpp
 #include <wil/com.h>
 #include <wincodec.h>
 
-HRESULT AddLosslessFrameWithHevcAlternate(
+HRESULT AddUncompressedFrameWithHevcAlternate(
     _In_ IWICBitmapEncoder* heifEncoder,
     _In_ IWICBitmapSource* sourceBitmap)
 {
@@ -422,19 +352,13 @@ HRESULT AddLosslessFrameWithHevcAlternate(
     wil::com_ptr_nothrow<IPropertyBag2> encoderOptions;
     RETURN_IF_FAILED(heifEncoder->CreateNewFrame(&primaryFrame, &encoderOptions));
 
-    // Specify that we'll use JPEG XL as the encoding for the primary frame.
+    // Specify that the primary frame should be saved in uncompressed format with lossless Deflate compression applied to it.
     PROPBAG2 option{};
     option.pstrName = L"HeifCompressionMethod";
 
     wil::unique_variant prop;
     prop.vt = VT_UI1;
-    prop.bVal = (BYTE)WICHeifCompressionJpegXL;
-
-    // For JPEG XL, we must explicitly enable lossless encoding.
-    option.pstrName = L"Lossless";
-    prop.vt = VT_BOOL;
-    prop.boolVal = VARIANT_TRUE;
-    RETURN_IF_FAILED(encoderOptions->Write(1, &option, &prop));
+    prop.bVal = (BYTE)WICHeifCompressionDeflate;
 
     RETURN_IF_FAILED(primaryFrame->Initialize(encoderOptions.get()));
     RETURN_IF_FAILED(primaryFrame->WriteSource(sourceBitmap, nullptr));
@@ -444,7 +368,7 @@ HRESULT AddLosslessFrameWithHevcAlternate(
     RETURN_IF_FAILED(wil::com_query_to_nothrow(primaryFrame, &chainWriter));
 
     // Create an alternate frame that is encoded using HEVC. This frame will be displayed by
-    // photo viewing apps when the JPEG XL plug-in isn't installed.
+    // photo viewing apps when uncompressed images aren't supported.
     // HEVC is the default, so we don't need to specify any encoding options for this frame.
     wil::com_ptr_nothrow<IWICBitmapFrameEncode> alternateFrame;
     RETURN_IF_FAILED(chainWriter->AppendFrameToChain(WICBitmapChainType_Alternate, &alternateFrame,
@@ -459,7 +383,7 @@ HRESULT AddLosslessFrameWithHevcAlternate(
 }
 ```
 
-#### Example 6: Checking whether gain map chains are supported
+#### Example 5: Checking whether gain map chains are supported
 
 This example shows how your app can check whether the encoder supports storing a gain map with the primary image. If the primary image is in standard-dynamic-range (SDR) format, then a gain map can be used to enhance the primary image to high-dynamic-range (HDR). But not all file formats support gain maps, so your app might first want to check whether gain maps are supported before spending resources on generating the gain map. This example shows how you can do that by using the [IWICBitmapFrameChainWriter::DoesSupportChainType](./nf-wincodec-iwicbitmapframechainwriter-doessupportchaintype.md) method.
 
