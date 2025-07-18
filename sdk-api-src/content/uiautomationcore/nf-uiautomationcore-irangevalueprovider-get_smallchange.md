@@ -66,7 +66,7 @@ ULONGLONG ulNaN = 0xFFFFFFFFFFFFFFFF;
 Alternatively, you can use the following function from the standard C++ libraries:
 
 ```cpp
-numeric_limits<double>::quiet_NaN( )
+numeric_limits<double>::quiet_NaN()
 ```
 
 ## -see-also
