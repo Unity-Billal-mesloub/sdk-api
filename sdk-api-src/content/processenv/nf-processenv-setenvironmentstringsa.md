@@ -2,7 +2,7 @@
 UID: NF:processenv.SetEnvironmentStringsA
 title: SetEnvironmentStringsA
 description: The SetEnvironmentStringsA function (processenv.h) sets the environment strings of the calling process for the current process.
-ms.date: 10/31/2024
+ms.date: 07/18/2025
 ms.keywords: SetEnvironmentStringsA
 targetos: Windows
 req.assembly: 
