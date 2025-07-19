@@ -85,11 +85,11 @@ A pointer to a variable. On input, this value specifies the size, in bytes, of t
 
 ### -param ReferencedDomainName [out, optional]
 
-A pointer to a buffer that receives the name of the domain where the account name is found. For computers that are not joined to a domain, this buffer receives the computer name. If this parameter is <b>NULL</b>, the function returns the required buffer size.
+A pointer to a buffer that receives the name of the domain where the account name is found. For computers that are not joined to a domain, this buffer receives the computer name. If this parameter is <b>NULL</b>, <i>cchReferencedDomainName</i> must be zero.
 
 ### -param cchReferencedDomainName [in, out]
 
-A pointer to a variable. On input, this value specifies the size, in <b>TCHAR</b>s, of the <i>ReferencedDomainName</i> buffer. If the function fails because the buffer is too small, this variable receives the required buffer size, including the terminating <b>null</b> character. If the <i>ReferencedDomainName</i> parameter is <b>NULL</b>, this parameter must be zero.
+A pointer to a variable. On input, this value specifies the size, in <b>TCHAR</b>s, of the <i>ReferencedDomainName</i> buffer. If the function fails because the buffer is too small, this variable receives the required buffer size, including the terminating <b>null</b> character.
 
 ### -param peUse [out]
 
