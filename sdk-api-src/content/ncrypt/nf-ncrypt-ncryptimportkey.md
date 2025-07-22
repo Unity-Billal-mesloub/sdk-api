@@ -1,7 +1,7 @@
 ---
 UID: NF:ncrypt.NCryptImportKey
 title: NCryptImportKey function (ncrypt.h)
-description: Imports a Cryptography API:\_Next Generation (CNG) key from a memory BLOB.
+description: Imports a Cryptography API - Next Generation (CNG) key from a memory BLOB.
 helpviewer_keywords: ["NCRYPT_SILENT_FLAG","NCryptImportKey","NCryptImportKey function [Security]","ncrypt/NCryptImportKey","security.ncryptimportkey_func"]
 old-location: security\ncryptimportkey_func.htm
 tech.root: security

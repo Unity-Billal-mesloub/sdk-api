@@ -48,7 +48,6 @@ api_name:
 
 # BCryptDeriveKey function
 
-
 ## -description
 
 The **BCryptDeriveKey** function derives a key from a **BCRYPT_SECRET_HANDLE**. This is typically done as part of a secret agreement procedure.
@@ -65,8 +64,6 @@ The secret handle to create the key from. This handle is obtained from the [BCry
 
 A pointer to a null-terminated Unicode string that identifies the *key derivation function* (KDF) to use to derive the key. This can be one of the following strings.
 
-
-
 #### BCRYPT_KDF_HASH (L"HASH")
 
 Use the hash key derivation function. 
@@ -77,12 +74,11 @@ If the *cbDerivedKey* parameter is greater than the size of the derived key, thi
 
 The parameters identified by the *pParameterList* parameter either can or must contain the following parameters, as indicated by the Required or optional column.
 
-
 | Parameter | Description | Required or optional |
 |-----------|-------------|----------------------|
 | **KDF_HASH_ALGORITHM** | A null-terminated Unicode string that identifies the hash algorithm to use. This can be one of the standard hash algorithm identifiers from [CNG Algorithm Identifiers](/windows/win32/seccng/cng-algorithm-identifiers) or the identifier for another registered hash algorithm.<br/><br/>If this parameter is not specified, the SHA1 hash algorithm is used. | Optional |
 | **KDF_SECRET_PREPEND** | A value to add to the beginning of the message input to the hash function. For more information, see Remarks. | Optional |
-| **KDF_SECRET_APPEND** | A value to add to the end of the message input to the hash function. For more information, see Remarks. | Optional | 
+| **KDF_SECRET_APPEND** | A value to add to the end of the message input to the hash function. For more information, see Remarks. | Optional |
 
 The call to the KDF is made as shown in the following pseudocode.
 
@@ -92,7 +88,6 @@ KDF-Output = Hash(
     hSharedSecret + 
     KDF-Append)
 ```
-
 
 #### BCRYPT_KDF_HMAC (L"HMAC")
 
@@ -121,7 +116,6 @@ KDF-Output = HMAC-Hash(
     KDF-Append)
 ```
 
-
 #### BCRYPT_KDF_TLS_PRF (L"TLS_PRF")
 
 Use the [transport layer security](/windows/win32/SecGloss/t-gly) (TLS) [pseudo-random function](/windows/win32/SecGloss/p-gly) (PRF) key derivation function. The size of the derived key is always 48 bytes, so the *cbDerivedKey* parameter must be 48.
@@ -134,10 +128,8 @@ The parameters identified by the *pParameterList* parameter either can or must c
 | **KDF_TLS_PRF_SEED** | The PRF seed. The seed must be 64 bytes long. | Required |
 | **KDF_TLS_PRF_PROTOCOL** | A **DWORD** value that specifies the TLS protocol version whose PRF algorithm is to be used.<br/><br/>Valid values are:<br/>SSL2_PROTOCOL_VERSION (0x0002)<br/>SSL3_PROTOCOL_VERSION (0x0300)<br/>TLS1_PROTOCOL_VERSION (0x0301)<br/>TLS1_0_PROTOCOL_VERSION (0x0301)<br/>TLS1_1_PROTOCOL_VERSION (0x0302)<br/>TLS1_2_PROTOCOL_VERSION (0x0303)<br/>DTLS1_0_PROTOCOL_VERSION (0xfeff)<br/><br/>**Windows Server 2008 and Windows Vista:** TLS1_1_PROTOCOL_VERSION, TLS1_2_PROTOCOL_VERSION and DTLS1_0_PROTOCOL_VERSION are not supported.<br/><br/>**Windows Server 2008 R2, Windows 7, Windows Server 2008 and Windows Vista:** DTLS1_0_PROTOCOL_VERSION is not supported. | Optional |
 | **KDF_HASH_ALGORITHM** | The CNG algorithm ID of the hash to be used with the HMAC in the PRF, for the TLS 1.2 protocol version. Valid choices are SHA-256 and SHA-384. If not specified, SHA-256 is used. | Optional |
- 
 
 The call to the KDF is made as shown in the following pseudocode.
-
 
 ``` syntax
 KDF-Output = PRF(
@@ -146,8 +138,6 @@ KDF-Output = PRF(
     KDF_TLS_PRF_SEED)
 ```
 
-
-
 #### BCRYPT_KDF_SP80056A_CONCAT (L"SP800_56A_CONCAT")
 
 Use the SP800-56A key derivation function. This is also known as SP800-56C rev2 one-step KDF.
@@ -155,7 +145,6 @@ Use the SP800-56A key derivation function. This is also known as SP800-56C rev2 
 The KDF takes an approved hash function as a parameter, but this API chooses the hash function internally, matching the security strength of the hash algorithm to the algorithm used to generate the secret handle. (i.e. ECDH P-256 uses SHA256, ECDH P-384 uses SHA384)
 
 The parameters identified by the *pParameterList* parameter either can or must contain the following parameters, as indicated by the Required or optional column. All parameter values are treated as opaque byte arrays.
-
 
 | Parameter | Description | Required or optional |
 |-----------|-------------|----------------------|
@@ -166,7 +155,6 @@ The parameters identified by the *pParameterList* parameter either can or must c
 | **KDF_SUPPPRIVINFO** | Specifies the **SuppPrivInfo** subfield of the **OtherInfo** field in the SP800-56A key derivation function. It contains private information known to both initiator and responder, such as a shared secret. | Optional |
 
 The call to the KDF is made as shown in the following pseudocode.
-
 
 ``` syntax
 KDF-Output = SP_800-56A_KDF(

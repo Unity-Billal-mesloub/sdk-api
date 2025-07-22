@@ -129,7 +129,7 @@ Possible return codes include, but are not limited to, the following.
 | **STATUS_BUFFER_TOO_SMALL** | The size specified by the *cbOutput* parameter is not large enough to hold the ciphertext. If buffer *pbOutput* is too small, *pcbResult* receives the number of bytes required for *pbOutput*. |
 | **STATUS_INVALID_HANDLE** | The key handle in the *hKey* parameter is not valid. |
 | **STATUS_INVALID_PARAMETER** | One or more parameters are not valid. |
-| **STATUS_NOT_SUPPORTED** | The specified BLOB type is not supported by the provider. If the key handle provided does not support the export of the private seed. See [remarks](#-remarks). |
+| **STATUS_NOT_SUPPORTED** | The specified BLOB type is not supported by the provider. If the key handle provided does not support the export of the private seed. See [remarks](#remarks). |
 
 ## -remarks
 

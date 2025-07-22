@@ -74,15 +74,13 @@ If the *cbDerivedKey* parameter is less than the size of the derived key, this f
 
 The parameters identified by the *pParameterList* parameter either can or must contain the following parameters, as indicated by the Required or optional column.
 
-
 | Parameter | Description | Required or optional |
 |-----------|-------------|----------------------|
 | **KDF_HASH_ALGORITHM** | A null-terminated Unicode string that identifies the hash algorithm to use. This can be one of the standard hash algorithm identifiers from [CNG Algorithm Identifiers](/windows/win32/seccng/cng-algorithm-identifiers) or the identifier for another registered hash algorithm.<br/><br/>If this parameter is not specified, the SHA1 hash algorithm is used. | Optional |
-| **KDF_SECRET_PREPEND** | A value to add to the beginning of the message input to the hash function. For more information, see Remarks. | Optional |
-| **KDF_SECRET_APPEND** | A value to add to the end of the message input to the hash function. For more information, see Remarks. | Optional | 
+| **KDF_SECRET_PREPEND** | A value to add to the beginning of the message input to the hash function. For more information, see [Remarks](#remarks). | Optional |
+| **KDF_SECRET_APPEND**  | A value to add to the end of the message input to the hash function. For more information, see [Remarks](#remarks). | Optional |
 
 The call to the KDF is made as shown in the following pseudocode.
-
 
 ``` syntax
 KDF-Output = Hash(
@@ -90,8 +88,6 @@ KDF-Output = Hash(
     hSharedSecret + 
     KDF-Append)
 ```
-
-
 
 #### BCRYPT_KDF_HMAC (L"HMAC")
 
@@ -118,7 +114,6 @@ KDF-Output = HMAC-Hash(
     KDF-Append)
 ```
 
-
 #### BCRYPT_KDF_TLS_PRF (L"TLS_PRF")
 
 Use the [transport layer security](/windows/win32/SecGloss/t-gly) (TLS) [pseudo-random function](/windows/win32/SecGloss/p-gly) (PRF) key derivation function. The size of the derived key is always 48 bytes, so the *cbDerivedKey* parameter must be 48.
@@ -131,10 +126,8 @@ The parameters identified by the *pParameterList* parameter either can or must c
 | **KDF_TLS_PRF_SEED** | The PRF seed. The seed must be 64 bytes long. | Required |
 | **KDF_TLS_PRF_PROTOCOL** | A **DWORD** value that specifies the TLS protocol version whose PRF algorithm is to be used.<br/><br/>Valid values are:<br/>SSL2_PROTOCOL_VERSION (0x0002)<br/>SSL3_PROTOCOL_VERSION (0x0300)<br/>TLS1_PROTOCOL_VERSION (0x0301)<br/>TLS1_0_PROTOCOL_VERSION (0x0301)<br/>TLS1_1_PROTOCOL_VERSION (0x0302)<br/>TLS1_2_PROTOCOL_VERSION (0x0303)<br/>DTLS1_0_PROTOCOL_VERSION (0xfeff)<br/><br/>**Windows Server 2008 and Windows Vista:** TLS1_1_PROTOCOL_VERSION, TLS1_2_PROTOCOL_VERSION and DTLS1_0_PROTOCOL_VERSION are not supported.<br/><br/>**Windows Server 2008 R2, Windows 7, Windows Server 2008 and Windows Vista:** DTLS1_0_PROTOCOL_VERSION is not supported. | Optional |
 | **KDF_HASH_ALGORITHM** | The CNG algorithm ID of the hash to be used with the HMAC in the PRF, for the TLS 1.2 protocol version. Valid choices are SHA-256 and SHA-384. If not specified, SHA-256 is used. | Optional |
- 
 
 The call to the KDF is made as shown in the following pseudocode.
-
 
 ``` syntax
 KDF-Output = PRF(
@@ -143,8 +136,6 @@ KDF-Output = PRF(
     KDF_TLS_PRF_SEED)
 ```
 
-
-
 #### BCRYPT_KDF_SP80056A_CONCAT (L"SP800_56A_CONCAT")
 
 Use the SP800-56A key derivation function.
@@ -152,7 +143,6 @@ Use the SP800-56A key derivation function.
 This is also known as SP800-56C rev2 one-step KDF (section 4.1) using an approved hash function that has strength corresponding to algorithm used to generate the secret handle.
 
 The parameters identified by the *pParameterList* parameter either can or must contain the following parameters, as indicated by the Required or optional column. All parameter values are treated as opaque byte arrays.
-
 
 | Parameter | Description | Required or optional |
 |-----------|-------------|----------------------|
@@ -163,7 +153,6 @@ The parameters identified by the *pParameterList* parameter either can or must c
 | **KDF_SUPPPRIVINFO** | Specifies the **SuppPrivInfo** subfield of the **OtherInfo** field in the SP800-56A key derivation function.  It contains private information known to both initiator and responder, such as a shared secret. | Optional |
 
 The call to the KDF is made as shown in the following pseudocode.
-
 
 ``` syntax
 KDF-Output = SP_800-56A_KDF(
@@ -185,21 +174,23 @@ If the *cbDerivedKey* parameter is less than the size of the derived key, this f
 
 **Windows 8, Windows Server 2008, Windows Vista, Windows Server 2003 and Windows XP:** This value is not supported.
 
-
 #### BCRYPT_KDF_HKDF (L"HKDF")
 
 Use the HKDF (HMAC-based Extract-and-Expand KDF) function from RFC 5869.
 
 In HKDF, a distinction is made between deriving a key from either:
-1) The output of a secret agreement function, which is not uniformly random, and is considered to be input keying material (IKM). Almost all users of *BCryptDeriveKey* will have a secret handle of this form.
-2) A uniformly random secret value.
+
+1. The output of a secret agreement function, which is not uniformly random, and is considered to be input keying material (IKM). Almost all users of *BCryptDeriveKey* will have a secret handle of this form.
+1. A uniformly random secret value.
 
 ##### The first step is to "Extract" a pseudorandom key (PRK) from the secret handle.
 
-This step is performed by calling [BCryptSetProperty](./nf-bcrypt-bcryptsetproperty.md) on a secret handle with **BCRYPT_HKDF_HASH_ALGORITHM** to set the hash algorithm to use in HMAC computations in HKDF.
-This is followed by a second call to [BCryptSetProperty](./nf-bcrypt-bcryptsetproperty.md) with one of either:
-1) If the secret handle represents IKM, use **BCRYPT_HKDF_SALT_AND_FINALIZE** to provide the optional salt value and extract the PRK from the IKM and finalize the secret handle.
-2) Otherwise, use **BCRYPT_HKDF_PRK_AND_FINALIZE** to directly transform the secret value into the HKDF PRK and finalize the secret handle.
+This step is performed by calling [BCryptSetProperty](../bcrypt/nf-bcrypt-bcryptsetproperty.md) on a secret handle with **BCRYPT_HKDF_HASH_ALGORITHM** to set the hash algorithm to use in HMAC computations in HKDF.
+
+This is followed by a second call to [BCryptSetProperty](../bcrypt/nf-bcrypt-bcryptsetproperty.md) with one of either:
+
+1. If the secret handle represents IKM, use **BCRYPT_HKDF_SALT_AND_FINALIZE** to provide the optional salt value and extract the PRK from the IKM and finalize the secret handle.
+1. Otherwise, use **BCRYPT_HKDF_PRK_AND_FINALIZE** to directly transform the secret value into the HKDF PRK and finalize the secret handle.
 
 ##### The second step is to "Expand" the PRK into an output derived key.
 This step is performed by calling *BCryptDeriveKey* on a finalized secret handle.
@@ -211,7 +202,6 @@ The parameters identified by the *pParameterList* parameter either can or must c
 | **KDF_HKDF_INFO** | Specifies the **info** field in the HKDF Expand Step. Indicates the optional context and application specific information. | Optional |
 
 The call to the KDF is made as shown in the following pseudocode.
-
 
 ``` syntax
 KDF-Output = HKDF-Expand(
@@ -283,12 +273,9 @@ Parameter[2].length = sizeof (abValue2);
 Parameter[3].type = KDF_SECRET_PREPEND
 Parameter[3].value = abValue3;
 Parameter[3].length = sizeof (abValue3);
-
 ```
 
-
 If the above parameter values are specified, the concatenated values to the actual KDF are as follows.
-
 
 ``` syntax
 Type: KDF_SECRET_PREPEND
@@ -296,7 +283,6 @@ Value: {0x04, 0x05, 0x20, 0x21, 0x22, 0x23}, length 6
 
 Type: KDF_SECRET_APPEND
 Value: {0x01, 0x10, 0x11, 0x12}, length 4
-
 ```
 
 If the *pwszKDF* parameter is set to **BCRYPT_KDF_RAW_SECRET**, the returned secret (unlike the other *pwszKDF* values) will be encoded in little-endian format. It is important to take note of this when using the raw secret in any other CNG functions, as most of them take in big-endian encoded inputs.
@@ -308,4 +294,3 @@ A service must not call this function from its <a href="/windows/win32/api/winsv
 [NCryptBufferDesc](../bcrypt/ns-bcrypt-bcryptbufferdesc.md)
 
 [NCryptSecretAgreement](nf-ncrypt-ncryptsecretagreement.md)
-
