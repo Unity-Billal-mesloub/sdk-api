@@ -52,8 +52,8 @@ api_type:
 api_location:
  - api-ms-win-eventing-consumer-l1-1-2.dll
  - api-ms-win-eventing-consumer-l1-1-1.dll
-  - AdvAPI32.dll
-  - Sechost.dll
+ - AdvAPI32.dll
+ - Sechost.dll
 api_name:
   - QueryTraceProcessingHandle
 ---

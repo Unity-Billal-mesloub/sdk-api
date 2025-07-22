@@ -60,11 +60,11 @@ api_location:
  - api-ms-win-eventing-consumer-l1-1-2.dll
  - api-ms-win-eventing-consumer-l1-1-1.dll
  - api-ms-win-downlevel-advapi32-l2-1-0.dll
-  - Sechost.dll
-  - Advapi32.dll
-  - API-MS-Win-DownLevel-AdvAPI32-l2-1-1.dll
-  - API-MS-Win-Eventing-Consumer-l1-1-0.dll
-  - KernelBase.dll
+ - Sechost.dll
+ - Advapi32.dll
+ - API-MS-Win-DownLevel-AdvAPI32-l2-1-1.dll
+ - API-MS-Win-Eventing-Consumer-l1-1-0.dll
+ - KernelBase.dll
 api_name:
   - ProcessTrace
 ---
