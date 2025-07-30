@@ -170,7 +170,7 @@ The four high-order bits of <b>tmPitchAndFamily</b> designate the font's font fa
 
 ### -field tmCharSet
 
-The character set of the font. For a list of possible values, see `lfCharSet` field of the <a href="/windows/desktop/api/wingdi/ns-wingdi-logfonta">LOGFONT structure</a>.
+The character set of the font. For a list of possible values, see *lfCharSet* field of the <a href="/windows/desktop/api/wingdi/ns-wingdi-logfonta">LOGFONT structure</a>.
 
 ## -see-also
 
