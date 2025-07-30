@@ -315,7 +315,7 @@ The character set. For a list of possible values, see `lfCharSet` field of the <
 
 Fonts with other character sets may exist in the operating system. If an application uses a font with an unknown character set, it should not attempt to translate or interpret strings that are rendered with that font.
 
-To ensure consistent results when creating a font, do not specify **OEM_CHARSET** or **DEFAULT_CHARSET**. If you specify a typeface name in the *pszFaceName* parameter, make sure that the `iCharSet` value matches the character set of the typeface specified in *pszFaceName*.
+To ensure consistent results when creating a font, do not specify **OEM_CHARSET** or **DEFAULT_CHARSET**. If you specify a typeface name in the *pszFaceName* parameter, make sure that the *iCharSet* value matches the character set of the typeface specified in *pszFaceName*.
 
 ### -param iOutPrecision [in]
 
