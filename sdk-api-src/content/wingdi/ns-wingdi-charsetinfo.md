@@ -64,7 +64,7 @@ Character set value. For a list of possible values, see lfCharSet field of the <
 
 ### -field ciACP
 
-Windows ANSI code page identifier. For a list of identifiers, see  <a href="/windows/desktop/Intl/code-page-identifiers">Code Page Identifiers</a>.
+Windows ANSI code page identifier. For a list of identifiers, see <a href="/windows/desktop/Intl/code-page-identifiers">Code Page Identifiers</a>.
 
 ### -field fs
 
