@@ -104,13 +104,13 @@ Specifies the character bias. This value is TrueType-specific and should be set 
 
 ### -field dpCharSets
 
-Specifies the offset from the beginning of this IFIMETRICS structure to an array containing a list of all Windows character sets supported by this font. The array is 16 bytes in size and is always terminated with DEFAULT_CHARSET. The first value of the array should identify the Windows character set that has the best and most complete coverage in the font; this value should also be stored in <b>jWinCharSet</b>. For instance, if this is a Japanese font that also supports US ANSI and Cyrillic character sets, then <b>jWinCharSet</b> should be set to SHIFTJIS_CHARSET and the array identified by <b>dpCharSets</b> would contain SHIFTJIS_CHARSET, ANSI_CHARSET, RUSSIAN_CHARSET, DEFAULT_CHARSET.
+Specifies the offset from the beginning of this IFIMETRICS structure to an array containing a list of all Windows character sets supported by this font. The array is 16 bytes in size and is always terminated with **DEFAULT_CHARSET**. The first value of the array should identify the Windows character set that has the best and most complete coverage in the font; this value should also be stored in <b>jWinCharSet</b>. For instance, if this is a Japanese font that also supports US ANSI and Cyrillic character sets, then <b>jWinCharSet</b> should be set to **SHIFTJIS_CHARSET** and the array identified by <b>dpCharSets</b> would contain **SHIFTJIS_CHARSET**, **ANSI_CHARSET**, **RUSSIAN_CHARSET**, **DEFAULT_CHARSET**.
 
 If this font does not support more than one Windows character set, <b>dpCharSets</b> should be set to zero.
 
 ### -field jWinCharSet
 
-Identifies the character set best supported by this font. If the font supports only a single Windows character set, the driver should store the corresponding value in <b>jWinCharSet</b>. The driver should not store 'DEFAULT_CHARSET' in this field.
+Identifies the character set best supported by this font. If the font supports only a single Windows character set, the driver should store the corresponding value in <b>jWinCharSet</b>. The driver should not store **DEFAULT_CHARSET** in this field.
 
 For a list of possible values, see `lfCharSet` field of the <a href="/windows/desktop/api/wingdi/ns-wingdi-logfontw">LOGFONT structure</a>.
 
