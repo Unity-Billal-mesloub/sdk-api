@@ -170,29 +170,7 @@ The four high-order bits of <b>tmPitchAndFamily</b> designate the font's font fa
 
 ### -field tmCharSet
 
-The character set of the font. The character set can be one of the following values.
-
-| Value | Description |
-|--|--|
-| `ANSI_CHARSET` | This font supports the Windows ANSI character set. |
-| `ARABIC_CHARSET` | This font supports the Arabic character set. |
-| `BALTIC_CHARSET` | This font supports the Baltic character set. |
-| `CHINESEBIG5_CHARSET` | This font supports the traditional Chinese (Big 5) character set. |
-| `DEFAULT_CHARSET` | This font supports character set value based on the system default Windows ANSI code page. For example, when the system locale is English (United States), it is set as ANSI_CHARSET. |
-| `EASTEUROPE_CHARSET` | This font supports the Eastern European character set. |
-| `GB2312_CHARSET` | This font supports the simplified (PRC) Chinese character set. |
-| `GREEK_CHARSET` | This font supports the Greek character set. |
-| `HANGEUL_CHARSET` | This font supports the Korean (Hangul) character set. |
-| `HEBREW_CHARSET` | This font supports the Hebrew character set. |
-| `JOHAB_CHARSET` | This font supports the Korean (Johab) character set. |
-| `MAC_CHARSET` | This font supports character set value based on the current system Macintosh code page. This value is used primarily in legacy code and should not generally be needed since modern Macintosh computers use Unicode for encoding. |
-| `OEM_CHARSET` | This font supports an OEM-specific character set. The OEM character set is system dependent. |
-| `RUSSIAN_CHARSET` | This font supports the Cyrillic character set. |
-| `SHIFTJIS_CHARSET` | This font supports the Shift-JIS (Japanese Industry Standard) character set. |
-| `SYMBOL_CHARSET` | This font supports the Windows symbol character set. |
-| `THAI_CHARSET` | This font supports the Thai character set. |
-| `TURKISH_CHARSET` | This font supports the Turkish character set. |
-| `VIETNAMESE_CHARSET` | This font supports the Vietnamese character set. |
+The character set of the font. For a list of possible values, see `lfCharSet` field of the <a href="/windows/desktop/api/wingdi/ns-wingdi-logfonta">LOGFONT structure</a>.
 
 ## -see-also
 
