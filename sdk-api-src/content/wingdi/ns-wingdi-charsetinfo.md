@@ -60,7 +60,7 @@ Contains information about a character set.
 
 ### -field ciCharset
 
-Character set value. For a list of possible values, see `lfCharSet` field of the <a href="/windows/desktop/api/wingdi/ns-wingdi-logfontw">LOGFONT structure</a>.
+Character set value. For a list of possible values, see *lfCharSet* field of the <a href="/windows/desktop/api/wingdi/ns-wingdi-logfontw">LOGFONT structure</a>.
 
 ### -field ciACP
 
