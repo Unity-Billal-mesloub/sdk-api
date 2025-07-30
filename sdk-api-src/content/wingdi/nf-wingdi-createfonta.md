@@ -311,7 +311,7 @@ A strikeout font if set to <b>TRUE</b>.
 
 ### -param iCharSet [in]
 
-The character set. For a list of possible values, see `lfCharSet` field of the <a href="/windows/desktop/api/wingdi/ns-wingdi-logfontw">LOGFONT structure</a>.
+The character set. For a list of possible values, see `lfCharSet` field of the <a href="/windows/desktop/api/wingdi/ns-wingdi-logfonta">LOGFONT structure</a>.
 
 Fonts with other character sets may exist in the operating system. If an application uses a font with an unknown character set, it should not attempt to translate or interpret strings that are rendered with that font.
 
