@@ -112,7 +112,7 @@ If this font does not support more than one Windows character set, <b>dpCharSets
 
 Identifies the character set best supported by this font. If the font supports only a single Windows character set, the driver should store the corresponding value in <b>jWinCharSet</b>. The driver should not store **DEFAULT_CHARSET** in this field.
 
-For a list of possible values, see `lfCharSet` field of the <a href="/windows/desktop/api/wingdi/ns-wingdi-logfontw">LOGFONT structure</a>.
+For a list of possible values, see *lfCharSet* field of the <a href="/windows/desktop/api/wingdi/ns-wingdi-logfontw">LOGFONT structure</a>.
 
 ### -field jWinPitchAndFamily
 
