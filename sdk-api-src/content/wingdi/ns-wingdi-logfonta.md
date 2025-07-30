@@ -226,7 +226,7 @@ The character set. The following values are predefined:
 
 Fonts with other character sets may exist in the operating system. If an application uses a font with an unknown character set, it should not attempt to translate or interpret strings that are rendered with that font.
 
-This parameter is important in the font mapping process. To ensure consistent results when creating a font, do not specify `OEM_CHARSET` or `DEFAULT_CHARSET`. If you specify a typeface name in the <b>lfFaceName</b> member, make sure that the <b>lfCharSet</b> value matches the character set of the typeface specified in <b>lfFaceName</b>.
+This parameter is important in the font mapping process. To ensure consistent results when creating a font, do not specify **OEM_CHARSET** or **DEFAULT_CHARSET**. If you specify a typeface name in the <b>lfFaceName</b> member, make sure that the <b>lfCharSet</b> value matches the character set of the typeface specified in <b>lfFaceName</b>.
 
 ### -field lfOutPrecision
 
