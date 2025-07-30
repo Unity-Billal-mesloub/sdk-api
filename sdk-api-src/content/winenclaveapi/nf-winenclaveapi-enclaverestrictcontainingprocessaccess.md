@@ -62,7 +62,7 @@ An `HRESULT` value that indicates the success or failure of the operation.
 
 ## -remarks
 
-When access is restricted, attempting to access the address space of the containing process from the enclave will result in an access violation. However, the [EnclaveCopyOutOfEnclave](nf-winenclaveapi-enclavecopyoutofenclave.md) and [EnclaveCopyIntoEnclave](nf-winenclaveapi-enclavecopyintoenclave.md) APIs will continue to permit access the address space of the containing process even when access is restricted.
+When access is restricted, attempting to access the address space of the containing process from the enclave will result in an access violation. However, even when access is restricted, the [EnclaveCopyOutOfEnclave](nf-winenclaveapi-enclavecopyoutofenclave.md) and [EnclaveCopyIntoEnclave](nf-winenclaveapi-enclavecopyintoenclave.md) APIs continue to permit access to the address space of the containing process.
 
 Access to the containing process's address space can also be restricted by setting the [IMAGE_ENCLAVE_POLICY_STRICT_MEMORY](../winnt/ns-winnt-image_enclave_config64.md#-field-enclaveflags) flag in the enclave's image configuration. The **EnclaveRestrictContainingProcessAccess** API can be used to change this policy at runtime.
 
