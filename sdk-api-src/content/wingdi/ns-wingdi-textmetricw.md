@@ -170,53 +170,7 @@ The four high-order bits of <b>tmPitchAndFamily</b> designate the font's font fa
 
 ### -field tmCharSet
 
-The character set of the font. The character set can be one of the following values.
-
-<ul>
-<li>ANSI_CHARSET</li>
-<li>BALTIC_CHARSET</li>
-<li>CHINESEBIG5_CHARSET</li>
-<li>DEFAULT_CHARSET</li>
-<li>EASTEUROPE_CHARSET</li>
-<li>GB2312_CHARSET</li>
-<li>GREEK_CHARSET</li>
-<li>HANGUL_CHARSET</li>
-<li>MAC_CHARSET</li>
-<li>OEM_CHARSET</li>
-<li>RUSSIAN_CHARSET</li>
-<li>SHIFTJIS_CHARSET</li>
-<li>SYMBOL_CHARSET</li>
-<li>TURKISH_CHARSET</li>
-<li>VIETNAMESE_CHARSET</li>
-</ul>
-<b>Korean language edition of Windows:</b>
-
-<ul>
-<li>
-JOHAB_CHARSET
-
-</li>
-</ul>
-<b>Middle East language edition of Windows:</b>
-
-<ul>
-<li>
-ARABIC_CHARSET
-
-</li>
-<li>
-HEBREW_CHARSET
-
-</li>
-</ul>
-<b>Thai language edition of Windows:</b>
-
-<ul>
-<li>
-THAI_CHARSET
-
-</li>
-</ul>
+The character set of the font. For a list of possible values, see *lfCharSet* field of the <a href="/windows/desktop/api/wingdi/ns-wingdi-logfontw">LOGFONT structure</a>.
 
 ## -see-also
 
