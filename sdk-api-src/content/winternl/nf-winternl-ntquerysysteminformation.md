@@ -161,8 +161,7 @@ typedef struct _SYSTEM_BASICPROCESS_INFORMATION {
 Its members are identical to the ones in SYSTEM_PROCESS_INFORMATION,
 except for SequenceNumber which is a unique number assigned to each
 process that can be used to detect UniqueProcessId reuse instead of
-process CreateTime. Also we add InheritedFromUniqueProcessId, which
-is the UniqueProcessId of the parent.
+process CreateTime.
 
 #### SystemProcessorPerformanceInformation
 
@@ -705,7 +704,7 @@ typedef struct _SYSTEM_PROCESS_INFORMATION {
     UNICODE_STRING ImageName;
     KPRIORITY BasePriority;
     HANDLE UniqueProcessId;
-    PVOID Reserved2;
+    HANDLE InheritedFromUniqueProcessId;
     ULONG HandleCount;
     ULONG SessionId;
     PVOID Reserved3;
@@ -734,6 +733,8 @@ The <b>ImageName</b> member contains the process's image name.
 The <b>BasePriority</b> member contains the base priority of the process, which is the starting priority for threads created within the associated process.
 
 The <b>UniqueProcessId</b> member contains the process's unique process ID.
+
+The <b>InheritedFromUniqueProcessId</b> member contains the process's unique process ID of its parent.
 
 The <b>HandleCount</b> member contains the total number
 of handles being used by the process in question; use <a href="/windows/desktop/api/processthreadsapi/nf-processthreadsapi-getprocesshandlecount">GetProcessHandleCount</a>  to retrieve this information
