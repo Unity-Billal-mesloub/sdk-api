@@ -734,7 +734,7 @@ The <b>BasePriority</b> member contains the base priority of the process, which 
 
 The <b>UniqueProcessId</b> member contains the process's unique process ID.
 
-The <b>InheritedFromUniqueProcessId</b> member contains the process's unique process ID of its parent.
+The <b>InheritedFromUniqueProcessId</b> member contains the unique process ID of its parent.
 
 The <b>HandleCount</b> member contains the total number
 of handles being used by the process in question; use <a href="/windows/desktop/api/processthreadsapi/nf-processthreadsapi-getprocesshandlecount">GetProcessHandleCount</a>  to retrieve this information
