@@ -161,7 +161,8 @@ typedef struct _SYSTEM_BASICPROCESS_INFORMATION {
 Its members are identical to the ones in SYSTEM_PROCESS_INFORMATION,
 except for SequenceNumber which is a unique number assigned to each
 process that can be used to detect UniqueProcessId reuse instead of
-process CreateTime.
+process CreateTime. Also we add InheritedFromUniqueProcessId, which
+is the UniqueProcessId of the parent.
 
 #### SystemProcessorPerformanceInformation
 
