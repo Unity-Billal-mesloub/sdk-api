@@ -68,7 +68,7 @@ Flags to specify how to treat the file that is being deleted. This parameter can
 
 | Value | Meaning |
 |-------|-------------|
-| **FILE_FLAGS_DISALLOW_PATH_REDIRECTS**<br/>`0x00000001` | Prevent *lpFileName* from being redirected by reparse points or symbolic links. |
+| **FILE_FLAG_DISALLOW_PATH_REDIRECTS**<br/>`0x00010000` | Prevent *lpFileName* from being redirected by reparse points or symbolic links. |
 
 ## -returns
 
