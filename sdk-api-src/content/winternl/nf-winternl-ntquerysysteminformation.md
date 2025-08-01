@@ -136,7 +136,32 @@ resource usage of each process, including the number of threads and handles used
 process, the peak page-file usage, and the number of memory pages that the
 process has allocated.
 
+When possible use <b>SystemBasicProcessInformation</b> as it is not only faster and consumes
+less memory, but doesn't need to synchronize timing data eliminating processor wakes.
 
+#### SystemBasicProcessInformation
+
+Returns an array of <b>SYSTEM_BASICPROCESS_INFORMATION</b> structures, one for each
+process running in the system. Available as of Windows 11 version 26100.4770.
+
+These structures contain basic information about each process, specifically
+the process name and its process id and unique sequence number.
+
+
+``` syntax
+typedef struct _SYSTEM_BASICPROCESS_INFORMATION {
+    ULONG NextEntryOffset;
+    HANDLE UniqueProcessId;
+    HANDLE InheritedFromUniqueProcessId;
+    ULONG64 SequenceNumber;
+    UNICODE_STRING ImageName;
+} SYSTEM_BASICPROCESS_INFORMATION, *PSYSTEM_BASICPROCESS_INFORMATION;
+```
+
+Its members are identical to the ones in SYSTEM_PROCESS_INFORMATION,
+except for SequenceNumber which is a unique number assigned to each
+process that can be used to detect UniqueProcessId reuse instead of
+process CreateTime.
 
 #### SystemProcessorPerformanceInformation
 
