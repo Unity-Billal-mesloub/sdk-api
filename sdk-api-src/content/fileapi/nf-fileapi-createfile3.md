@@ -133,7 +133,7 @@ If the function fails, the return value is **INVALID_HANDLE_VALUE**. To get exte
 
 ## -remarks
 
-**CreateFile3** behaves exactly the same way as [CreateFile2](nf-fileapi-createfile2.md) with one exception; operations can fail if *lpFileName* is redirected via a reparse point or symbolic link. This behavior can be enabled with a new flag that can be added to the *dwFileFlags*.
+**CreateFile3** behaves exactly the same way as [CreateFile2](nf-fileapi-createfile2.md) with one exception; operations can fail if *lpFileName* is redirected via a reparse point or symbolic link. Redirects can be disallowed by adding the **FILE_FLAG_DISALLOW_PATH_REDIRECTS** flag to the *dwFileFlags*.
 
 To compile an application that uses the **CreateFile3** function, define the **_WIN32_WINNT** macro as `0x0602` or later. For more information, see [Using the Windows Headers](/windows/win32/WinProg/using-the-windows-headers).
 
