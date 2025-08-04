@@ -88,6 +88,13 @@ If the function fails, the return value is zero. To get extended error informati
 
 <b>TzSpecificLocalTimeToSystemTime</b> takes into account whether daylight saving time (DST) is in effect for the local time to be converted.
 
+> [!IMPORTANT]
+> Certain local times near DST transitions may be <b>ambiguous</b> or <b>invalid</b>. Specifying such a time can result in unexpected behavior as there is no guaranteed "correct" result. 
+> - During the transition from daylight time to standard time, the local clock repeats. A local time within the repeated window is ambiguous because it occurs twice, once in daylight time and once in standard time.
+> - During the transition from standard time to daylight time, the local clock jumps forward. A local time within the skipped window does not have a valid UTC conversion. 
+>
+> Applications requiring continuity or precision should avoid relying on this function and look to use UTC time directly instead. 
+
 ## -see-also
 
 <a href="/windows/desktop/api/sysinfoapi/nf-sysinfoapi-getsystemtime">GetSystemTime</a>
