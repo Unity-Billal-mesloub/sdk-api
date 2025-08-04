@@ -56,7 +56,7 @@ Outputs a single page of a Portable Document Format (PDF) file as a bitmap image
 
 ### -param pdfPage [in]
 
-The <b>IPdfPage</b> interface as an instance of the <a href="/dotnet/api/pdfkit.pdfpage?view=xamarin-ios-sdk-12&preserve-view=true">PdfPage</a> class,  type-casted to the <b>IUnknown</b> interface, representing the page to be output.
+The <b>IPdfPage</b> interface as an instance of the <a href="uwp/api/windows.data.pdf.pdfpage">PdfPage</a> class type-casted to the <b>IUnknown</b> interface, `page.as<IUnknown>().get()`, representing the page to be output.
 
 ### -param pD2DDeviceContext [in]
 
