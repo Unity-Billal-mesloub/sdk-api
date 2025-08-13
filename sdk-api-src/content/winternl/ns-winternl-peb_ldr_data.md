@@ -28,7 +28,7 @@ req.irql:
 targetos: Windows
 req.typenames: PEB_LDR_DATA, *PPEB_LDR_DATA
 req.redist: 
-ms.custom: 19H1
+ms.custom: 24H2
 f1_keywords:
  - _PEB_LDR_DATA
  - winternl/_PEB_LDR_DATA
@@ -91,16 +91,16 @@ The <b>LDR_DATA_TABLE_ENTRY</b> structure is defined as follows:
 typedef struct _LDR_DATA_TABLE_ENTRY {
     PVOID Reserved1[2];
     LIST_ENTRY InMemoryOrderLinks;
-    PVOID Reserved2[2];
-    PVOID DllBase;
-    PVOID EntryPoint;
-    PVOID Reserved3;
+    PVOID DllBase;                                                  
+    PVOID EntryPoint;                                               
+    PVOID Reserved2;								
     UNICODE_STRING FullDllName;
-    BYTE Reserved4[8];
-    PVOID Reserved5[3];
-    union {
-        ULONG CheckSum;
-        PVOID Reserved6;
+    UNICODE_STRING BaseDllName;
+    PVOID Reserved3[2];
+    union
+    {
+     ULONG CheckSum;
+     PVOID Reserved4;
     };
     ULONG TimeDateStamp;
 } LDR_DATA_TABLE_ENTRY, *PLDR_DATA_TABLE_ENTRY;
