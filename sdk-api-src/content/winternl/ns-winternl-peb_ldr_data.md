@@ -91,16 +91,16 @@ The <b>LDR_DATA_TABLE_ENTRY</b> structure is defined as follows:
 typedef struct _LDR_DATA_TABLE_ENTRY {
     PVOID Reserved1[2];
     LIST_ENTRY InMemoryOrderLinks;
-    PVOID DllBase;                                                  
-    PVOID EntryPoint;                                               
-    PVOID Reserved2;								
-    UNICODE_STRING FullDllName;
-    UNICODE_STRING BaseDllName;
+    PVOID Reserved2[2];
+    PVOID DllBase;
     PVOID Reserved3[2];
+    UNICODE_STRING FullDllName;
+    BYTE Reserved4[8];
+    PVOID Reserved5[3];
     union
     {
-     ULONG CheckSum;
-     PVOID Reserved4;
+        ULONG CheckSum;
+        PVOID Reserved6;
     };
     ULONG TimeDateStamp;
 } LDR_DATA_TABLE_ENTRY, *PLDR_DATA_TABLE_ENTRY;
