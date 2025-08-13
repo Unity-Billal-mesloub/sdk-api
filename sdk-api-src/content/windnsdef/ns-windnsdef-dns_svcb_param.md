@@ -5,7 +5,6 @@ description: Represents an SVCB parameter.
 tech.root: DNS
 ms.date: 07/03/2025
 targetos: Windows
-description: 
 prerelease: false
 req.construct-type: structure
 req.ddi-compliance: 
