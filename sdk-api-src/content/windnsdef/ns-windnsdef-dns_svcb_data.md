@@ -68,7 +68,7 @@ Count of svcb parameters.
 
 ### -field pSvcParams
 
-Type: **DNS_SVCB_PARAM\***
+Type: **[DNS_SVCB_PARAM](./ns-windnsdef-dns_svcb_param.md)\***
 
 List of SVCB parameters representing the services available at *pszTargetName*.
 

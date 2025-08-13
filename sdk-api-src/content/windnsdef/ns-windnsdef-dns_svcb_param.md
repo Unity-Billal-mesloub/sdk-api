@@ -1,7 +1,7 @@
 ---
 UID: NS:windnsdef._DNS_SVCB_PARAM
 title: DNS_SVCB_PARAM
-description: TBD
+description: Represents an SVCB parameter.
 tech.root: DNS
 ms.date: 07/03/2025
 targetos: Windows
@@ -45,7 +45,7 @@ helpviewer_keywords:
 
 ## -description
 
-TBD
+Represents an SVCB parameter.
 
 ## -struct-fields
 
