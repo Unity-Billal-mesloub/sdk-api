@@ -130,7 +130,7 @@ policy provider.
 </dl>
 </td>
 <td width="60%">
-Verify an SSL/TLS connection through Internet Explorer.
+Verify an SSL/TLS connection established by WinINet.
 
 </td>
 </tr>
@@ -261,7 +261,7 @@ The trust provider does not support the form specified for the subject.
 
 The <b>WinVerifyTrust</b> function enables applications to invoke a <a href="/windows/desktop/SecGloss/t-gly">trust provider</a> to verify that a specified object satisfies the criteria of a specified verification operation. The <i>pgActionID</i> parameter identifies the verification operation, and the <i>pWinTrustData</i> parameter identifies the object whose trust is to be verified. A trust provider is a DLL registered with the operating system. A call to <b>WinVerifyTrust</b> forwards that call to the registered trust provider, if there is one, that supports that specified action identifier.
 
-For example, the Software Publisher Trust Provider can verify that an executable image file comes from a trusted software publisher and that the file has not been modified since it was published. In this case, the <i>pWinTrustData</i> parameter specifies the name of the file and the type of file, such as a Microsoft <a href="/windows/desktop/SecGloss/p-gly">Portable Executable</a> image file.
+For example, the Software Publisher Trust Provider can verify that an executable image file comes from a trusted software publisher and that the code in the file has not been modified since it was signed. In this case, the <i>pWinTrustData</i> parameter specifies the name of the file and the type of file, such as a Microsoft <a href="/windows/desktop/SecGloss/p-gly">Portable Executable</a> image file.
 
 Each trust provider supports a specific set of actions that it can evaluate. Each action has a GUID that identifies it. A trust provider can support any number of action identifiers, but two trust providers cannot support the same action identifier.
 

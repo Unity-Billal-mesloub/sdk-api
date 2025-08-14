@@ -704,7 +704,7 @@ Certain <i>DesiredAccess</i> flags and combinations of flags have the following 
 
 <ul>
 <li>For a caller to synchronize an I/O completion by waiting on the returned <i>FileHandle</i>, the <b>SYNCHRONIZE</b> flag must be set.</li>
-<li>Passing a zero to <i>DesiredFlags</i> is not valid.</li>
+<li>Passing a zero to <i>DesiredAccess</i> is not valid.</li>
 <li>If only the <b>FILE_APPEND_DATA</b> and <b>SYNCHRONIZE</b> flags are set, the caller can write only to the end of the file, and any offset information on writes to the file is ignored. However, the file is automatically  extended as necessary for this type of write operation.</li>
 <li>Setting the <b>FILE_WRITE_DATA</b> flag for a file also allows writes beyond the end of the file to occur. The file is automatically extended for this type of write, as well.</li>
 <li>If only the <b>FILE_EXECUTE</b> and <b>SYNCHRONIZE</b> flags are set, the caller cannot directly read or write any data in the file using the returned <i>FileHandle</i>, that is, all operations on the file occur through the system pager in response to instruction and data accesses. </li>
@@ -804,4 +804,4 @@ NTFS is the only Microsoft file system that implements <b>FILE_RESERVE_OPFILTER<
 
 For more information on oplocks, see [Opportunistic Locks](/windows/win32/fileio/opportunistic-locks).
 
-Note that the WDK header file NtDef.h is necessary for many constant definitions as well as the <b>InitializeObjectAttributes</b> macro. You can also use the <a href="/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya">LoadLibrary</a> and <a href="/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress">GetProcAddress</a> functions to dynamically link to NtDll.dll.
+Note that the WDK header file NtDef.h is necessary for many constant definitions. You can also use the <a href="/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya">LoadLibrary</a> and <a href="/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress">GetProcAddress</a> functions to dynamically link to NtDll.dll.
