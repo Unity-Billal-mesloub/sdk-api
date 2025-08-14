@@ -34,6 +34,8 @@ topic_type:
 api_type:
  - DllExport
 api_location:
+ - api-ms-win-downlevel-kernel32-l1-1-0.dll
+ - api-ms-win-core-processenvironment-l1-2-0.dll
  - api-ms-win-core-processenvironment-l1-1-0.dll
  - kernel32.dll
 api_name:
