@@ -130,7 +130,7 @@ The network subsystem has failed.
 </dl>
 </td>
 <td width="60%">
-The <i>time-out</i> value is not valid, or all three descriptor parameters were <b>null</b>.
+The <i>time-out</i> value is not valid, or all three descriptor parameters were <b>null</b> or descriptor parameters are empty.
 
 </td>
 </tr>
