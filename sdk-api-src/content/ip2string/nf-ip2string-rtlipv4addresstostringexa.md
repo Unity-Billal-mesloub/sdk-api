@@ -14,7 +14,7 @@ req.idl:
 req.include-header: Mstcpip.h 
 req.irql: 
 req.kmdf-ver: 
-req.lib: 
+req.lib: ntdll.lib 
 req.max-support: 
 req.namespace: 
 req.redist: 
@@ -115,8 +115,6 @@ When either UNICODE or _UNICODE is defined, <b>RtlIpv4AddressToStringEx</b> is d
 When both UNICODE and _UNICODE are not defined, <b>RtlIpv4AddressToStringEx</b> is defined to <b>RtlIpv4AddressToStringExA</b>, the ANSI version of this function. The <i>AddressString</i> parameter is defined to the PSTR data type.
 
 The <b>IN_ADDR</b> structure is defined in the <i>Inaddr.h</i> header file.
-
-An import library containing the <b>RtlIpv4AddressToStringEx</b> function is not included in the Microsoft Windows Software Development Kit (SDK) released for Windows Vista. The <b>RtlIpv4AddressToStringEx</b> function is included in the <i>Ntdll.lib</i> import library included in the Windows Driver Kit (WDK). An application could also use the <a href="/windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulehandlea">GetModuleHandle</a> and <a href="/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress">GetProcAddress</a> functions to retrieve the function pointer from the <i>Ntdll.dll</i> and call this function.
 
 ## -see-also
 
