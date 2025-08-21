@@ -6,7 +6,7 @@ helpviewer_keywords: ["BCRYPT_HASH_REUSABLE_FLAG","BCryptCreateHash","BCryptCrea
 old-location: security\bcryptcreatehash_func.htm
 tech.root: security
 ms.assetid: deb02f67-f3d3-4542-8245-fd4982c3190b
-ms.date: 07/01/2025
+ms.date: 08/21/2025
 ms.keywords: BCRYPT_HASH_REUSABLE_FLAG, BCryptCreateHash, BCryptCreateHash function [Security], bcrypt/BCryptCreateHash, security.bcryptcreatehash_func
 req.header: bcrypt.h
 req.include-header: 
@@ -47,7 +47,6 @@ api_name:
 ---
 
 # BCryptCreateHash function
-
 
 ## -description
 
@@ -113,7 +112,7 @@ Possible return codes include, but are not limited to, the following.
 
 When using a supported algorithm provider, **BCryptCreateHash** can be called either from user mode or kernel mode. Kernel mode callers can execute either at **PASSIVE_LEVEL** [IRQL](/windows/win32/SecGloss/i-gly) or **DISPATCH_LEVEL** IRQL. If the current IRQL level is **DISPATCH_LEVEL**, the handle provided in the *hAlgorithm* parameter must have been opened by using the **BCRYPT_PROV_DISPATCH** flag, and any pointers passed to the **BCryptCreateHash** function must refer to nonpaged (or locked) memory.
 
-The caller should release *phHash* with [BCryptDestroyHash](/nf-bcrypt-bcryptdestroyhash) when the object is no longer in use.
+The caller should release *phHash* with [BCryptDestroyHash](nf-bcrypt-bcryptdestroyhash.md) when the object is no longer in use.
 
 To call this function in kernel mode, use `Cng.lib`, which is part of the Driver Development Kit (DDK). **Windows Server 2008 and Windows Vista:** To call this function in kernel mode, use `Ksecdd.lib`.
 
