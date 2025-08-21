@@ -6,7 +6,7 @@ helpviewer_keywords: ["BCRYPT_DH_PRIVATE_BLOB","BCRYPT_DH_PUBLIC_BLOB","BCRYPT_D
 old-location: security\ncryptexportkey_func.htm
 tech.root: security
 ms.assetid: 1588eb29-4026-4d1c-8bee-a035df38444a
-ms.date: 06/25/2025
+ms.date: 08/21/2025
 ms.keywords: BCRYPT_DH_PRIVATE_BLOB, BCRYPT_DH_PUBLIC_BLOB, BCRYPT_DSA_PRIVATE_BLOB, BCRYPT_DSA_PUBLIC_BLOB, BCRYPT_ECCPRIVATE_BLOB, BCRYPT_ECCPUBLIC_BLOB, BCRYPT_PRIVATE_KEY_BLOB, BCRYPT_PUBLIC_KEY_BLOB, BCRYPT_RSAFULLPRIVATE_BLOB, BCRYPT_RSAPRIVATE_BLOB, BCRYPT_RSAPUBLIC_BLOB, LEGACY_DH_PRIVATE_BLOB, LEGACY_DH_PUBLIC_BLOB, LEGACY_DSA_PRIVATE_BLOB, LEGACY_DSA_PUBLIC_BLOB, LEGACY_RSAPRIVATE_BLOB, LEGACY_RSAPUBLIC_BLOB, NCRYPT_CIPHER_KEY_BLOB, NCRYPT_OPAQUETRANSPORT_BLOB, NCRYPT_PKCS7_ENVELOPE_BLOB, NCRYPT_PKCS8_PRIVATE_KEY_BLOB, NCRYPT_PROTECTED_KEY_BLOB, NCRYPT_SILENT_FLAG, NCryptExportKey, NCryptExportKey function [Security], ncrypt/NCryptExportKey, security.ncryptexportkey_func
 req.header: ncrypt.h
 req.include-header: 
@@ -211,7 +211,7 @@ Export a protected key in a [NCRYPT_KEY_BLOB_HEADER](/windows/win32/api/ncrypt/n
 
 #### NCRYPT_PQ_PRIVATE_KEY_BLOB
 
-Export a generic private key of any type of Post-Quantum algorithm. The type of key in this BLOB is determined by the **Magic** member of the [NCRYPT_PQ_BLOB](/windows/win32/seccng/ncrypt/ns-ncrypt-ncrypt_pq_blob) structure.
+Export a generic private key of any type of Post-Quantum algorithm. The type of key in this BLOB is determined by the **Magic** member of the **NCRYPT_PQ_BLOB** structure.
 
 ### -param pParameterList [in, optional]
 
@@ -259,3 +259,4 @@ A service must not call this function from its [StartService Function](/windows/
 ## -see-also
 
 - [NCryptBuffer](/windows/win32/api/bcrypt/ns-bcrypt-bcryptbuffer)
+- [NCryptFinalizeKey](/windows/win32/api/ncrypt/nf-ncrypt-ncryptfinalizekey)
