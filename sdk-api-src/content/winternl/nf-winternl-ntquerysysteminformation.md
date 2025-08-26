@@ -136,16 +136,21 @@ resource usage of each process, including the number of threads and handles used
 process, the peak page-file usage, and the number of memory pages that the
 process has allocated.
 
-When possible use <b>SystemBasicProcessInformation</b> as it is not only faster and consumes
-less memory, but doesn't need to synchronize timing data eliminating processor wakes.
+> [!NOTE]
+> Whenever possible, <b>SystemBasicProcessInformation</b> should be used instead as it is faster, consumes less memory, and doesn't need to synchronize timing data (eliminating processor wakes).
 
 #### SystemBasicProcessInformation
 
-Returns an array of <b>SYSTEM_BASICPROCESS_INFORMATION</b> structures, one for each
-process running in the system. Available as of Windows 11 version 26100.4770.
+<b>Available as of Windows 11 version 26100.4770</b>
 
-These structures contain basic information about each process, specifically
-the process name and its process id and unique sequence number.
+Returns an array of <b>SYSTEM_BASICPROCESS_INFORMATION</b> structures, one for each
+process running in the system.
+
+These structures contain basic information about each process, including the process name,
+its process id, and a unique sequence number.
+
+> [!NOTE]
+> <b>SYSTEM_BASICPROCESS_INFORMATION</b> is identical to <b>SYSTEM_PROCESS_INFORMATION</b> except for the <b>SequenceNumber</b> member, which is a unique value assigned to each process and used to detect <b>UniqueProcessId</b> reuse (instead of process <b>CreateTime</b>).
 
 
 ``` syntax
