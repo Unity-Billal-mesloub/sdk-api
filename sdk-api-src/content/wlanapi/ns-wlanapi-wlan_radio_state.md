@@ -64,7 +64,7 @@ The number of valid PHY indices in the <b>PhyRadioState</b> member.
 
 ### -field PhyRadioState
 
-An array of <a href="/windows/desktop/api/wlanapi/ns-wlanapi-wlan_phy_radio_state">WLAN_PHY_RADIO_STATE</a> structures that specify the radio states of a number of PHY indices. Only the first <b>dwNumberOfPhys</b> entries in this array are valid.
+An array of <a href="/windows/desktop/api/wlanapi/ns-wlanapi-wlan_phy_radio_state">WLAN_PHY_RADIO_STATE</a> structures that specify the radio states of a number of PHY indices. Only the first <b>dwNumberOfPhys</b> entries in this array are valid. WLAN_MAX_PHY_INDEX is set to 64.
 
 ## -remarks
 
