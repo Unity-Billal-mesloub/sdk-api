@@ -78,7 +78,7 @@ Number of connected links.
 
 ### -field linksInfo[1]
 
-A [WLAN_REALTIME_CONNECTION_QUALITY_LINK_INFO](./ns-wlanapi-wlan_realtime_connection_quality_link_info.md) of size *ulNumLinks*. Each element contains information about a different connected link.
+An array of [WLAN_REALTIME_CONNECTION_QUALITY_LINK_INFO](./ns-wlanapi-wlan_realtime_connection_quality_link_info.md) structures. The number of items in the array is specified in the <b>ulNumLinks</b> member. Each element contains information about a different connected link.
 
 ## -remarks
 
