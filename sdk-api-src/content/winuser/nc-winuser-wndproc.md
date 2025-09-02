@@ -3,7 +3,7 @@ UID: NC:winuser.WNDPROC
 title: WNDPROC
 description: A callback function, which you define in your application, that processes messages sent to a window.
 tech.root: winmsg
-ms.date: 04/14/2021
+ms.date: 09/02/2025
 targetos: Windows
 req.assembly: 
 req.construct-type: function
@@ -77,6 +77,9 @@ Type: **[LRESULT](/windows/win32/winprog/windows-data-types)**
 The return value is the result of the message processing, and depends on the message sent.
 
 ## -remarks
+
+> [!NOTE]
+> The parameters are defined in the header with no names: ```typedef LRESULT (CALLBACK* WNDPROC)(HWND, UINT, WPARAM, LPARAM);```. Therefore, the syntax block lists them as `unnamedParam1` - `unnamedParam4`. You can name these parameters anything in your app. However, they are usually named as shown in the parameter descriptions. Visual Studio project templates will use these names (or something similar, depending on the template).
 
 If your application runs on a 32-bit version of Windows operating system, uncaught exceptions from the callback will be passed onto higher-level exception handlers of your application when available. The system then calls the unhandled exception filter to handle the exception prior to terminating the process. If the PCA is enabled, it will offer to fix the problem the next time you run the application.
 

@@ -6,7 +6,7 @@ helpviewer_keywords: ["GW_HWNDNEXT","GW_HWNDPREV","GetNextWindow","GetNextWindow
 old-location: winmsg\getnextwindow.htm
 tech.root: winmsg
 ms.assetid: VS|winui|~\winui\windowsuserinterface\windowing\windows\windowreference\windowfunctions\getnextwindow.htm
-ms.date: 12/05/2018
+ms.date: 09/02/2025
 ms.keywords: GW_HWNDNEXT, GW_HWNDPREV, GetNextWindow, GetNextWindow function [Windows and Messages], _win32_GetNextWindow, _win32_getnextwindow_cpp, winmsg.getnextwindow, winui._win32_getnextwindow, winuser/GetNextWindow
 req.header: winuser.h
 req.include-header: Windows.h
@@ -112,6 +112,14 @@ This function is implemented as a call to the <a href="/windows/desktop/api/winu
 #define GetNextWindow(hWnd, wCmd) GetWindow(hWnd, wCmd)
 ```
 
+## -syntax
+
+```cpp
+HWND GetNextWindow(
+  [in] hWnd,
+  [in] wCmd
+);
+```
 
 ## -see-also
 
