@@ -151,7 +151,7 @@ The Windows audio service is not running.
 </dl>
 </td>
 <td width="60%">
-Parameter <i>dwFlags</i> is not a valid value.
+Parameter <i>dwFlags</i> is not a valid value.<br>
 
 </td>
 </tr>
