@@ -50,7 +50,7 @@ api_name:
 ## -syntax
 
 ```cpp
-int ListView_SetView(
+DWORD ListView_SetView(
    HWND  hwnd,
    DWORD iView
 );
@@ -58,9 +58,9 @@ int ListView_SetView(
 
 ## -returns
 
-Type: **int**
+Type: **DWORD**
 
-Returns 1 if successful, or -1 otherwise. For example, returns -1 if the view is invalid. 
+Returns 1 if successful, or UINT_MAX otherwise. For example, returns UINT_MAX if the view is invalid.
 
 
 ## -description
