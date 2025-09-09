@@ -70,14 +70,15 @@ Valid values include the <b>DXGI_CREATE_FACTORY_DEBUG (0x01)</b> flag, and zero.
 
 Type: <b>REFIID</b>
 
-The globally unique identifier (GUID) of the <a href="/windows/win32/api/dxgi1_2/nn-dxgi1_2-idxgifactory2">IDXGIFactory2</a> object referenced by 
-          the <i>ppFactory</i> parameter.
+The globally unique identifier (<b>GUID</b>) for the factory interface (e.g. <a href="/windows/win32/api/dxgi1_2/nn-dxgi1_2-idxgifactory2">IDXGIFactory2</a>, or a newer version of this interface).
+            This parameter, and <i>ppFactory</i>, can be addressed with the single macro
+          <a href="/windows/desktop/api/combaseapi/nf-combaseapi-iid_ppv_args">IID_PPV_ARGS</a>.
 
 ### -param ppFactory [out]
 
 Type: <b>void**</b>
 
-Address of a pointer to an [IDXGIFactory2](/windows/win32/api/dxgi1_2/nn-dxgi1_2-idxgifactory2) interface.
+A pointer to a memory block that receives a pointer to the factory.
 
 ## -returns
 
