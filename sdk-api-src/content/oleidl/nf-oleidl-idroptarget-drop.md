@@ -82,6 +82,17 @@ This method returns S_OK on success. Other possible values include the following
 <tr>
 <td width="40%">
 <dl>
+<dt><b>DRAGDROP_S_CANCEL</b></dt>
+</dl>
+</td>
+<td width="60%">
+The OLE drag-and-drop operation was canceled.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
+<dl>
 <dt><b>E_UNEXPECTED</b></dt>
 </dl>
 </td>
