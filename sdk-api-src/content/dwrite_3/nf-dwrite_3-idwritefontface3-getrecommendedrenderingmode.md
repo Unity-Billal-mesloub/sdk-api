@@ -6,7 +6,7 @@ helpviewer_keywords: ["GetRecommendedRenderingMode","GetRecommendedRenderingMode
 old-location: directwrite\idwritefontface3_getrecommendedrenderingmode.htm
 tech.root: DirectWrite
 ms.assetid: 9EF4A414-8DD9-431B-81A6-D87F4CF9AA73
-ms.date: 12/05/2018
+ms.date: 09/10/2025
 ms.keywords: GetRecommendedRenderingMode, GetRecommendedRenderingMode method [Direct Write], GetRecommendedRenderingMode method [Direct Write],IDWriteFontFace3 interface, IDWriteFontFace3 interface [Direct Write],GetRecommendedRenderingMode method, IDWriteFontFace3.GetRecommendedRenderingMode, IDWriteFontFace3::GetRecommendedRenderingMode, directwrite.idwritefontface3_getrecommendedrenderingmode, dwrite_3/IDWriteFontFace3::GetRecommendedRenderingMode
 req.header: dwrite_3.h
 req.include-header: 

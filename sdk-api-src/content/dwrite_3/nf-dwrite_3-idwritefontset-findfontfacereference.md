@@ -6,7 +6,7 @@ helpviewer_keywords: ["FindFontFaceReference","FindFontFaceReference method [Dir
 old-location: directwrite\idwritefontset_findfontfacereference.htm
 tech.root: DirectWrite
 ms.assetid: dba55a36-8037-5564-59d8-e01189ff0020
-ms.date: 12/05/2018
+ms.date: 09/10/2025
 ms.keywords: FindFontFaceReference, FindFontFaceReference method [Direct Write], FindFontFaceReference method [Direct Write],IDWriteFontSet interface, IDWriteFontSet interface [Direct Write],FindFontFaceReference method, IDWriteFontSet.FindFontFaceReference, IDWriteFontSet::FindFontFaceReference, directwrite.idwritefontset_findfontfacereference, dwrite_3/IDWriteFontSet::FindFontFaceReference
 req.header: dwrite_3.h
 req.include-header: 

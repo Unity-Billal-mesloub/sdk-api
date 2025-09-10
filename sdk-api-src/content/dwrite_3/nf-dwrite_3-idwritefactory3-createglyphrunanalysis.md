@@ -6,7 +6,7 @@ helpviewer_keywords: ["CreateGlyphRunAnalysis","CreateGlyphRunAnalysis method [D
 old-location: directwrite\idwritefactory3_createglyphrunanalysis.htm
 tech.root: DirectWrite
 ms.assetid: 5BF8BA9C-F07F-43F0-B712-71220E6535A5
-ms.date: 12/05/2018
+ms.date: 09/10/2025
 ms.keywords: CreateGlyphRunAnalysis, CreateGlyphRunAnalysis method [Direct Write], CreateGlyphRunAnalysis method [Direct Write],IDWriteFactory3 interface, IDWriteFactory3 interface [Direct Write],CreateGlyphRunAnalysis method, IDWriteFactory3.CreateGlyphRunAnalysis, IDWriteFactory3::CreateGlyphRunAnalysis, directwrite.idwritefactory3_createglyphrunanalysis, dwrite_3/IDWriteFactory3::CreateGlyphRunAnalysis
 req.header: dwrite_3.h
 req.include-header: 

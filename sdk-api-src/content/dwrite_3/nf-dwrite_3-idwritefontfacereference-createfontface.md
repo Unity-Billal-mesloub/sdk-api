@@ -6,7 +6,7 @@ helpviewer_keywords: ["CreateFontFace","CreateFontFace method [Direct Write]","C
 old-location: directwrite\idwritefontfacereference_createfontface.htm
 tech.root: DirectWrite
 ms.assetid: f9bc5933-c766-5b30-e2cf-b276a80aecda
-ms.date: 12/05/2018
+ms.date: 09/10/2025
 ms.keywords: CreateFontFace, CreateFontFace method [Direct Write], CreateFontFace method [Direct Write],IDWriteFontFaceReference interface, IDWriteFontFaceReference interface [Direct Write],CreateFontFace method, IDWriteFontFaceReference.CreateFontFace, IDWriteFontFaceReference::CreateFontFace, directwrite.idwritefontfacereference_createfontface, dwrite_3/IDWriteFontFaceReference::CreateFontFace
 req.header: dwrite_3.h
 req.include-header: 

@@ -2,7 +2,7 @@
 UID: NN:dwrite_3.IDWriteTextLayout4
 tech.root: DirectWrite
 title: IDWriteTextLayout4
-ms.date: 02/15/2023
+ms.date: 09/10/2025
 targetos: Windows
 description: Represents a block of text after it has been fully analyzed and formatted.
 prerelease: false

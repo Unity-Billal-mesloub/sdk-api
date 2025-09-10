@@ -6,7 +6,7 @@ helpviewer_keywords: ["IDWriteRenderingParams3","IDWriteRenderingParams3 interfa
 old-location: directwrite\idwriterenderingparams3.htm
 tech.root: DirectWrite
 ms.assetid: A083377C-7315-40F4-AD94-9B65B98DE0D6
-ms.date: 12/05/2018
+ms.date: 09/10/2025
 ms.keywords: IDWriteRenderingParams3, IDWriteRenderingParams3 interface [Direct Write], IDWriteRenderingParams3 interface [Direct Write],described, directwrite.idwriterenderingparams3, dwrite_3/IDWriteRenderingParams3
 req.header: dwrite_3.h
 req.include-header: 

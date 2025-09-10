@@ -4,7 +4,7 @@ title: DWRITE_MAKE_FONT_AXIS_TAG
 description: Creates an OpenType tag for a font axis.
 helpviewer_keywords: ["DWRITE_MAKE_FONT_AXIS_TAG","DWRITE_MAKE_FONT_AXIS_TAG macro [Direct Write]","directwrite.dwrite_make_font_axis_tag","dwrite/DWRITE_MAKE_FONT_AXIS_TAG"]
 tech.root: DirectWrite
-ms.date: 09/17/2019
+ms.date: 09/10/2025
 ms.keywords: DWRITE_MAKE_FONT_AXIS_TAG, DWRITE_MAKE_FONT_AXIS_TAG macro [Direct Write], directwrite.dwrite_make_font_axis_tag, dwrite/DWRITE_MAKE_FONT_AXIS_TAG
 req.header: dwrite_3.h
 req.include-header: 

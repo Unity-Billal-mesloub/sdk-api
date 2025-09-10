@@ -4,7 +4,7 @@ title: IDWriteTextFormat3::SetAutomaticFontAxes
 description: Sets the automatic font axis options.
 helpviewer_keywords: ["IDWriteTextFormat3 interface [Direct Write]","SetAutomaticFontAxes method","IDWriteTextFormat3.SetAutomaticFontAxes","IDWriteTextFormat3::SetAutomaticFontAxes","SetAutomaticFontAxes","SetAutomaticFontAxes method [Direct Write]","SetAutomaticFontAxes method [Direct Write]","IDWriteTextFormat3 interface","directwrite.idwritetextformat3_setautomaticfontaxes","dwrite_3/IDWriteTextFormat3::SetAutomaticFontAxes"]
 tech.root: DirectWrite
-ms.date: 09/17/2019
+ms.date: 09/10/2025
 ms.keywords: IDWriteTextFormat3 interface [Direct Write],SetAutomaticFontAxes method, IDWriteTextFormat3.SetAutomaticFontAxes, IDWriteTextFormat3::SetAutomaticFontAxes, SetAutomaticFontAxes, SetAutomaticFontAxes method [Direct Write], SetAutomaticFontAxes method [Direct Write],IDWriteTextFormat3 interface, directwrite.idwritetextformat3_setautomaticfontaxes, dwrite_3/IDWriteTextFormat3::SetAutomaticFontAxes
 req.construct-type: function
 req.header: dwrite_3.h

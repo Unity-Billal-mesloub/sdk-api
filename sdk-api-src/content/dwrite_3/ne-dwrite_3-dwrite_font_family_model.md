@@ -4,7 +4,7 @@ title: DWRITE_FONT_FAMILY_MODEL
 description: Defines constants that specify how font families are grouped together.
 helpviewer_keywords: ["DWRITE_FONT_FAMILY_MODEL","DWRITE_FONT_FAMILY_MODEL enumeration [Direct Write]","directwrite.dwrite_font_family_model","dwrite_3/DWRITE_FONT_FAMILY_MODEL"]
 tech.root: DirectWrite
-ms.date: 09/12/2019
+ms.date: 09/10/2025
 ms.keywords: DWRITE_FONT_FAMILY_MODEL, DWRITE_FONT_FAMILY_MODEL enumeration [Direct Write], directwrite.dwrite_font_family_model, dwrite_3/DWRITE_FONT_FAMILY_MODEL
 req.construct-type: enumeration
 req.header: dwrite_3.h

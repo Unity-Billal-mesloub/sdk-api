@@ -4,7 +4,7 @@ title: IDWriteFontFaceReference1::GetFontAxisValueCount
 description: Retrieves the number of axes specified by the reference.
 helpviewer_keywords: ["IDWriteFontFaceReference1 interface [Direct Write]","GetFontAxisValueCount method","IDWriteFontFaceReference1.GetFontAxisValueCount","IDWriteFontFaceReference1::GetFontAxisValueCount","GetFontAxisValueCount","GetFontAxisValueCount method [Direct Write]","GetFontAxisValueCount method [Direct Write]","IDWriteFontFaceReference1 interface","directwrite.idwritefontfacereference1_getfontaxisvaluecount","dwrite_3/IDWriteFontFaceReference1::GetFontAxisValueCount"]
 tech.root: DirectWrite
-ms.date: 09/13/2019
+ms.date: 09/10/2025
 ms.keywords: IDWriteFontFaceReference1 interface [Direct Write],GetFontAxisValueCount method, IDWriteFontFaceReference1.GetFontAxisValueCount, IDWriteFontFaceReference1::GetFontAxisValueCount, GetFontAxisValueCount, GetFontAxisValueCount method [Direct Write], GetFontAxisValueCount method [Direct Write],IDWriteFontFaceReference1 interface, directwrite.idwritefontfacereference1_getfontaxisvaluecount, dwrite_3/IDWriteFontFaceReference1::GetFontAxisValueCount
 req.construct-type: function
 req.header: dwrite_3.h

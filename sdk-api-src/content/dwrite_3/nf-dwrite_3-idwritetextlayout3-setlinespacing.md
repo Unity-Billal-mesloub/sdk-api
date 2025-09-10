@@ -6,7 +6,7 @@ helpviewer_keywords: ["IDWriteTextLayout3 interface [Direct Write]","SetLineSpac
 old-location: directwrite\idwritetextlayout3_setlinespacing.htm
 tech.root: DirectWrite
 ms.assetid: 1bfca257-189c-4d18-628c-aff8217d2775
-ms.date: 12/05/2018
+ms.date: 09/10/2025
 ms.keywords: IDWriteTextLayout3 interface [Direct Write],SetLineSpacing method, IDWriteTextLayout3.SetLineSpacing, IDWriteTextLayout3::SetLineSpacing, SetLineSpacing, SetLineSpacing method [Direct Write], SetLineSpacing method [Direct Write],IDWriteTextLayout3 interface, directwrite.idwritetextlayout3_setlinespacing, dwrite_3/IDWriteTextLayout3::SetLineSpacing
 req.header: dwrite_3.h
 req.include-header: 

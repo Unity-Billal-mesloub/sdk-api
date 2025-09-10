@@ -6,7 +6,7 @@ helpviewer_keywords: ["IDWriteFontList1","IDWriteFontList1 interface [Direct Wri
 old-location: directwrite\idwritefontlist1.htm
 tech.root: DirectWrite
 ms.assetid: 68B6B1E3-9463-4A45-853A-CCC9501E4301
-ms.date: 12/05/2018
+ms.date: 09/10/2025
 ms.keywords: IDWriteFontList1, IDWriteFontList1 interface [Direct Write], IDWriteFontList1 interface [Direct Write],described, directwrite.idwritefontlist1, dwrite_3/IDWriteFontList1
 req.header: dwrite_3.h
 req.include-header: 

@@ -6,7 +6,7 @@ helpviewer_keywords: ["AddListener","AddListener method [Direct Write]","AddList
 old-location: directwrite\idwritefontdownloadqueue_addlistener.htm
 tech.root: DirectWrite
 ms.assetid: c539be2d-bc77-cc8a-c78c-226a67b8dd26
-ms.date: 12/05/2018
+ms.date: 09/10/2025
 ms.keywords: AddListener, AddListener method [Direct Write], AddListener method [Direct Write],IDWriteFontDownloadQueue interface, IDWriteFontDownloadQueue interface [Direct Write],AddListener method, IDWriteFontDownloadQueue.AddListener, IDWriteFontDownloadQueue::AddListener, directwrite.idwritefontdownloadqueue_addlistener, dwrite_3/IDWriteFontDownloadQueue::AddListener
 req.header: dwrite_3.h
 req.include-header: 

@@ -2,7 +2,7 @@
 UID: NF:dwrite_3.IDWriteFontSet4.ConvertWeightStretchStyleToFontAxisValues
 tech.root: DirectWrite
 title: IDWriteFontSet4::ConvertWeightStretchStyleToFontAxisValues
-ms.date: 05/05/2022
+ms.date: 09/10/2025
 targetos: Windows
 description: Computes derived font axis values from the specified font weight, stretch, style, and size.
 req.assembly: 

@@ -6,7 +6,7 @@ helpviewer_keywords: ["EnqueueCharacterDownloadRequest","EnqueueCharacterDownloa
 old-location: directwrite\idwritefontfacereference_enqueuecharacterdownloadrequest.htm
 tech.root: DirectWrite
 ms.assetid: 7ca1b6c7-46c2-2440-35e4-0bcdc375d74e
-ms.date: 12/05/2018
+ms.date: 09/10/2025
 ms.keywords: EnqueueCharacterDownloadRequest, EnqueueCharacterDownloadRequest method [Direct Write], EnqueueCharacterDownloadRequest method [Direct Write],IDWriteFontFaceReference interface, IDWriteFontFaceReference interface [Direct Write],EnqueueCharacterDownloadRequest method, IDWriteFontFaceReference.EnqueueCharacterDownloadRequest, IDWriteFontFaceReference::EnqueueCharacterDownloadRequest, directwrite.idwritefontfacereference_enqueuecharacterdownloadrequest, dwrite_3/IDWriteFontFaceReference::EnqueueCharacterDownloadRequest
 req.header: dwrite_3.h
 req.include-header: 
