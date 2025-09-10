@@ -6,7 +6,7 @@ helpviewer_keywords: ["IDWriteFontDownloadQueue","IDWriteFontDownloadQueue inter
 old-location: directwrite\idwritefontdownloadqueue.htm
 tech.root: DirectWrite
 ms.assetid: d1b1dfab-a22a-40bb-ffc4-eb094ac14217
-ms.date: 12/05/2018
+ms.date: 09/10/2025
 ms.keywords: IDWriteFontDownloadQueue, IDWriteFontDownloadQueue interface [Direct Write], IDWriteFontDownloadQueue interface [Direct Write],described, directwrite.idwritefontdownloadqueue, dwrite_3/IDWriteFontDownloadQueue
 req.header: dwrite_3.h
 req.include-header: 

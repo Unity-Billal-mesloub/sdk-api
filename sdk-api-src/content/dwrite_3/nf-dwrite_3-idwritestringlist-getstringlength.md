@@ -6,13 +6,13 @@ helpviewer_keywords: ["GetStringLength","GetStringLength method [Direct Write]",
 old-location: directwrite\idwritestringlist_getstringlength.htm
 tech.root: DirectWrite
 ms.assetid: 5511DD28-22B1-4006-A724-13C2C4A17E6C
-ms.date: 12/05/2018
+ms.date: 09/10/2025
 ms.keywords: GetStringLength, GetStringLength method [Direct Write], GetStringLength method [Direct Write],IDWriteStringList interface, IDWriteStringList interface [Direct Write],GetStringLength method, IDWriteStringList.GetStringLength, IDWriteStringList::GetStringLength, directwrite.idwritestringlist_getstringlength, dwrite_3/IDWriteStringList::GetStringLength
 req.header: dwrite_3.h
 req.include-header: 
 req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
+req.target-min-winverclnt: Windows 10 [desktop apps only]
+req.target-min-winversvr: Windows Server 2016 [desktop apps only]
 req.kmdf-ver: 
 req.umdf-ver: 
 req.ddi-compliance: 

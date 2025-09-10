@@ -4,7 +4,7 @@ title: IDWriteFontFaceReference1::GetFontAxisValues
 description: Retrieves the list of font axis values specified by the reference.
 helpviewer_keywords: ["IDWriteFontFaceReference1 interface [Direct Write]","GetFontAxisValues method","IDWriteFontFaceReference1.GetFontAxisValues","IDWriteFontFaceReference1::GetFontAxisValues","GetFontAxisValues","GetFontAxisValues method [Direct Write]","GetFontAxisValues method [Direct Write]","IDWriteFontFaceReference1 interface","directwrite.idwritefontfacereference1_getfontaxisvalues","dwrite_3/IDWriteFontFaceReference1::GetFontAxisValues"]
 tech.root: DirectWrite
-ms.date: 09/13/2019
+ms.date: 09/10/2025
 ms.keywords: IDWriteFontFaceReference1 interface [Direct Write],GetFontAxisValues method, IDWriteFontFaceReference1.GetFontAxisValues, IDWriteFontFaceReference1::GetFontAxisValues, GetFontAxisValues, GetFontAxisValues method [Direct Write], GetFontAxisValues method [Direct Write],IDWriteFontFaceReference1 interface, directwrite.idwritefontfacereference1_getfontaxisvalues, dwrite_3/IDWriteFontFaceReference1::GetFontAxisValues
 req.construct-type: function
 req.header: dwrite_3.h

@@ -4,7 +4,7 @@ title: IDWriteFontList2::GetFontSet
 description: Retrieves the underlying font set used by this list.
 helpviewer_keywords: ["IDWriteFontList2 interface [Direct Write]","GetFontSet method","IDWriteFontList2.GetFontSet","IDWriteFontList2::GetFontSet","GetFontSet","GetFontSet method [Direct Write]","GetFontSet method [Direct Write]","IDWriteFontList2 interface","directwrite.idwritefontlist2_getfontset","dwrite_3/IDWriteFontList2::GetFontSet"]
 tech.root: DirectWrite
-ms.date: 09/13/2019
+ms.date: 09/10/2025
 ms.keywords: IDWriteFontList2 interface [Direct Write],GetFontSet method, IDWriteFontList2.GetFontSet, IDWriteFontList2::GetFontSet, GetFontSet, GetFontSet method [Direct Write], GetFontSet method [Direct Write],IDWriteFontList2 interface, directwrite.idwritefontlist2_getfontset, dwrite_3/IDWriteFontList2::GetFontSet
 req.construct-type: function
 req.header: dwrite_3.h

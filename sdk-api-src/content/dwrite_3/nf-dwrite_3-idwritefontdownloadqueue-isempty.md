@@ -6,7 +6,7 @@ helpviewer_keywords: ["IDWriteFontDownloadQueue interface [Direct Write]","IsEmp
 old-location: directwrite\idwritefontdownloadqueue_isempty.htm
 tech.root: DirectWrite
 ms.assetid: 2f1f0d1c-0db8-c382-7879-92a889cfeb6b
-ms.date: 12/05/2018
+ms.date: 09/10/2025
 ms.keywords: IDWriteFontDownloadQueue interface [Direct Write],IsEmpty method, IDWriteFontDownloadQueue.IsEmpty, IDWriteFontDownloadQueue::IsEmpty, IsEmpty, IsEmpty method [Direct Write], IsEmpty method [Direct Write],IDWriteFontDownloadQueue interface, directwrite.idwritefontdownloadqueue_isempty, dwrite_3/IDWriteFontDownloadQueue::IsEmpty
 req.header: dwrite_3.h
 req.include-header: 

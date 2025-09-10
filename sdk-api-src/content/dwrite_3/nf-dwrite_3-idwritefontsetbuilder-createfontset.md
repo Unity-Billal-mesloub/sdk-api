@@ -6,7 +6,7 @@ helpviewer_keywords: ["CreateFontSet","CreateFontSet method [Direct Write]","Cre
 old-location: directwrite\idwritefontsetbuilder_createfontset.htm
 tech.root: DirectWrite
 ms.assetid: 58923F9C-4DAA-4F97-AE25-A2560176E0F2
-ms.date: 12/05/2018
+ms.date: 09/10/2025
 ms.keywords: CreateFontSet, CreateFontSet method [Direct Write], CreateFontSet method [Direct Write],IDWriteFontSetBuilder interface, IDWriteFontSetBuilder interface [Direct Write],CreateFontSet method, IDWriteFontSetBuilder.CreateFontSet, IDWriteFontSetBuilder::CreateFontSet, directwrite.idwritefontsetbuilder_createfontset, dwrite_3/IDWriteFontSetBuilder::CreateFontSet
 req.header: dwrite_3.h
 req.include-header: 

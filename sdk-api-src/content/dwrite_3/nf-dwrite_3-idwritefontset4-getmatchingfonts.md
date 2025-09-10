@@ -2,7 +2,7 @@
 UID: NF:dwrite_3.IDWriteFontSet4.GetMatchingFonts
 tech.root: DirectWrite
 title: IDWriteFontSet4::GetMatchingFonts
-ms.date: 05/05/2022
+ms.date: 09/10/2025
 targetos: Windows
 description: Generates a matching font set based on the requested inputs, ordered so that nearer matches are earlier.
 req.assembly: 

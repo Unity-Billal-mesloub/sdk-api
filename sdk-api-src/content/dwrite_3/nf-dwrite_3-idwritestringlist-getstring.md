@@ -6,13 +6,13 @@ helpviewer_keywords: ["GetString","GetString method [Direct Write]","GetString m
 old-location: directwrite\idwritestringlist_getstring.htm
 tech.root: DirectWrite
 ms.assetid: 9F569418-F5CF-4280-8E53-32F14AE6FD42
-ms.date: 12/05/2018
+ms.date: 09/10/2025
 ms.keywords: GetString, GetString method [Direct Write], GetString method [Direct Write],IDWriteStringList interface, IDWriteStringList interface [Direct Write],GetString method, IDWriteStringList.GetString, IDWriteStringList::GetString, directwrite.idwritestringlist_getstring, dwrite_3/IDWriteStringList::GetString
 req.header: dwrite_3.h
 req.include-header: 
 req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
+req.target-min-winverclnt: Windows 10 [desktop apps only]
+req.target-min-winversvr: Windows Server 2016 [desktop apps only]
 req.kmdf-ver: 
 req.umdf-ver: 
 req.ddi-compliance: 

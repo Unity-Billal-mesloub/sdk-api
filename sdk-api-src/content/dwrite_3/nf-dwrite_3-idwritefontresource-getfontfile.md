@@ -4,7 +4,7 @@ title: IDWriteFontResource::GetFontFile
 description: Retrieves the font file of the resource.
 helpviewer_keywords: ["IDWriteFontResource interface [Direct Write]","GetFontFile method","IDWriteFontResource.GetFontFile","IDWriteFontResource::GetFontFile","GetFontFile","GetFontFile method [Direct Write]","GetFontFile method [Direct Write]","IDWriteFontResource interface","directwrite.idwritefontresource_getfontfile","dwrite_3/IDWriteFontResource::GetFontFile"]
 tech.root: DirectWrite
-ms.date: 09/16/2019
+ms.date: 09/10/2025
 ms.keywords: IDWriteFontResource interface [Direct Write],GetFontFile method, IDWriteFontResource.GetFontFile, IDWriteFontResource::GetFontFile, GetFontFile, GetFontFile method [Direct Write], GetFontFile method [Direct Write],IDWriteFontResource interface, directwrite.idwritefontresource_getfontfile, dwrite_3/IDWriteFontResource::GetFontFile
 req.construct-type: function
 req.header: dwrite_3.h
