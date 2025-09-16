@@ -1,7 +1,7 @@
 ---
 UID: NF:objbase.CoRegisterInitializeSpy
 title: CoRegisterInitializeSpy function (objbase.h)
-description: Registers an implementation of the IInitializeSpy interface. The IInitializeSpy interface is defied to allow developers to perform initialization and cleanup on COM apartments.
+description: Registers an implementation of the IInitializeSpy interface. The IInitializeSpy interface is defined to allow developers to perform initialization and cleanup on COM apartments.
 helpviewer_keywords: ["CoRegisterInitializeSpy","CoRegisterInitializeSpy function [COM]","_com_CoRegisterInitializeSpy","com.coregisterinitializespy","objbase/CoRegisterInitializeSpy"]
 old-location: com\coregisterinitializespy.htm
 tech.root: com
@@ -127,6 +127,7 @@ It is unpredictable whether a call to <b>CoRegisterInitializeSpy</b> from within
 ## -see-also
 
 <a href="/windows/desktop/api/objbase/nf-objbase-corevokeinitializespy">CoRevokeInitializeSpy</a>
+
 
 
 
