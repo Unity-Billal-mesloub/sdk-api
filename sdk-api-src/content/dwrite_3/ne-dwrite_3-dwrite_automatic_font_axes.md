@@ -4,7 +4,7 @@ title: DWRITE_AUTOMATIC_FONT_AXES
 description: Defines constants that specify certain axes that can be applied automatically in layout during font selection.
 helpviewer_keywords: ["DWRITE_AUTOMATIC_FONT_AXES","DWRITE_AUTOMATIC_FONT_AXES enumeration [Direct Write]","directwrite.dwrite_automatic_font_axes","dwrite_3/DWRITE_AUTOMATIC_FONT_AXES"]
 tech.root: DirectWrite
-ms.date: 09/16/2019
+ms.date: 09/10/2025
 ms.keywords: DWRITE_AUTOMATIC_FONT_AXES, DWRITE_AUTOMATIC_FONT_AXES enumeration [Direct Write], directwrite.dwrite_automatic_font_axes, dwrite_3/DWRITE_AUTOMATIC_FONT_AXES
 req.construct-type: enumeration
 req.header: dwrite_3.h

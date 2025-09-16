@@ -6,13 +6,13 @@ helpviewer_keywords: ["GetLocaleName","GetLocaleName method [Direct Write]","Get
 old-location: directwrite\idwritestringlist_getlocalename.htm
 tech.root: DirectWrite
 ms.assetid: 3CB369A4-D1FC-4C8B-BE41-33D176117133
-ms.date: 12/05/2018
+ms.date: 09/10/2025
 ms.keywords: GetLocaleName, GetLocaleName method [Direct Write], GetLocaleName method [Direct Write],IDWriteStringList interface, IDWriteStringList interface [Direct Write],GetLocaleName method, IDWriteStringList.GetLocaleName, IDWriteStringList::GetLocaleName, directwrite.idwritestringlist_getlocalename, dwrite_3/IDWriteStringList::GetLocaleName
 req.header: dwrite_3.h
 req.include-header: 
 req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
+req.target-min-winverclnt: Windows 10 [desktop apps only]
+req.target-min-winversvr: Windows Server 2016 [desktop apps only]
 req.kmdf-ver: 
 req.umdf-ver: 
 req.ddi-compliance: 

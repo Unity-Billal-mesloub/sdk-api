@@ -6,7 +6,7 @@ helpviewer_keywords: ["AddFontFaceReference","AddFontFaceReference method [Direc
 old-location: directwrite\idwritefontsetbuilder_addfontfacereference_1.htm
 tech.root: DirectWrite
 ms.assetid: 0E67F5EF-F8BB-47D9-995D-40879351DC17
-ms.date: 12/05/2018
+ms.date: 09/10/2025
 ms.keywords: AddFontFaceReference, AddFontFaceReference method [Direct Write], AddFontFaceReference method [Direct Write],IDWriteFontSetBuilder interface, IDWriteFontSetBuilder interface [Direct Write],AddFontFaceReference method, IDWriteFontSetBuilder.AddFontFaceReference, IDWriteFontSetBuilder.AddFontFaceReference(IDWriteFontFaceReference,DWRITE_FONT_PROPERTY const,UINT32), IDWriteFontSetBuilder::AddFontFaceReference, IDWriteFontSetBuilder::AddFontFaceReference(IDWriteFontFaceReference,DWRITE_FONT_PROPERTY const,UINT32), directwrite.idwritefontsetbuilder_addfontfacereference_1, dwrite_3/IDWriteFontSetBuilder::AddFontFaceReference
 req.header: dwrite_3.h
 req.include-header: 

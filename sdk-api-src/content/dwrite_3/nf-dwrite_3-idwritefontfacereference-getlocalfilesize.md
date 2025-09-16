@@ -6,7 +6,7 @@ helpviewer_keywords: ["GetLocalFileSize","GetLocalFileSize method [Direct Write]
 old-location: directwrite\idwritefontfacereference_getlocalfilesize.htm
 tech.root: DirectWrite
 ms.assetid: f6dc5cf5-131f-a451-7979-3ae8613577bb
-ms.date: 12/05/2018
+ms.date: 09/10/2025
 ms.keywords: GetLocalFileSize, GetLocalFileSize method [Direct Write], GetLocalFileSize method [Direct Write],IDWriteFontFaceReference interface, IDWriteFontFaceReference interface [Direct Write],GetLocalFileSize method, IDWriteFontFaceReference.GetLocalFileSize, IDWriteFontFaceReference::GetLocalFileSize, directwrite.idwritefontfacereference_getlocalfilesize, dwrite_3/IDWriteFontFaceReference::GetLocalFileSize
 req.header: dwrite_3.h
 req.include-header: 

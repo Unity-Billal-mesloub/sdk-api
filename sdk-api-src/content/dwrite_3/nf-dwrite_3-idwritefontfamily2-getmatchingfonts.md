@@ -4,7 +4,7 @@ title: IDWriteFontFamily2::GetMatchingFonts
 description: Retrieves a list of fonts in the font family, ranked in order of how well they match the specified axis values.
 helpviewer_keywords: ["IDWriteFontFamily2 interface [Direct Write]","GetMatchingFonts method","IDWriteFontFamily2.GetMatchingFonts","IDWriteFontFamily2::GetMatchingFonts","GetMatchingFonts","GetMatchingFonts method [Direct Write]","GetMatchingFonts method [Direct Write]","IDWriteFontFamily2 interface","directwrite.idwritefontfamily2_getmatchingfont","dwrite_3/IDWriteFontFamily2::GetMatchingFonts"]
 tech.root: DirectWrite
-ms.date: 09/12/2019
+ms.date: 09/10/2025
 ms.keywords: IDWriteFontFamily2 interface [Direct Write],GetMatchingFonts method, IDWriteFontFamily2.GetMatchingFonts, IDWriteFontFamily2::GetMatchingFonts, GetMatchingFonts, GetMatchingFonts method [Direct Write], GetMatchingFonts method [Direct Write],IDWriteFontFamily2 interface, directwrite.idwritefontfamily2_getmatchingfont, dwrite_3/IDWriteFontFamily2::GetMatchingFonts
 req.construct-type: function
 req.header: dwrite_3.h

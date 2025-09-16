@@ -4,7 +4,7 @@ title: IDWriteFontSet3::GetFontSourceType
 description: Retrieves the font source type of the specified font.
 helpviewer_keywords: ["IDWriteFontSet3 interface [Direct Write]","GetFontSourceType method","IDWriteFontSet3.GetFontSourceType","IDWriteFontSet3::GetFontSourceType","GetFontSourceType","GetFontSourceType method [Direct Write]","GetFontSourceType method [Direct Write]","IDWriteFontSet3 interface","directwrite.idwritefontset3_getfontsourcetype","dwrite_3/IDWriteFontSet3::GetFontSourceType"]
 tech.root: DirectWrite
-ms.date: 09/16/2019
+ms.date: 09/10/2025
 ms.keywords: IDWriteFontSet3 interface [Direct Write],GetFontSourceType method, IDWriteFontSet3.GetFontSourceType, IDWriteFontSet3::GetFontSourceType, GetFontSourceType, GetFontSourceType method [Direct Write], GetFontSourceType method [Direct Write],IDWriteFontSet3 interface, directwrite.idwritefontset3_getfontsourcetype, dwrite_3/IDWriteFontSet3::GetFontSourceType
 req.construct-type: function
 req.header: dwrite_3.h

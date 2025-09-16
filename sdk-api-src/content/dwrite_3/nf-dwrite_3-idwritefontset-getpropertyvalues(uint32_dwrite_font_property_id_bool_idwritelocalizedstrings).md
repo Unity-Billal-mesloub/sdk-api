@@ -6,7 +6,7 @@ helpviewer_keywords: ["GetPropertyValues","GetPropertyValues method [Direct Writ
 old-location: directwrite\idwritefontset_getpropertyvalues_1.htm
 tech.root: DirectWrite
 ms.assetid: 4523d5a6-9d5f-61ac-a47f-810fef1522a9
-ms.date: 12/05/2018
+ms.date: 09/10/2025
 ms.keywords: GetPropertyValues, GetPropertyValues method [Direct Write], GetPropertyValues method [Direct Write],IDWriteFontSet interface, IDWriteFontSet interface [Direct Write],GetPropertyValues method, IDWriteFontSet.GetPropertyValues, IDWriteFontSet.GetPropertyValues(UINT32,DWRITE_FONT_PROPERTY_ID,BOOL,IDWriteLocalizedStrings), IDWriteFontSet::GetPropertyValues, IDWriteFontSet::GetPropertyValues(UINT32,DWRITE_FONT_PROPERTY_ID,BOOL,IDWriteLocalizedStrings), directwrite.idwritefontset_getpropertyvalues_1, dwrite_3/IDWriteFontSet::GetPropertyValues
 req.header: dwrite_3.h
 req.include-header: 

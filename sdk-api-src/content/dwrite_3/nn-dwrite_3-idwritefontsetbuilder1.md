@@ -6,13 +6,13 @@ helpviewer_keywords: ["IDWriteFontSetBuilder1","IDWriteFontSetBuilder1 interface
 old-location: directwrite\idwritefontsetbuilder1.htm
 tech.root: DirectWrite
 ms.assetid: 32023D5C-5000-44A7-8C7A-995A821951BB
-ms.date: 12/05/2018
+ms.date: 09/10/2025
 ms.keywords: IDWriteFontSetBuilder1, IDWriteFontSetBuilder1 interface [Direct Write], IDWriteFontSetBuilder1 interface [Direct Write],described, directwrite.idwritefontsetbuilder1, dwrite_3/IDWriteFontSetBuilder1
 req.header: dwrite_3.h
 req.include-header: 
 req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
+req.target-min-winverclnt: Windows 10 Build 14393
+req.target-min-winversvr: Windows 10 Build 14393
 req.kmdf-ver: 
 req.umdf-ver: 
 req.ddi-compliance: 

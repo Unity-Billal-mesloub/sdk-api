@@ -4,7 +4,7 @@ title: IDWriteFontResource::GetFontAxisCount
 description: Retrieves the number of axes supported by the font resource.
 helpviewer_keywords: ["IDWriteFontResource interface [Direct Write]","GetFontAxisCount method","IDWriteFontResource.GetFontAxisCount","IDWriteFontResource::GetFontAxisCount","GetFontAxisCount","GetFontAxisCount method [Direct Write]","GetFontAxisCount method [Direct Write]","IDWriteFontResource interface","directwrite.idwritefontresource_getfontaxiscount","dwrite_3/IDWriteFontResource::GetFontAxisCount"]
 tech.root: DirectWrite
-ms.date: 09/16/2019
+ms.date: 09/10/2025
 ms.keywords: IDWriteFontResource interface [Direct Write],GetFontAxisCount method, IDWriteFontResource.GetFontAxisCount, IDWriteFontResource::GetFontAxisCount, GetFontAxisCount, GetFontAxisCount method [Direct Write], GetFontAxisCount method [Direct Write],IDWriteFontResource interface, directwrite.idwritefontresource_getfontaxiscount, dwrite_3/IDWriteFontResource::GetFontAxisCount
 req.construct-type: function
 req.header: dwrite_3.h

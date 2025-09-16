@@ -4,7 +4,7 @@ title: IDWriteFontFace5::GetFontResource
 description: Retrieves the underlying font resource for this font face.
 helpviewer_keywords: ["IDWriteFontFace5 interface [Direct Write]","GetFontResource method","IDWriteFontFace5.GetFontResource","IDWriteFontFace5::GetFontResource","GetFontResource","GetFontResource method [Direct Write]","GetFontResource method [Direct Write]","IDWriteFontFace5 interface","directwrite.idwritefontface5_getfontresource","dwrite_3/IDWriteFontFace5::GetFontResource"]
 tech.root: DirectWrite
-ms.date: 09/10/2019
+ms.date: 09/10/2025
 ms.keywords: IDWriteFontFace5 interface [Direct Write],GetFontResource method, IDWriteFontFace5.GetFontResource, IDWriteFontFace5::GetFontResource, GetFontResource, GetFontResource method [Direct Write], GetFontResource method [Direct Write],IDWriteFontFace5 interface, directwrite.idwritefontface5_getfontresource, dwrite_3/IDWriteFontFace5::GetFontResource
 req.construct-type: function
 req.header: dwrite_3.h

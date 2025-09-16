@@ -6,7 +6,7 @@ helpviewer_keywords: ["IDWriteFontFaceReference","IDWriteFontFaceReference inter
 old-location: directwrite\idwritefontfacereference.htm
 tech.root: DirectWrite
 ms.assetid: 04242508-7439-43B6-B3E7-07617B782038
-ms.date: 12/05/2018
+ms.date: 09/10/2025
 ms.keywords: IDWriteFontFaceReference, IDWriteFontFaceReference interface [Direct Write], IDWriteFontFaceReference interface [Direct Write],described, directwrite.idwritefontfacereference, dwrite_3/IDWriteFontFaceReference
 req.header: dwrite_3.h
 req.include-header: 
