@@ -53,12 +53,9 @@ api_name:
  - CoRegisterInitializeSpy
 ---
 
-# CoRegisterInitializeSpy function
-
-
 ## -description
 
-Registers an implementation of the <a href="/windows/desktop/api/objidl/nn-objidl-iinitializespy">IInitializeSpy</a> interface. The <b>IInitializeSpy</b> interface is defied to allow developers to perform initialization and cleanup on COM apartments.
+Registers an implementation of the <a href="/windows/desktop/api/objidl/nn-objidl-iinitializespy">IInitializeSpy</a> interface. The <b>IInitializeSpy</b> interface is defined to allow developers to perform initialization and cleanup on COM apartments.
 
 ## -parameters
 
@@ -132,3 +129,4 @@ It is unpredictable whether a call to <b>CoRegisterInitializeSpy</b> from within
 
 
 <a href="/windows/desktop/api/objidl/nn-objidl-iinitializespy">IInitializeSpy</a>
+
