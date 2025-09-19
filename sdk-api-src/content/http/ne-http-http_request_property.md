@@ -6,7 +6,7 @@ helpviewer_keywords: ["*PHTTP_REQUEST_PROPERTY","*PHTTP_REQUEST_PROPERTY enumera
 old-location: http\http_Request_property.htm
 tech.root: http
 ms.assetid: 02e40197-4e21-4268-8a5e-f9b222f7eba2
-ms.date: 09/17/2025
+ms.date: 09/19/2025
 ms.keywords: '*PHTTP_REQUEST_PROPERTY, *PHTTP_REQUEST_PROPERTY enumeration [HTTP], HTTP_REQUEST_PROPERTY, HTTP_REQUEST_PROPERTY enumeration [HTTP], HttpRequestPropertyStreamError, http.http_Request_property, http/*PHTTP_REQUEST_PROPERTY, http/HTTP_REQUEST_PROPERTY, http/HttpRequestPropertyStreamError'
 req.header: http.h
 req.include-header:
@@ -86,7 +86,7 @@ Retrieve the **TCP_INFO_v1** statistics for a request. Uses the *Qualifier* para
 ### -field HttpRequestPropertySni
 
 Action: Query.
-PVOID Input/Output value: HTTP_REQUEST_PROPERTY_SNI
+PVOID Input/Output value: [HTTP_REQUEST_PROPERTY_SNI](./ns-http-http_request_property_sni.md)
 
 Retrieve the Server Name Indication for the request's TLS connection, in a **HTTP_REQUEST_PROPERTY_SNI**.
 
@@ -100,7 +100,7 @@ Set an (HTTP/2 or HTTP/3) **HTTP_REQUEST_PROPERTY_STREAM_ERROR** struct on a req
 ### -field HttpRequestPropertyWskApiTimings
 
 Action: Query.
-PVOID Input/Output value: HTTP_WSK_API_TIMINGS
+PVOID Input/Output value: [HTTP_WSK_API_TIMINGS](./ns-http-http_wsk_api_timings.md)
 
 Retrieve the **HTTP_WSK_API_TIMINGS** statistics for a request. Only used for non-QUIC requests (HTTP/1.1, HTTP/2). This property requires additional configuration to enable its use; see Remarks.
 
