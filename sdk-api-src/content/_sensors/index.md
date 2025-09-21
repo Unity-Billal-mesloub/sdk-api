@@ -11,9 +11,15 @@ ms.topic: overview
 
 ## -description
 
+> [!IMPORTANT]
+> Use the [UWP Sensor API](/windows/uwp/devices-sensors/sensors) instead.
+>
+> The COM-based Sensor API is deprecated and should not be used in new applications. No additional features or enhancements are planned, and support will be limited.
+
 Overview of the Sensor device driver reference technology.
 
 The Sensor device driver reference technology is not associated with any headers.
 
 For programming guidance for this technology, see:
+
 * [Sensor device driver reference](/windows-hardware/drivers/sensors/)
