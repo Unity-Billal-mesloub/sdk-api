@@ -1,5 +1,5 @@
 ---
-UID: NF:sensorsapi.ISensor GetData
+UID: NF:sensorsapi.ISensor.GetData
 title: ISensor::GetData (sensorsapi.h)
 description: Retrieves the most recent sensor data report.
 helpviewer_keywords: ["GetData","GetData method","GetData method","ISensor interface","ISensor interface","GetData method","ISensor.GetData","ISensor::GetData","sensorsapi/ISensor::GetData","winsensors_com_ref.isensor_getdata"]
