@@ -1,7 +1,7 @@
 ---
 UID: NF:rpcnsi.RpcNsBindingExportW
 title: RpcNsBindingExportW function (rpcnsi.h)
-description: The RpcNsBindingExport function establishes a name service�database entry with multiple binding handles and multiple objects for a server. (Unicode)
+description: The RpcNsBindingExport function establishes a name service—database entry with multiple binding handles and multiple objects for a server. (Unicode)
 helpviewer_keywords: ["RpcNsBindingExport", "RpcNsBindingExport function [RPC]", "RpcNsBindingExportW", "_rpc_rpcnsbindingexport", "rpc.rpcnsbindingexport", "rpcnsi/RpcNsBindingExport", "rpcnsi/RpcNsBindingExportW"]
 old-location: rpc\rpcnsbindingexport.htm
 tech.root: Rpc
