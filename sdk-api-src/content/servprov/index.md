@@ -4,6 +4,7 @@ title: Servprov.h header
 ms.date: 07/01/2021
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: com
 f1_keywords:
  - servprov

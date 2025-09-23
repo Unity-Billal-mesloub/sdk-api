@@ -5,6 +5,7 @@ ms.assetid: 15319619-c68f-331e-a793-0d7bda1f4c22
 ms.date: 01/11/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: com
 f1_keywords:
  - winerror

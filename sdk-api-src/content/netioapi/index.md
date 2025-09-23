@@ -5,6 +5,7 @@ ms.assetid: f65aa596-03b5-3fe2-b778-37604a4294d3
 ms.date: 01/11/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: iphlp
 f1_keywords:
  - netioapi

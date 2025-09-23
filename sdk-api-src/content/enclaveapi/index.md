@@ -6,6 +6,7 @@ ms.assetid: 91a0db05-9113-3f1e-987e-2ce774ff0b6f
 ms.date: 11/20/2024
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: base
 f1_keywords:
  - enclaveapi

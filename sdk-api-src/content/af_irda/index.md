@@ -5,6 +5,7 @@ ms.assetid: 9c758597-e3af-39c4-b476-06df5ad26352
 ms.date: 01/11/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: winsock
 f1_keywords:
  - af_irda

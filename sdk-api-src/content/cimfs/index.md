@@ -6,6 +6,7 @@ title: cimfs
 ms.date: 9/9/2019
 ms.keywords: cimfs
 ms.topic: overview
+ms.update-cycle: 1095-days
 targetos: Windows
 ms.service: windows
 req.assembly: 

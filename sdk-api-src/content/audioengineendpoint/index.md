@@ -5,6 +5,7 @@ ms.assetid: e3f686f9-6316-396c-adf4-e0ac9e6d8ad8
 ms.date: 01/11/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: coreaudio
 f1_keywords:
  - audioengineendpoint

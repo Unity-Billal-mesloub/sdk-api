@@ -4,6 +4,7 @@ title: hbaapi.h header
 ms.date: 08/01/2022
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: hba
 f1_keywords:
  - hbaapi

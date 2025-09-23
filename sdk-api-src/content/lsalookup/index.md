@@ -5,6 +5,7 @@ ms.assetid: f104326f-a8db-3cac-b963-825147c697fd
 ms.date: 01/11/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: security
 f1_keywords:
  - lsalookup

@@ -5,6 +5,7 @@ ms.assetid: 09675054-7282-316d-9f3c-f0acf1007928
 ms.date: 01/11/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: winprog
 f1_keywords:
  - camerauicontrol

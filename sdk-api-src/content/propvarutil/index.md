@@ -5,6 +5,7 @@ ms.assetid: 173e7dc2-fa66-3252-bba8-8ce0fd0d5b18
 ms.date: 01/11/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: properties
 f1_keywords:
  - propvarutil

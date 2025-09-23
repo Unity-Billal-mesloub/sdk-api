@@ -4,6 +4,7 @@ title: Uiviewsettingsinterop.h header
 ms.date: 04/16/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: winrt
 f1_keywords:
  - uiviewsettingsinterop

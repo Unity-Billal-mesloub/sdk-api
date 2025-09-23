@@ -5,6 +5,7 @@ ms.assetid: 0e81ac43-89f3-3837-b085-d06594f4d8c9
 ms.date: 09/19/2025
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: winlocation
 f1_keywords:
  - sensorsapi

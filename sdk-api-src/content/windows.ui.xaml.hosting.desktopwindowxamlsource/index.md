@@ -4,6 +4,7 @@ title: Windows.Ui.Xaml.Hosting.Desktopwindowxamlsource.h header
 ms.date: 07/25/2021
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: winrt
 f1_keywords:
  - windows.ui.xaml.hosting.desktopwindowxamlsource

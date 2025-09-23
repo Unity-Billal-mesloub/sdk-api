@@ -5,6 +5,7 @@ ms.assetid: 6e1f154e-cb89-3563-bfef-9ccac20a6b15
 ms.date: 01/11/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: base
 f1_keywords:
  - sysinfoapi

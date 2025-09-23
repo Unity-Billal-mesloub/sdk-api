@@ -5,6 +5,7 @@ ms.assetid: a41919ee-07b9-3c9d-9b40-e3735e91f391
 ms.date: 01/11/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: security
 f1_keywords:
  - winsafer

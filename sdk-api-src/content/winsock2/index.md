@@ -5,6 +5,7 @@ ms.assetid: 1418c4da-e9d0-35ea-9c7b-fe2f54273e08
 ms.date: 01/11/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: qos
 f1_keywords:
  - winsock2

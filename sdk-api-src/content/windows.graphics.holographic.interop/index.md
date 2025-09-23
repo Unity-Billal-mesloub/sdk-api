@@ -7,6 +7,7 @@ ms.keywords:
 ms.service: windows
 ms.subservice: windows
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: direct3d12
 f1_keywords:
  - windows.graphics.holographic.interop

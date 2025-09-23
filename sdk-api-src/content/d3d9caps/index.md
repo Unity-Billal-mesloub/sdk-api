@@ -5,6 +5,7 @@ ms.assetid: 9e673793-a9e8-36aa-ba1d-9887d36549c5
 ms.date: 01/11/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: direct3d9
 f1_keywords:
  - d3d9caps

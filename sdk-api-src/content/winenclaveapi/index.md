@@ -6,6 +6,7 @@ ms.assetid: 3d0a5616-bf27-3ff0-b4b6-017537728b7c
 ms.date: 11/20/2024
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: base
 f1_keywords:
  - winenclaveapi

@@ -5,6 +5,7 @@ ms.assetid: e1a7e0e3-7a4f-305f-9c8c-47beba62ae6d
 ms.date: 01/11/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 ---
 
 # Other Devices Technologies

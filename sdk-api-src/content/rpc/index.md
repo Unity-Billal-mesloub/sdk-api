@@ -5,6 +5,7 @@ ms.assetid: 95e4d8fd-5323-369a-90e4-cd95eab3841f
 ms.date: 01/11/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: rpc
 f1_keywords:
  - rpc
