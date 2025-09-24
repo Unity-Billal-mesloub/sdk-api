@@ -347,7 +347,7 @@ Bits 1:7 of the **APSTA** structure are reserved.
 
 ### -field WCTEMP
 
-Indicates the minimum Composite Temperature field value (reported in the [SMART / Health Information](ns-nvme-nvme_health_info_log.md) log that indicates an overheating condition during which controller operation continues.
+Indicates the minimum Composite Temperature field value (reported in the [SMART / Health Information](ns-nvme-nvme_health_info_log.md) log) that indicates an overheating condition during which controller operation continues.
 
 Immediate remediation is recommended (for example, additional cooling or workload reduction). The platform should strive to maintain a composite temperature below this value.
 
