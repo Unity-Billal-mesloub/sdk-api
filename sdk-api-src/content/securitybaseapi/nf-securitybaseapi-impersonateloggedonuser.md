@@ -85,7 +85,8 @@ All impersonate functions, including **ImpersonateLoggedOnUser** allow the reque
 - A process (or another process in the caller's logon session) created the token using explicit credentials through [LogonUser](/windows/win32/api/winbase/nf-winbase-logonusera) or [LsaLogonUser](/windows/win32/api/ntsecapi/nf-ntsecapi-lsalogonuser) function.
 - The authenticated identity is same as the caller.
 
-**Important:** The token must have an impersonation level of **SecurityImpersonation** or higher for impersonation to succeed. Tokens with **SecurityIdentification** or **SecurityAnonymous** levels cannot be used for impersonation, even if the caller has **SeImpersonatePrivilege**. **SecurityIdentification** tokens allow identity verification and ACL checks but do not permit impersonation.
+> [!IMPORTANT]
+> The token must have an impersonation level of **SecurityImpersonation** or higher for impersonation to succeed. Tokens with **SecurityIdentification** or **SecurityAnonymous** levels cannot be used for impersonation, even if the caller has **SeImpersonatePrivilege**. **SecurityIdentification** tokens allow identity verification and ACL checks but do not permit impersonation.
 
 #### Impersonation Level Requirements
 
