@@ -1,7 +1,7 @@
 ---
 UID: NN:radialcontrollerinterop.IRadialControllerConfigurationInterop
 title: IRadialControllerConfigurationInterop (radialcontrollerinterop.h)
-description: Enables interoperability with a WinRT—RadialControllerConfiguration object and provides access to RadialControllerConfiguration members for customizing a RadialController menu.
+description: Enables interoperability with a WinRT RadialControllerConfiguration object and provides access to RadialControllerConfiguration members for customizing a RadialController menu.
 helpviewer_keywords: ["IRadialControllerConfigurationInterop","IRadialControllerConfigurationInterop interface","IRadialControllerConfigurationInterop interface","described","Input_Radial.iradialcontrollerconfigurationinterop","radialcontrollerinterop/IRadialControllerConfigurationInterop"]
 old-location: input_radial\iradialcontrollerconfigurationinterop.htm
 tech.root: winrt
