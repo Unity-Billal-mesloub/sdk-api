@@ -74,7 +74,7 @@ An HRESULT including the following values.
 
 ## -remarks
 
-The value returned by this method can be used to allocate source buffer. This value will change if the endpoint cadence changes. The caller must specify same [AUDIO_STREAM_CATEGORY](xref:NE:audiosessiontypes._AUDIO_STREAM_CATEGORY) and [WAVEFORMATEX](xref:NS:mmeapi.tWAVEFORMATEX) values that will be used when creating the stream. The *offloadEnabled* parameter must be set to TRUE if the stream will be created with the [SPATIAL_AUDIO_STREAM_OPTIONS_OFFLOAD](xref:NE:spatialaudioclient.SPATIAL_AUDIO_STREAM_OPTIONS) flag. 
+The value returned by this method can be used to allocate source buffer. This value will change if the endpoint cadence changes. The caller must specify same [AUDIO_STREAM_CATEGORY](/windows/win32/api/audiosessiontypes/ne-audiosessiontypes-audio_stream_category) and [WAVEFORMATEX](/windows/win32/api/mmeapi/ns-mmeapi-waveformatex) values that will be used when creating the stream. The *offloadEnabled* parameter must be set to TRUE if the stream will be created with the [SPATIAL_AUDIO_STREAM_OPTIONS_OFFLOAD](ne-spatialaudioclient-spatial_audio_stream_options) flag. 
 
 
 ## -see-also
