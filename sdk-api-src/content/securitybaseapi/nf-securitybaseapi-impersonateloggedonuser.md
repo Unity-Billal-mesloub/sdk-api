@@ -81,10 +81,20 @@ If the call to **ImpersonateLoggedOnUser** fails, the client connection is not i
 
 All impersonate functions, including **ImpersonateLoggedOnUser** allow the requested impersonation if one of the following is true:
 
-- The requested impersonation level of the token is less than **SecurityImpersonation**, such as **SecurityIdentification** or **SecurityAnonymous**.
 - The caller has the **SeImpersonatePrivilege** privilege.
 - A process (or another process in the caller's logon session) created the token using explicit credentials through [LogonUser](/windows/win32/api/winbase/nf-winbase-logonusera) or [LsaLogonUser](/windows/win32/api/ntsecapi/nf-ntsecapi-lsalogonuser) function.
 - The authenticated identity is same as the caller.
+
+**Important:** The token must have an impersonation level of **SecurityImpersonation** or higher for impersonation to succeed. Tokens with **SecurityIdentification** or **SecurityAnonymous** levels cannot be used for impersonation, even if the caller has **SeImpersonatePrivilege**. **SecurityIdentification** tokens allow identity verification and ACL checks but do not permit impersonation.
+
+#### Impersonation Level Requirements
+
+The behavior varies based on the token's impersonation level:
+
+- **SecurityAnonymous**: The server cannot obtain client identity information and cannot impersonate the client.
+- **SecurityIdentification**: The server can obtain the client's identity and perform access validation, but cannot impersonate the client. This is the default level for many scenarios.
+- **SecurityImpersonation**: The server can impersonate the client's security context on the local system. This is the minimum level required for **ImpersonateLoggedOnUser** to succeed.
+- **SecurityDelegation**: The server can impersonate the client on remote systems as well as locally.
 
 **Windows XP with SP1 and earlier:** The **SeImpersonatePrivilege** privilege is not supported.
 
