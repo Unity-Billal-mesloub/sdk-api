@@ -1,4 +1,4 @@
-﻿---
+---
 UID: NS:evntprov._EVENT_FILTER_DESCRIPTOR
 title: EVENT_FILTER_DESCRIPTOR (evntprov.h)
 description:

@@ -1,4 +1,4 @@
-﻿---
+---
 UID: NS:evntrace._EVENT_TRACE_PROPERTIES_V2
 title: EVENT_TRACE_PROPERTIES_V2 (evntrace.h)
 description:

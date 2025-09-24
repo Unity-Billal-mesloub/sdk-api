@@ -1,4 +1,4 @@
-﻿---
+---
 UID: NF:evntrace.ControlTraceW
 title: ControlTraceW function (evntrace.h)
 description: The ControlTraceW (Unicode) function (evntrace.h) flushes, queries, updates, or stops the specified event tracing session.
