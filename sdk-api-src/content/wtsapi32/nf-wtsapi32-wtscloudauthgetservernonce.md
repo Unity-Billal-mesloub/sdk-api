@@ -1,6 +1,6 @@
 ---
 UID: NF:wtsapi32.WTSCloudAuthGetServerNonce
-termserv
+tech.root: TermServ
 title: WTSCloudAuthGetServerNonce
 ms.date: 09/25/2025
 targetos: Windows

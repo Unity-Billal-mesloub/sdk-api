@@ -1,6 +1,6 @@
 ---
 UID: NS:wtsapi32._WTS_SERIALIZED_USER_CREDENTIAL
-termserv
+tech.root: TermServ
 title: WTS_SERIALIZED_USER_CREDENTIAL
 ms.date: 09/25/2025
 targetos: Windows

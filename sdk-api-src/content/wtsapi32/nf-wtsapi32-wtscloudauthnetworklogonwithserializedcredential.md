@@ -1,6 +1,6 @@
 ---
 UID: NF:wtsapi32.WTSCloudAuthNetworkLogonWithSerializedCredential
-termserv
+tech.root: TermServ
 title: WTSCloudAuthNetworkLogonWithSerializedCredential
 ms.date: 09/25/2025
 targetos: Windows

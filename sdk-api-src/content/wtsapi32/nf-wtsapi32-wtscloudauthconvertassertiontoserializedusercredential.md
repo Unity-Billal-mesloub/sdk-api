@@ -1,6 +1,6 @@
 ---
 UID: NF:wtsapi32.WTSCloudAuthConvertAssertionToSerializedUserCredential
-termserv
+tech.root: TermServ
 title: WTSCloudAuthConvertAssertionToSerializedUserCredential
 ms.date: 09/25/2025
 targetos: Windows

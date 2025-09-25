@@ -1,6 +1,6 @@
 ---
 UID: NF:wtsapi32.WTSActiveSessionExists
-termserv
+tech.root: TermServ
 title: WTSActiveSessionExists
 ms.date: 09/25/2025
 targetos: Windows

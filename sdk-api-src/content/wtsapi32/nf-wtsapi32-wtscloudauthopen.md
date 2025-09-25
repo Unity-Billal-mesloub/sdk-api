@@ -1,6 +1,6 @@
 ---
 UID: NF:wtsapi32.WTSCloudAuthOpen
-termserv
+tech.root: TermServ
 title: WTSCloudAuthOpen
 ms.date: 09/25/2025
 targetos: Windows
