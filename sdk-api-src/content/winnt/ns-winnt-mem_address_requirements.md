@@ -68,7 +68,7 @@ If this member is <b>NULL</b>, then there is no lower limit.
 ### -field HighestEndingAddress
 
 Specifies the highest acceptable address (inclusive).
-This address must not exceed <b>lpMaximumApplicationAddress</b> and must be **one less** than a multiple of the allocation granularity returned by <a href="/windows/desktop/api/sysinfoapi/nf-sysinfoapi-getsysteminfo">GetSystemInfo</a>.
+This address must not exceed <b>lpMaximumApplicationAddress</b> and must be <b>one less</b> than a multiple of the allocation granularity returned by <a href="/windows/desktop/api/sysinfoapi/nf-sysinfoapi-getsysteminfo">GetSystemInfo</a>.
 If this member is <b>NULL</b>, then there is no upper limit.
 
 ### -field Alignment
