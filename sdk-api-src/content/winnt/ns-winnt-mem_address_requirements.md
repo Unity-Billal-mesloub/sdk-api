@@ -74,7 +74,7 @@ If this member is <b>NULL</b>, then there is no upper limit.
 ### -field Alignment
 
 Specifies power-of-2 alignment. Specifying 0 aligns the returned address on the system allocation granularity.
-If nonzero, this value must be larger or equal to the system allocation granularity.
+If nonzero, this value must be greater than or equal to the system allocation granularity.
 
 ## -remarks
 
