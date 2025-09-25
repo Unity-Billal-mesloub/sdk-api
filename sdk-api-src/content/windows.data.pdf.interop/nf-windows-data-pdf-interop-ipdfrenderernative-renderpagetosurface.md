@@ -56,7 +56,7 @@ Outputs a single page of a Portable Document Format (PDF) file to a Microsoft Di
 
 ### -param pdfPage [in]
 
-The <b>IPdfPage</b> interface as an instance of the <a href="uwp/api/windows.data.pdf.pdfpage">PdfPage</a> class type-casted to the <b>IUnknown</b> interface, `page.as<IUnknown>().get()`, representing the page to be output.
+The <b>IPdfPage</b> interface as an instance of the <a href="/uwp/api/windows.data.pdf.pdfpage">PdfPage</a> class type-casted to the <b>IUnknown</b> interface, `page.as<IUnknown>().get()`, representing the page to be output.
 
 ### -param pSurface [in]
 
