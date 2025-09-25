@@ -1,8 +1,8 @@
 ---
 UID: NF:wtsapi32.WTSCloudAuthClose
-tech.root: 
+termserv
 title: WTSCloudAuthClose
-ms.date: 
+ms.date: 09/25/2025
 targetos: Windows
 description: 
 prerelease: false

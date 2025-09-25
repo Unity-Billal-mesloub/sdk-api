@@ -1,8 +1,8 @@
 ---
 UID: NF:wtsapi32.WTSCloudAuthDuplicateSerializedUserCredential
-tech.root: 
+termserv
 title: WTSCloudAuthDuplicateSerializedUserCredential
-ms.date: 
+ms.date: 09/25/2025
 targetos: Windows
 description: 
 prerelease: false

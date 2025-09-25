@@ -1,8 +1,8 @@
 ---
 UID: NF:wtsapi32.WTSCloudAuthGetServerNonce
-tech.root: 
+termserv
 title: WTSCloudAuthGetServerNonce
-ms.date: 
+ms.date: 09/25/2025
 targetos: Windows
 description: 
 prerelease: false

@@ -1,8 +1,8 @@
 ---
 UID: NS:wtsapi32._WTS_SERIALIZED_USER_CREDENTIAL
-tech.root: 
+termserv
 title: WTS_SERIALIZED_USER_CREDENTIAL
-ms.date: 
+ms.date: 09/25/2025
 targetos: Windows
 description: 
 prerelease: false

@@ -1,8 +1,8 @@
 ---
 UID: NN:wtsprotocol.IWRdsProtocolConnection2
-tech.root: 
+tech.root: TermServ
 title: IWRdsProtocolConnection2
-ms.date: 
+ms.date: 09/25/2025
 targetos: Windows
 description: 
 prerelease: false

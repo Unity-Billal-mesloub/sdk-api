@@ -1,8 +1,8 @@
 ---
 UID: NF:wtsprotocol.IWRdsProtocolConnection2.GetSerializedUserCredential
-tech.root: 
+tech.root: TermServ
 title: IWRdsProtocolConnection2::GetSerializedUserCredential
-ms.date: 
+ms.date: 09/25/2025
 targetos: Windows
 description: 
 prerelease: false
