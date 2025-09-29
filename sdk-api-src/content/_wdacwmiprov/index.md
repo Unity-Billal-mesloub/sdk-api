@@ -5,6 +5,7 @@ ms.assetid: 4a0360e0-1ed6-3688-a2a1-f628eb03374b
 ms.date: 01/11/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 ---
 
 # Windows Data Access Components WMI Provider

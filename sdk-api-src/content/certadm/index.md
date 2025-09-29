@@ -5,6 +5,7 @@ ms.assetid: 87b149b2-1e58-330a-a91d-f63130b54a41
 ms.date: 01/11/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: security
 f1_keywords:
  - certadm

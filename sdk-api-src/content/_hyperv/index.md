@@ -5,6 +5,7 @@ ms.assetid: 61481173-288c-3c51-981d-d766e94aef88
 ms.date: 01/11/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 ---
 
 # Hyper-V management

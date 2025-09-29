@@ -5,6 +5,7 @@ ms.assetid: 319da130-d8d3-329d-a985-0c9eccf7efad
 ms.date: 01/11/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: rdp
 f1_keywords:
  - rdpencomapi

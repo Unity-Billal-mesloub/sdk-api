@@ -5,6 +5,7 @@ ms.assetid: 7ffd173f-c94a-3b37-bbad-716c34aaa3b1
 ms.date: 01/11/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: shell
 f1_keywords:
  - imagetranscode

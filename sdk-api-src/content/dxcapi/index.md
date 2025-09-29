@@ -4,6 +4,7 @@ title: Dxcapi.h header
 ms.date: 04/05/2023
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: direct3dhlsl
 f1_keywords:
  - dxcapi

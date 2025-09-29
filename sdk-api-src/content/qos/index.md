@@ -5,6 +5,7 @@ ms.assetid: dd03d918-3831-3f6c-a2cd-e700e7f0dae8
 ms.date: 01/11/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: qos
 f1_keywords:
  - qos

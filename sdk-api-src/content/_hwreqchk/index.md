@@ -5,6 +5,7 @@ ms.assetid: c04a9010-a37f-47a1-b016-bce7b37eda80
 ms.date: 04/26/2023
 ms.keywords: HWREQCHK, HWREQCHKAPI, windows 11
 ms.topic: overview
+ms.update-cycle: 1095-days
 ---
 
 # Hardware Requirement Evaluator (HWREQCHK)

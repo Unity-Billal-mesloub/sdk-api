@@ -4,6 +4,7 @@ title: Activity Coordinator
 ms.assetid: e190851a-3613-419f-88fd-60c149c00a41
 ms.date: 05/07/2024
 ms.topic: overview
+ms.update-cycle: 1095-days
 ---
 
 # Activity Coordinator

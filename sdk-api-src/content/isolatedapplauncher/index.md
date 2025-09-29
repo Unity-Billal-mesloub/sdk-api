@@ -5,6 +5,7 @@ ms.assetid: d720a701-e171-3f16-97cd-85324b4f27ec
 ms.date: 07/24/2023
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: winprog
 f1_keywords:
  - isolatedapplauncher

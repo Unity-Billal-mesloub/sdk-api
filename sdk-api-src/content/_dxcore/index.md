@@ -4,6 +4,7 @@ title: DXCore
 ms.date: 06/12/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 ---
 
 # DXCore

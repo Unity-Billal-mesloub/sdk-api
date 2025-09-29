@@ -5,6 +5,7 @@ ms.assetid: fc28571c-8620-355b-b58f-bc64d526561a
 ms.date: 01/11/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: winrt
 f1_keywords:
  - inspectable

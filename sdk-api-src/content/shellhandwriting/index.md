@@ -6,6 +6,7 @@ ms.date: 11/13/2023
 prerelease: false
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: input_ink
 f1_keywords:
  - shellhandwriting

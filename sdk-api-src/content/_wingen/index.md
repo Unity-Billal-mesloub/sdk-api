@@ -5,6 +5,7 @@ ms.assetid: e9c62382-8b92-33aa-8f38-f0150c61496b
 ms.date: 08/05/2024
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 ---
 
 # Windows Genuine Advantage API

@@ -5,6 +5,7 @@ ms.assetid: 00a29e75-1661-338b-bf86-09b29aa51310
 ms.date: 01/11/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: search
 f1_keywords:
  - structuredquerycondition

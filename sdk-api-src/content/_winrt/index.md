@@ -5,6 +5,7 @@ ms.assetid: 19ccb9a3-b0f9-3246-95d5-0d1c2650a2d5
 ms.date: 05/17/2022
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 ---
 
 # Windows Runtime C++ reference

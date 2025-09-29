@@ -4,6 +4,7 @@ title: Processthreadsapi.h header
 ms.date: 10/28/2022
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: processthreadsapi
 f1_keywords:
  - processthreadsapi

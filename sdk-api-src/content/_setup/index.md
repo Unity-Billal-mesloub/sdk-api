@@ -5,6 +5,7 @@ ms.assetid: 333c3bdd-1089-3313-b2f3-8fa8322fcfb4
 ms.date: 01/11/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 ---
 
 # Application Installation and Servicing

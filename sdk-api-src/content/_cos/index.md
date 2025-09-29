@@ -5,6 +5,7 @@ ms.assetid: fa1a2831-adb6-3c65-849b-78572fe3c364
 ms.date: 01/11/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 ---
 
 # COM+ (Component Services)

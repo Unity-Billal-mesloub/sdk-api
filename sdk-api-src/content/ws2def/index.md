@@ -5,6 +5,7 @@ ms.assetid: f1975944-a570-3105-94f3-ebc68542e2f3
 ms.date: 01/11/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: iphlp
 f1_keywords:
  - ws2def

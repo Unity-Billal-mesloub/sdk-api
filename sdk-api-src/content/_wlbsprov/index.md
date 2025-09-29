@@ -5,6 +5,7 @@ ms.assetid: 77fa084b-5304-3c4b-99de-ed718f3f28e1
 ms.date: 01/11/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 ---
 
 # Network Load Balancing Provider

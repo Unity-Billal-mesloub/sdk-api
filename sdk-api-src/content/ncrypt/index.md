@@ -6,6 +6,7 @@ ms.assetid: 9d9ca017-f280-36f9-bfa9-e3f802095a19
 ms.date: 07/22/2025
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: security
 f1_keywords:
  - ncrypt

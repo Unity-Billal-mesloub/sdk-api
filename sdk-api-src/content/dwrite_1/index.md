@@ -5,6 +5,7 @@ ms.assetid: 8435f958-79f2-383a-951d-7f432b43458b
 ms.date: 01/11/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: directwrite
 f1_keywords:
  - dwrite_1

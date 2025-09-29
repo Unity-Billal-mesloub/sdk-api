@@ -5,6 +5,7 @@ ms.assetid: b9bf4454-b16d-35ba-b437-3f291166884c
 ms.date: 01/11/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: gdiplus
 f1_keywords:
  - gdipluscolor
