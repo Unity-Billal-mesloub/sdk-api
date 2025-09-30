@@ -3,7 +3,7 @@ UID: NC:winuser.WNDPROC
 title: WNDPROC
 description: A callback function, which you define in your application, that processes messages sent to a window.
 tech.root: winmsg
-ms.date: 09/02/2025
+ms.date: 09/30/2025
 targetos: Windows
 req.assembly: 
 req.construct-type: function
@@ -36,7 +36,7 @@ api_name:
 
 ## -description
 
-A callback function, which you define in your application, that processes messages sent to a window. The **WNDPROC** type defines a pointer to this callback function. The *WndProc* name is a placeholder for the name of the function that you define in your application.
+A callback function, which you define in your application, that processes messages sent to a window. The **WNDPROC** type defines a pointer to this callback function. The _WndProc_ name is a placeholder for the name of the function that you define in your application.
 
 ## -parameters
 
@@ -44,13 +44,13 @@ A callback function, which you define in your application, that processes messag
 
 Type: **[HWND](/windows/win32/winprog/windows-data-types)**
 
-A handle to the window. This parameter is typically named *hWnd*.
+A handle to the window. This parameter is typically named _hWnd_.
 
 ### -param unnamedParam2
 
 Type: **[UINT](/windows/win32/winprog/windows-data-types)**
 
-The message. This parameter is typically named *uMsg*.
+The message. This parameter is typically named _uMsg_.
 
 For lists of the system-provided messages, see [System-defined messages](/windows/win32/winmsg/about-messages-and-message-queues#system-defined-messages).
 
@@ -58,17 +58,17 @@ For lists of the system-provided messages, see [System-defined messages](/window
 
 Type: **[WPARAM](/windows/win32/winprog/windows-data-types)**
 
-Additional message information. This parameter is typically named *wParam*.
+Additional message information. This parameter is typically named _wParam_.
 
-The contents of the *wParam* parameter depend on the value of the *uMsg* parameter.
+The contents of the _wParam_ parameter depend on the value of the _uMsg_ parameter.
 
 ### -param unnamedParam4
 
 Type: **[LPARAM](/windows/win32/winprog/windows-data-types)**
 
-Additional message information. This parameter is typically named *lParam*.
+Additional message information. This parameter is typically named _lParam_.
 
-The contents of the *lParam* parameter depend on the value of the *uMsg* parameter.
+The contents of the _lParam_ parameter depend on the value of the _uMsg_ parameter.
 
 ## -returns
 
