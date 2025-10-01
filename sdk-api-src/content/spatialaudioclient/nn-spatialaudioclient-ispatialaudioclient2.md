@@ -36,7 +36,7 @@ dev_langs:
 
 ## -description
 
-The **ISpatialAudioClient2** interface inherits from [ISpatialAudioClient](xref:NN:spatialaudioclient.ISpatialAudioClient) and adds methods to query for support for offloading large audio buffers.
+The **ISpatialAudioClient2** interface inherits from [ISpatialAudioClient](nn-spatialaudioclient-ispatialaudioclient) and adds methods to query for support for offloading large audio buffers.
 
 ## -remarks
 
@@ -44,7 +44,7 @@ The **ISpatialAudioClient2** interface inherits from [ISpatialAudioClient](xref:
 
 Audio offloading allows an app to submit a large audio buffer (typically 1 to 2 seconds) to the audio device driver. Without offload, a typical audio buffer only contains 10ms of data, requiring the app to be awakened around 100 times per second to provide additional audio data. Using offloaded large buffers can provide battery savings, particularly for the scenario where the user is listening to audio with the screen off.
 
-To use this feature, the driver for the audio device must support offloading. Query for support by calling [IsOffloadCapable](xref:NF:spatialaudioclient.ISpatialAudioClient2.IsOffloadCapable). Determine the maximum number of audio frames supported for offloading by calling [GetMaxFrameCountForCategory](xref:NF:spatialaudioclient.ISpatialAudioClient2.GetMaxFrameCountForCategory).
+To use this feature, the driver for the audio device must support offloading. Query for support by calling [IsOffloadCapable](nf-spatialaudioclient-ispatialaudioclient2-isoffloadcapable). Determine the maximum number of audio frames supported for offloading by calling [GetMaxFrameCountForCategory](nf-spatialaudioclient-ispatialaudioclient2-getmaxframecountforcategory).
 
 **ISpatialAudioClient2** was introduced in Windows 11 (Windows Build 22000), so your code should handle the case where it is running on an older version of Windows that doesn't include the interface. The following example illustrates using calling **QueryInterface** on **ISpatialAudioClient** to try to obtain an instance of **ISpatialAudioClient2** and checking that the retrieved interface is not null before calling its methods.
 

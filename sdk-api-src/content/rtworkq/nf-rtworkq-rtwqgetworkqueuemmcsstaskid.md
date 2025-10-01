@@ -68,4 +68,4 @@ If this function succeeds, it returns <b>S_OK</b>. Otherwise, it returns an <b>H
 
 ## -remarks
 
-To associate a work queue with an MMCSS task, call <a href="<a href="/windows/win32/api/rtworkq/nf-rtworkq-rtwqbeginregisterworkqueuewithmmcss">RtwqBeginRegisterWorkQueueWithMMCSSEx</a>">RtwqBeginRegisterWorkQueueWithMMCSSEx</a>.
+To associate a work queue with an MMCSS task, call <a href="/windows/win32/api/rtworkq/nf-rtworkq-rtwqbeginregisterworkqueuewithmmcss">RtwqBeginRegisterWorkQueueWithMMCSSEx</a>.

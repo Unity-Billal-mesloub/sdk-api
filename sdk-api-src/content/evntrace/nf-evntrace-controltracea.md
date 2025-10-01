@@ -1,4 +1,4 @@
-﻿---
+---
 UID: NF:evntrace.ControlTraceA
 title: ControlTraceA function (evntrace.h)
 description: The ControlTraceA (ANSI) function (evntrace.h) flushes, queries, updates, or stops the specified event tracing session.

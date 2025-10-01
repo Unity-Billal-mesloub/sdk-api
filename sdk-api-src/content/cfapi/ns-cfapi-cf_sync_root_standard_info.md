@@ -101,7 +101,7 @@ The identity of the sync root directory.
 
 [CF_INSYNC_POLICY](ne-cfapi-cf_insync_policy.md)
 
-[CF_HARDLINK_POLICY](ne-cfapi-cf_hardlink_policy.md
+[CF_HARDLINK_POLICY](ne-cfapi-cf_hardlink_policy.md)
 
 [CF_SYNC_PROVIDER_STATUS](ne-cfapi-cf_sync_provider_status.md)
 

@@ -42,14 +42,14 @@ dev_langs:
 
 ## -description
 
-Queries whether the audio rendering endpoint that the [ISpatialAudioClient2](xref:NN:spatialaudioclient.ISpatialAudioClient2) was created on supports hardware offloaded audio processing. The method also considers the capabilities of the [AUDIO_STREAM_CATEGORY](xref:NE:audiosessiontypes._AUDIO_STREAM_CATEGORY) value that will be used, as use of offload is restricted to only certain **AUDIO_STREAM_CATEGORY** values.
+Queries whether the audio rendering endpoint that the [ISpatialAudioClient2](nn-spatialaudioclient-ispatialaudioclient2) was created on supports hardware offloaded audio processing. The method also considers the capabilities of the [AUDIO_STREAM_CATEGORY](/windows/win32/api/audiosessiontypes/ne-audiosessiontypes-audio_stream_category) value that will be used, as use of offload is restricted to only certain **AUDIO_STREAM_CATEGORY** values.
 
 
 ## -parameters
 
 ### -param category [in]
 
-A value from the [AUDIO_STREAM_CATEGORY](xref:NE:audiosessiontypes._AUDIO_STREAM_CATEGORY) enumeration specifying the category of audio for which offload support is queried.
+A value from the [AUDIO_STREAM_CATEGORY](/windows/win32/api/audiosessiontypes/ne-audiosessiontypes-audio_stream_category) enumeration specifying the category of audio for which offload support is queried.
 
 ### -param isOffloadCapable [out]
 

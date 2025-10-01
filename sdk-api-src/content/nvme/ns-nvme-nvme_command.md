@@ -254,15 +254,15 @@ A [NVME_CDW10_GET_LOG_PAGE_V13](ns-nvme-nvme_cdw10_get_log_page_v13.md) structur
 
 ### -field u.GETLOGPAGE.CDW11
 
-A NVME_CDW11_GET_LOG_PAGE](ns-nvme-nvme_cdw11_get_log_page.md) structure containing Command DWord 11 parameters for the Get Log Page command.
+A [NVME_CDW11_GET_LOG_PAGE](ns-nvme-nvme_cdw11_get_log_page.md) structure containing Command DWord 11 parameters for the Get Log Page command.
 
 ### -field u.GETLOGPAGE.CDW12
 
-A NVME_CDW12_GET_LOG_PAGE](ns-nvme-nvme_cdw12_get_log_page.md) structure containing Command DWord 12 parameters for the Get Log Page command.
+A [NVME_CDW12_GET_LOG_PAGE](ns-nvme-nvme_cdw12_get_log_page.md) structure containing Command DWord 12 parameters for the Get Log Page command.
 
 ### -field u.GETLOGPAGE.CDW13
 
-A NVME_CDW13_GET_LOG_PAGE](ns-nvme-nvme_cdw13_get_log_page.md) structure containing Command DWord 13 parameters for the Get Log Page command.
+A [NVME_CDW13_GET_LOG_PAGE](ns-nvme-nvme_cdw13_get_log_page.md) structure containing Command DWord 13 parameters for the Get Log Page command.
 
 ### -field u.GETLOGPAGE.CDW14
 
