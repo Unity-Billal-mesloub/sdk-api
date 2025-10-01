@@ -5,6 +5,7 @@ ms.assetid: db1069cc-6126-3f18-93c5-635837f13eba
 ms.date: 01/11/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: winrt
 f1_keywords:
  - windows.graphics.effects.interop

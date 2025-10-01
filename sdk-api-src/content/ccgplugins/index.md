@@ -4,6 +4,7 @@ title: ccgplugins.h header
 ms.date: 03/02/2021
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: security
 f1_keywords:
  - ccgplugins

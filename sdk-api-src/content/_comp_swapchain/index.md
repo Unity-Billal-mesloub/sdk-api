@@ -4,6 +4,7 @@ title: Composition swapchain
 ms.date: 09/10/2021
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 ---
 
 # Composition swapchain

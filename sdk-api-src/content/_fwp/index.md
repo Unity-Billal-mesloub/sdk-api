@@ -5,6 +5,7 @@ ms.assetid: a51f62fb-3c8a-3b1f-92ae-873df74e2cc2
 ms.date: 05/20/2024
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 ---
 
 # Windows Filtering Platform

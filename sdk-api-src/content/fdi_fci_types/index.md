@@ -5,6 +5,7 @@ ms.assetid: 912c8328-9a99-3cdb-90f4-3abc27dcb0da
 ms.date: 01/11/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: winprog
 f1_keywords:
  - fdi_fci_types

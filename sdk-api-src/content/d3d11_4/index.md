@@ -5,6 +5,7 @@ ms.assetid: dd857e4a-c3d1-3058-bcf5-9eaeef5094d9
 ms.date: 01/11/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: direct3d11
 f1_keywords:
  - d3d11_4

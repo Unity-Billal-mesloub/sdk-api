@@ -5,6 +5,7 @@ ms.assetid: a4c7c22a-09d2-38c4-953e-d9d5066a4676
 ms.date: 01/11/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: winrt
 f1_keywords:
  - windows.ui.xaml.media.dxinterop

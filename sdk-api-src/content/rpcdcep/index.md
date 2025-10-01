@@ -5,6 +5,7 @@ ms.assetid: 466566d5-c1f1-3a27-b263-0e94ec24f7b9
 ms.date: 01/11/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: rpc
 f1_keywords:
  - rpcdcep

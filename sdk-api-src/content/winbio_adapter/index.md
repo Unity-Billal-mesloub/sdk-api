@@ -5,6 +5,7 @@ ms.assetid: b14ee319-c6d4-3d23-b828-1d9777a9ca03
 ms.date: 01/11/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: secbiomet
 f1_keywords:
  - winbio_adapter

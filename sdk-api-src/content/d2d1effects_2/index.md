@@ -5,6 +5,7 @@ ms.assetid: 12da1084-1117-329b-8dbc-44bb9e574eac
 ms.date: 01/11/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: direct2d
 f1_keywords:
  - d2d1effects_2

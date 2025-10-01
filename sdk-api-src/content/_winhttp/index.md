@@ -5,6 +5,7 @@ ms.assetid: 4f410546-bcdd-44f6-801e-6968154b9940
 ms.date: 01/11/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 ---
 
 # Windows HTTP Services (WinHTTP)

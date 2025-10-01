@@ -5,6 +5,7 @@ ms.assetid: 43bd6226-7c92-3ebe-a75b-8b415939fac6
 ms.date: 01/11/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: mstv
 f1_keywords:
  - strmif

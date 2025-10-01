@@ -5,6 +5,7 @@ ms.assetid: f1d849c9-17a6-3fba-88ab-612df7758338
 ms.date: 01/11/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: direct3d12
 f1_keywords:
  - d3d12sdklayers

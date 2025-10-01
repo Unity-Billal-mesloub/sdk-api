@@ -5,6 +5,7 @@ ms.assetid: dba0b1e7-db90-3fa7-92a9-636c9ba707cd
 ms.date: 01/11/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: winrt
 f1_keywords:
  - winstring

@@ -5,6 +5,7 @@ ms.assetid:
 ms.date: 03/19/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: mf
 f1_keywords:
  - d3d12video

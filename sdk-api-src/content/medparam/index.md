@@ -5,6 +5,7 @@ ms.assetid: 31b21ee7-146b-309c-836c-f7d4ebd67b25
 ms.date: 01/11/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: dshow
 archived: true
 f1_keywords:

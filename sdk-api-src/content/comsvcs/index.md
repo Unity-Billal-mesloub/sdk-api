@@ -5,6 +5,7 @@ ms.assetid: 03923598-8e51-32d0-ab59-a6cc44135a18
 ms.date: 01/11/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: winmessenger
 f1_keywords:
  - comsvcs

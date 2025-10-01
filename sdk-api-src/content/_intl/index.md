@@ -5,6 +5,7 @@ ms.assetid: c8883f60-a6cc-3905-a03c-cf6c9d78580c
 ms.date: 01/11/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 ---
 
 # Internationalization for Windows Applications

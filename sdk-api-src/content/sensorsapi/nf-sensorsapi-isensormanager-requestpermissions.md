@@ -6,7 +6,7 @@ helpviewer_keywords: ["FALSE","ISensorManager interface","RequestPermissions met
 old-location: winsensors_com_ref\Isensormanager_requestpermissions.htm
 tech.root: winsensors
 ms.assetid: 6a21820c-4f13-4220-ad13-34d0226597b6
-ms.date: 12/05/2018
+ms.date: 09/19/2025
 ms.keywords: FALSE, ISensorManager interface,RequestPermissions method, ISensorManager.RequestPermissions, ISensorManager::RequestPermissions, RequestPermissions, RequestPermissions method, RequestPermissions method,ISensorManager interface, TRUE, sensorsapi/ISensorManager::RequestPermissions, winsensors_com_ref.Isensormanager_requestpermissions
 req.header: sensorsapi.h
 req.include-header: 
@@ -49,6 +49,11 @@ api_name:
 
 
 ## -description
+
+> [!IMPORTANT]
+> Use the [UWP Sensor API](/windows/uwp/devices-sensors/sensors) instead.
+>
+> The COM-based Sensor API is deprecated and should not be used in new applications. No additional features or enhancements are planned, and support will be limited.
 
 Opens a system dialog box to request user permission to access sensor data.
 

@@ -5,6 +5,7 @@ ms.assetid: 21f1e14b-0313-3382-ac2f-72157ee70414
 ms.date: 01/11/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: rstmgr
 f1_keywords:
  - restartmanager
