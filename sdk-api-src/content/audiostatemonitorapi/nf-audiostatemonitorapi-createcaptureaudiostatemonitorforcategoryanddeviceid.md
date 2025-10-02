@@ -15,7 +15,7 @@ req.idl:
 req.include-header: 
 req.irql: 
 req.kmdf-ver: 
-req.lib: 
+req.lib: windows.media.mediacontrol.lib
 req.max-support: 
 req.namespace: 
 req.redist: 

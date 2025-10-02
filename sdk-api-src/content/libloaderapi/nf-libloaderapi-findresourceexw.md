@@ -14,7 +14,7 @@ req.idl:
 req.include-header: Windows.h 
 req.irql: 
 req.kmdf-ver: 
-req.lib: 
+req.lib: kernel32.Lib
 req.max-support: 
 req.namespace: 
 req.redist: 

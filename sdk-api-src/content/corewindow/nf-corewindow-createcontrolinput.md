@@ -22,7 +22,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: 
+req.lib: windows.ui.lib
 req.dll: Windows.UI.Core.dll
 req.irql: 
 targetos: Windows

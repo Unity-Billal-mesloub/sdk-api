@@ -22,7 +22,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: 
+req.lib: wininet.Lib
 req.dll: JSProxy.dll
 req.irql: 
 targetos: Windows

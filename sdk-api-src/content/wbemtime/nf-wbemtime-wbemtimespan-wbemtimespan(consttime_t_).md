@@ -22,7 +22,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: 
+req.lib: FrameDyd.Lib
 req.dll: FrameDynOS.dll; FrameDyn.dll
 req.irql: 
 targetos: Windows

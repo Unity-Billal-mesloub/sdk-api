@@ -22,7 +22,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: 
+req.lib: OneCore_downlevel.Lib
 req.dll: Apphelp.dll
 req.irql: 
 targetos: Windows
