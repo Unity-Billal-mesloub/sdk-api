@@ -15,7 +15,7 @@ req.include-header:
 req.max-support: 
 req.namespace: 
 req.redist: 
-req.target-min-winverclnt: Windows Build 22621
+req.target-min-winverclnt: Windows Build 26100
 req.target-min-winversvr: 
 req.target-type: 
 req.unicode-ansi: 
