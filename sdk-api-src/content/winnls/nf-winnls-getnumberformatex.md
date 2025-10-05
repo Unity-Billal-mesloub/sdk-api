@@ -94,7 +94,7 @@ Pointer to a null-terminated string containing the number string to format. This
 
 ### -param lpFormat [in, optional]
 
-Pointer to a <a href="/windows/desktop/api/winnls/ns-winnls-numberfmta">NUMBERFMT</a> structure that contains number formatting information, with all members set to appropriate values. If the application does not set this parameter to <b>NULL</b>, the function uses the locale only for formatting information not specified in the structure, for example, the locale string value for the negative sign.
+Pointer to a <a href="/windows/desktop/api/winnls/ns-winnls-numberfmta">NUMBERFMT</a> structure that contains number formatting information, with all members set to appropriate values. If the application does not set this parameter to <b>NULL</b>, the function uses the locale formatting information.
 
 ### -param lpNumberStr [out, optional]
 
