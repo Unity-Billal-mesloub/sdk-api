@@ -6,7 +6,7 @@ helpviewer_keywords: ["GetNumberFormatA", "winnls/GetNumberFormatA"]
 old-location: intl\getnumberformat.htm
 tech.root: Intl
 ms.assetid: acbfebed-71bd-4266-b639-66f453158442
-ms.date: 12/05/2018
+ms.date: 10/06/2025
 ms.keywords: GetNumberFormat, GetNumberFormat function [Internationalization for Windows Applications], GetNumberFormatA, GetNumberFormatW, _win32_GetNumberFormat, intl.getnumberformat, winnls/GetNumberFormat, winnls/GetNumberFormatA, winnls/GetNumberFormatW
 req.header: winnls.h
 req.include-header: Windows.h
@@ -109,7 +109,7 @@ Pointer to a null-terminated string containing the number string to format. This
 
 ### -param lpFormat [in, optional]
 
-Pointer to a <a href="/windows/desktop/api/winnls/ns-winnls-numberfmta">NUMBERFMT</a> structure that contains number formatting information, with all members set to appropriate values. If this parameter does is not set to <b>NULL</b>, the function uses the locale only for formatting information not specified in the structure, for example, the locale-specific string value for the negative sign.
+Pointer to a <a href="/windows/desktop/api/winnls/ns-winnls-numberfmta">NUMBERFMT</a> structure that contains number formatting information, with all members set to appropriate values. If the application does not set this parameter to <b>NULL</b>, the function uses the locale formatting information.
 
 ### -param lpNumberStr [out, optional]
 
