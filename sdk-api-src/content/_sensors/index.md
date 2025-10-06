@@ -23,7 +23,3 @@ The Sensor device driver reference technology is not associated with any headers
 For programming guidance for this technology, see:
 
 * [Sensor device driver reference](/windows-hardware/drivers/sensors/)
-
-```
-```
-
