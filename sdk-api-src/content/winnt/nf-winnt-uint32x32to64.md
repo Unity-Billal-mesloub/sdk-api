@@ -50,17 +50,17 @@ api_name:
 ## -syntax
 
 ```cpp
-LONGLONG Int32x32To64(
-  [in]  LONG a,
-  [in]  LONG b
+ULONGLONG UInt32x32To64(
+  [in]  ULONG a,
+  [in]  ULONG b
 );
 ```
 
 ## -returns
 
-Type: **LONGLONG**
+Type: **ULONGLONG**
 
-The return value is the signed 64-bit integer result of the multiplication operation.
+The return value is the unsigned 64-bit integer result of the multiplication operation.
 
 
 ## -description
@@ -76,10 +76,6 @@ The first unsigned 32-bit integer for the multiplication operation.
 ### -param b [in]
 
 The second unsigned 32-bit integer for the multiplication operation.
-
-## -returns
-
-The value of the product.
 
 ## -remarks
 
