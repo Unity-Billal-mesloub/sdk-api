@@ -4,7 +4,7 @@ tech.root: TermServ
 title: WTSCloudAuthNetworkLogonWithSerializedCredential
 ms.date: 09/25/2025
 targetos: Windows
-description: 
+description: Performs a network logon using the provided serialized credentials.
 prerelease: false
 req.assembly: 
 req.construct-type: function
@@ -19,7 +19,7 @@ req.lib:
 req.max-support: 
 req.namespace: 
 req.redist: 
-req.target-min-winverclnt: 
+req.target-min-winverclnt: Windows, version 26100
 req.target-min-winversvr: 
 req.target-type: 
 req.type-library: 
@@ -30,7 +30,7 @@ topic_type:
 api_type:
  - HeaderDef
 api_location:
- - wtsapi32.h
+ - wtsapi32.dll
 api_name:
  - WTSCloudAuthNetworkLogonWithSerializedCredential
 f1_keywords:
@@ -44,17 +44,36 @@ helpviewer_keywords:
 
 ## -description
 
+Performs a network logon using the provided serialized credentials.
+
+## Syntax
+
+```cpp
+BOOL WINAPI WTSCloudAuthNetworkLogonWithSerializedCredential(
+    [in]  WTS_CLOUD_AUTH_HANDLE cloudAuthHandle,
+    [in]  WTS_SERIALIZED_USER_CREDENTIAL* userCredential,
+    [out] HANDLE* tokenHandle
+);
+```
+
 ## -parameters
 
-### -param cloudAuthHandle
+### -param cloudAuthHandle [in]
 
-### -param userCredential
+The cloud authentication handle obtained by calling [`WTSCloudAuthOpen`](./nf-wtsapi32-wtscloudauthopen.md).
 
-### -param token
+### -param userCredential [in]
+
+The serialized credential obtained by calling [`WTSCloudAuthConvertAssertionToSerializedCredential`](./nf-wtsapi32-wtscloudauthconvertassertiontoserializedusercredential.md).
+
+### -param tokenHandle [out]
+
+Receives a handle that represents the user token if the function succeeds. Use [`CloseHandle`](/windows/win32/api/handleapi/nf-handleapi-closehandle) to close the handle.
 
 ## -returns
 
+If the function succeeds, the return value is a nonzero value. If the function fails, the return value is zero. To get extended error information, call the [`GetLastError`](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) function.
+
 ## -remarks
 
-## -see-also
-
+The user token handle can be used to perform additional checks by, for instance, calling [`CheckTokenMembership`](/windows/win32/api/securitybaseapi/nf-securitybaseapi-checktokenmembership).

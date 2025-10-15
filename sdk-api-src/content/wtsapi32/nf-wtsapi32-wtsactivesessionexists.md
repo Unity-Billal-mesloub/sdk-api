@@ -4,7 +4,7 @@ tech.root: TermServ
 title: WTSActiveSessionExists
 ms.date: 09/25/2025
 targetos: Windows
-description: 
+description: Returns if there is an active session on the system. 
 prerelease: false
 req.assembly: 
 req.construct-type: function
@@ -19,7 +19,7 @@ req.lib:
 req.max-support: 
 req.namespace: 
 req.redist: 
-req.target-min-winverclnt: 
+req.target-min-winverclnt: Windows, version 26100
 req.target-min-winversvr: 
 req.target-type: 
 req.type-library: 
@@ -30,7 +30,7 @@ topic_type:
 api_type:
  - HeaderDef
 api_location:
- - wtsapi32.h
+ - Wtsapi32.dll
 api_name:
  - WTSActiveSessionExists
 f1_keywords:
@@ -44,13 +44,18 @@ helpviewer_keywords:
 
 ## -description
 
+Returns if there is an active session on the system without enumerating through the list of sessions. It also does not obtain any extra information from Local Session Manager.
+
 ## -parameters
 
-### -param pbActiveSessionExists
+### -param pbActiveSessionExists [out]
+
+A pointer to a boolean value indicating whether an active session exists.
 
 ## -returns
 
+Returns zero if this function fails. If this function succeeds, a nonzero value is returned.
+
 ## -remarks
 
-## -see-also
-
+This function only determines if an active session exists. To get a list of sessions and their states, use `WTSEnumerateSessions`. Many processes running in session 0 use **[WTSEnumerateSessions](/windows/win32/api/wtsapi32/nf-wtsapi32-wtsenumeratesessionsa)** to check if an active session exists, or to do things if an active session exists (ie: get user name, session id, etc). Using **WTSEnumerateSessions** when there are no active sessions is expensive because the entire list of inactive sessions must be enumerated.

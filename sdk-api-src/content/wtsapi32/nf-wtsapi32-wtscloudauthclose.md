@@ -4,7 +4,7 @@ tech.root: TermServ
 title: WTSCloudAuthClose
 ms.date: 09/25/2025
 targetos: Windows
-description: 
+description: Closes a cloud authentication handle obtained by calling WTSCloudAuthOpen.
 prerelease: false
 req.assembly: 
 req.construct-type: function
@@ -19,7 +19,7 @@ req.lib:
 req.max-support: 
 req.namespace: 
 req.redist: 
-req.target-min-winverclnt: 
+req.target-min-winverclnt: Windows, version 26100
 req.target-min-winversvr: 
 req.target-type: 
 req.type-library: 
@@ -30,7 +30,7 @@ topic_type:
 api_type:
  - HeaderDef
 api_location:
- - wtsapi32.h
+ - wtsapi32.dll
 api_name:
  - WTSCloudAuthClose
 f1_keywords:
@@ -44,11 +44,16 @@ helpviewer_keywords:
 
 ## -description
 
+Closes a cloud authentication handle obtained by calling *[WTSCloudAuthOpen](/windows/desktop/api/wtsapi32/nf-wtsapi32-wtscloudauthopen/)*.
+
 ## -parameters
 
-### -param cloudAuthHandle
+### -param cloudAuthHandle [in]
+
+The cloud authentication handle to close.
 
 ## -remarks
 
-## -see-also
+This function should be called to free resources associated with a cloud authentication handle when it is no longer needed.
 
+## -see-also
