@@ -14,7 +14,7 @@ req.idl:
 req.include-header: Mstcpip.h 
 req.irql: 
 req.kmdf-ver: 
-req.lib: 
+req.lib: ntdll.lib
 req.max-support: 
 req.namespace: 
 req.redist: 

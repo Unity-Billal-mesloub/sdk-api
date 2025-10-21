@@ -30,7 +30,7 @@ req.max-support:
 req.namespace:
 req.assembly:
 req.type-library:
-req.lib:
+req.lib: AdvAPI32.Lib
   Sechost.lib on Windows 8.1 and Windows Server 2012 R2; Advapi32.lib on
   Windows 8 and Windows Server 2012
 req.dll:

@@ -15,7 +15,7 @@ req.include-header:
 req.irql: 
 targetos: Windows
 req.kmdf-ver: 
-req.lib: 
+req.lib: ninput.lib
 req.max-support: 
 req.namespace: 
 req.redist: 
