@@ -43,7 +43,7 @@ api_type:
 api_location:
  - WinIoCtl.h
 api_name:
- - READ_USN_JOURNAL_DATA_V0
+ - READ_USN_JOURNAL_DATA_V1
 ---
 
 # READ_USN_JOURNAL_DATA_V1 structure
