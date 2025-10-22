@@ -70,8 +70,8 @@ Fills a buffer with strings that specify valid drives in the system.
 
 ### -param nBufferLength [in]
 
-The maximum size of the buffer pointed to by <i>lpBuffer</i>, in
-      <b>TCHARs</b>. If this parameter is zero, <i>lpBuffer</i> is not used.
+The maximum size of the buffer pointed to by <i>lpBuffer</i>, in <b>TCHARs</b>. This value includes
+      space for the terminating null character. If this parameter is zero, <i>lpBuffer</i> is not used.
 
 ### -param lpBuffer [out]
 
@@ -186,3 +186,4 @@ For an example, see
 
 
 <a href="/windows/desktop/FileIO/volume-management-functions">Volume Management Functions</a>
+
