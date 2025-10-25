@@ -97,11 +97,11 @@ A value from the
 
 ### -field ptstrName
 
-A pointer whose form depends on the value of the <i>TrusteeType</i> member, cast to LPCH.
+A pointer whose form depends on the value of the <i>TrusteeForm</i> member, cast to LPCH.
 
 <table>
 <tr>
-<th>TrusteeType</th>
+<th>TrusteeForm</th>
 <th>Meaning of ptstrName</th>
 </tr>
 <tr>
