@@ -109,6 +109,8 @@ A pointer to a null-terminated string that identifies the type of object to whic
 
 This string must be a valid <a href="/windows/desktop/SecGloss/l-gly">LDAP</a> display name in the Active Directory schema.
 
+If the ACE_INHERITED_OBJECT_TYPE_PRESENT bit is not set in the <b>ObjectsPresent</b> member, the <b>ObjectTypeName</b> member is ignored.
+
 ### -field InheritedObjectTypeName
 
 A pointer to a null-terminated string that identifies the type of object that can inherit the ACE. 
@@ -126,7 +128,7 @@ A pointer to a null-terminated string that contains the name of the trustee.
 
 ## -remarks
 
-The <b>ptstrName</b> member of a <a href="/windows/desktop/api/accctrl/ns-accctrl-trustee_a">TRUSTEE</a> structure can be a pointer to an <b>OBJECTS_AND_NAME</b> structure. This enables functions such as <a href="/windows/desktop/api/aclapi/nf-aclapi-setentriesinacla">SetEntriesInAcl</a> and <a href="/windows/desktop/api/aclapi/nf-aclapi-getexplicitentriesfromacla">GetExplicitEntriesFromAcl</a> to store object-specific ACE information in the <b>Trustee</b> member of an <a href="/windows/desktop/api/accctrl/ns-accctrl-explicit_access_a">EXPLICIT_ACCESS</a> structure.
+The <b>ptstrName</b> member of a <a href="/windows/desktop/api/accctrl/ns-accctrl-trustee_w">TRUSTEE_W</a> structure is be a pointer to an <b>OBJECTS_AND_NAME_W</b> structure if the <b>TrusteeForm</b> is <b>TRUSTEE_IS_OBJECTS_AND_NAME</b>. This enables functions such as <a href="/windows/desktop/api/aclapi/nf-aclapi-setentriesinacla">SetEntriesInAcl</a> and <a href="/windows/desktop/api/aclapi/nf-aclapi-getexplicitentriesfromacla">GetExplicitEntriesFromAcl</a> to store object-specific ACE information in the <b>Trustee</b> member of an <a href="/windows/desktop/api/accctrl/ns-accctrl-explicit_access_a">EXPLICIT_ACCESS</a> structure.
 
 
 
@@ -161,4 +163,4 @@ The <b>ptstrName</b> member of a <a href="/windows/desktop/api/accctrl/ns-accctr
 
 
 
-<a href="/windows/desktop/api/accctrl/ns-accctrl-trustee_a">TRUSTEE</a>
+<a href="/windows/desktop/api/accctrl/ns-accctrl-trustee_w">TRUSTEE_W</a>

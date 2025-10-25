@@ -53,6 +53,17 @@ api_name:
 
 # TRUSTEE_A structure
 
+## -syntax
+
+```cpp
+typedef struct _TRUSTEE_A {
+  struct _TRUSTEE_A          *pMultipleTrustee;
+  MULTIPLE_TRUSTEE_OPERATION MultipleTrusteeOperation;
+  TRUSTEE_FORM               TrusteeForm;
+  TRUSTEE_TYPE               TrusteeType;
+  LPCH                       ptstrName;
+} TRUSTEE_A, *PTRUSTEE_A, TRUSTEEA, *PTRUSTEEA;
+```
 
 ## -description
 
@@ -77,49 +88,21 @@ A value of the
 
 A value from the 
 <a href="/windows/desktop/api/accctrl/ne-accctrl-trustee_form">TRUSTEE_FORM</a> enumeration type that indicates the type of data pointed to by the <b>ptstrName</b> member.
+See Remarks below.
 
 ### -field TrusteeType
 
 A value from the 
 <a href="/windows/desktop/api/accctrl/ne-accctrl-trustee_type">TRUSTEE_TYPE</a> enumeration type that indicates whether the trustee is a user account, a group account, or an unknown account type.
 
-### -field ptstrName.case
-
-### -field ptstrName.case.TRUSTEE_IS_NAME
-
-### -field pSid
-
-### -field pSid.case
-
-### -field pSid.case.TRUSTEE_IS_SID
-
-### -field pObjectsAndSid
-
-### -field pObjectsAndSid.case
-
-### -field pObjectsAndSid.case.TRUSTEE_IS_OBJECTS_AND_SID
-
-### -field pObjectsAndName
-
-### -field pObjectsAndName.case
-
-### -field pObjectsAndName.case.TRUSTEE_IS_OBJECTS_AND_NAME
-
-
-
 ### -field ptstrName
 
- A pointer to a buffer that identifies the trustee and, optionally, contains information about object-specific ACEs. The type of data depends on the value of the <b>TrusteeForm</b> member. 
-
-
-
-This member can be one of the following values.
-					
+A pointer whose form depends on the value of the <i>TrusteeType</i> member, cast to LPCH.
 
 <table>
 <tr>
-<th>Value</th>
-<th>Meaning</th>
+<th>TrusteeType</th>
+<th>Meaning of ptstrName</th>
 </tr>
 <tr>
 <td width="40%"><a id="TRUSTEE_IS_NAME"></a><a id="trustee_is_name"></a><dl>
@@ -159,8 +142,7 @@ A pointer to an
 </dl>
 </td>
 <td width="60%">
- Pointer to the SID of the trustee.
-
+A pointer to the SID of the trustee.
 </td>
 </tr>
 </table>
