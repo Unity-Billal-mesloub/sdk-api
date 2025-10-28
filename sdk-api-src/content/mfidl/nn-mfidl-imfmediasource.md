@@ -68,6 +68,71 @@ For some device sources, such as cameras or microphones, the **IMFMediaSource** 
 > [!NOTE] 
 > This interface is optional and may not be available. If this interface is not available, [QueryInterface](../unknwn/nf-unknwn-iunknown-queryinterface(refiid_void).md) will return E_NOINTERFACE.
 
+Get an instance of **IMFMediaSource** by calling [IMFSourceResolver::CreateObjectFromByteStream](nf-mfidl-imfsourceresolver-createobjectfrombytestream.md), [IMFSourceResolver::CreateObjectFromURL](nf-mfidl-imfsourceresolver-createobjectfromurl.md), or the asynchronous versions of those methods.
+
+## -examples
+
+The following example shows how to use [IMFSourceResolver](nn-mfidl-imfsourceresolver.md) to get an instance of **IMFMediaSource** from a path to a local media file.
+
+```cpp
+    HRESULT hr = S_OK;
+
+    // Initialize Media Foundation
+    hr = MFStartup(MF_VERSION);
+    if (FAILED(hr))
+    {
+        std::cerr << "MFStartup failed: " << std::hex << hr << std::endl;
+        return -1;
+    }
+
+    IMFSourceResolver* pSourceResolver = nullptr;
+    IUnknown* pSource = nullptr;
+    IMFMediaSource* pMediaSource = nullptr;
+
+    // Create the Source Resolver
+    hr = MFCreateSourceResolver(&pSourceResolver);
+    if (FAILED(hr))
+    {
+        std::cerr << "MFCreateSourceResolver failed: " << std::hex << hr << std::endl;
+        goto done;
+    }
+
+    // Create the Media Source from a file URL
+    MF_OBJECT_TYPE ObjectType = MF_OBJECT_INVALID;
+    hr = pSourceResolver->CreateObjectFromURL(
+        //L"file://C:\\path\\to\\media.mp4", // Replace with your file path
+        L"file://C:\\Users\\drewbat\\Videos\\wacky.mp4",
+        MF_RESOLUTION_MEDIASOURCE,
+        nullptr, // Optional property store
+        &ObjectType,
+        &pSource
+    );
+    if (FAILED(hr))
+    {
+        std::cerr << "CreateObjectFromURL failed: " << std::hex << hr << std::endl;
+        goto done;
+    }
+
+    // Query for IMFMediaSource
+    hr = pSource->QueryInterface(IID_PPV_ARGS(&pMediaSource));
+    if (FAILED(hr))
+    {
+        std::cerr << "QueryInterface for IMFMediaSource failed: " << std::hex << hr << std::endl;
+        goto done;
+    }
+
+    std::cout << "IMFMediaSource successfully created!" << std::endl;
+
+done:
+    // Clean up
+    if (pMediaSource) pMediaSource->Release();
+    if (pSource) pSource->Release();
+    if (pSourceResolver) pSourceResolver->Release();
+
+    MFShutdown();
+    return 0;
+```
+
 ## -see-also
 
 <a href="/windows/desktop/api/mfobjects/nn-mfobjects-imfmediaeventgenerator">IMFMediaEventGenerator</a>
