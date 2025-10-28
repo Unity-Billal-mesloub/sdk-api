@@ -100,8 +100,7 @@ The following example shows how to use [IMFSourceResolver](nn-mfidl-imfsourceres
     // Create the Media Source from a file URL
     MF_OBJECT_TYPE ObjectType = MF_OBJECT_INVALID;
     hr = pSourceResolver->CreateObjectFromURL(
-        //L"file://C:\\path\\to\\media.mp4", // Replace with your file path
-        L"file://C:\\Users\\drewbat\\Videos\\wacky.mp4",
+        L"file://C:\\path\\to\\media.mp4", // Replace with your file path
         MF_RESOLUTION_MEDIASOURCE,
         nullptr, // Optional property store
         &ObjectType,
