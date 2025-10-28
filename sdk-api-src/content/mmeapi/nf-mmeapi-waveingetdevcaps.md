@@ -56,7 +56,7 @@ The <b>waveInGetDevCaps</b> function retrieves the capabilities of a given wavef
 
 ### -param uDeviceID
 
-Identifier of the waveform-audio output device. It can be either a device identifier or a handle of an open waveform-audio input device.
+Identifier of the waveform-audio input device. It can be either a device identifier or a handle of an open waveform-audio input device.
 
 ### -param pwic
 
