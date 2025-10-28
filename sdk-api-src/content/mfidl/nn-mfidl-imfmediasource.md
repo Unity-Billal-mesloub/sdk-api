@@ -57,11 +57,11 @@ Media sources are objects that generate media data. For example, the data might 
 
 ## -inheritance
 
-The <b>IMFMediaSource</b> interface inherits from <a href="/windows/desktop/api/mfobjects/nn-mfobjects-imfmediaeventgenerator">IMFMediaEventGenerator</a>. <b>IMFMediaSource</b> also has these types of members:
+The **IMFMediaSource** interface inherits from [IMFMediaEventGenerator](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediaeventgenerator). **IMFMediaSource** also has these types of members:
 
 ## -remarks
 
-In Windows 8, this interface is extended with <a href="/windows/desktop/api/mfidl/nn-mfidl-imfmediasourceex">IMFMediaSourceEx</a>.
+In Windows 8, this interface is extended with [IMFMediaSourceEx](/windows/desktop/api/mfidl/nn-mfidl-imfmediasourceex).
 
 For some device sources, such as cameras or microphones, the **IMFMediaSource** also implements the [IKsControl](/windows-hardware/drivers/ddi/ksproxy/nn-ksproxy-ikscontrol) which can be used by user mode applications to issue KSPROPERTY, KSEVENT and KSMETHOD operations to the underlying device driver.
 
@@ -134,12 +134,12 @@ done:
 
 ## -see-also
 
-<a href="/windows/desktop/api/mfobjects/nn-mfobjects-imfmediaeventgenerator">IMFMediaEventGenerator</a>
+[IMFMediaEventGenerator](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediaeventgenerator)
 
 
 
-<a href="/windows/desktop/medfound/media-foundation-interfaces">Media Foundation Interfaces</a>
+[Media Foundation Interfaces](/windows/desktop/medfound/media-foundation-interfaces)
 
 
 
-<a href="/windows/desktop/medfound/media-sources">Media Sources</a>
+[Media Sources](/windows/desktop/medfound/media-sources)
