@@ -72,64 +72,27 @@ Get an instance of **IMFMediaSource** by calling [IMFSourceResolver::CreateObjec
 
 ## -examples
 
-The following example shows how to use [IMFSourceResolver](nn-mfidl-imfsourceresolver.md) to get an instance of **IMFMediaSource** from a path to a local media file.
+The following example shows how to use [IMFSourceResolver](nn-mfidl-imfsourceresolver.md) to get an instance of **IMFMediaSource** from an [IMFByteStream](/windows/win32/api/mfobjects/nn-mfobjects-imfbytestream).
 
 ```cpp
-    HRESULT hr = S_OK;
+#include <wil.h>
+#include <mfplat.h>
+#include <mfidl.h>
 
-    // Initialize Media Foundation
-    hr = MFStartup(MF_VERSION);
-    if (FAILED(hr))
-    {
-        std::cerr << "MFStartup failed: " << std::hex << hr << std::endl;
-        return -1;
-    }
+HRESULT CreateMediaSourceFromStream(_In_ IMFByteStream* stream, _COM_Outptr_ IMFMediaSource** source)
+{
+    *source = nullptr;
 
-    IMFSourceResolver* pSourceResolver = nullptr;
-    IUnknown* pSource = nullptr;
-    IMFMediaSource* pMediaSource = nullptr;
+    wil::com_ptr_nothrow<IMFSourceResolver> sourceResolver;
+    RETURN_IF_FAILED(MFCreateSourceResolver(&sourceResolver));
 
-    // Create the Source Resolver
-    hr = MFCreateSourceResolver(&pSourceResolver);
-    if (FAILED(hr))
-    {
-        std::cerr << "MFCreateSourceResolver failed: " << std::hex << hr << std::endl;
-        goto done;
-    }
+    MF_OBJECT_TYPE objectType;
+    wil::com_ptr_nothrow<IUnknown> sourceUnknown;
+    RETURN_IF_FAILED(sourceResolver->CreateObjectFromByteStream(stream, nullptr, MF_RESOLUTION_MEDIASOURCE, nullptr, &objectType, &sourceUnknown));
 
-    // Create the Media Source from a file URL
-    MF_OBJECT_TYPE ObjectType = MF_OBJECT_INVALID;
-    hr = pSourceResolver->CreateObjectFromURL(
-        L"file://C:\\path\\to\\media.mp4", // Replace with your file path
-        MF_RESOLUTION_MEDIASOURCE,
-        nullptr, // Optional property store
-        &ObjectType,
-        &pSource
-    );
-    if (FAILED(hr))
-    {
-        std::cerr << "CreateObjectFromURL failed: " << std::hex << hr << std::endl;
-        goto done;
-    }
-
-    // Query for IMFMediaSource
-    hr = pSource->QueryInterface(IID_PPV_ARGS(&pMediaSource));
-    if (FAILED(hr))
-    {
-        std::cerr << "QueryInterface for IMFMediaSource failed: " << std::hex << hr << std::endl;
-        goto done;
-    }
-
-    std::cout << "IMFMediaSource successfully created!" << std::endl;
-
-done:
-    // Clean up
-    if (pMediaSource) pMediaSource->Release();
-    if (pSource) pSource->Release();
-    if (pSourceResolver) pSourceResolver->Release();
-
-    MFShutdown();
-    return 0;
+    RETURN_IF_FAILED(sourceUnknown.copy_to(IID_PPV_ARGS(source)));
+    return S_OK;
+}
 ```
 
 ## -see-also
