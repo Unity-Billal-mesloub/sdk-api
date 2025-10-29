@@ -57,25 +57,52 @@ Media sources are objects that generate media data. For example, the data might 
 
 ## -inheritance
 
-The <b>IMFMediaSource</b> interface inherits from <a href="/windows/desktop/api/mfobjects/nn-mfobjects-imfmediaeventgenerator">IMFMediaEventGenerator</a>. <b>IMFMediaSource</b> also has these types of members:
+The **IMFMediaSource** interface inherits from [IMFMediaEventGenerator](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediaeventgenerator). **IMFMediaSource** also has these types of members:
 
 ## -remarks
 
-In Windows 8, this interface is extended with <a href="/windows/desktop/api/mfidl/nn-mfidl-imfmediasourceex">IMFMediaSourceEx</a>.
+In Windows 8, this interface is extended with [IMFMediaSourceEx](/windows/desktop/api/mfidl/nn-mfidl-imfmediasourceex).
 
 For some device sources, such as cameras or microphones, the **IMFMediaSource** also implements the [IKsControl](/windows-hardware/drivers/ddi/ksproxy/nn-ksproxy-ikscontrol) which can be used by user mode applications to issue KSPROPERTY, KSEVENT and KSMETHOD operations to the underlying device driver.
 
 > [!NOTE] 
 > This interface is optional and may not be available. If this interface is not available, [QueryInterface](../unknwn/nf-unknwn-iunknown-queryinterface(refiid_void).md) will return E_NOINTERFACE.
 
+Get an instance of **IMFMediaSource** by calling [IMFSourceResolver::CreateObjectFromByteStream](nf-mfidl-imfsourceresolver-createobjectfrombytestream.md), [IMFSourceResolver::CreateObjectFromURL](nf-mfidl-imfsourceresolver-createobjectfromurl.md), or the asynchronous versions of those methods.
+
+## -examples
+
+The following example shows how to use [IMFSourceResolver](nn-mfidl-imfsourceresolver.md) to get an instance of **IMFMediaSource** from an [IMFByteStream](/windows/win32/api/mfobjects/nn-mfobjects-imfbytestream).
+
+```cpp
+#include <wil.h>
+#include <mfplat.h>
+#include <mfidl.h>
+
+HRESULT CreateMediaSourceFromStream(_In_ IMFByteStream* stream, _COM_Outptr_ IMFMediaSource** source)
+{
+    *source = nullptr;
+
+    wil::com_ptr_nothrow<IMFSourceResolver> sourceResolver;
+    RETURN_IF_FAILED(MFCreateSourceResolver(&sourceResolver));
+
+    MF_OBJECT_TYPE objectType;
+    wil::com_ptr_nothrow<IUnknown> sourceUnknown;
+    RETURN_IF_FAILED(sourceResolver->CreateObjectFromByteStream(stream, nullptr, MF_RESOLUTION_MEDIASOURCE, nullptr, &objectType, &sourceUnknown));
+
+    RETURN_IF_FAILED(sourceUnknown.copy_to(IID_PPV_ARGS(source)));
+    return S_OK;
+}
+```
+
 ## -see-also
 
-<a href="/windows/desktop/api/mfobjects/nn-mfobjects-imfmediaeventgenerator">IMFMediaEventGenerator</a>
+[IMFMediaEventGenerator](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediaeventgenerator)
 
 
 
-<a href="/windows/desktop/medfound/media-foundation-interfaces">Media Foundation Interfaces</a>
+[Media Foundation Interfaces](/windows/desktop/medfound/media-foundation-interfaces)
 
 
 
-<a href="/windows/desktop/medfound/media-sources">Media Sources</a>
+[Media Sources](/windows/desktop/medfound/media-sources)
