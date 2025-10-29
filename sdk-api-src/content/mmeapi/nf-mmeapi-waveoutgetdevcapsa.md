@@ -4,23 +4,23 @@ tech.root: Multimedia
 title: waveOutGetDevCapsA
 ms.date: 10/28/2025
 targetos: Windows
-description: The waveOutGetDevCaps function retrieves the capabilities of a given waveform-audio output device. (ANSI)
+description: The waveOutGetDevCapsA function retrieves the capabilities of a given waveform-audio output device. (ANSI)
 prerelease: false
 req.assembly: 
 req.construct-type: function
 req.ddi-compliance: 
-req.dll: 
+req.dll: Winmm.dll
 req.header: mmeapi.h
 req.idl: 
 req.include-header: 
 req.irql: 
 req.kmdf-ver: 
-req.lib: 
+req.lib: Winmm.lib
 req.max-support: 
 req.namespace: 
 req.redist: 
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
+req.target-min-winverclnt: Windows 2000 Professional
+req.target-min-winversvr: Windows 2000 Server
 req.target-type: 
 req.type-library: 
 req.umdf-ver: 
