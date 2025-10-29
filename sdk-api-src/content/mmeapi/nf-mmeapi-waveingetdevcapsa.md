@@ -33,12 +33,9 @@ api_location:
  - mmeapi.h
 api_name:
  - waveInGetDevCapsA
- - waveInGetDevCaps
 f1_keywords:
  - waveInGetDevCapsA
  - mmeapi/waveInGetDevCapsA
- - waveInGetDevCaps
- - mmeapi/waveInGetDevCaps
 dev_langs:
  - c++
 helpviewer_keywords:

@@ -37,8 +37,6 @@ api_name:
 f1_keywords:
  - waveOutGetDevCapsA
  - mmeapi/waveOutGetDevCapsA
- - waveOutGetDevCaps
- - mmeapi/waveOutGetDevCaps
 dev_langs:
  - c++
 helpviewer_keywords:
