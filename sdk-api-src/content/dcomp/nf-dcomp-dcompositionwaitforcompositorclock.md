@@ -2,7 +2,7 @@
 UID: NF:dcomp.DCompositionWaitForCompositorClock
 tech.root: directcomp
 title: DCompositionWaitForCompositorClock
-ms.date: 06/24/2021
+ms.date: 10/30/2025
 targetos: Windows
 description: Halts a thread until the next signal from the compositor clock occurs.
 prerelease: false
@@ -67,6 +67,8 @@ Amount of time in milliseconds to wait before the operation times out.
 ## -returns
 
 Type: **[DWORD](/windows/win32/winprog/windows-data-types)**
+
+If the display is off, then this function returns immediately with **STATUS_GRAPHICS_PRESENT_OCCLUDED**.
 
 ## -remarks
 
