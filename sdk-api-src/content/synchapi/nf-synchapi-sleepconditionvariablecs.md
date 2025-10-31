@@ -61,7 +61,7 @@ Sleeps on the specified condition variable and releases the specified critical s
 
 ### -param ConditionVariable [in, out]
 
-A pointer to the condition variable. This variable must be initialized using the [InitializeConditionVariable](nf-synchapi-initializeconditionvariable.md) function.
+A pointer to the condition variable. This variable must be initialized by either calling [InitializeConditionVariable](nf-synchapi-initializeconditionvariable.md) (to initialize the structure dynamically) or assign the constant CONDITION_VARIABLE_INIT to the structure variable (to initialize the structure statically).
 
 ### -param CriticalSection [in, out]
 
