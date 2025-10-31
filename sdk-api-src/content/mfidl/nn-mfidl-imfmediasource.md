@@ -70,7 +70,7 @@ For some device sources, such as cameras or microphones, the **IMFMediaSource** 
 
 Get an instance of **IMFMediaSource** by calling [IMFSourceResolver::CreateObjectFromByteStream](nf-mfidl-imfsourceresolver-createobjectfrombytestream.md), [IMFSourceResolver::CreateObjectFromURL](nf-mfidl-imfsourceresolver-createobjectfromurl.md), or the asynchronous versions of those methods.
 
-## -examples
+
 
 The following example shows how to use [IMFSourceResolver](nn-mfidl-imfsourceresolver.md) to get an instance of **IMFMediaSource** from an [IMFByteStream](/windows/win32/api/mfobjects/nn-mfobjects-imfbytestream).
 
