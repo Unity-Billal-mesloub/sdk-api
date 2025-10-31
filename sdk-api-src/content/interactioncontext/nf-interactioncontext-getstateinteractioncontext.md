@@ -6,7 +6,7 @@ helpviewer_keywords: ["GetStateInteractionContext","GetStateInteractionContext f
 old-location: input_intcontext\getstateinteractioncontext.htm
 tech.root: input_intcontext
 ms.assetid: 35d581a9-b1be-4f9b-8783-ccea3469921a
-ms.date: 12/05/2018
+ms.date: 10/31/2025
 ms.keywords: GetStateInteractionContext, GetStateInteractionContext function, input_intcontext.getstateinteractioncontext, interactioncontext.getstateinteractioncontext, interactioncontext/GetStateInteractionContext
 req.header: interactioncontext.h
 req.include-header: 
@@ -51,7 +51,7 @@ api_name:
 
 ## -description
 
-Gets current [Interaction Context](../_input_intcontext/index.md) state and the time when the context will return to idle state.
+Gets current [Interaction Context](../_input_intcontext/index.md) state.
 
 ## -parameters
 
@@ -59,9 +59,9 @@ Gets current [Interaction Context](../_input_intcontext/index.md) state and the 
 
 Pointer to a handle for the [Interaction Context](../_input_intcontext/index.md).
 
-### -param pointerInfo [in]
+### -param pointerInfo [in, optional]
 
-Basic pointer information common to all pointer types.
+A <a href="/windows/desktop/api/winuser/ns-winuser-pointer_info">POINTER_INFO</a> structure that contains basic pointer information for the specific pointer of interest. This parameter can be <b>NULL</b>.
 
 ### -param state [out]
 
