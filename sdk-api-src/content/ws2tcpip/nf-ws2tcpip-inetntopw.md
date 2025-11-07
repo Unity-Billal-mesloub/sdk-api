@@ -173,9 +173,9 @@ If the <i>Family</i> parameter specified is <b>AF_INET6</b>, then the <i>pAddr</
 
 If the length of the buffer pointed to by the <i>pStringBuf</i> parameter is not large enough to receive the string representation of the IP address, <b>InetNtop</b> returns ERROR_INVALID_PARAMETER.
 
-When UNICODE or _UNICODE is defined, <b>InetNtop</b> is defined to <b>InetNtopW</b>, the Unicode version of this function. The <i>pStringBuf</i> parameter is defined to the <b>PSTR</b> data type.
+When UNICODE or _UNICODE is defined, <b>InetNtop</b> is defined to <b>InetNtopW</b>, the Unicode version of this function. The <i>pStringBuf</i> parameter is defined to the <b>PWSTR</b> data type.
 
-When UNICODE or _UNICODE is not defined, <b>InetNtop</b> is defined to <b>InetNtopA</b>, the ANSI version of this function. The ANSI version of this function is always defined as <b>inet_ntop</b>. The <i>pStringBuf</i> parameter is defined to the <b>PWSTR</b> data type.
+When UNICODE or _UNICODE is not defined, <b>InetNtop</b> is defined to <b>InetNtopA</b>, the ANSI version of this function. The ANSI version of this function is always defined as <b>inet_ntop</b>. The <i>pStringBuf</i> parameter is defined to the <b>PSTR</b> data type.
 
 The <a href="/windows/desktop/api/winsock2/ns-winsock2-in_addr">IN_ADDR</a> structure is defined in the <i>Inaddr.h</i> header file.
 
