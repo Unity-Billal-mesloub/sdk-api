@@ -50,7 +50,7 @@ api_name:
 ## -syntax
 
 ```cpp
-VOID TabCtrl_AdjustRect(
+int TabCtrl_AdjustRect(
    HWND hwnd,
    BOOL bLarger,
    RECT *prc
@@ -59,7 +59,7 @@ VOID TabCtrl_AdjustRect(
 
 ## -returns
 
-Type: **[VOID](/windows/desktop/winprog/windows-data-types)**
+Type: **int**
 
 No return value.
 
