@@ -665,7 +665,7 @@ This Arm processor implements the SVE F64MM (FP64 matrix multiply) instructions 
 </dl>
 </td>
 <td width="60%">
-The BMI2 instruction set is available.
+This x64 processor implements the BMI2 instruction set.
 </td>
 </tr>
 
@@ -676,7 +676,7 @@ The BMI2 instruction set is available.
 </dl>
 </td>
 <td width="60%">
-The MOVDIR64B instruction is available.
+This x64 processor implements the MOVDIR64B instruction.
 </td>
 </tr>
 
@@ -698,7 +698,7 @@ This Arm processor implements the LSE2 atomic instructions (<b>FEAT_LSE2</b>).
 </dl>
 </td>
 <td width="60%">
-This Arm processor implements the Armv8.2 SHA-3 cryptographic instructions (<b>FEAT_SHA3</b>).
+This Arm processor implements the SHA-3 cryptographic instructions (<b>FEAT_SHA3</b>).
 </td>
 </tr>
 
@@ -709,7 +709,7 @@ This Arm processor implements the Armv8.2 SHA-3 cryptographic instructions (<b>F
 </dl>
 </td>
 <td width="60%">
-This Arm processor implements the Armv8.2 SHA-512 cryptographic instructions (<b>FEAT_SHA512</b>).
+This Arm processor implements the SHA-512 cryptographic instructions (<b>FEAT_SHA512</b>).
 </td>
 </tr>
 
@@ -720,7 +720,7 @@ This Arm processor implements the Armv8.2 SHA-512 cryptographic instructions (<b
 </dl>
 </td>
 <td width="60%">
-This Arm processor implements the Armv8.2 I8MM (Int8 matrix multiply) instructions (<b>FEAT_I8MM</b>).
+This Arm processor implements the I8MM (Int8 matrix multiply) NEON instructions (<b>FEAT_I8MM</b>).
 </td>
 </tr>
 
@@ -731,7 +731,7 @@ This Arm processor implements the Armv8.2 I8MM (Int8 matrix multiply) instructio
 </dl>
 </td>
 <td width="60%">
-This Arm processor implements the Armv8.2 FP16 (half-precision floating point) instructions (<b>FEAT_FP16</b>).
+This Arm processor implements the FP16 (half-precision floating point) NEON instructions (<b>FEAT_FP16</b>).
 </td>
 </tr>
 
@@ -742,7 +742,7 @@ This Arm processor implements the Armv8.2 FP16 (half-precision floating point) i
 </dl>
 </td>
 <td width="60%">
-This Arm processor implements the Armv8.6 BF16 (BFloat16) instructions (<b>FEAT_BF16</b>).
+This Arm processor implements the BF16 (BFloat16) NEON instructions (<b>FEAT_BF16</b>).
 </td>
 </tr>
 
@@ -753,7 +753,7 @@ This Arm processor implements the Armv8.6 BF16 (BFloat16) instructions (<b>FEAT_
 </dl>
 </td>
 <td width="60%">
-This Arm processor implements the Armv8.6 EBF16 (Extended BFloat16) instructions (<b>FEAT_EBF16</b>).
+This Arm processor implements the EBF16 (Extended BFloat16) NEON instructions (<b>FEAT_EBF16</b>).
 </td>
 </tr>
 
@@ -973,7 +973,7 @@ This Arm processor implements SME FA64 (Full AArch64 instruction set when in Str
 </dl>
 </td>
 <td width="60%">
-The UMONITOR instruction is available.
+This x64 processor implements the UMONITOR instruction.
 </td>
 </tr>
 
@@ -1002,4 +1002,5 @@ Support for ``PF_ARM_SVE_INSTRUCTIONS_AVAILABLE`` through ``PF_MOVDIR64B_INSTRUC
 [Vertdll APIs available in VBS enclaves](/windows/win32/trusted-execution/enclaves-available-in-vertdll)
 
 [System Information Functions](/windows/win32/SysInfo/system-information-functions)
+
 
