@@ -261,6 +261,14 @@ A **GUID** value that contains the Terminal Services activity ID currently assoc
 
 **Versions prior to Windows Server 2025 or Windows 11 (23H2):** This value is not supported.
 
+### -field WTSCapabilityCheck
+
+An **array of UINT32** values corresponding to whether certain capabilities are supported by the session host.
+
+If the list includes the value `59083637` then that means that RAIL protocol v2 is supported.
+
+**Versions prior to Windows Server 2025 or Windows 11 (24H2):** This value is not supported.
+
 ## -see-also
 
 <a href="/windows/desktop/api/wtsapi32/nf-wtsapi32-wtsquerysessioninformationa">WTSQuerySessionInformation</a>
