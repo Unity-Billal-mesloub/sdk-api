@@ -211,6 +211,8 @@ After calling
 
 Only one file can be open in a single FTP session. Therefore, no file handle is returned and the application simply uses the FTP session handle when necessary.
 
+Error 12058 can occur if **FtpOpenFileW** fails due to a lack of available local ports.
+
 The 
 <i>lpszFileName</i> parameter can be either a partially or fully qualified file name relative to the current directory.
 

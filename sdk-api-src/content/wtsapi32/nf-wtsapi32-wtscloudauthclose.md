@@ -57,3 +57,4 @@ The cloud authentication handle to close.
 This function should be called to free resources associated with a cloud authentication handle when it is no longer needed.
 
 ## -see-also
+

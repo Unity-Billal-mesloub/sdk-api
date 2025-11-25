@@ -68,13 +68,13 @@ The size, in bytes, of the block of memory that <i>pSrcData</i> points to.
 
 ### -param pRootSignatureDeserializerInterface [in]
 
-Type: <b><b>REFIID</b></b>
+Type: <b>REFIID</b>
 
 The globally unique identifier (<b>GUID</b>) for the root signature deserializer interface. See remarks.
 
 ### -param ppRootSignatureDeserializer [out]
 
-Type: <b><b>void</b>**</b>
+Type: <b>void**</b>
 
 A pointer to a memory block that receives a pointer to the root signature deserializer.
 

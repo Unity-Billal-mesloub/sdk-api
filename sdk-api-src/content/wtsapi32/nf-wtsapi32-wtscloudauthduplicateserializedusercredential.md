@@ -71,3 +71,6 @@ If the function succeeds, the return value is a nonzero value.
 If the function fails, the return value is zero. To get extended error information, call the [`GetLastError'](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) function.
 
 ## -remarks
+
+## -see-also
+

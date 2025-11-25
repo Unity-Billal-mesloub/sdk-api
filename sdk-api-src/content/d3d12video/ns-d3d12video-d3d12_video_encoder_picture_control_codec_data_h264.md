@@ -57,7 +57,7 @@ A **UINT** specifying the value to be used in the slice headers of the current f
 
 ### -field idr_pic_id
 
-When **FrameType**** is **D3D12_VIDEO_ENCODER_FRAME_TYPE_H264_IDR_FRAME**, a **UINT** indicating the identifier of the IDR frame to be used in all the slices headers present in the frame.  
+When **FrameType** is **D3D12_VIDEO_ENCODER_FRAME_TYPE_H264_IDR_FRAME**, a **UINT** indicating the identifier of the IDR frame to be used in all the slices headers present in the frame.  
 
 ### -field PictureOrderCountNumber
 
