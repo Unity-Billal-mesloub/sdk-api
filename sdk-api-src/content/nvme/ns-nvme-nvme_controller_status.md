@@ -58,7 +58,7 @@ Indicates whether the controller is ready to accept [Submission Queue Tail doorb
 
 When this value is set to `1`, the controller is ready to accept Submission Queue Tail doorbell writes after the **EN** field in the [Controller configuration](ns-nvme-nvme_controller_configuration.md) is set to `1`.
 
-This value is cleared to `0` when **EN** is cleared to `0`. Commands cannot be submitted to the controller until this field is set to `1` after **EN**** is set to `1`. Failure to follow this requirement produces undefined results.
+This value is cleared to `0` when **EN** is cleared to `0`. Commands cannot be submitted to the controller until this field is set to `1` after **EN** is set to `1`. Failure to follow this requirement produces undefined results.
 
 Host software must wait at least as long as the Timeout **TO** value in [Controller Capabilities](ns-nvme-nvme_controller_capabilities.md) for this field to be set to `1` after **EN** is set to `1` from a previous value of `0`.
 

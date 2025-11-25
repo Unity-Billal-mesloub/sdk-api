@@ -59,7 +59,7 @@ Reports that a dynamic function table has increased in size.
 
 ### -param DynamicTable
 
-An opaque reference returned by <a href="/windows/desktop/api/winnt/nf-winnt-rtladdgrowablefunctiontable">RtlAddGrowableFunctionTable.</a>.
+An opaque reference returned by <a href="/windows/desktop/api/winnt/nf-winnt-rtladdgrowablefunctiontable">RtlAddGrowableFunctionTable</a>.
 
 ### -param NewEntryCount [in]
 
@@ -71,4 +71,4 @@ This function does not return a value.
 
 ## -remarks
 
-<b>RtlGrowFunctionTable</b> should be called after populating the corresponding entries in the <a href="/windows/win32/api/winnt/ns-winnt-runtime_function">RUNTIME_FUNCTION</a> array specified in <a href="/windows/desktop/api/winnt/nf-winnt-rtladdgrowablefunctiontable">RtlAddGrowableFunctionTable.</a>
+<b>RtlGrowFunctionTable</b> should be called after populating the corresponding entries in the <a href="/windows/win32/api/winnt/ns-winnt-runtime_function">RUNTIME_FUNCTION</a> array specified in <a href="/windows/desktop/api/winnt/nf-winnt-rtladdgrowablefunctiontable">RtlAddGrowableFunctionTable</a>.

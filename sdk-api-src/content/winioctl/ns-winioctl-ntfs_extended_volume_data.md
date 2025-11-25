@@ -43,7 +43,7 @@ api_type:
 api_location:
  - WinIoCtl.h
 api_name:
- - NTFS_VOLUME_DATA_BUFFER
+ - NTFS_EXTENDED_VOLUME_DATA
 ---
 
 # NTFS_EXTENDED_VOLUME_DATA structure

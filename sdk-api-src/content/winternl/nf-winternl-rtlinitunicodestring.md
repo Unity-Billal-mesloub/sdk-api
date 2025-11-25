@@ -55,7 +55,7 @@ Initializes a counted Unicode string.
 
 ## -parameters
 
-### -param DestinationString [in, out]
+### -param DestinationString [out]
 
 The buffer for a counted Unicode string to be initialized. The length is initialized to zero if the <i>SourceString</i> is not specified.
 

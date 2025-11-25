@@ -138,7 +138,7 @@ Specfies that this resource may be used only as an encode reference frame. It ma
 
 ### -field D3D12_RESOURCE_FLAG_RAYTRACING_ACCELERATION_STRUCTURE:0x100
 
-Requires the DirectX 12 Agility SDK 1.608.0 or later. Indicates that a buffer is to be used as a raytracing acceleration structure. When using D3D12 Enhanced Barriers, this flag serves as a replacement for `D3D12_RESOURCE_STATE_RAYTRACING_ACCELERATION_STRUCTURE`, since buffers no longer have layouts/states.
+Requires the DirectX 12 Agility SDK 1.608.0 or later. Indicates that a buffer is to be used as a raytracing acceleration structure. When using D3D12 Enhanced Barriers, this flag serves as a replacement for `D3D12_RESOURCE_STATE_RAYTRACING_ACCELERATION_STRUCTURE`, since buffers no longer have layouts/states. Requires `D3D12_RESOURCE_FLAG_ALLOW_UNORDERED_ACCESS` to be set.
 
 
 ## -remarks
