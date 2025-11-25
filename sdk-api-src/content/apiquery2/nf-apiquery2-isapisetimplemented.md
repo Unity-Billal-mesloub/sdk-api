@@ -46,11 +46,9 @@ api_name:
  - IsApiSetImplemented
 ---
 
-# IsApiSetImplemented function
-
 ## -description
 
-The **IsApiSetImplemented** function tests if a specified *API set* is present on the computer.
+Tests whether a specified *API set* is present on the computer.
 
 ## -parameters
 
