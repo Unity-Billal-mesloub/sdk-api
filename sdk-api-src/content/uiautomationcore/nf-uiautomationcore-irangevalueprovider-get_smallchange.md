@@ -6,7 +6,7 @@ helpviewer_keywords: ["IRangeValueProvider interface [Windows Accessibility]","S
 old-location: winauto\uiauto_IRangeValueProvider_SmallChange.htm
 tech.root: WinAuto
 ms.assetid: 8230747d-d8c3-4708-a77a-7c76a62f39dd
-ms.date: 12/05/2018
+ms.date: 12/02/2025
 ms.keywords: IRangeValueProvider interface [Windows Accessibility],SmallChange property, IRangeValueProvider.SmallChange, IRangeValueProvider.get_SmallChange, IRangeValueProvider::SmallChange, IRangeValueProvider::get_SmallChange, SmallChange property [Windows Accessibility], SmallChange property [Windows Accessibility],IRangeValueProvider interface, get_SmallChange, uiauto.uiauto_IRangeValueProvider_SmallChange, uiauto_IRangeValueProvider_SmallChange, uiautomationcore/IRangeValueProvider::SmallChange, uiautomationcore/IRangeValueProvider::get_SmallChange, winauto.uiauto_IRangeValueProvider_SmallChange
 req.header: uiautomationcore.h
 req.include-header: UIAutomation.h
@@ -71,6 +71,6 @@ numeric_limits<double>::quiet_NaN()
 
 ## -see-also
 
-[IRangeValueProvider](windows/desktop/api/uiautomationcore/nn-uiautomationcore-irangevalueprovider">IRangeValueProvider)
+[IRangeValueProvider](/windows/desktop/api/uiautomationcore/nn-uiautomationcore-irangevalueprovider">IRangeValueProvider)
 
 [UI Automation Providers Overview](/windows/desktop/WinAuto/uiauto-providersoverview)

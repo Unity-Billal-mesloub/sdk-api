@@ -199,4 +199,4 @@ if (bytesWritten != smBiosDataSize) {
 
 
 <a href="/windows/desktop/SysInfo/system-information-functions">System
-		  Information Functions</a>
+          Information Functions</a>
