@@ -88,7 +88,7 @@ A value of the
 
 A value from the 
 <a href="/windows/desktop/api/accctrl/ne-accctrl-trustee_form">TRUSTEE_FORM</a> enumeration type that indicates the type of data pointed to by the <b>ptstrName</b> member.
-See Remarks below.
+See <a href="#-remarks">Remarks</a> below.
 
 ### -field TrusteeType
 
