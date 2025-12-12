@@ -62,8 +62,8 @@ Represents the 80387 save area on WOW64. Refer to the header file WinNT.h for th
 
 
 
-<a href="https://github.com/MicrosoftDocs/sdk-api/blob/docs/sdk-api-src/content/winbase/nf-winbase-wow64getthreadcontext.md">Wow64GetThreadContext</a>
+<a href="/windows/win32/api/wow64apiset/nf-wow64apiset-wow64getthreadcontext.md">Wow64GetThreadContext</a>
 
 
 
-<a href="https://github.com/MicrosoftDocs/sdk-api/blob/docs/sdk-api-src/content/winbase/nf-winbase-wow64setthreadcontext.md">Wow64SetThreadContext</a>
+<a href="/windows/win32/api/wow64apiset/nf-wow64apiset-wow64setthreadcontext.md">Wow64SetThreadContext</a>
