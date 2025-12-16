@@ -6,7 +6,7 @@ helpviewer_keywords: ["TzSpecificLocalTimeToSystemTimeEx","TzSpecificLocalTimeTo
 old-location: base\tzspecificlocaltimetosystemtimeex.htm
 tech.root: winprog
 ms.assetid: C202F91E-FFFF-412D-A968-3B7AE60A5846
-ms.date: 12/05/2018
+ms.date: 12/16/2025
 ms.keywords: TzSpecificLocalTimeToSystemTimeEx, TzSpecificLocalTimeToSystemTimeEx function, base.tzspecificlocaltimetosystemtimeex, timezoneapi/TzSpecificLocalTimeToSystemTimeEx
 req.header: timezoneapi.h
 req.include-header: Windows.h
@@ -53,7 +53,7 @@ api_name:
 
 ## -description
 
-Converts a specified time zone's local time with dynamic daylight saving time settings to the corresponding Coordinated Universal Time (UTC).
+Converts the local time in the specified time zone (with dynamic daylight saving time settings) to a corresponding Coordinated Universal Time (UTC).
 
 ## -parameters
 
@@ -61,28 +61,31 @@ Converts a specified time zone's local time with dynamic daylight saving time se
 
 A pointer to a <a href="/windows/desktop/api/timezoneapi/ns-timezoneapi-dynamic_time_zone_information">DYNAMIC_TIME_ZONE_INFORMATION</a> structure that specifies the time zone and dynamic daylight saving time settings.
 
+If <i>lpTimeZoneInformation</i> is <b>NULL</b>, the function uses the currently active time zone.
+
 ### -param lpLocalTime [in]
 
-A pointer to a
-<a href="/windows/desktop/api/minwinbase/ns-minwinbase-systemtime">SYSTEMTIME</a> structure that specifies the local time to be converted. The function converts this time to the corresponding UTC time.
+A pointer to a <a href="/windows/desktop/api/minwinbase/ns-minwinbase-systemtime">SYSTEMTIME</a> structure that specifies the local time to be converted. The function converts this time to the corresponding UTC time.
 
 ### -param lpUniversalTime [out]
 
-A pointer to a
-<a href="/windows/desktop/api/minwinbase/ns-minwinbase-systemtime">SYSTEMTIME</a> structure that receives the UTC time.
+A pointer to a <a href="/windows/desktop/api/minwinbase/ns-minwinbase-systemtime">SYSTEMTIME</a> structure that receives the UTC time.
 
 ## -returns
 
-If the function fails, the return value is zero. To get extended error information, call
-<a href="/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror">GetLastError</a>.
+If the function succeeds, the return value is nonzero, and the function sets the members of the <a href="/windows/desktop/api/minwinbase/ns-minwinbase-systemtime">SYSTEMTIME</a> structure pointed to by <i>lpUniversalTime</i> to the appropriate values.
+
+If the function fails, the return value is zero. To get extended error information, call <a href="/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror">GetLastError</a>.
 
 ## -remarks
 
 <b>TzSpecificLocalTimeToSystemTimeEx</b> takes into account whether daylight saving time (DST) is in effect for the local time to be converted.
 
 > [!IMPORTANT]
-> Certain local times near DST transitions are <b>ambiguous</b> or <b>invalid</b>. Specifying such a time can result in unexpected behavior as there is no guaranteed "correct" result.
-> - During the transition from daylight time to standard time, the local clock repeats. A local time within the repeated window is <b>ambiguous</b> because it occurs twice, once in daylight time and once in standard time. If such a local time is specified, the function treats it as <b>daylight time</b> and applies the daylight time bias.
-> - During the transition from standard time to daylight time, the local clock jumps forward. A local time within the skipped window is <b>invalid</b> because it does not have a valid UTC conversion. If such a local time is specified, the function treats it as <b>standard time</b> and applies the standard time bias.
+> The following local times, near DST transitions, can be <b>ambiguous</b> or <b>invalid</b> and might result in unexpected behavior (as there is no guaranteed "correct" result).
+> - During the transition from daylight time to standard time, the local clock repeats. A local time within the repeated window is <b>ambiguous</b> because it occurs twice, once in daylight time and once in standard time.
+> - During the transition from standard time to daylight time, the local clock jumps forward. A local time within the skipped window is <b>invalid</b> because it does not have a valid UTC conversion.
 >
-> Applications requiring continuity or precision should avoid relying on this function and consider using UTC time directly instead.
+> If the specified local time is either ambiguous or invalid, the function treats it as <b>daylight time</b> and applies the daylight time bias. Applications requiring continuity or precision should avoid this function and use UTC time instead.
+
+## -see-also
