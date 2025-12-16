@@ -156,7 +156,7 @@ This function  generates a full memory barrier (or fence) to ensure that memory 
 
 
 
-<a href="/previous-versions/windows/desktop/legacy/ms683605(v=vs.85)".InterlockedExchangeAddRelease</a>
+<a href="/previous-versions/windows/desktop/legacy/ms683605(v=vs.85)">InterlockedExchangeAddRelease</a>
 
 
 

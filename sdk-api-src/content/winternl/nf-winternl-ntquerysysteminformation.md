@@ -136,7 +136,37 @@ resource usage of each process, including the number of threads and handles used
 process, the peak page-file usage, and the number of memory pages that the
 process has allocated.
 
+> [!NOTE]
+> Whenever possible, <b>SystemBasicProcessInformation</b> should be used instead as it is faster, consumes less memory, and doesn't need to synchronize timing data (eliminating processor wakes).
 
+#### SystemBasicProcessInformation
+
+<b>Available as of Windows 11 version 26100.4770</b>
+
+Returns an array of <b>SYSTEM_BASICPROCESS_INFORMATION</b> structures, one for each
+process running in the system.
+
+These structures contain basic information about each process, including the process name,
+its process id, and a unique sequence number.
+
+> [!NOTE]
+> <b>SYSTEM_BASICPROCESS_INFORMATION</b> is identical to <b>SYSTEM_PROCESS_INFORMATION</b> except for the <b>SequenceNumber</b> member, which is a unique value assigned to each process and used to detect <b>UniqueProcessId</b> reuse (instead of process <b>CreateTime</b>).
+
+
+``` syntax
+typedef struct _SYSTEM_BASICPROCESS_INFORMATION {
+    ULONG NextEntryOffset;
+    HANDLE UniqueProcessId;
+    HANDLE InheritedFromUniqueProcessId;
+    ULONG64 SequenceNumber;
+    UNICODE_STRING ImageName;
+} SYSTEM_BASICPROCESS_INFORMATION, *PSYSTEM_BASICPROCESS_INFORMATION;
+```
+
+Its members are identical to the ones in SYSTEM_PROCESS_INFORMATION,
+except for SequenceNumber which is a unique number assigned to each
+process that can be used to detect UniqueProcessId reuse instead of
+process CreateTime.
 
 #### SystemProcessorPerformanceInformation
 
@@ -679,7 +709,7 @@ typedef struct _SYSTEM_PROCESS_INFORMATION {
     UNICODE_STRING ImageName;
     KPRIORITY BasePriority;
     HANDLE UniqueProcessId;
-    PVOID Reserved2;
+    HANDLE InheritedFromUniqueProcessId;
     ULONG HandleCount;
     ULONG SessionId;
     PVOID Reserved3;
@@ -708,6 +738,8 @@ The <b>ImageName</b> member contains the process's image name.
 The <b>BasePriority</b> member contains the base priority of the process, which is the starting priority for threads created within the associated process.
 
 The <b>UniqueProcessId</b> member contains the process's unique process ID.
+
+The <b>InheritedFromUniqueProcessId</b> member contains the unique process ID of its parent.
 
 The <b>HandleCount</b> member contains the total number
 of handles being used by the process in question; use <a href="/windows/desktop/api/processthreadsapi/nf-processthreadsapi-getprocesshandlecount">GetProcessHandleCount</a>  to retrieve this information

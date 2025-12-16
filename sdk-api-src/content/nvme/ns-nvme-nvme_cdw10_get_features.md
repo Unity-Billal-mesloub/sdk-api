@@ -62,7 +62,7 @@ Specifies an [NVME_FEATURE_VALUE_CODES](ne-nvme-nvme_feature_value_codes.md) val
 
 The controller indicates in bit 4 of the Optional NVM Command Support **ONCS** field of the [Identify Controller](ns-nvme-nvme_identify_controller_data.md) data structure whether the **SEL** field is supported.
 
-If a Get Features command is received with the **SEL**** field set to `010b` (**NVME_FEATURE_VALUE_SAVED**), for example, and the controller does not support the Feature Identifier being saved or does not currently have any saved values, then the controller treats the **SEL** field as though it were set to `001b` (**NVME_FEATURE_VALUE_DEFAULT**).
+If a Get Features command is received with the **SEL** field set to `010b` (**NVME_FEATURE_VALUE_SAVED**), for example, and the controller does not support the Feature Identifier being saved or does not currently have any saved values, then the controller treats the **SEL** field as though it were set to `001b` (**NVME_FEATURE_VALUE_DEFAULT**).
 
 ### -field DUMMYSTRUCTNAME.Reserved0
 

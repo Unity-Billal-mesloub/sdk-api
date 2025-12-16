@@ -13,7 +13,7 @@ req.idl:
 req.include-header: 
 req.irql: 
 req.kmdf-ver: 
-req.lib: 
+req.lib: kernel32.Lib
 req.max-support: 
 req.namespace: 
 req.redist: 
@@ -27,6 +27,11 @@ topic_type:
  - apiref
 api_type:
 api_location:
+ - api-ms-win-core-processthreads-l1-1-8.dll
+ - api-ms-win-core-processthreads-l1-1-7.dll
+ - api-ms-win-core-processthreads-l1-1-6.dll
+ - api-ms-win-core-processthreads-l1-1-5.dll
+ - api-ms-win-core-processthreads-l1-1-4.dll
  - processthreadsapi.h
 api_name:
  - SetProcessDynamicEHContinuationTargets

@@ -4,7 +4,7 @@ title: IDWriteFontSetBuilder2
 description: Contains methods for building a font set. (IDWriteFontSetBuilder2)
 helpviewer_keywords: ["IDWriteFontSetBuilder2","IDWriteFontSetBuilder2 interface [Direct Write]","IDWriteFontSetBuilder2 interface [Direct Write]","described","directwrite.idwritefontsetbuilder2","dwrite_3/IDWriteFontSetBuilder2"]
 tech.root: DirectWrite
-ms.date: 09/16/2019
+ms.date: 09/10/2025
 ms.keywords: IDWriteFontSetBuilder2, IDWriteFontSetBuilder2 interface [Direct Write], IDWriteFontSetBuilder2 interface [Direct Write],described, directwrite.idwritefontsetbuilder2, dwrite_3/IDWriteFontSetBuilder2
 targetos: Windows
 req.assembly: 

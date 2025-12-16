@@ -5,6 +5,7 @@ ms.assetid: d38cdf1b-ef65-394e-984c-8776732b0365
 ms.date: 01/11/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: gdi
 f1_keywords:
  - windef

@@ -40,6 +40,9 @@ topic_type:
 api_type:
  - DllExport
 api_location:
+ - api-ms-win-core-file-l1-2-5.dll
+ - api-ms-win-core-file-l1-2-4.dll
+ - api-ms-win-core-file-l1-2-3.dll
  - Kernel32.dll
  - API-MS-Win-Core-File-l1-1-0.dll
  - KernelBase.dll
@@ -67,9 +70,8 @@ Fills a buffer with strings that specify valid drives in the system.
 
 ### -param nBufferLength [in]
 
-The maximum size of the buffer pointed to by <i>lpBuffer</i>, in 
-      <b>TCHARs</b>. This size does not include the terminating null character. If this 
-      parameter is zero, <i>lpBuffer</i> is not used.
+The maximum size of the buffer pointed to by <i>lpBuffer</i>, in <b>TCHARs</b>. This value includes
+      space for the terminating null character. If this parameter is zero, <i>lpBuffer</i> is not used.
 
 ### -param lpBuffer [out]
 
@@ -184,3 +186,4 @@ For an example, see
 
 
 <a href="/windows/desktop/FileIO/volume-management-functions">Volume Management Functions</a>
+

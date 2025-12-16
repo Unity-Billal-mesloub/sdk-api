@@ -2,7 +2,7 @@
 UID: NF:dcomp.DCompositionWaitForCompositorClock
 tech.root: directcomp
 title: DCompositionWaitForCompositorClock
-ms.date: 06/24/2021
+ms.date: 10/31/2025
 targetos: Windows
 description: Halts a thread until the next signal from the compositor clock occurs.
 prerelease: false
@@ -15,7 +15,7 @@ req.idl:
 req.include-header: 
 req.irql: 
 req.kmdf-ver: 
-req.lib: 
+req.lib: dcomp.lib
 req.max-support: 
 req.namespace: 
 req.redist: 
@@ -67,6 +67,8 @@ Amount of time in milliseconds to wait before the operation times out.
 ## -returns
 
 Type: **[DWORD](/windows/win32/winprog/windows-data-types)**
+
+Returns a status code (an **NTSTATUS** value) that indicates the success or failure of the function. If the method succeeds, then it will return `STATUS_SUCCESS`. If the display is off, then the function returns immediately with **STATUS_GRAPHICS_PRESENT_OCCLUDED**. For other **NTSTATUS** values, see [NTSTATUS values](/openspecs/windows_protocols/ms-erref/596a1078-e883-4972-9bbc-49e60bebca55).
 
 ## -remarks
 

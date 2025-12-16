@@ -6,13 +6,13 @@ helpviewer_keywords: ["GetLocaleNameLength","GetLocaleNameLength method [Direct 
 old-location: directwrite\idwritestringlist_getlocalenamelength.htm
 tech.root: DirectWrite
 ms.assetid: AB3CDFB6-8B3E-47B1-BB19-C22E0D8D2D5C
-ms.date: 12/05/2018
+ms.date: 09/10/2025
 ms.keywords: GetLocaleNameLength, GetLocaleNameLength method [Direct Write], GetLocaleNameLength method [Direct Write],IDWriteStringList interface, IDWriteStringList interface [Direct Write],GetLocaleNameLength method, IDWriteStringList.GetLocaleNameLength, IDWriteStringList::GetLocaleNameLength, directwrite.idwritestringlist_getlocalenamelength, dwrite_3/IDWriteStringList::GetLocaleNameLength
 req.header: dwrite_3.h
 req.include-header: 
 req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
+req.target-min-winverclnt: Windows 10 [desktop apps only]
+req.target-min-winversvr: Windows Server 2016 [desktop apps only]
 req.kmdf-ver: 
 req.umdf-ver: 
 req.ddi-compliance: 

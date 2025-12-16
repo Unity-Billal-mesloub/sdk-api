@@ -22,7 +22,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: 
+req.lib: mincore.lib
 req.dll: 
 req.irql: 
 targetos: Windows
@@ -58,7 +58,9 @@ Creates a new [**HSTRING**](/windows/win32/winrt/hstring) based on the specified
 
 Type: [in, optional] <b>LPCWSTR</b>
 
-A null-terminated string to use as the source for the new [**HSTRING**](/windows/win32/winrt/hstring). To create a new, empty, or <b>NULL</b> string, pass <b>NULL</b> for <i>sourceString</i> and 0 for <i>length</i>.
+The UTF-16LE-encoded text buffer to use as the source for the new [**HSTRING**](/windows/win32/winrt/hstring). To create a new, empty, or <b>NULL</b> string, pass <b>NULL</b> for <i>sourceString</i> and 0 for <i>length</i>.
+
+This buffer is not required to be null-terminated. <b>WindowsCreateString</b> will copy its contents and add a null-terminator in the new buffer backing the returned [**HSTRING**](/windows/win32/winrt/hstring).
 
 ### -param length
 

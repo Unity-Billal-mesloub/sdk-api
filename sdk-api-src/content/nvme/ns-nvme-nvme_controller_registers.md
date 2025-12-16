@@ -107,7 +107,7 @@ The Controller Status **CSTS** register starts at Offset 1Ch.
 
 A [NVME_NVM_SUBSYSTEM_RESET](ns-nvme-nvme_nvm_subsystem_reset.md) structure that provides host software with the capability to initiate an NVM Subsystem Reset.
 
-Support for this optional register is indicated by the state of the NVM Subsystem Reset Supported (**NSSRS**) field in the [Controller Capabilities](C:\Users\v-thpra\sdk-api\sdk-api-src\content\nvme\ns-nvme-nvme_controller_capabilities.md). If the register is not supported, then the address range occupied by the register is reserved.
+Support for this optional register is indicated by the state of the NVM Subsystem Reset Supported (**NSSRS**) field in the [Controller Capabilities](ns-nvme-nvme_controller_capabilities.md). If the register is not supported, then the address range occupied by the register is reserved.
 
 The (Optional) NVM Subsystem Reset register starts at Offset 20h.
 

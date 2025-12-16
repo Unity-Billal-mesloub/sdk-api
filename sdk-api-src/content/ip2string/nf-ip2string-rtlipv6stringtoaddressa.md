@@ -137,8 +137,6 @@ When both UNICODE and _UNICODE are not defined, <b>RtlIpv6StringToAddress</b> is
 
 The <a href="/previous-versions/windows/desktop/legacy/ms738560(v=vs.85)">IN6_ADDR</a> structure is defined in the In6addr.h header file.
 
-An import library containing the <b>RtlIpv6StringToAddress</b> function is not included in the Microsoft Windows Software Development Kit (SDK) released for Windows Vista. The <b>RtlIpv6StringToAddress</b> function is included in the <i>Ntdll.lib</i> import library included in the Windows Driver Kit (WDK). An application could also use the <a href="/windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulehandlea">GetModuleHandle</a> and <a href="/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress">GetProcAddress</a> functions to retrieve the function pointer from the <i>Ntdll.dll</i> and call this function.
-
 
 
 

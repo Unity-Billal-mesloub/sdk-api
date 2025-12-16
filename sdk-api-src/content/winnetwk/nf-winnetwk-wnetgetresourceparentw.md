@@ -64,8 +64,7 @@ Call the
 
 ### -param lpNetResource [in]
 
-Pointer to a 
-<a href="/windows/desktop/api/rrascfg/nn-rrascfg-ieapproviderconfig">NETRESOURCE</a> structure that specifies the network resource for which the parent name is required. 
+Pointer to a <a href="ns-winnetwk-netresourcew.md">NETRESOURCE</a> structure that specifies the network resource for which the parent name is required. 
 
 
 
@@ -82,7 +81,7 @@ Specify the members of the input
 </tr>
 <tr>
 <td width="40%"><a id="dwType"></a><a id="dwtype"></a><a id="DWTYPE"></a><dl>
-<dt><b><b>dwType</b></b></dt>
+<dt><b>dwType</b></dt>
 </dl>
 </td>
 <td width="60%">
@@ -92,7 +91,7 @@ This member should be filled in if known; otherwise, it should be set to <b>NULL
 </tr>
 <tr>
 <td width="40%"><a id="lpRemoteName"></a><a id="lpremotename"></a><a id="LPREMOTENAME"></a><dl>
-<dt><b><b>lpRemoteName</b></b></dt>
+<dt><b>lpRemoteName</b></dt>
 </dl>
 </td>
 <td width="60%">
@@ -102,7 +101,7 @@ This member should specify the remote name of the network resource whose parent 
 </tr>
 <tr>
 <td width="40%"><a id="lpProvider"></a><a id="lpprovider"></a><a id="LPPROVIDER"></a><dl>
-<dt><b><b>lpProvider</b></b></dt>
+<dt><b>lpProvider</b></dt>
 </dl>
 </td>
 <td width="60%">
@@ -219,7 +218,7 @@ You can call the
 <a href="/windows/desktop/api/winnetwk/nf-winnetwk-wnetenumresourcea">WNetEnumResource</a>, 
 <a href="/windows/desktop/api/winnetwk/nf-winnetwk-wnetgetresourceinformationa">WNetGetResourceInformation</a>, or 
 <b>WNetGetResourceParent</b> function to return information from the 
-<a href="/windows/desktop/api/rrascfg/nn-rrascfg-ieapproviderconfig">NETRESOURCE</a> structure. You can also construct network resource information using the members of the 
+<a href="ns-winnetwk-netresourcew.md">NETRESOURCE</a> structure. You can also construct network resource information using the members of the 
 <b>NETRESOURCE</b> structure.
 
 An example of an inappropriate use of 

@@ -4,6 +4,7 @@ title: Fileapi.h header
 ms.date: 03/23/2021
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: fs
 f1_keywords:
  - fileapifromapp

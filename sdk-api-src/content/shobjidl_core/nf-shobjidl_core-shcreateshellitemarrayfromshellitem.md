@@ -22,7 +22,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: 
+req.lib: OneCore.Lib
 req.dll: Shell32.dll
 req.irql: 
 targetos: Windows
@@ -40,6 +40,9 @@ topic_type:
 api_type:
  - DllExport
 api_location:
+ - ext-ms-win-shell-shell32-l1-3-0.dll
+ - ext-ms-win-shell-shell32-l1-2-3.dll
+ - api-ms-win-shell-namespace-l1-1-1.dll
  - Shell32.dll
  - Ext-MS-Win-shell-shell32-l1-2-0.dll
  - ext-ms-win-shell-shell32-l1-2-1.dll

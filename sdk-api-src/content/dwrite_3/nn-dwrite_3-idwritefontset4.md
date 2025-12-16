@@ -2,7 +2,7 @@
 UID: NN:dwrite_3.IDWriteFontSet4
 tech.root: DirectWrite
 title: IDWriteFontSet4
-ms.date: 05/05/2022
+ms.date: 09/10/2025
 targetos: Windows
 description: Represents a font set. (IDWriteFontSet4)
 req.assembly: 

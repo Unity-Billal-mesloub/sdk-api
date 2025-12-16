@@ -6,7 +6,7 @@ helpviewer_keywords: ["GetSystemFontCollection","GetSystemFontCollection method 
 old-location: directwrite\idwritefactory3_getsystemfontcollection.htm
 tech.root: DirectWrite
 ms.assetid: f6e983b5-5c5f-a2de-59f8-722f967bb992
-ms.date: 12/05/2018
+ms.date: 09/10/2025
 ms.keywords: GetSystemFontCollection, GetSystemFontCollection method [Direct Write], GetSystemFontCollection method [Direct Write],IDWriteFactory3 interface, IDWriteFactory3 interface [Direct Write],GetSystemFontCollection method, IDWriteFactory3.GetSystemFontCollection, IDWriteFactory3::GetSystemFontCollection, directwrite.idwritefactory3_getsystemfontcollection, dwrite_3/IDWriteFactory3::GetSystemFontCollection
 req.header: dwrite_3.h
 req.include-header: 

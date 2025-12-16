@@ -5,6 +5,7 @@ ms.assetid: 0ebaa899-6918-3bd4-b858-1afff58ee6a4
 ms.date: 01/11/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 ---
 
 # Unmanaged C++ Version of the AXE API

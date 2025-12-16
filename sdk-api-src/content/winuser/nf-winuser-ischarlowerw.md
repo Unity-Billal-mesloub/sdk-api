@@ -14,7 +14,7 @@ req.idl:
 req.include-header: 
 req.irql: 
 req.kmdf-ver: 
-req.lib: 
+req.lib: mincore.lib
 req.max-support: 
 req.namespace: 
 req.redist: 
@@ -34,6 +34,8 @@ topic_type:
 api_type:
  - DllExport
 api_location:
+ - api-ms-win-core-string-l2-1-1.dll
+ - api-ms-win-core-string-l2-1-0.dll
  - User32.dll
  - API-MS-Win-Core-Stringansi-l1-1-0.dll
  - KernelBase.dll

@@ -1,4 +1,4 @@
-﻿---
+---
 UID: NF:evntrace.ControlTraceA
 title: ControlTraceA function (evntrace.h)
 description: The ControlTraceA (ANSI) function (evntrace.h) flushes, queries, updates, or stops the specified event tracing session.
@@ -67,13 +67,14 @@ topic_type:
 api_type:
   - DllExport
 api_location:
-  - Sechost.dll
-  - Advapi32.dll
-  - API-MS-Win-DownLevel-AdvAPI32-l2-1-1.dll
-  - API-MS-Win-Eventing-Controller-l1-1-0.dll
-  - API-MS-Win-Eventing-Legacy-l1-1-0.dll
-  - AdvApi32Legacy.dll
-  - KernelBase.dll
+ - api-ms-win-downlevel-advapi32-l2-1-0.dll
+ - Sechost.dll
+ - Advapi32.dll
+ - API-MS-Win-DownLevel-AdvAPI32-l2-1-1.dll
+ - API-MS-Win-Eventing-Controller-l1-1-0.dll
+ - API-MS-Win-Eventing-Legacy-l1-1-0.dll
+ - AdvApi32Legacy.dll
+ - KernelBase.dll
 api_name:
   - ControlTrace
   - ControlTraceA

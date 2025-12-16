@@ -4,7 +4,7 @@ title: IDWriteFactory6::GetSystemFontCollection
 description: Retrieves a collection of fonts, grouped into families. (IDWriteFactory6::GetSystemFontCollection)
 helpviewer_keywords: ["IDWriteFactory6 interface [Direct Write]","GetSystemFontCollection method","IDWriteFactory6.GetSystemFontCollection","IDWriteFactory6::GetSystemFontCollection","GetSystemFontCollection","GetSystemFontCollection method [Direct Write]","GetSystemFontCollection method [Direct Write]","IDWriteFactory6 interface","directwrite.idwritefactory6_getsystemfontcollection","dwrite_3/IDWriteFactory6::GetSystemFontCollection"]
 tech.root: DirectWrite
-ms.date: 09/12/2019
+ms.date: 09/10/2025
 ms.keywords: IDWriteFactory6 interface [Direct Write],GetSystemFontCollection method, IDWriteFactory6.GetSystemFontCollection, IDWriteFactory6::GetSystemFontCollection, GetSystemFontCollection, GetSystemFontCollection method [Direct Write], GetSystemFontCollection method [Direct Write],IDWriteFactory6 interface, directwrite.idwritefactory6_getsystemfontcollection, dwrite_3/IDWriteFactory6::GetSystemFontCollection
 req.construct-type: function
 req.header: dwrite_3.h

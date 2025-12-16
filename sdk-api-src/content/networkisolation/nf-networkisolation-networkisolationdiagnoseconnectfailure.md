@@ -15,7 +15,7 @@ req.idl:
 req.include-header: 
 req.irql: 
 req.kmdf-ver: 
-req.lib: 
+req.lib: nanosrv.lib
 req.max-support: 
 req.namespace: 
 req.redist: 
@@ -30,6 +30,7 @@ topic_type:
 api_type:
  - HeaderDef
 api_location:
+ - api-ms-win-net-isolation-l1-1-1.dll
  - networkisolation.h
 api_name:
  - NetworkIsolationDiagnoseConnectFailure

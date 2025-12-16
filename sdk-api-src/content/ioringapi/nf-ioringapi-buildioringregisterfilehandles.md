@@ -15,7 +15,7 @@ req.idl:
 req.include-header: 
 req.irql: 
 req.kmdf-ver: 
-req.lib: 
+req.lib: kernel32.Lib
 req.max-support: 
 req.namespace: 
 req.redist: 
@@ -30,6 +30,9 @@ topic_type:
 api_type:
  - HeaderDef
 api_location:
+ - api-ms-win-core-ioring-l1-1-2.dll
+ - api-ms-win-core-ioring-l1-1-1.dll
+ - api-ms-win-core-ioring-l1-1-0.dll
  - ioringapi.h
 api_name:
  - BuildIoRingRegisterFileHandles

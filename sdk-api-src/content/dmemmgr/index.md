@@ -5,6 +5,7 @@ ms.assetid: 9b1577ca-eaf8-39a6-b4b9-4b30cc0e628e
 ms.date: 01/11/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: display
 f1_keywords:
  - dmemmgr

@@ -59,7 +59,7 @@ api_name:
     information, and alternatives to TxF, please see 
     <a href="/windows/desktop/FileIO/deprecation-of-txf">Alternatives to using Transactional NTFS</a>.]
 
-Contains a Transactional NTFS (TxF) specific structure. This information should only be used when calling <a href="/windows/desktop/api/winioctl/ns-winioctl-txfs_read_backup_information_out">TXFS_WRITE_BACKUP_INFORMATION</a>.
+Contains a Transactional NTFS (TxF) specific structure. This information should only be used when calling TXFS_WRITE_BACKUP_INFORMATION.
 
 ## -struct-fields
 

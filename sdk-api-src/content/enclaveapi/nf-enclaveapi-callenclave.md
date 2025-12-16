@@ -22,8 +22,8 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: Vertdll.lib
-req.dll: Vertdll.dll; Api-ms-win-core-enclave-l1-1-0.dll
+req.lib: Kernel32.lib
+req.dll: Api-ms-win-core-enclave-l1-1-0.dll; Kernel32.dll; KernelBase.dll
 req.irql: 
 targetos: Windows
 req.typenames: 
@@ -40,7 +40,9 @@ topic_type:
 api_type:
  - DllExport
 api_location:
- - Vertdll.dll
+ - api-ms-win-core-enclave-l1-1-1.dll
+ - kernel32.dll
+ - KernelBase.dll
  - api-ms-win-core-enclave-l1-1-0.dll
 api_name:
  - CallEnclave

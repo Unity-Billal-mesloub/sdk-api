@@ -40,6 +40,9 @@ topic_type:
 api_type:
  - DllExport
 api_location:
+ - api-ms-win-core-file-l1-2-5.dll
+ - api-ms-win-core-file-l1-2-4.dll
+ - api-ms-win-core-file-l1-2-3.dll
  - Kernel32.dll
  - API-MS-Win-Core-File-l1-1-0.dll
  - KernelBase.dll
@@ -90,7 +93,7 @@ The size of the buffer <i>lpszLongPath</i> points to, in
 If the function succeeds, the return value is the length, in <b>TCHARs</b>, of the 
        string copied to <i>lpszLongPath</i>, not including the terminating null character.
 
-If the <i>lpBuffer</i> buffer is too small to contain the path, the return value is the 
+If the <i>lpszLongPath</i> buffer is too small to contain the path, the return value is the 
        size, in <b>TCHARs</b>, of the buffer that is required to hold the path and the 
        terminating null character.
 

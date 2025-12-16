@@ -5,6 +5,7 @@ ms.assetid: 064ae0f9-7282-39cf-be9e-a2768a182496
 ms.date: 01/11/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 ---
 
 # User Access Logging

@@ -5,6 +5,7 @@ ms.assetid: fcfbb073-ac49-3b82-bfbf-200fe034062c
 ms.date: 01/11/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: winrt
 f1_keywords:
  - systemmediatransportcontrolsinterop

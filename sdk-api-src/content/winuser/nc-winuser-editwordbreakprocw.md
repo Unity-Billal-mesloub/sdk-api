@@ -60,7 +60,7 @@ The <b>EDITWORDBREAKPROC</b> type defines a pointer to this callback function. <
 
 ### -param lpch [in]
 
-Type: <b><a href="/windows/desktop/WinProg/windows-data-types">LPTSTR</a></b>
+Type: <b><a href="/windows/desktop/WinProg/windows-data-types">LPWSTR</a></b>
 
 A pointer to the text of the edit control.
 
@@ -74,8 +74,7 @@ An index to a character position in the buffer of text that identifies the point
 
 Type: <b>int</b>
 
-The number of 
-					<b>TCHARs</b> in the edit control text. For the ANSI text, this is the number of bytes; for the Unicode text, this is the number of WCHARs.
+The number of <b>TCHARs</b> in the edit control text. For the ANSI text, this is the number of bytes; for the Unicode text, this is the number of WCHARs.
 
 ### -param code [in]
 

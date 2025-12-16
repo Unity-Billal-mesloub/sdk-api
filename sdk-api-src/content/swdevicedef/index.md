@@ -5,6 +5,7 @@ ms.assetid: cc3029b5-2552-335e-8f05-b135a0447e74
 ms.date: 01/11/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: swdevice
 f1_keywords:
  - swdevicedef

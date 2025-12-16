@@ -5,6 +5,7 @@ ms.assetid: 5cc02d60-54b0-3330-8ff8-1b2f6e1f8c31
 ms.date: 01/11/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 ---
 
 # Group Policy API

@@ -14,7 +14,7 @@ req.idl:
 req.include-header: 
 req.irql: 
 req.kmdf-ver: 
-req.lib: 
+req.lib: kernel32.Lib
 req.max-support: 
 req.namespace: 
 req.redist: 
@@ -34,6 +34,15 @@ topic_type:
 api_type:
  - DllExport
 api_location:
+ - api-ms-win-downlevel-kernel32-l2-1-0.dll
+ - api-ms-win-core-misc-l1-1-0.dll
+ - api-ms-win-core-kernel32-legacy-l1-1-6.dll
+ - api-ms-win-core-kernel32-legacy-l1-1-5.dll
+ - api-ms-win-core-kernel32-legacy-l1-1-4.dll
+ - api-ms-win-core-kernel32-legacy-l1-1-3.dll
+ - api-ms-win-core-kernel32-legacy-l1-1-2.dll
+ - api-ms-win-core-kernel32-legacy-l1-1-1.dll
+ - api-ms-win-core-kernel32-legacy-l1-1-0.dll
  - kernel32.dll
 api_name:
  - SetHandleCount

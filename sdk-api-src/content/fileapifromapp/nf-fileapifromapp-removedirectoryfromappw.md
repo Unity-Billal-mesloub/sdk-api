@@ -14,7 +14,7 @@ req.idl:
 req.include-header: 
 req.irql: 
 req.kmdf-ver: 
-req.lib: 
+req.lib: OneCore.Lib
 req.max-support: 
 req.namespace: 
 req.redist: 
@@ -27,7 +27,7 @@ req.unicode-ansi:
 topic_type:
  - apiref
 api_location:
-- Kernel32.dll
+ - Kernel32.dll
 api_name:
 - RemoveDirectoryFromAppW
 - RemoveDirectoryFromApp

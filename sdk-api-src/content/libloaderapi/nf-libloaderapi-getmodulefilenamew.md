@@ -40,6 +40,7 @@ topic_type:
 api_type:
  - DllExport
 api_location:
+ - api-ms-win-core-libraryloader-l1-2-3.dll
  - Kernel32.dll
  - API-MS-Win-Core-LibraryLoader-l1-1-0.dll
  - KernelBase.dll
@@ -78,7 +79,7 @@ The <b>GetModuleFileName</b> function does not retrieve the path for modules  th
 
 A pointer to a buffer that receives the fully qualified path of the module. If the length of the path is less than the size that the <i>nSize</i> parameter specifies, the function succeeds and the path is returned as a null-terminated string. 
 
-If the length of the path exceeds the size that  the <i>nSize</i> parameter specifies, the function succeeds and the string is truncated to <i>nSize</i>  characters including the terminating null character.
+If the length of the path equals or exceeds the value specified by <i>nSize</i>, the function succeeds and the string is truncated to <i>nSize</i>  characters (including the terminating null character).
 
 <b>Windows XP:  </b>The string is truncated to <i>nSize</i> characters and is not null-terminated.
 
@@ -136,3 +137,5 @@ For an example, see
 
 
 <a href="/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibraryexa">LoadLibraryEx</a>
+
+

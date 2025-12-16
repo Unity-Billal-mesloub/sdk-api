@@ -5,6 +5,7 @@ ms.assetid: 8b5930f5-2069-3b7a-9d86-e7c148f8868f
 ms.date: 01/11/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: tapi2
 f1_keywords:
  - tspi

@@ -59,6 +59,6 @@ Pass a member of this enumeration into [IMFContentDecryptionModule::CreateSessio
 
 ## -see-also
 
-- IMFContentDecryptionModuleSession](/windows/win32/api/mfcontentdecryptionmodule/nn-mfcontentdecryptionmodule-imfcontentdecryptionmodulesession)
+- [IMFContentDecryptionModuleSession](/windows/win32/api/mfcontentdecryptionmodule/nn-mfcontentdecryptionmodule-imfcontentdecryptionmodulesession)
 
 - [IMFContentDecryptionModule::CreateSession](../mfcontentdecryptionmodule/nf-mfcontentdecryptionmodule-imfcontentdecryptionmodule-createsession.md)

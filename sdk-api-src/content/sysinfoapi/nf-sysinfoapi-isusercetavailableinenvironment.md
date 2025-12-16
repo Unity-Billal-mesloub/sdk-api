@@ -13,7 +13,7 @@ req.idl:
 req.include-header: 
 req.irql: 
 req.kmdf-ver: 
-req.lib: 
+req.lib: kernel32.Lib
 req.max-support: 
 req.namespace: 
 req.redist: 
@@ -27,6 +27,8 @@ topic_type:
  - apiref
 api_type:
 api_location:
+ - api-ms-win-core-sysinfo-l1-2-7.dll
+ - api-ms-win-core-sysinfo-l1-2-6.dll
  - sysinfoapi.h
 api_name:
  - IsUserCetAvailableInEnvironment

@@ -5,6 +5,7 @@ ms.assetid: cd834ca0-b712-386c-8042-173e3d8c8820
 ms.date: 01/11/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 ---
 
 # Data Deduplication API

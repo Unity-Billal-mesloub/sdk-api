@@ -6,7 +6,7 @@ helpviewer_keywords: ["GetFamilyNames","GetFamilyNames method [Direct Write]","G
 old-location: directwrite\idwritefontface3_getfamilynames.htm
 tech.root: DirectWrite
 ms.assetid: EAA7DF51-5089-4A0B-A0E3-C19FB71EB61E
-ms.date: 12/05/2018
+ms.date: 09/10/2025
 ms.keywords: GetFamilyNames, GetFamilyNames method [Direct Write], GetFamilyNames method [Direct Write],IDWriteFontFace3 interface, IDWriteFontFace3 interface [Direct Write],GetFamilyNames method, IDWriteFontFace3.GetFamilyNames, IDWriteFontFace3::GetFamilyNames, directwrite.idwritefontface3_getfamilynames, dwrite_3/IDWriteFontFace3::GetFamilyNames
 req.header: dwrite_3.h
 req.include-header: 

@@ -4,6 +4,7 @@ title: bcp47mrm.h header
 ms.date: 05/11/2021
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: menurc
 f1_keywords:
  - bcp47mrm

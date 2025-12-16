@@ -6,7 +6,7 @@ helpviewer_keywords: ["SENSOR_CONNECTION_TYPE_PC_ATTACHED","SENSOR_CONNECTION_TY
 old-location: winsensors_com_ref\sensorconnectiontype.htm
 tech.root: winsensors
 ms.assetid: 3d5cb6ff-0228-44fa-8216-dbffcb2ec834
-ms.date: 12/05/2018
+ms.date: 09/19/2025
 ms.keywords: SENSOR_CONNECTION_TYPE_PC_ATTACHED, SENSOR_CONNECTION_TYPE_PC_EXTERNAL, SENSOR_CONNECTION_TYPE_PC_INTEGRATED, SensorConnectionType, SensorConnectionType enumeration, sensorsapi/ SENSOR_CONNECTION_TYPE_PC_EXTERNAL, sensorsapi/SENSOR_CONNECTION_TYPE_PC_ATTACHED, sensorsapi/SENSOR_CONNECTION_TYPE_PC_INTEGRATED, sensorsapi/SensorConnectionType, winsensors_com_ref.sensorconnectiontype
 req.header: sensorsapi.h
 req.include-header: 
@@ -51,6 +51,11 @@ api_name:
 
 
 ## -description
+
+> [!IMPORTANT]
+> Use the [UWP Sensor API](/windows/uwp/devices-sensors/sensors) instead.
+>
+> The COM-based Sensor API is deprecated and should not be used in new applications. No additional features or enhancements are planned, and support will be limited.
 
 Defines types of sensor device connections.
 

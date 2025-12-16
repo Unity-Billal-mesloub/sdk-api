@@ -5,6 +5,7 @@ ms.assetid: 03a1a7f4-f3e4-387c-96a3-a81a62b48c4e
 ms.date: 01/11/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: winsock
 f1_keywords:
  - sporder

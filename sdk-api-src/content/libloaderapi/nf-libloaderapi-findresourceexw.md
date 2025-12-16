@@ -14,7 +14,7 @@ req.idl:
 req.include-header: Windows.h 
 req.irql: 
 req.kmdf-ver: 
-req.lib: 
+req.lib: kernel32.Lib
 req.max-support: 
 req.namespace: 
 req.redist: 
@@ -29,6 +29,7 @@ topic_type:
 api_type:
  - DllExport
 api_location:
+ - api-ms-win-core-libraryloader-l1-2-3.dll
  - Kernel32.dll
  - API-MS-Win-Core-Kernel32-Legacy-l1-1-0.dll
  - kernel32legacy.dll

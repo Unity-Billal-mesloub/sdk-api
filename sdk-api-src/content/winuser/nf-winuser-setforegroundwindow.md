@@ -6,7 +6,7 @@ helpviewer_keywords: ["SetForegroundWindow","SetForegroundWindow function [Windo
 old-location: winmsg\setforegroundwindow.htm
 tech.root: winmsg
 ms.assetid: VS|winui|~\winui\windowsuserinterface\windowing\windows\windowreference\windowfunctions\setforegroundwindow.htm
-ms.date: 12/05/2018
+ms.date: 10/06/2025
 ms.keywords: SetForegroundWindow, SetForegroundWindow function [Windows and Messages], _win32_SetForegroundWindow, _win32_setforegroundwindow_cpp, winmsg.setforegroundwindow, winui._win32_setforegroundwindow, winuser/SetForegroundWindow
 req.header: winuser.h
 req.include-header: Windows.h
@@ -40,6 +40,9 @@ topic_type:
 api_type:
  - DllExport
 api_location:
+ - ext-ms-win-rtcore-ntuser-window-ext-l1-1-1.dll
+ - ext-ms-win-ntuser-window-l1-1-6.dll
+ - ext-ms-win-ntuser-window-l1-1-5.dll
  - User32.dll
  - API-MS-Win-NTUser-IE-Window-l1-1-0.dll
  - ie_shims.dll
@@ -87,9 +90,9 @@ The system restricts which processes can set the foreground window. A process ca
 - All of the following conditions are true:
   - The calling process belongs to a desktop application, not a UWP app or a Windows Store app designed for Windows 8 or 8.1.
   - The foreground process has not disabled calls to **SetForegroundWindow** by a previous call to the [**LockSetForegroundWindow**](nf-winuser-locksetforegroundwindow.md) function.
-  - The foreground lock time-out has expired (see [**SPI_GETFOREGROUNDLOCKTIMEOUT** in **SystemParametersInfo**](nf-winuser-systemparametersinfoa.md#SPI_GETFOREGROUNDLOCKTIMEOUT)).
   - No menus are active.
 - Additionally, at least one of the following conditions is true:
+  - The foreground lock time-out has expired (see [**SPI_GETFOREGROUNDLOCKTIMEOUT** in **SystemParametersInfo**](nf-winuser-systemparametersinfoa.md#SPI_GETFOREGROUNDLOCKTIMEOUT)).
   - The calling process is the foreground process.
   - The calling process was started by the foreground process.
   - There is currently no foreground window, and thus no foreground process.

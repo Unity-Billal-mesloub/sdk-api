@@ -5,6 +5,7 @@ ms.assetid: 6668a311-b6d8-4275-9fac-faf7adc7bbef
 ms.date: 01/07/2025
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: dns
 f1_keywords:
  - windnsdef

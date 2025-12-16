@@ -232,8 +232,8 @@ A bitmask that indicates how you can enumerate information about the resource. I
 <td width="60%">
 You can connect to the resource by calling 
 <a href="/windows/desktop/api/npapi/nf-npapi-npaddconnection">NPAddConnection</a>. If <b>dwType</b> is RESOURCETYPE_DISK, then, after you have connected to the resource, you can use the file system APIs, such as 
-<a href="/windows/desktop/api/fileapi/nf-fileapi-findfirstfilea">FindFirstFile</a>, and 
-<a href="/windows/desktop/api/fileapi/nf-fileapi-findnextfilea">FindNextFile</a>, to enumerate any files and directories the resource contains.
+<a href="/windows/desktop/api/fileapi/nf-fileapi-findfirstfilew">FindFirstFile</a>, and 
+<a href="/windows/desktop/api/fileapi/nf-fileapi-findnextfilew">FindNextFile</a>, to enumerate any files and directories the resource contains.
 
 </td>
 </tr>

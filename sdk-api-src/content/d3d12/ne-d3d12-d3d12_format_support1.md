@@ -139,7 +139,7 @@ Format can be displayed on screen.
 
 ### -field D3D12_FORMAT_SUPPORT1_CAST_WITHIN_BIT_LAYOUT:0x100000
 
-Format can't be cast to another format.
+Format can be cast to another format.
 
 ### -field D3D12_FORMAT_SUPPORT1_MULTISAMPLE_RENDERTARGET:0x200000
 

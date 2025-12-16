@@ -4,6 +4,7 @@ title: diagnosticdataquerytypes.h header
 ms.date: 08/19/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: security
 ---
 

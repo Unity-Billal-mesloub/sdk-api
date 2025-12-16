@@ -40,6 +40,10 @@ topic_type:
 api_type:
  - DllExport
 api_location:
+ - ext-ms-win-cluster-clusapi-l1-1-6.dll
+ - ext-ms-win-cluster-clusapi-l1-1-5.dll
+ - ext-ms-win-cluster-clusapi-l1-1-4.dll
+ - ext-ms-win-cluster-clusapi-l1-1-3.dll
  - ClusAPI.dll
  - Ext-MS-Win-Cluster-ClusAPI-l1-1-0.dll
  - Ext-MS-Win-Cluster-ClusAPI-l1-1-1.dll
@@ -92,7 +96,7 @@ Handle to the newly created cluster or <b>NULL</b>. A non <b>NULL</b>
 <tr>
 <td width="40%">
 <dl>
-<dt><b><b>NULL</b></b></dt>
+<dt><b>NULL</b></dt>
 </dl>
 </td>
 <td width="60%">

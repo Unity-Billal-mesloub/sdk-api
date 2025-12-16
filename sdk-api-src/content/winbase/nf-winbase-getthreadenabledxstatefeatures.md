@@ -14,7 +14,7 @@ req.idl:
 req.include-header: 
 req.irql: 
 req.kmdf-ver: 
-req.lib: 
+req.lib: kernel32.Lib
 req.max-support: 
 req.namespace: 
 req.redist: 
@@ -29,6 +29,7 @@ topic_type:
 api_type:
  - HeaderDef
 api_location:
+ - api-ms-win-core-xstate-l2-1-2.dll
  - winbase.h
 api_name:
  - GetThreadEnabledXStateFeatures

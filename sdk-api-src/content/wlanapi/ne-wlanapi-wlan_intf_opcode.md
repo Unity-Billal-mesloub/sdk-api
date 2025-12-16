@@ -104,7 +104,7 @@ The opcode used to query the list of supported country or region strings. This o
 
 ### -field wlan_intf_opcode_current_operation_mode
 
-The opcode used to set or query the current operation mode of the wireless interface. For more information about operation modes, see <a href="https://www.microsoft.com/?ref=go">Native 802.11 Operation Modes</a>.
+The opcode used to set or query the current operation mode of the wireless interface. For more information about operation modes, see <a href="/previous-versions/windows/hardware/wireless/native-802-11-operation-modes">Native 802.11 Operation Modes</a>.
 
 ### -field wlan_intf_opcode_supported_safe_mode
 

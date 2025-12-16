@@ -5,6 +5,7 @@ ms.assetid: dd7271cc-ebc1-369a-9ee2-f14414a4a2f6
 ms.date: 01/11/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 ---
 
 # Windows Virtual PC

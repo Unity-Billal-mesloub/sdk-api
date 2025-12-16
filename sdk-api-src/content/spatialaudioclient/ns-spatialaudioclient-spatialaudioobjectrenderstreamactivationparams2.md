@@ -72,7 +72,7 @@ The category of the audio stream and its spatial audio objects.
 
 ### -field Options
 
-A member of the [SPATIAL_AUDIO_STREAM_OPTIONS](xref:NE:spatialaudioclient.SPATIAL_AUDIO_STREAM_OPTIONS) emumeration, specifying options for the activated audio stream.
+A member of the [SPATIAL_AUDIO_STREAM_OPTIONS](ne-spatialaudioclient-spatial_audio_stream_options) emumeration, specifying options for the activated audio stream.
 
 ## -remarks
 

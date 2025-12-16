@@ -5,6 +5,7 @@ ms.assetid: 351c8dd2-97c5-39de-8ade-c55ddf3acc2c
 ms.date: 04/05/2023
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 ---
 
 # HLSL

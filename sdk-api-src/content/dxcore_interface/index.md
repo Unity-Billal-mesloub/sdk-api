@@ -6,6 +6,7 @@ ms.keywords:
 ms.service: windows
 ms.subservice: windows
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: dxcore
 ---
 

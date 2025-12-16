@@ -5,6 +5,7 @@ ms.assetid: 61129341-18f7-3ab8-95b4-b450e7060c31
 ms.date: 01/11/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: com
 f1_keywords:
  - objidl

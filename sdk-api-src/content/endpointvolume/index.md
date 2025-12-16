@@ -5,6 +5,7 @@ ms.assetid: 0254f63c-cfca-3892-af5c-552b0b2e971e
 ms.date: 01/11/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: coreaudio
 f1_keywords:
  - endpointvolume

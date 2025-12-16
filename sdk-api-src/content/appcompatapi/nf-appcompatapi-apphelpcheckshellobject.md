@@ -22,7 +22,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: 
+req.lib: OneCore_downlevel.Lib
 req.dll: Apphelp.dll
 req.irql: 
 targetos: Windows
@@ -40,6 +40,8 @@ topic_type:
 api_type:
  - DllExport
 api_location:
+ - ext-ms-win-appcompat-apphelp-l1-1-2.dll
+ - ext-ms-win-appcompat-apphelp-l1-1-1.dll
  - Apphelp.dll
  - Ext-MS-Win-AppCompat-AppHelp-L1-1-0.dll
 api_name:

@@ -6,7 +6,7 @@ helpviewer_keywords: ["IDWriteFontSetBuilder","IDWriteFontSetBuilder interface [
 old-location: directwrite\idwritefontsetbuilder.htm
 tech.root: DirectWrite
 ms.assetid: CC6C95CA-BA8B-47C4-A241-650EC8477192
-ms.date: 12/05/2018
+ms.date: 09/10/2025
 ms.keywords: IDWriteFontSetBuilder, IDWriteFontSetBuilder interface [Direct Write], IDWriteFontSetBuilder interface [Direct Write],described, directwrite.idwritefontsetbuilder, dwrite_3/IDWriteFontSetBuilder
 req.header: dwrite_3.h
 req.include-header: 

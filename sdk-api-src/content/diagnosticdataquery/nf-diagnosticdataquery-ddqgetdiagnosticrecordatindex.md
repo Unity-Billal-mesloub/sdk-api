@@ -16,7 +16,7 @@ req.idl:
 req.include-header: 
 req.irql: 
 req.kmdf-ver: 
-req.lib: 
+req.lib: DiagnosticDataQuery.Lib
 req.max-support: 
 req.namespace: 
 req.redist: 

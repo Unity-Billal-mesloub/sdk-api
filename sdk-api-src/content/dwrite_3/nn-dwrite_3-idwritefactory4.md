@@ -6,13 +6,13 @@ helpviewer_keywords: ["IDWriteFactory4","IDWriteFactory4 interface [Direct Write
 old-location: directwrite\idwritefactory4.htm
 tech.root: DirectWrite
 ms.assetid: D3C5E48A-A062-430A-A196-CAC621F346FC
-ms.date: 12/05/2018
+ms.date: 09/10/2025
 ms.keywords: IDWriteFactory4, IDWriteFactory4 interface [Direct Write], IDWriteFactory4 interface [Direct Write],described, directwrite.idwritefactory4, dwrite_3/IDWriteFactory4
 req.header: dwrite_3.h
 req.include-header: 
 req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
+req.target-min-winverclnt: Windows 10 Build 14393
+req.target-min-winversvr: Windows 10 Build 14393
 req.kmdf-ver: 
 req.umdf-ver: 
 req.ddi-compliance: 

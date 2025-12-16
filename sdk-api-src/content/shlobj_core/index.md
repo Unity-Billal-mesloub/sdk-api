@@ -5,6 +5,7 @@ ms.assetid: c0d2636b-9239-39b4-87ee-10ef3f703c40
 ms.date: 01/11/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: lwef
 f1_keywords:
  - shlobj_core

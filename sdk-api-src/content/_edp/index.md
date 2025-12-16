@@ -5,6 +5,7 @@ ms.assetid: 13bd1e1d-a2d1-3fd8-be4b-3200f4a9456f
 ms.date: 10/15/2020
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 ---
 
 # Windows Information Protection (WIP)

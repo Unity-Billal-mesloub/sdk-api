@@ -43,7 +43,7 @@ req.max-support:
 req.namespace:
 req.assembly:
 req.type-library:
-req.lib:
+req.lib: AdvAPI32.Lib
   Sechost.lib on Windows 8.1 and Windows Server 2012 R2; Advapi32.lib on
   Windows 8, Windows Server 2012, Windows 7 and Windows Server 2008 R2
 req.dll:
@@ -65,11 +65,13 @@ topic_type:
 api_type:
   - DllExport
 api_location:
-  - Sechost.dll
-  - Advapi32.dll
-  - API-MS-Win-DownLevel-AdvAPI32-l2-1-1.dll
-  - API-MS-Win-Eventing-Controller-l1-1-0.dll
-  - KernelBase.dll
+ - api-ms-win-eventing-controller-l1-1-1.dll
+ - api-ms-win-downlevel-advapi32-l2-1-0.dll
+ - Sechost.dll
+ - Advapi32.dll
+ - API-MS-Win-DownLevel-AdvAPI32-l2-1-1.dll
+ - API-MS-Win-Eventing-Controller-l1-1-0.dll
+ - KernelBase.dll
 api_name:
   - EnableTraceEx2
 ---

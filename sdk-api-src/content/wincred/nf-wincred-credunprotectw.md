@@ -40,6 +40,7 @@ topic_type:
 api_type:
  - DllExport
 api_location:
+ - api-ms-win-downlevel-advapi32-l2-1-0.dll
  - Advapi32.dll
  - API-MS-Win-DownLevel-AdvApi32-l2-1-1.dll
  - sechost.dll
@@ -94,7 +95,7 @@ For extended error information, call the
 <tr>
 <td width="40%">
 <dl>
-<dt><b><b>ERROR_NOT_CAPABLE</b></b></dt>
+<dt><b>ERROR_NOT_CAPABLE</b></dt>
 <dt></dt>
 </dl>
 </td>
@@ -106,7 +107,7 @@ The security context used to encrypt the credentials is different from the secur
 <tr>
 <td width="40%">
 <dl>
-<dt><b><b>ERROR_INSUFFICIENT_BUFFER</b></b></dt>
+<dt><b>ERROR_INSUFFICIENT_BUFFER</b></dt>
 <dt></dt>
 </dl>
 </td>

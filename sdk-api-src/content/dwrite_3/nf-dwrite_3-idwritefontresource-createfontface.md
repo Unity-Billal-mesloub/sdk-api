@@ -4,7 +4,7 @@ title: IDWriteFontResource::CreateFontFace
 description: Creates a font face instance with specific axis values.
 helpviewer_keywords: ["IDWriteFontResource interface [Direct Write]","CreateFontFace method","IDWriteFontResource.CreateFontFace","IDWriteFontResource::CreateFontFace","CreateFontFace","CreateFontFace method [Direct Write]","CreateFontFace method [Direct Write]","IDWriteFontResource interface","directwrite.idwritefontresource_createfontface","dwrite_3/IDWriteFontResource::CreateFontFace"]
 tech.root: DirectWrite
-ms.date: 09/13/2019
+ms.date: 09/10/2025
 ms.keywords: IDWriteFontResource interface [Direct Write],CreateFontFace method, IDWriteFontResource.CreateFontFace, IDWriteFontResource::CreateFontFace, CreateFontFace, CreateFontFace method [Direct Write], CreateFontFace method [Direct Write],IDWriteFontResource interface, directwrite.idwritefontresource_createfontface, dwrite_3/IDWriteFontResource::CreateFontFace
 req.construct-type: function
 req.header: dwrite_3.h

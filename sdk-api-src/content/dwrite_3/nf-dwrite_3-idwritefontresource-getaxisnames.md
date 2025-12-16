@@ -4,7 +4,7 @@ title: IDWriteFontResource::GetAxisNames
 description: Retrieves the localized names of a font axis.
 helpviewer_keywords: ["IDWriteFontResource interface [Direct Write]","GetAxisNames method","IDWriteFontResource.GetAxisNames","IDWriteFontResource::GetAxisNames","GetAxisNames","GetAxisNames method [Direct Write]","GetAxisNames method [Direct Write]","IDWriteFontResource interface","directwrite.idwritefontresource_getaxisnames","dwrite_3/IDWriteFontResource::GetAxisNames"]
 tech.root: DirectWrite
-ms.date: 09/13/2019
+ms.date: 09/10/2025
 ms.keywords: IDWriteFontResource interface [Direct Write],GetAxisNames method, IDWriteFontResource.GetAxisNames, IDWriteFontResource::GetAxisNames, GetAxisNames, GetAxisNames method [Direct Write], GetAxisNames method [Direct Write],IDWriteFontResource interface, directwrite.idwritefontresource_getaxisnames, dwrite_3/IDWriteFontResource::GetAxisNames
 req.construct-type: function
 req.header: dwrite_3.h

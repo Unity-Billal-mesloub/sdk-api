@@ -4,6 +4,7 @@ title: Audioclientactivationparams.h header
 ms.date: 01/21/2021
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: coreaudio
 f1_keywords:
  - audioclientactivationparams

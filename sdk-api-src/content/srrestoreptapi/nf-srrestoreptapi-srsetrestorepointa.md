@@ -22,7 +22,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: 
+req.lib: Sfc.Lib
 req.dll: SrClient.dll
 req.irql: 
 targetos: Windows

@@ -6,7 +6,7 @@ helpviewer_keywords: ["CancelDownload","CancelDownload method [Direct Write]","C
 old-location: directwrite\idwritefontdownloadqueue_canceldownload.htm
 tech.root: DirectWrite
 ms.assetid: f2ecabcf-3301-d446-8eda-4536b3f9b5e3
-ms.date: 12/05/2018
+ms.date: 09/10/2025
 ms.keywords: CancelDownload, CancelDownload method [Direct Write], CancelDownload method [Direct Write],IDWriteFontDownloadQueue interface, IDWriteFontDownloadQueue interface [Direct Write],CancelDownload method, IDWriteFontDownloadQueue.CancelDownload, IDWriteFontDownloadQueue::CancelDownload, directwrite.idwritefontdownloadqueue_canceldownload, dwrite_3/IDWriteFontDownloadQueue::CancelDownload
 req.header: dwrite_3.h
 req.include-header: 

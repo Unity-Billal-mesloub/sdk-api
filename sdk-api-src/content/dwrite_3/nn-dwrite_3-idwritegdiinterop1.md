@@ -6,7 +6,7 @@ helpviewer_keywords: ["IDWriteGdiInterop1","IDWriteGdiInterop1 interface [Direct
 old-location: directwrite\idwritegdiinterop1.htm
 tech.root: DirectWrite
 ms.assetid: A69922D8-EF9F-4F46-91D3-F7F649CF4705
-ms.date: 12/05/2018
+ms.date: 09/10/2025
 ms.keywords: IDWriteGdiInterop1, IDWriteGdiInterop1 interface [Direct Write], IDWriteGdiInterop1 interface [Direct Write],described, directwrite.idwritegdiinterop1, dwrite_3/IDWriteGdiInterop1
 req.header: dwrite_3.h
 req.include-header: 

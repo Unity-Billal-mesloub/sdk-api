@@ -14,7 +14,7 @@ req.idl:
 req.include-header: 
 req.irql: 
 req.kmdf-ver: 
-req.lib: 
+req.lib: OneCoreUAP.Lib
 req.max-support: 
 req.namespace: 
 req.redist: 
@@ -29,6 +29,13 @@ topic_type:
 api_type:
  - HeaderDef
 api_location:
+ - api-ms-win-appmodel-runtime-l1-1-7.dll
+ - api-ms-win-appmodel-runtime-l1-1-6.dll
+ - api-ms-win-appmodel-runtime-l1-1-5.dll
+ - api-ms-win-appmodel-runtime-l1-1-4.dll
+ - api-ms-win-appmodel-runtime-l1-1-3.dll
+ - api-ms-win-appmodel-runtime-l1-1-2.dll
+ - api-ms-win-appmodel-runtime-l1-1-1.dll
  - appmodel.h
 api_name:
  - VerifyPackageFamilyName

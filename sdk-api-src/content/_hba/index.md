@@ -4,6 +4,7 @@ title: Host bus adapter (HBA)
 ms.date: 08/01/2022
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 ---
 
 # Host bus adapter (HBA)

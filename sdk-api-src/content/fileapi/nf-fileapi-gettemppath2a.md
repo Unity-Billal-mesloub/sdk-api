@@ -31,6 +31,7 @@ topic_type:
 api_type:
  - DllExport
 api_location:
+ - api-ms-win-core-file-l1-2-5.dll
  - api-ms-win-core-file-l1-2-4.dll
  - kernel32.dll
  - kernelbase.dll
@@ -51,7 +52,7 @@ Retrieves the path of the directory designated for temporary files, based on the
 
 ### -param BufferLength [in]
 
-The size of the string buffer identified by *lpBuffer*, in **TCHARs**.
+The size of the string buffer identified by *Buffer*, in **TCHARs**.
 
 ### -param Buffer [out]
 
@@ -59,7 +60,7 @@ A pointer to a string buffer that receives the null-terminated string specifying
 
 ## -returns
 
-If the function succeeds, the return value is the length, in **TCHARs**, of the string copied to *lpBuffer*, not including the terminating null character. If the return value is greater than *nBufferLength*, the return value is the length, in **TCHARs**, of the buffer required to hold the path.
+If the function succeeds, the return value is the length, in **TCHARs**, of the string copied to *Buffer*, not including the terminating null character. If the return value is greater than *BufferLength*, the return value is the length, in **TCHARs**, of the buffer required to hold the path.
 
 If the function fails, the return value is zero. To get extended error information, call [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror).
 

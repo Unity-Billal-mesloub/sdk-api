@@ -4,7 +4,7 @@ title: IDWriteFontFace5::GetFontAxisValueCount
 description: Retrieves the number of axes defined by the font. This includes both static and variable axes.
 helpviewer_keywords: ["IDWriteFontFace5 interface [Direct Write]","GetFontAxisValueCount method","IDWriteFontFace5.GetFontAxisValueCount","IDWriteFontFace5::GetFontAxisValueCount","GetFontAxisValueCount","GetFontAxisValueCount method [Direct Write]","GetFontAxisValueCount method [Direct Write]","IDWriteFontFace5 interface","directwrite.idwritefontface5_getfontaxisvaluecount","dwrite_3/IDWriteFontFace5::GetFontAxisValueCount"]
 tech.root: DirectWrite
-ms.date: 09/10/2019
+ms.date: 09/10/2025
 ms.keywords: IDWriteFontFace5 interface [Direct Write],GetFontAxisValueCount method, IDWriteFontFace5.GetFontAxisValueCount, IDWriteFontFace5::GetFontAxisValueCount, GetFontAxisValueCount, GetFontAxisValueCount method [Direct Write], GetFontAxisValueCount method [Direct Write],IDWriteFontFace5 interface, directwrite.idwritefontface5_getfontaxisvaluecount, dwrite_3/IDWriteFontFace5::GetFontAxisValueCount
 req.construct-type: function
 req.header: dwrite_3.h

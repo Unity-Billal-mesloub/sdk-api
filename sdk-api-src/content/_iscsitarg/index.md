@@ -5,6 +5,7 @@ ms.assetid: 55221415-bb39-3fdd-9d5e-3be143be538d
 ms.date: 01/11/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 ---
 
 # iSCSI Target Server Provider

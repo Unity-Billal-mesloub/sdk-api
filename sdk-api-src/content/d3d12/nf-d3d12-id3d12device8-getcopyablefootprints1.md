@@ -68,7 +68,7 @@ The number of subresources in the resource. The range of valid values is 0 to (D
 
 Type: <b>UINT64</b>
 
-The offset, in bytes, to the resource.
+The offset, in bytes, that is added to the <i>Offset</i> of each <a href="/windows/desktop/api/d3d12/ns-d3d12-d3d12_placed_subresource_footprint">D3D12_PLACED_SUBRESOURCE_FOOTPRINT</a> in the <i>pLayouts<i> array.
 
 ### -param pLayouts
 
@@ -96,7 +96,7 @@ For example, if a Texture2D resource has a width of 32 and bytes per pixel of 4,
 
 Type: [out, optional] <b>UINT64*</b>
 
-A pointer to an integer variable, to be filled with the total size, in bytes.
+A pointer to an integer variable, to be filled with the total size, in bytes. If *pResourceDesc* is invalid, then the value of *pTotalBytes* is set to **UINT64_MAX**.
 
 ## -remarks
 

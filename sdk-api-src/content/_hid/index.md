@@ -5,6 +5,7 @@ ms.assetid: 87c002be-da96-313a-bae1-c6a49c9ce065
 ms.date: 01/11/2022
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 ---
 
 # Human Interface Devices Reference

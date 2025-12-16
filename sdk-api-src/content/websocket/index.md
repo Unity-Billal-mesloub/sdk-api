@@ -5,6 +5,7 @@ ms.assetid: aea56bd7-1b37-3cb6-947e-696852041f02
 ms.date: 01/11/2019
 ms.keywords: 
 ms.topic: overview
+ms.update-cycle: 1095-days
 tech.root: websock
 f1_keywords:
  - websocket

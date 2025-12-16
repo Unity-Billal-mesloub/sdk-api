@@ -6,7 +6,7 @@ helpviewer_keywords: ["IDWriteFontDownloadListener","IDWriteFontDownloadListener
 old-location: directwrite\idwritefontdownloadlistener.htm
 tech.root: DirectWrite
 ms.assetid: 92678d34-9a14-8d58-129c-be31a0963942
-ms.date: 12/05/2018
+ms.date: 09/10/2025
 ms.keywords: IDWriteFontDownloadListener, IDWriteFontDownloadListener interface [Direct Write], IDWriteFontDownloadListener interface [Direct Write],described, directwrite.idwritefontdownloadlistener, dwrite_3/IDWriteFontDownloadListener
 req.header: dwrite_3.h
 req.include-header: 
