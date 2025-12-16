@@ -13,21 +13,21 @@ req.include-header: Windows.h
 req.target-type: Windows
 req.target-min-winverclnt: Windows XP [desktop apps \| UWP apps]
 req.target-min-winversvr: Windows Server 2003 [desktop apps \| UWP apps]
-req.kmdf-ver: 
-req.umdf-ver: 
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.idl: 
-req.max-support: 
-req.namespace: 
-req.assembly: 
-req.type-library: 
+req.kmdf-ver:
+req.umdf-ver:
+req.ddi-compliance:
+req.unicode-ansi:
+req.idl:
+req.max-support:
+req.namespace:
+req.assembly:
+req.type-library:
 req.lib: Kernel32.lib
 req.dll: Kernel32.dll
-req.irql: 
+req.irql:
 targetos: Windows
-req.typenames: 
-req.redist: 
+req.typenames:
+req.redist:
 ms.custom: 19H1
 f1_keywords:
  - TzSpecificLocalTimeToSystemTime
@@ -55,33 +55,33 @@ api_name:
 
 ## -description
 
-Converts a local time to a time in Coordinated Universal Time (UTC).
+Converts a specified time zone's local time to the corresponding Coordinated Universal Time (UTC).
 
 ## -parameters
 
 ### -param lpTimeZoneInformation [in, optional]
 
-A pointer to a 
+A pointer to a
 <a href="/windows/desktop/api/timezoneapi/ns-timezoneapi-time_zone_information">TIME_ZONE_INFORMATION</a> structure that specifies the time zone for the time specified in <i>lpLocalTime</i>.
 
 If <i>lpTimeZoneInformation</i> is <b>NULL</b>, the function uses the currently active time zone.
 
 ### -param lpLocalTime [in]
 
-A pointer to a 
+A pointer to a
 <a href="/windows/desktop/api/minwinbase/ns-minwinbase-systemtime">SYSTEMTIME</a> structure that specifies the local time to be converted. The function converts this time to the corresponding UTC time.
 
 ### -param lpUniversalTime [out]
 
-A pointer to a 
+A pointer to a
 <a href="/windows/desktop/api/minwinbase/ns-minwinbase-systemtime">SYSTEMTIME</a> structure that receives the UTC time.
 
 ## -returns
 
-If the function succeeds, the return value is nonzero, and the function sets the members of the 
+If the function succeeds, the return value is nonzero, and the function sets the members of the
 <a href="/windows/desktop/api/minwinbase/ns-minwinbase-systemtime">SYSTEMTIME</a> structure pointed to by <i>lpUniversalTime</i> to the appropriate values.
 
-If the function fails, the return value is zero. To get extended error information, call 
+If the function fails, the return value is zero. To get extended error information, call
 <a href="/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror">GetLastError</a>.
 
 ## -remarks
@@ -89,11 +89,11 @@ If the function fails, the return value is zero. To get extended error informati
 <b>TzSpecificLocalTimeToSystemTime</b> takes into account whether daylight saving time (DST) is in effect for the local time to be converted.
 
 > [!IMPORTANT]
-> Certain local times near DST transitions may be <b>ambiguous</b> or <b>invalid</b>. Specifying such a time can result in unexpected behavior as there is no guaranteed "correct" result. 
-> - During the transition from daylight time to standard time, the local clock repeats. A local time within the repeated window is ambiguous because it occurs twice, once in daylight time and once in standard time.
-> - During the transition from standard time to daylight time, the local clock jumps forward. A local time within the skipped window does not have a valid UTC conversion. 
+> Certain local times near DST transitions are <b>ambiguous</b> or <b>invalid</b>. Specifying such a time can result in unexpected behavior as there is no guaranteed "correct" result.
+> - During the transition from daylight time to standard time, the local clock repeats. A local time within the repeated window is <b>ambiguous</b> because it occurs twice, once in daylight time and once in standard time.
+> - During the transition from standard time to daylight time, the local clock jumps forward. A local time within the skipped window is <b>invalid</b> because it does not have a valid UTC conversion.
 >
-> Applications requiring continuity or precision should avoid relying on this function and look to use UTC time directly instead. 
+> If the specified local time is either ambiguous or invalid, the function treats it as <b>daylight time</b> and applies the daylight time bias. Applications requiring continuity or precision should avoid relying on this function and consider using UTC time directly instead.
 
 ## -see-also
 
