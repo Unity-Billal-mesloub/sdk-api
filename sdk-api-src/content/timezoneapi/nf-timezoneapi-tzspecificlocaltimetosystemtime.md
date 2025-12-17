@@ -54,7 +54,7 @@ api_name:
 
 ## -description
 
-Converts the local time in the specified time zone to a corresponding Coordinated Universal Time (UTC).
+Converts the local time in the specified time zone to the corresponding time in Coordinated Universal Time (UTC).
 
 ## -parameters
 
