@@ -1,7 +1,7 @@
 ---
 UID: NF:timezoneapi.TzSpecificLocalTimeToSystemTimeEx
 title: TzSpecificLocalTimeToSystemTimeEx function (timezoneapi.h)
-description: Converts a local time to a time with dynamic daylight saving time settings to Coordinated Universal Time (UTC).
+description: Converts the specified local time, with dynamic daylight saving time (DST) settings, to the corresponding Coordinated Universal Time (UTC).
 helpviewer_keywords: ["TzSpecificLocalTimeToSystemTimeEx","TzSpecificLocalTimeToSystemTimeEx function","base.tzspecificlocaltimetosystemtimeex","timezoneapi/TzSpecificLocalTimeToSystemTimeEx"]
 old-location: base\tzspecificlocaltimetosystemtimeex.htm
 tech.root: winprog
@@ -52,7 +52,7 @@ api_name:
 
 ## -description
 
-Converts the specified local time, with dynamic daylight saving time (DST) settings, to a corresponding Coordinated Universal Time (UTC).
+Converts the specified local time, with dynamic daylight saving time (DST) settings, to the corresponding Coordinated Universal Time (UTC).
 
 ## -parameters
 
