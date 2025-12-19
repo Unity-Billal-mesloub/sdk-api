@@ -62,7 +62,7 @@ An incremental step that can be added to *minBlockSize* to produce a block size.
 
 ### -field dataType
 
-A value from the [AVEncVideoQPMapElementDataType](eAVEncVideoQPMapElementDataType)specifying the data width and the signed nature of the QP min and max values.
+A value from the [AVEncVideoQPMapElementDataType](eAVEncVideoQPMapElementDataType) specifying the data width and the signed nature of the QP min and max values.
 
 ### -field minValue
 
@@ -70,7 +70,7 @@ This value represents the minimum QP value accepted by the video encoder MFT. An
 
 ### -field maxValue
 
-This value represents the maximum delta QP value accepted by the video encoder MFT. Any entry within such a QP map must be less than or equal to *maxValue*.
+This value represents the maximum QP value accepted by the video encoder MFT. Any entry within such a QP map must be less than or equal to *maxValue*.
 
 ### -field step
 
