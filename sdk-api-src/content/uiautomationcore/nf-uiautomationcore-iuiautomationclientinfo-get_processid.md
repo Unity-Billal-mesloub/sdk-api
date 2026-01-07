@@ -1,8 +1,8 @@
 ---
 UID: NF:uiautomationcore.IUIAutomationClientInfo.get_ProcessId
-tech.root: 
+tech.root: WinAuto
 title: IUIAutomationClientInfo::get_ProcessId
-ms.date: 
+ms.date: 01/07/2026
 targetos: Windows
 description: 
 prerelease: false

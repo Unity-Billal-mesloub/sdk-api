@@ -1,8 +1,8 @@
 ---
 UID: NF:uiautomationcore.IUIAutomationClientConnectionCallback.OnDisconnected
-tech.root: 
+tech.root: WinAuto
 title: IUIAutomationClientConnectionCallback::OnDisconnected
-ms.date: 
+ms.date: 01/07/2026
 targetos: Windows
 description: 
 prerelease: false

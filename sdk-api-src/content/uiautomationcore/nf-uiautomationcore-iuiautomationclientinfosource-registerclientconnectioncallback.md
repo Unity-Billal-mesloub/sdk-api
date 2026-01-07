@@ -1,8 +1,8 @@
 ---
 UID: NF:uiautomationcore.IUIAutomationClientInfoSource.RegisterClientConnectionCallback
-tech.root: 
+tech.root: WinAuto
 title: IUIAutomationClientInfoSource::RegisterClientConnectionCallback
-ms.date: 
+ms.date: 01/07/2026
 targetos: Windows
 description: 
 prerelease: false

@@ -1,8 +1,8 @@
 ---
 UID: NF:uiautomationcore.IUIAutomationClientInfoSource.UnregisterClientConnectionCallback
-tech.root: 
+tech.root: WinAuto
 title: IUIAutomationClientInfoSource::UnregisterClientConnectionCallback
-ms.date: 
+ms.date: 01/07/2026
 targetos: Windows
 description: 
 prerelease: false

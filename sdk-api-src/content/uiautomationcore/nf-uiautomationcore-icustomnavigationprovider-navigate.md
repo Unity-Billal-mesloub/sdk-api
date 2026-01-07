@@ -1,8 +1,8 @@
 ---
 UID: NF:uiautomationcore.ICustomNavigationProvider.Navigate
-tech.root: 
+tech.root: WinAuto
 title: ICustomNavigationProvider::Navigate
-ms.date: 
+ms.date: 01/07/2026
 targetos: Windows
 description: 
 prerelease: false

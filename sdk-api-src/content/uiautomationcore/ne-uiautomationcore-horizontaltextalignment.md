@@ -1,8 +1,8 @@
 ---
 UID: NE:uiautomationcore.HorizontalTextAlignment
-tech.root: 
+tech.root: WinAuto
 title: HorizontalTextAlignment
-ms.date: 
+ms.date: 01/07/2026
 targetos: Windows
 description: 
 prerelease: false
