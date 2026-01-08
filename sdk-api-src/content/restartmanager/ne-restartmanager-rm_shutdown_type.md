@@ -72,7 +72,7 @@ with the value <b>SPI_GETHUNGAPPTIMEOUT</b>.
 
 The time to wait before initiating a forced shutdown of services can be obtained by calling the
 <a href="/windows/win32/api/winuser/nf-winuser-systemparametersinfow">SystemParametersInfo</a> function
-with the value <bb>SPI_GETWAITTOKILLSERVICETIMEOUT</b>.
+with the value <b>SPI_GETWAITTOKILLSERVICETIMEOUT</b>.
 
 ## -see-also
 
