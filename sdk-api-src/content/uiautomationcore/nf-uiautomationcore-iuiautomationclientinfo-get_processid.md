@@ -42,15 +42,24 @@ helpviewer_keywords:
  - get_ProcessId
 ---
 
+# ProcessId function
+
 ## -description
+
+Gets the the process ID of the UI Automation client application.
 
 ## -parameters
 
 ### -param processId
 
+The process ID as a `DWORD`.
+
 ## -returns
+
+S_OK - If the process ID is retrieved successfully.
+
+INVALIDARG - If the *processId* parameter is null.
 
 ## -remarks
 
 ## -see-also
-

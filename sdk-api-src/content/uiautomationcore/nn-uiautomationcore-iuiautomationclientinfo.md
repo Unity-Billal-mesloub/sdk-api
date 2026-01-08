@@ -36,9 +36,14 @@ helpviewer_keywords:
  - IUIAutomationClientInfo
 ---
 
+# IUIAutomationClientInfo interface
+
 ## -description
+
+Supports the ability to receive information about a connected UI Automation client.
 
 ## -remarks
 
-## -see-also
+Enables adaptive behavior (perf shaping, telemetry) based on client presence.
 
+## -see-also

@@ -38,7 +38,7 @@ helpviewer_keywords:
 
 ## -description
 
-Provides access to controls that that support a custom navigation order.
+Provides access to controls that support a custom navigation order.
 
 ## -remarks
 

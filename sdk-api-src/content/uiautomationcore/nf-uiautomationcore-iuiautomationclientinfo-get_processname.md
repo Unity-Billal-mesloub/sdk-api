@@ -42,15 +42,28 @@ helpviewer_keywords:
  - get_ProcessName
 ---
 
+# ProcessName function
+
 ## -description
+
+Gets the file name of the UI Automation client application.
 
 ## -parameters
 
-### -param processName
+### -param processName [ out, retval]
+
+The file name as a `BSTR`.
 
 ## -returns
 
+S_OK - If process name retrieved successfully.
+
+E_INVALIDARG - If *processName* parameter is null.
+
+E_OUTOFMEMORY - If memory allocation for the process name failed.
+
 ## -remarks
 
-## -see-also
+Call [SysFreeString](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) to free allocated memory.
 
+## -see-also

@@ -42,17 +42,28 @@ helpviewer_keywords:
  - Navigate
 ---
 
+# Navigate function
+
 ## -description
+
+Moves to the next element in the specified direction within the logical UI tree.
 
 ## -parameters
 
-### -param direction
+### -param direction [in]
 
-### -param pRetVal
+The specified direction.
+
+### -param pRetVal [out, retval]
+
+Pointer to the [IRawElementProviderSimple](/windows/desktop/api/uiautomationcore/nn-uiautomationcore-irawelementprovidersimple) interface that was retrieved as a property.
 
 ## -returns
+
+Type: **[HRESULT](windows/desktop/WinProg/windows-data-types)**
+
+If this method succeeds, it returns **S_OK**. Otherwise, it returns an **HRESULT** error code.
 
 ## -remarks
 
 ## -see-also
-

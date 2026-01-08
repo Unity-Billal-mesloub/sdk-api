@@ -36,9 +36,16 @@ helpviewer_keywords:
  - IUIAutomationClientConnectionCallback
 ---
 
+# IUIAutomationClientConnectionCallback interface
+
 ## -description
+
+Supports the ability to receive synchronous notifications when UI Automation clients connect or disconnect.
 
 ## -remarks
 
-## -see-also
+Providers implement this interface and register it with [IUIAutomationClientInfoSource](nn-uiautomationcore-iuiautomationclientinfosource.md) to receive notifications when UI Automation clients connect or disconnect.
 
+Methods are invoked synchronously on the UI Automation system thread.
+
+## -see-also

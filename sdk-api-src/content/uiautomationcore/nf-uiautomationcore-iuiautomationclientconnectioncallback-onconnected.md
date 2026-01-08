@@ -42,15 +42,22 @@ helpviewer_keywords:
  - OnConnected
 ---
 
+# OnConnected function
+
 ## -description
+
+Asynchonously called when a UI Automation client connects to the provider.
 
 ## -parameters
 
-### -param clientInfo
+### -param clientInfo [in]
+
+[IUIAutomationClientInfo](nn-uiautomationcore-iuiautomationclientinfo.md) object that provides information about the disconnecting client (valid only during the method execution).
 
 ## -returns
+
+Ignored.
 
 ## -remarks
 
 ## -see-also
-
