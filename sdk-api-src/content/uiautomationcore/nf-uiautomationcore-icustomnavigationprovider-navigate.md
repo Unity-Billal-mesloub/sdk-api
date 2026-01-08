@@ -60,7 +60,7 @@ Pointer to the [IRawElementProviderSimple](/windows/desktop/api/uiautomationcore
 
 ## -returns
 
-Type: **[HRESULT](windows/desktop/WinProg/windows-data-types)**
+Type: **[HRESULT](/windows/desktop/WinProg/windows-data-types)**
 
 If this method succeeds, it returns **S_OK**. Otherwise, it returns an **HRESULT** error code.
 
