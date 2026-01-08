@@ -4,7 +4,7 @@ tech.root: WinAuto
 title: ICustomNavigationProvider
 ms.date: 01/07/2026
 targetos: Windows
-description: 
+description: Provides access to controls that support a custom navigation order.
 prerelease: false
 req.assembly: 
 req.construct-type: iface

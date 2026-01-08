@@ -4,7 +4,7 @@ tech.root: WinAuto
 title: HorizontalTextAlignment
 ms.date: 01/07/2026
 targetos: Windows
-description: 
+description: Defines horizontal text alignment values.
 prerelease: false
 req.construct-type: enumeration
 req.ddi-compliance: 
@@ -12,7 +12,7 @@ req.header: uiautomationcore.h
 req.include-header: 
 req.kmdf-ver: 
 req.max-support: 
-req.target-min-winverclnt: 
+req.target-min-winverclnt: Windows build 26100
 req.target-min-winversvr: 
 req.target-type: 
 req.typenames: 

@@ -4,7 +4,7 @@ tech.root: WinAuto
 title: IUIAutomationClientConnectionCallback::OnConnected
 ms.date: 01/07/2026
 targetos: Windows
-description: 
+description: Asynchonously called when a UI Automation client connects to the provider.
 prerelease: false
 req.assembly: 
 req.construct-type: function
@@ -19,7 +19,7 @@ req.lib:
 req.max-support: 
 req.namespace: 
 req.redist: 
-req.target-min-winverclnt: 
+req.target-min-winverclnt: Windows build 26100
 req.target-min-winversvr: 
 req.target-type: 
 req.type-library: 
@@ -52,7 +52,7 @@ Asynchonously called when a UI Automation client connects to the provider.
 
 ### -param clientInfo [in]
 
-[IUIAutomationClientInfo](nn-uiautomationcore-iuiautomationclientinfo.md) object that provides information about the connecting client (valid only during the method execution).
+[IUIAutomationClientInfo](nn-uiautomationcore-iuiautomationclientinfo.md) object that provides information about the disconnecting client (valid only during the method execution).
 
 ## -returns
 

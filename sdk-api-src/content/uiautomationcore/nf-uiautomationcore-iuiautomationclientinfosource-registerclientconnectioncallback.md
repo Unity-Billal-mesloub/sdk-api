@@ -4,7 +4,7 @@ tech.root: WinAuto
 title: IUIAutomationClientInfoSource::RegisterClientConnectionCallback
 ms.date: 01/07/2026
 targetos: Windows
-description: 
+description: Registers a connection callback.
 prerelease: false
 req.assembly: 
 req.construct-type: function
@@ -19,7 +19,7 @@ req.lib:
 req.max-support: 
 req.namespace: 
 req.redist: 
-req.target-min-winverclnt: 
+req.target-min-winverclnt: Windows build 26100
 req.target-min-winversvr: 
 req.target-type: 
 req.type-library: 
