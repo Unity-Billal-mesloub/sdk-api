@@ -42,15 +42,32 @@ helpviewer_keywords:
  - GetConnectedClients
 ---
 
+# GetConnectedClients function
+
 ## -description
+
+Retrieves information about currently connected UI Automation clients.
 
 ## -parameters
 
-### -param clients
+### -param clients [out, retval]
+
+A SAFEARRAY of [IUIAutomationClientInfo](nn-uiautomationcore-iuiautomationclientinfo.md) interface pointers.
 
 ## -returns
 
+S_OK - If the UI Automation client information was retrieved successfully or the *clients* SAFEARRAY is empty (no clients connected).
+
+E_INVALIDARG - If *clients* is null.
+
+E_OUTOFMEMORY - If memory allocation for the client array failed.
+
 ## -remarks
 
-## -see-also
+Caller must destroy the SAFEARRAY using the [SafeArrayDestroy function](../oleauto/nf-oleauto-safearraydestroy.md).
 
+The returned interfaces provide a snapshot at the time of the call.
+
+Client connections may change between calls to this method.
+
+## -see-also

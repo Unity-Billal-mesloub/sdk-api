@@ -38,7 +38,10 @@ helpviewer_keywords:
 
 ## -description
 
+Provides access to controls that that support a custom navigation order.
+
 ## -remarks
 
 ## -see-also
 
+[Control Pattern Interfaces for Providers](/windows/desktop/WinAuto/uiauto-cpinterfaces)

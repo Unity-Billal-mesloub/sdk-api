@@ -42,15 +42,34 @@ helpviewer_keywords:
  - UnregisterClientConnectionCallback
 ---
 
+# UnregisterClientConnectionCallback function
+
 ## -description
+
+Unregisters a previously registered connection callback.
 
 ## -parameters
 
-### -param handle
+### -param handle [in]
+
+A handle to the previously registered callback.
 
 ## -returns
 
+S_OK - If the callback unregistered successfully.
+
+S_FALSE - If the *handle* is not found (callback may have already been unregistered).
+
+E_INVALIDARG - If the handle value is invalid.
+
 ## -remarks
+
+Safe to call multiple times with the same handle.
+
+After successful unregistration, the callback will no longer be invoked.
+
+The callback interface can be released after successful unregistration.
 
 ## -see-also
 
+[RegisterClientConnectionCallback](nf-uiautomationcore-iuiautomationclientinfosource-registerclientconnectioncallback.md)

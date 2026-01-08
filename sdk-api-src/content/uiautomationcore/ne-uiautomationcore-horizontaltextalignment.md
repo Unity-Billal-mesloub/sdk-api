@@ -37,15 +37,27 @@ helpviewer_keywords:
 
 ## -description
 
+Defines horizontal text alignment values.
+
 ## -enum-fields
 
 ### -field HorizontalTextAlignment_Left
 
+Text is left-aligned.
+
 ### -field HorizontalTextAlignment_Centered
+
+Text is center-aligned.
 
 ### -field HorizontalTextAlignment_Right
 
+Text is right-aligned.
+
 ### -field HorizontalTextAlignment_Justified
+
+Text is justified.
+
+The last line of a paragraph is typically left or right-aligned, depending on the language direction.
 
 ## -remarks
 

@@ -36,9 +36,14 @@ helpviewer_keywords:
  - IUIAutomationClientInfoSource
 ---
 
+# IUIAutomationClientInfoSource interface
+
 ## -description
+
+Supports registering and unregistering connection callbacks and enumerating currently connected UIA clients.
 
 ## -remarks
 
-## -see-also
+Used to detect active accessibility consumers and customize provider output.
 
+## -see-also

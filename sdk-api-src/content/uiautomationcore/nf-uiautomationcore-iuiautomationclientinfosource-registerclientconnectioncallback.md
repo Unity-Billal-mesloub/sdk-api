@@ -42,17 +42,40 @@ helpviewer_keywords:
  - RegisterClientConnectionCallback
 ---
 
+# RegisterClientConnectionCallback function
+
 ## -description
+
+Registers a connection callback.
 
 ## -parameters
 
-### -param callback
+### -param callback [in]
 
-### -param handle
+The callback that is being registered.
+
+### -param handle [out]
+
+A handle to the callback (for later unregistration).
 
 ## -returns
 
+S_OK - If the callback was registered successfully.
+
+E_INVALIDARG - If the callback or handle parameter is null.
+
+E_OUTOFMEMORY - If memory allocation for registration failed.
+
 ## -remarks
+
+Multiple callbacks can be registered and will be called in order.
+
+The callback interface must remain valid until explicitly unregistered.
+
+Store the returned handle to unregister the callback later.
+
+Callbacks are invoked synchronously on the UIA system thread.
 
 ## -see-also
 
+[UnregisterClientConnectionCallback function](nf-uiautomationcore-iuiautomationclientinfosource-unregisterclientconnectioncallback.md)
