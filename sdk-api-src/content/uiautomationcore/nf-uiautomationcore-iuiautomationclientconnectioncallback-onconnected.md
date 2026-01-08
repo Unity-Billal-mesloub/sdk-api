@@ -52,7 +52,7 @@ Asynchonously called when a UI Automation client connects to the provider.
 
 ### -param clientInfo [in]
 
-[IUIAutomationClientInfo](nn-uiautomationcore-iuiautomationclientinfo.md) object that provides information about the disconnecting client (valid only during the method execution).
+[IUIAutomationClientInfo](nn-uiautomationcore-iuiautomationclientinfo.md) object that provides information about the connecting client (valid only during the method execution).
 
 ## -returns
 
