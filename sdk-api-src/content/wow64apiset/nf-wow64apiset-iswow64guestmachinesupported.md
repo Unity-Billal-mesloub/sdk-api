@@ -63,7 +63,7 @@ An <a href="/windows/desktop/SysInfo/image-file-machine-constants">IMAGE_FILE_MA
 
 ### -param MachineIsSupported [out]
 
-On success, returns a pointer to a boolean: <b>true</b> if the machine supports WOW64, or <b>false</b> if it does not.
+A pointer to the variable that, on success, receives <b>true</b> if the machine supports WOW64, or <b>false</b> if it does not.
 
 ## -returns
 
