@@ -2,9 +2,9 @@
 UID: NF:uiautomationcore.IUIAutomationClientInfo.get_ProcessName
 tech.root: WinAuto
 title: IUIAutomationClientInfo::get_ProcessName
-ms.date: 01/07/2026
+ms.date: 01/14/2026
 targetos: Windows
-description: Gets the file name of the UI Automation client application.
+description: Gets the process name of the UI Automation client application.
 prerelease: false
 req.assembly: 
 req.construct-type: function
@@ -46,7 +46,7 @@ helpviewer_keywords:
 
 ## -description
 
-Gets the file name of the UI Automation client application.
+Gets the process name of the UI Automation client application.
 
 ## -parameters
 

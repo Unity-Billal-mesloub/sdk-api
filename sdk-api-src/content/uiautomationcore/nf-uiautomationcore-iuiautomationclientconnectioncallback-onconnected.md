@@ -2,9 +2,9 @@
 UID: NF:uiautomationcore.IUIAutomationClientConnectionCallback.OnConnected
 tech.root: WinAuto
 title: IUIAutomationClientConnectionCallback::OnConnected
-ms.date: 01/07/2026
+ms.date: 01/14/2026
 targetos: Windows
-description: Asynchonously called when a UI Automation client connects to the provider.
+description: Synchonously called when a UI Automation client connects to the provider.
 prerelease: false
 req.assembly: 
 req.construct-type: function
@@ -46,13 +46,13 @@ helpviewer_keywords:
 
 ## -description
 
-Asynchonously called when a UI Automation client connects to the provider.
+Synchonously called when a UI Automation client connects to the provider.
 
 ## -parameters
 
 ### -param clientInfo [in]
 
-[IUIAutomationClientInfo](nn-uiautomationcore-iuiautomationclientinfo.md) object that provides information about the disconnecting client (valid only during the method execution).
+[IUIAutomationClientInfo](nn-uiautomationcore-iuiautomationclientinfo.md) object that provides information about the connecting client (valid only during the method execution).
 
 ## -returns
 
