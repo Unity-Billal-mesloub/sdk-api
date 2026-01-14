@@ -58,13 +58,13 @@ Line breakpoint characteristics of a character.
 
 Type: <b>UINT8 : 2</b>
 
-Indicates a breaking condition before the character, equivalent to **DWRITE_BREAK_CONDITION**
+Indicates a breaking condition before the character, equivalent to [DWRITE_BREAK_CONDITION](/windows/win32/api/dwrite/ne-dwrite-dwrite_break_condition).
 
 ### -field breakConditionAfter
 
 Type: <b>UINT8 : 2</b>
 
-Indicates a breaking condition after the character, equivalent to **DWRITE_BREAK_CONDITION**.
+Indicates a breaking condition after the character, equivalent to [DWRITE_BREAK_CONDITION](/windows/win32/api/dwrite/ne-dwrite-dwrite_break_condition).
 
 ### -field isWhitespace
 
@@ -84,3 +84,6 @@ Type: <b>UINT8 : 2</b>
 
 Reserved for future use.
 
+## -see-also
+
+[DWRITE_BREAK_CONDITION](/windows/win32/api/dwrite/ne-dwrite-dwrite_break_condition)
