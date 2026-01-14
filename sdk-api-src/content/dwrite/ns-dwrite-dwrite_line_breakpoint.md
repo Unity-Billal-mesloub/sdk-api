@@ -56,31 +56,31 @@ Line breakpoint characteristics of a character.
 
 ### -field breakConditionBefore
 
-Type: <b>UINT8</b>
+Type: <b>UINT8 : 2</b>
 
-Indicates a breaking condition before the character.
+Indicates a breaking condition before the character, equivalent to **DWRITE_BREAK_CONDITION**
 
 ### -field breakConditionAfter
 
-Type: <b>UINT8</b>
+Type: <b>UINT8 : 2</b>
 
-Indicates a breaking condition after the character.
+Indicates a breaking condition after the character, equivalent to **DWRITE_BREAK_CONDITION**.
 
 ### -field isWhitespace
 
-Type: <b>UINT8</b>
+Type: <b>UINT8 : 1</b>
 
 Indicates that the character is some form of whitespace, which may be meaningful for justification.
 
 ### -field isSoftHyphen
 
-Type: <b>UINT8</b>
+Type: <b>UINT8 : 1</b>
 
 Indicates that the character is a soft hyphen, often used to indicate hyphenation points inside words.
 
 ### -field padding
 
-Type: <b>UINT8</b>
+Type: <b>UINT8 : 2</b>
 
 Reserved for future use.
 
